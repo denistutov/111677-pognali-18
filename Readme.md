@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Тутов](https://up.htmlacademy.ru/adaptive/18/user/111677).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Уразаев`.
 
 ---
 
