@@ -58,6 +58,124 @@
       </nav>
     </header>
     <main class="page-main">
+      <section class="catalog-filter">
+        <div class="filter__wrapper">
+          <h2 class="filter__title">Фильтрация по странам</h2>
+          <button class="filter__toggle" type="button" aria-label="Открыть или закрыть фильтр"></button>
+          <!--Popup с фильтром-->
+        </div>
+      </section>
+      <form class="form-catalog members-search" method="get" action="">
+        <h2 class="members-search__title">Подберите идеального попутчика</h2>
+        <fieldset class="members-search__accordion accordion">
+          <h3 class="accordion__title">Хобби</h3>
+          <ul class="accordion__list">
+            <li class="accordion__item">
+              <input id="gym" type="checkbox" checked>
+              <label for="gym">Спортзал</label>
+            </li>
+            <li class="accordion__item">
+              <input id="hookah" type="checkbox">
+              <label for="hookah">Кальян</label>
+            </li>
+            <li class="accordion__item">
+              <input id="sofa" type="checkbox">
+              <label for="sofa">Диван</label>
+            </li>
+          </ul>
+          <button class="accordion__toggle" aria-label="Открыть/закрыть пункт меню"></button>
+        </fieldset>
+        <fieldset class="members-search__accordion accordion accordion--is-open">
+          <h3 class="accordion__title">Музыка</h3>
+          <ul class="accordion__list">
+            <li class="accordion__item">
+              <input id="hardrock" type="checkbox" checked>
+              <label for="hardrock">Тяжелый рок</label>
+            </li>
+            <li class="accordion__item">
+              <input id="russian-rap" type="checkbox">
+              <label for="russian-rap">Русский рэп</label>
+            </li>
+            <li class="accordion__item">
+              <input id="eurodens" type="checkbox">
+              <label for="eurodens">Евроденс</label>
+            </li>
+          </ul>
+          <button class="accordion__toggle" aria-label="Открыть/закрыть пункт меню"></button>
+        </fieldset>
+        <fieldset class="members-search__accordion accordion">
+          <h3 class="accordion__title">Еда</h3>
+          <ul class="accordion__list">
+            <li class="accordion__item">
+              <input id="eat-meat" type="checkbox" checked>
+              <label for="eat-meat">Мясоед</label>
+            </li>
+            <li class="accordion__item">
+              <input id="diet" type="checkbox">
+              <label for="diet">Сидит на ПП</label>
+            </li>
+            <li class="accordion__item">
+              <input id="vegan" type="checkbox">
+              <label for="vegan">Веган-сыроед</label>
+            </li>
+          </ul>
+          <button class="accordion__toggle" aria-label="Открыть/закрыть пункт меню"></button>
+        </fieldset>
+        <fieldset class="members-search__accordion accordion accordion--is-open">
+          <h3 class="accordion__title">Транспорт</h3>
+          <ul class="accordion__list transport-list transport-list--checkbox">
+            <li class="transport-list__item">
+              <input id="plane" type="checkbox" checked>
+              <label for="plane">
+                <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
+                <span class="transport-list__text">Авиаперелет</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <input id="automobile" type="checkbox" checked>
+              <label for="automobile">
+                <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
+                <span class="transport-list__text">Автотранспорт</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <input id="bike" type="checkbox">
+              <label for="bike">
+                <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
+                <span class="transport-list__text">Велосипед</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <input id="foot" type="checkbox" checked>
+              <label for="foot">
+                <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
+                <span class="transport-list__text">Пешком</span>
+              </label>
+            </li>
+          </ul>
+          <button class="accordion__toggle" aria-label="Открыть/закрыть пункт меню"></button>
+        </fieldset>
+        <fieldset class="members-search__accordion accordion accordion--is-open">
+          <h3 class="accordion__title">Левел</h3>
+          <div class="accordion__range range-controls">
+            <div class="range-controls__scale">
+              <div class="range-controls__bar"></div>
+              <button class="range-controls__toggle range-toggle-min"></button>
+              <button class="range-controls__toggle range-toggle-max"></button>
+            </div>
+          </div>
+          <div class="level-controls">
+            <div class="level-controls__field">
+              <input class="level-min" id="level-control-min" type="number" name="range-min" value="30">
+            </div>
+            <div class="price-controls__field">
+              <input class="level-max" id="level-control-max" type="number" name="range-max" value="100">
+            </div>
+          </div>
+          <button class="accordion__toggle" aria-label="Открыть/закрыть пункт меню"></button>
+        </fieldset>
+        <button class="button button--round button--white-bg" type="submit"></button>
+      </form>
       <section class="members">
         <ul class="members__list">
           <li class="members__item travel-card">
