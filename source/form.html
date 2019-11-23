@@ -58,9 +58,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <form class="form-user" method="post" action="">
+      <form class="form-user" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form-user__photo">
-          <legend class="visually-hidden">Фотография пользователя</legend>
           <div class="form-user__level user-level">
             <span class="user-level__value">80</span>
             <span class="user-level__text">level</span>
@@ -108,7 +107,6 @@
             </ul>
         </fieldset>
         <fieldset class="form-user__plans">
-          <legend class="visually-hidden">Мои планы на будущее</legend>
           <h2 class="form-user__title">Мои планы:</h2>
           <ol class="form-user__list">
             <li class="form-user__item plan-card">
@@ -129,9 +127,8 @@
         </fieldset>
 
         <div class="form-user__add-plan">
-          <legend class="visually-hidden">Добавить новый план поездки</legend>
           <h2 class="form-user__title">Добавить план:</h2>
-            <div class="form-user__step plan-step">
+          <div class="form-user__step plan-step">
               <h3 class="plan-step__title">Шаг 1. Даты пребывания</h3>
               <p class="plan-step__text">Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -365,12 +362,12 @@
                   </tbody>
                 </table>
               </div>
-              <button class="button button--round plan-step__btn" type="button">
+              <a class="button button--round plan-step__btn" href="">
                 Следующий шаг
-              </button>
+              </a>
             </div>
-          </div>
-          <div class="form-user__step plan-step">
+        </div>
+        <div class="form-user__step plan-step">
             <h3 class="plan-step__title">Шаг 2. Маршрут</h3>
             <p class="plan-step__text">Укажите страны, которые вы хотели по посетить.
               Это может быть одна или сразу несколько.</p>
@@ -379,10 +376,10 @@
                 <button class="country-select__drop-list">
                   Босния и герцеговина
                 </button>
-                <div class="country-select__flag flag" aria-label="Флаг страны">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Босния и герцеговина" width="35" height="24">
+                <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Босния и герцеговина" width="35" height="24" aria-label="Флаг страны">
                 </div>
-                <button class="country-select__country-delete">
+                <button class="country-select__country-delete" type="button">
                   Удалить страну
                 </button>
               </div>
@@ -391,10 +388,10 @@
                   <button class="country-select__drop-list">
                     Чехия
                   </button>
-                  <div class="country-select__flag flag" aria-label="Флаг страны">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
+                  <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
                   </div>
-                  <button class="country-select__country-delete">
+                  <button class="country-select__country-delete" type="button">
                     Удалить страну
                   </button>
                 </div>
@@ -404,8 +401,8 @@
                   <button class="country-select__drop-list">
                     Чехия
                   </button>
-                  <div class="country-select__flag flag" aria-label="Флаг страны">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
+                  <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
                   </div>
                   <button class="country-select__country-delete">
                     Удалить страну
@@ -417,7 +414,7 @@
                   <button class="country-select__drop-list">
                     Выберите страну
                   </button>
-                  <button class="country-select__country-delete">
+                  <button class="country-select__country-delete" type="button">
                     Удалить страну
                   </button>
                 </div>
@@ -430,46 +427,45 @@
                 </div>
               </div>
             </div>
-            <button class="button button--round plan-step__btn" type="button">
+            <a class="button button--round plan-step__btn" href="">
               Следующий шаг
-            </button>
+            </a>
             <button class="button button--transparent-bg plan-step__btn" type="button">
               На шаг назад
             </button>
             <div class="page-popup plan-step__country-select country-select">
               <!--Popup с выбором страны-->
             </div>
-          </div>
+      </div>
+        <div class="form-user__step plan-step">
+          <h3 class="plan-step__title">Шаг 3. Развлечения</h3>
+          <p class="plan-step__text">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
           <div class="form-user__step plan-step">
-            <h3 class="plan-step__title">Шаг 3. Развлечения</h3>
-            <p class="plan-step__text">Наконец, расскажите о своих планах времяпровождения.
-              Можно писать в свободной форме и ставить тэги.</p>
-            <div class="form-user__step plan-step">
-              <div class="plan-step__dally dally-step">
-                <lable class="dally-step__title">Босния и герцеговина</lable>
-                <textarea class="dally-step__text" placeholder="План действий"></textarea>
-                <div class="dally-step__flag flag" aria-label="Флаг страны">
-                  <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
-                </div>
-              </div>
-              <div class="plan-step__dally dally-step">
-                <lable class="dally-step__title">Чехия</lable>
-                <textarea class="dally-step__text" placeholder="План действий">
-                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
-                <div class="dally-step__flag flag" aria-label="Флаг страны">
-                  <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
-                </div>
+            <div class="plan-step__dally dally-step">
+              <h3 class="dally-step__title">Босния и герцеговина</h3>
+              <textarea class="dally-step__text" placeholder="План действий"></textarea>
+              <div class="dally-step__flag flag">
+                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
               </div>
             </div>
-            <button class="button button--round" type="submit">
-              Отправить
-            </button>
-            <button class="button button--no-bg plan-step__btn" type="button">
-              На шаг назад
-            </button>
+            <div class="plan-step__dally dally-step">
+              <h3 class="dally-step__title">Чехия</h3>
+              <textarea class="dally-step__text" placeholder="План действий">
+                Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+              </textarea>
+              <div class="dally-step__flag flag">
+                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+              </div>
+            </div>
           </div>
-        </fieldset>
+          <button class="button button--round" type="submit">
+            Отправить
+          </button>
+          <a class="button button--no-bg plan-step__btn">
+            На шаг назад
+          </a>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
