@@ -58,8 +58,415 @@
       </nav>
     </header>
     <main class="page-main">
-   
+      <form class="form-user" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-user__photo">
+          <div class="form-user__level user-level">
+            <span class="user-level__value">80</span>
+            <span class="user-level__text">level</span>
+          </div>
+          <img class="form-user__photo" src="https://via.placeholder.com/99x100" alt="Ваша фотография" width="99" height="100">
+          <input class="form-user__file" id="file" type="file" name="add-photo">
+          <!-- для стилизации кнопки-->
+          <label for="file">Сменить фото</label>
+        </fieldset>
+        <fieldset class="form-user__tags">
+          <legend>Тэги</legend>
+          <textarea class="form-user__text" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+        </fieldset>
+        <fieldset class="form-user__transport">
+          <legend>Транспорт</legend>
+            <ul class="form-user__list transport-list transport-list--checkbox">
+              <li class="transport-list__item">
+                <input id="plane" type="checkbox" checked>
+                <label for="plane">
+                  <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
+                  <span class="transport-list__text">Авиаперелет</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input id="automobile" type="checkbox" checked>
+                <label for="automobile">
+                  <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
+                  <span class="transport-list__text">Автотранспорт</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input id="bike" type="checkbox">
+                <label for="bike">
+                  <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
+                  <span class="transport-list__text">Велосипед</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input id="foot" type="checkbox" checked>
+                <label for="foot">
+                  <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
+                  <span class="transport-list__text">Пешком</span>
+                </label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-user__plans">
+          <h2 class="form-user__title">Мои планы:</h2>
+          <ol class="form-user__list">
+            <li class="form-user__item plan-card">
+              <span class="plan-card__number">1.</span>
+              <h3 class="plan-card__title">Франция, Италия</h3>
+              <p class="plan-card__text">3 попутчика</p>
+              <p class="plan-card__data">26 мар — 29 мар</p>
+              <a class="plan-card__link" href="">Изменить</a>
+            </li>
+            <li class="form-user__item plan-card">
+              <span class="plan-card__number">2.</span>
+              <h3 class="plan-card__title">Таиланд, Индонезия</h3>
+              <p class="plan-card__text">1 попутчик</p>
+              <p class="plan-card__data">1 июл — 15 июл</p>
+              <a class="plan-card__link" href="">Изменить</a>
+            </li>
+          </ol>
+        </fieldset>
 
+        <div class="form-user__add-plan">
+          <h2 class="form-user__title">Добавить план:</h2>
+          <div class="form-user__step plan-step">
+              <h3 class="plan-step__title">Шаг 1. Даты пребывания</h3>
+              <p class="plan-step__text">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="plan-step__counter counter">
+                <span class="counter__title">Ищу попутчиков:</span>
+                <span class="counter__desc">Чел.</span>
+                <div class="counter__value">
+                  <span class="counter__minus">-</span>
+                  <input type="text" value="2"/>
+                  <span class="counter__plus">+</span>
+                </div>
+                <div class="counter__checkbox">
+                  <input id="children" type="checkbox">
+                  <label for="children">Можно с детьми</label>
+                </div>
+              </div>
+              <div class="plan-step__counter counter">
+                <span class="counter__title">Длительность:</span>
+                <span class="counter__desc">Дн.</span>
+                <div class="counter__value">
+                  <span class="counter__minus">-</span>
+                  <input type="text" value="2"/>
+                  <span class="counter__plus">+</span>
+                </div>
+              </div>
+              <div class="plan-step__calendar calendar">
+                <div class="calendar__title-wrapper">
+                  <button class="calendar__control calendar__control--prev" type="button">
+                    Предыдущий месяц
+                  </button>
+                  <p class="calendar__title">Март 2019</p>
+                  <button class="calendar__control calendar__control--next" type="button">
+                    Следующий месяц
+                  </button>
+                </div>
+                <table class="calendar__table">
+                  <thead>
+                  <tr>
+                    <th class="calendar__day-of-week">П</th>
+                    <th class="calendar__day-of-week">В</th>
+                    <th class="calendar__day-of-week">С</th>
+                    <th class="calendar__day-of-week">Ч</th>
+                    <th class="calendar__day-of-week">П</th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekend"> С </th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekend"> В </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-23" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-23">
+                        23
+                      </label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-24" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-24">24</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-25" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-25">25</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-26" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-26">26</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-27" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-27">27</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-28" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="february-28">28</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-01" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-01">1</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-02" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-02">2</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-03" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-03">3</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-04" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-04">4</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-05" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-05">5</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-06" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-06">6</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-07" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-07">7</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-08" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-08">8</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-09" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-09">9</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-10" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-10">10</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-11" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-11">11</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-12" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-12">12</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-13" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-13">13</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-14" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-14">14</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-15" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-15">15</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-16" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-16">16</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-17" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-17">17</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-18" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-18">18</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-19" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-19">19</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-20" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-20">20</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-21" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-21">21</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-22" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-22">22</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-23" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-23">23</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-24" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-24">24</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-25" disabled />
+                      <label class="calendar__day-number calendar__day-number--inactive" for="march-25">25</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-26" checked />
+                      <label class="calendar__day-number calendar__day-number--selected calendar__day-number--active" for="march-26">26</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-27" checked />
+                      <label class="calendar__day-number calendar__day-number--selected" for="march-27">27</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-28" checked />
+                      <label class="calendar__day-number calendar__day-number--selected" for="march-28">28</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-29" />
+                      <label class="calendar__day-number" for="march-29">29</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-30" />
+                      <label class="calendar__day-number" for="march-30">30</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-31" />
+                      <label class="calendar__day-number" for="march-31">31</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-01" />
+                      <label class="calendar__day-number" for="april-01">1</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-02" />
+                      <label class="calendar__day-number" for="april-02">2</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-03" />
+                      <label class="calendar__day-number" for="april-03">3</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-04" />
+                      <label class="calendar__day-number" for="april-04">4</label>
+                    </td>
+                    <td>
+                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-05" />
+                      <label class="calendar__day-number" for="april-05">5</label>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="button button--round plan-step__btn" href="">
+                Следующий шаг
+              </a>
+            </div>
+        </div>
+        <div class="form-user__step plan-step">
+            <h3 class="plan-step__title">Шаг 2. Маршрут</h3>
+            <p class="plan-step__text">Укажите страны, которые вы хотели по посетить.
+              Это может быть одна или сразу несколько.</p>
+            <div class="form-user__step plan-step">
+              <div class="plan-step__country-select country-select">
+                <button class="country-select__drop-list">
+                  Босния и герцеговина
+                </button>
+                <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Босния и герцеговина" width="35" height="24" aria-label="Флаг страны">
+                </div>
+                <button class="country-select__country-delete" type="button">
+                  Удалить страну
+                </button>
+              </div>
+              <div class="form-user__step plan-step">
+                <div class="plan-step__country-select country-select">
+                  <button class="country-select__drop-list">
+                    Чехия
+                  </button>
+                  <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+                  </div>
+                  <button class="country-select__country-delete" type="button">
+                    Удалить страну
+                  </button>
+                </div>
+              </div>
+              <div class="form-user__step plan-step">
+                <div class="plan-step__country-select country-select">
+                  <button class="country-select__drop-list">
+                    Чехия
+                  </button>
+                  <div class="country-select__flag flag">
+                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+                  </div>
+                  <button class="country-select__country-delete">
+                    Удалить страну
+                  </button>
+                </div>
+              </div>
+              <div class="form-user__step plan-step">
+                <div class="plan-step__country-select country-select">
+                  <button class="country-select__drop-list">
+                    Выберите страну
+                  </button>
+                  <button class="country-select__country-delete" type="button">
+                    Удалить страну
+                  </button>
+                </div>
+              </div>
+              <div class="form-user__step plan-step">
+                <div class="plan-step__country-select country-select">
+                  <button class="country-select__drop-list country-select__drop-list--add-new">
+                    Добавить страну
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a class="button button--round plan-step__btn" href="">
+              Следующий шаг
+            </a>
+            <button class="button button--transparent-bg plan-step__btn" type="button">
+              На шаг назад
+            </button>
+            <div class="page-popup plan-step__country-select country-select">
+              <!--Popup с выбором страны-->
+            </div>
+      </div>
+        <div class="form-user__step plan-step">
+          <h3 class="plan-step__title">Шаг 3. Развлечения</h3>
+          <p class="plan-step__text">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
+          <div class="form-user__step plan-step">
+            <div class="plan-step__dally dally-step">
+              <h3 class="dally-step__title">Босния и герцеговина</h3>
+              <textarea class="dally-step__text" placeholder="План действий"></textarea>
+              <div class="dally-step__flag flag">
+                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+              </div>
+            </div>
+            <div class="plan-step__dally dally-step">
+              <h3 class="dally-step__title">Чехия</h3>
+              <textarea class="dally-step__text" placeholder="План действий">
+                Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+              </textarea>
+              <div class="dally-step__flag flag">
+                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+              </div>
+            </div>
+          </div>
+          <button class="button button--round" type="submit">
+            Отправить
+          </button>
+          <a class="button button--no-bg plan-step__btn">
+            На шаг назад
+          </a>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo logo--blue" href="index.html">
