@@ -1,0 +1,14 @@
+.menu-list {
+  width: 183px;
+  list-style: none;
+  font-family: BloggerSansMedium;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: $dark-blue-grey;
+  cursor: pointer;
+}
