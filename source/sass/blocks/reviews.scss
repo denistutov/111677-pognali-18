@@ -1,0 +1,26 @@
+.reviews {
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-bottom: 37px;
+}
+
+.reviews__text {
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 32px;
+
+  @include primary-font($light);
+
+  line-height: 22px;
+}
+
+.reviews__author {
+  display: inline-block;
+  width: 160px;
+
+  @include primary-font($bold);
+
+  line-height: 22px;
+}

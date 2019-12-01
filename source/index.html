@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали?" aria-label="Логотип Погнали?">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали?" aria-label="Логотип Погнали?">
+        </a>
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
@@ -59,19 +61,21 @@
     </header>
     <main class="page-main">
       <section class="intro">
-        <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий.</h1>
-        <h2 class="intro__title">В путешествие с крутыми попутчиками!</h2>
-        <ul class="intro__list top-menu">
-          <li class="top-menu__item">
-            <a class="top-menu__link top-menu__link--phone" href="tel:88005558628" aria-label="Позвонить нам">Позвонить нам</a>
-          </li>
-          <li class="top-menu__item">
-            <a class="top-menu__link top-menu__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Написать email">Написать email</a>
-          </li>
-          <li class="top-menu__item">
-            <a class="button button--round top-menu__link" href="">Авторизация</a>
-          </li>
-        </ul>
+        <div class="intro__wrapper">
+          <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий.</h1>
+          <h2 class="intro__title">В путешествие с крутыми попутчиками!</h2>
+          <ul class="intro__list top-menu">
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--phone" href="tel:88005558628" aria-label="Позвонить нам">Позвонить нам</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Написать email">Написать email</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link button button--round" href="">Авторизация</a>
+            </li>
+          </ul>
+        </div>
         <div class="intro__reviews reviews">
           <q class="reviews__text">Лучшее приложение, что я видел в жизни!</q>
           <b class="reviews__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</b>
@@ -80,69 +84,86 @@
           <h2 class="visually-hidden">Как пользоваться нашим сайтом? Последовательность:</h2>
           <ol class="action-list">
             <li class="action-list__item">
-                Выберите направление
+              Выберите<br/>
+              направление
             </li>
             <li class="action-list__item">
-                Изучите идеи путешественников
+              Изучите идеи<br/>
+              путешественников
             </li>
             <li class="action-list__item">
-                Находите тех, кто похож на вас
+              Находите тех,<br/>
+              кто похож на вас
             </li>
             <li class="action-list__item">
-                Путешествуйте вместе!
+              Путешествуйте<br/>
+              вместе!
             </li>
           </ol>
         </div>
       </section>
       <section class="about">
-        <h2 class="about__title">О сервисе</h2>
-        <p class="about__text">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
-          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
-        </p>
-        <b class="about__text about__text--bold">А если найдете кого-то
-          близкого по духу — скорее
-          зовите в совместный трип!
-        </b>
+        <div class="about__wrapper">
+          <h2 class="about__title">О сервисе</h2>
+          <p class="about__text">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+            Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <b class="about__text about__text--bold">А если найдете кого-то
+            близкого по духу — скорее
+            зовите в совместный трип!
+          </b>
+        </div>
       </section>
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
-        <p class="directions__text">
-          Мы не продаем туры и ничего не рекламируем.
-          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-        </p>
+        <div class="directions__wrapper">
+          <h2 class="directions__title">Направления</h2>
+          <p class="directions__text">
+            Мы не продаем туры<br/>
+            и ничего не рекламируем.<br/>
+            Люди сами пишут о странах,<br/>
+            куда хотели бы отправиться<br/>
+            и чем можно там заняться.
+          </p>
+        </div>
         <ul class="directions__list">
-          <li class="directions__item travel-card">
+          <li class="directions__item travel-card travel-card--thailand">
             <div class="travel-card__wrapper">
-              <div class="travel-card__flag flag">
-                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
-                <span class="flag__text">Шриланка</span>
+              <div class="travel-card_desc">
+                <div class="travel-card__flag flag">
+                  <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
+                  <span class="flag__text">Шриланка</span>
+                </div>
+                <h3 class="travel-card__title">Тайланд</h3>
+                <p class="travel-card__slogan">Джунгли зовут!</p>
               </div>
-              <h3 class="travel-card__title">Тайланд</h3>
-              <p class="travel-card__slogan">Джунгли зовут!</p>
               <span class="travel-card__count">18321</span>
             </div>
           </li>
-          <li class="directions__item travel-card">
+          <li class="directions__item travel-card travel-card--france">
             <div class="travel-card__wrapper">
-              <div class="travel-card__flag flag">
-                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
-                <span class="flag__text">Франция</span>
+              <div class="travel-card_desc">
+                <div class="travel-card__flag flag">
+                  <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
+                  <span class="flag__text">Франция</span>
+                </div>
+                <h3 class="travel-card__title">Франция</h3>
+                <p class="travel-card__slogan">Трэ бьен, манифик!</p>
               </div>
-              <h3 class="travel-card__title">Франция</h3>
-              <p class="travel-card__slogan">Трэ бьен, манифик!</p>
               <span class="travel-card__count">12518</span>
             </div>
           </li>
-          <li class="directions__item travel-card">
+          <li class="directions__item travel-card travel-card--czech">
             <div class="travel-card__wrapper">
-              <div class="travel-card__flag flag">
-                <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
-                <span class="flag__text">Шриланка</span>
+              <div class="travel-card_desc">
+                <div class="travel-card__flag flag">
+                  <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
+                  <span class="flag__text">Шриланка</span>
+                </div>
+                <h3 class="travel-card__title">Чехия</h3>
+                <p class="travel-card__slogan">Закоулки старой Европы</p>
               </div>
-              <h3 class="travel-card__title">Чехия</h3>
-              <p class="travel-card__slogan">Закоулки старой Европы</p>
-              <span class="travel-card__count">18321</span>
+              <span class="travel-card__count">5326</span>
             </div>
           </li>
         </ul>

@@ -1,14 +1,22 @@
 .menu-list {
-  width: 183px;
   list-style: none;
-  font-family: BloggerSansMedium;
+
+  @include primary-font($medium);
+
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .menu-list__link {
   text-decoration: none;
-  color: $dark-blue-grey;
+  color: $dark-blue-1;
   cursor: pointer;
 }

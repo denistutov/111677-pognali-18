@@ -1,0 +1,40 @@
+.action-list {
+  min-width: 270px;
+  display: flex;
+  margin: 0 0 40px 0;
+  padding: 0;
+  flex-direction: column;
+
+  @include primary-font($bold);
+
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-blue-3;
+}
+
+.action-list__item {
+  list-style: none;
+  display: inline-block;
+  height: 106px;
+  padding: 25px;
+  margin-top: -15px;
+  box-sizing: border-box;
+  background-color: pink;
+  border-radius: 10px;
+
+  &:nth-child(1) {
+    background-color: #ff8d30;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    background-color: #ffd74b;
+  }
+}

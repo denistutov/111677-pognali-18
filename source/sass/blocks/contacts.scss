@@ -1,23 +1,30 @@
 .contacts {
   list-style: none;
-  font-family: BloggerSansBold;
+
+  @include primary-font($bold);
+
   font-size: 16px;
   line-height: 22px;
   text-align: left;
+  margin: 0 0 42px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__item {
-  padding: 11px 0;
-  margin-left: 30px;
+  min-height: 45px;
 }
 
 .contacts__link {
-  color: $dark-blue-grey;
+  color: $dark-blue-1;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+  margin-left: 62px;
+
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 45px;
     height: 45px;
@@ -30,14 +37,14 @@
 
 .contacts__phone {
   &::before {
-    background: $dark-blue-menu url('../../img/contacts-phone.svg') no-repeat center center;
+    background: $dark-blue-4 url("../../img/contacts-phone.svg") no-repeat center center;
     background-size: 18px;
   }
 }
 
 .contacts__email {
   &::before {
-    background: $dark-blue-menu url('../../img/contacts-mail.svg') no-repeat center center;
+    background: $dark-blue-4 url("../../img/contacts-mail.svg") no-repeat center center;
     background-size: 18px;
   }
 }

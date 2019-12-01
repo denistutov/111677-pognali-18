@@ -1,3 +1,23 @@
 .page-header {
-  background-color: $dark-blue-grey;
+  background-color: $dark-blue-1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 73px;
+}
+
+.page-header__toggle {
+  width: 25px;
+  height: 11px;
+  font-size: 0;
+  background: transparent url("../../img/menu.svg") no-repeat center center;
+  border: none;
 }

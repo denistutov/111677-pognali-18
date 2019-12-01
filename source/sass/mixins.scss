@@ -1,0 +1,5 @@
+@mixin primary-font($weight, $style: normal) {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}

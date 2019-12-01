@@ -1,12 +1,10 @@
 .main-nav {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.main-nav__toggle {
-  width: 25px;
-  height: 11px;
-  font-size: 0;
-  background: transparent url('../../img/menu.svg') no-repeat center center;
-  border: none;
+.main-nav__wrapper {
+  min-width: 270px;
 }
-
