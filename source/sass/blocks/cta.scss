@@ -1,0 +1,48 @@
+.cta {
+  padding-top: 72px;
+  padding-bottom: 45px;
+  border-radius: 0 0 30px 30px;
+  background-color: #192144;
+  display: flex;
+  justify-content: center;
+}
+
+.cta__wrapper {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__title {
+  display: block;
+  padding: 0;
+  margin-bottom: 23px;
+  color: $title-orange;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @include primary-font($bold);
+}
+
+.cta__text {
+  width: 220px;
+  padding: 0;
+  margin-bottom: 34px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  @include primary-font($light);
+}
+
+.cta__link {
+  color: $light-gold;
+}
+
+.cta__contacts {
+  width: 270px;
+}

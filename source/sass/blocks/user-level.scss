@@ -1,0 +1,25 @@
+.user-level {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-level__value {
+  font-size: 24px;
+  line-height: 24px;
+
+  @include primary-font($bold);
+}
+
+.user-level__text {
+  font-size: 14px;
+  line-height: 14px;
+
+  @include primary-font($normal)
+}

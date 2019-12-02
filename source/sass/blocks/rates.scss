@@ -1,0 +1,76 @@
+.rates {
+  background-color: $bg-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rates__wrapper {
+  width: 320px;
+}
+
+.rates__text {
+  width: 110px;
+  margin-bottom: 44px;
+  padding-left: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-orange;
+
+  @include primary-font($bold);
+}
+
+.rates__list {
+  list-style: none;
+  padding: 0;
+}
+
+.rates__item {
+  padding: 14px 0 14px 25px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($light);
+
+  &:nth-child(1) {
+    .rates__number {
+      background-color: #ffa530;
+    }
+  }
+  &:nth-child(2) {
+    .rates__number {
+      background-color: #ffbd30;
+    }
+  }
+  &:nth-child(3) {
+    .rates__number {
+      background-color: #ffd74b;
+    }
+  }
+}
+
+.rates__number {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  text-align: center;
+  line-height: 34px;
+  color: #ffffff;
+
+  @include primary-font($normal);
+}
+
+.rates__business {
+  width: 320px;
+  padding-left: 25px;
+}

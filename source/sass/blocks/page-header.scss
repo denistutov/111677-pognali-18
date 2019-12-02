@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $dark-blue-1;
+  background-color: #fffffff;
   display: flex;
   align-items: center;
   position: relative;
@@ -12,12 +12,13 @@
   align-items: center;
   width: 320px;
   height: 73px;
+  margin-bottom: 70px;
 }
 
 .page-header__toggle {
-  width: 25px;
-  height: 11px;
+  width: 19px;
+  height: 19px;
   font-size: 0;
-  background: transparent url("../../img/menu.svg") no-repeat center center;
+  background: transparent url("../../img/menu-close.svg") no-repeat center center;
   border: none;
 }

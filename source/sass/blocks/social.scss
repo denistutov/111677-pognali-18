@@ -13,3 +13,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.social--yellow {
+  .social__item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $light-gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

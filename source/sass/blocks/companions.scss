@@ -1,21 +1,20 @@
-.directions {
+.companions {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-  background-color: $bg-grey;
-  padding-top: 78px;
+  background: url("../../img/co");
+  background-color: $dark-blue-1;
+  color: #ffffff;
   border-radius: 0 0 30px 30px;
 }
 
-.directions__wrapper {
+.companions__desc {
   width: 270px;
   padding: 0 25px;
   box-sizing: border-box;
 }
 
-.directions__title {
+.companions__title {
   font-size: 24px;
   line-height: 24px;
   color: $title-orange;
@@ -23,20 +22,26 @@
   @include primary-font($bold);
 }
 
-.directions__text {
+.companions__text {
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
 
   @include primary-font($light);
 }
 
-.directions__list {
-  list-style: none;
-  margin: 0;
+.companions__text--bold {
+  @include primary-font($bold);
+}
+
+.companions__list {
   padding: 0;
 }
 
-.directions__item {
+.companions__item {
   margin-bottom: 10px;
+}
+
+.companions__show-all {
+  width: 270px;
+  margin-bottom: 20px;
 }

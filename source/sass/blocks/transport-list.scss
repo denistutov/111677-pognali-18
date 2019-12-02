@@ -1,0 +1,24 @@
+.transport-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 190px;
+}
+
+.transport-list__item {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.transport-list__text {
+  display: none;
+}

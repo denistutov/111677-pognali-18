@@ -1,0 +1,22 @@
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__wrapper {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $bg-grey;
+  padding-top: 14px;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}

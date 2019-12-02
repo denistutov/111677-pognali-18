@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+  line-height: 0;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+
+  background-color: $light-gold;
+  padding: 30px 0 30px 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.button--round {
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-radius: 20px;
+  color: $dark-blue-3;
+  text-align: center;
+}
+
+.button--border {
+  background-color: transparent;
+  border: solid 3px $dark-blue-1;
+  padding: 24px;
+  color: #000000;
+}
+
+.button--transparent-bg {
+  background-color: transparent;
+}
+
+.button--no-bg {
+  background: none;
+  font-size: 16px;
+  padding: 30px 0;
+}
