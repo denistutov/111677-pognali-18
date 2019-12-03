@@ -1,6 +1,5 @@
 .transport-list {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
   width: 190px;
@@ -21,4 +20,18 @@
 
 .transport-list__text {
   display: none;
+}
+
+.transport-list--checkbox {
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+
+  .transport-list__item {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
 }
