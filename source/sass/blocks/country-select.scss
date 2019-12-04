@@ -1,0 +1,21 @@
+.country-select {
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-select__drop-list {
+  width: 168px;
+  height: 42px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.country-select__flag {
+  height: 42px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}

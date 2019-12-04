@@ -1,13 +1,17 @@
 .user-details {
   width: 270px;
+  padding: 0;
+  margin-bottom: 33px;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.user-detail__wrapper {
+.user-details__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 17px 20px 19px;
 }
 

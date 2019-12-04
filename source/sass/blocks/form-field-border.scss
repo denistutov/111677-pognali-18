@@ -1,0 +1,40 @@
+.form-field-border {
+  width: 270px;
+  padding: 0;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form-field-border__title {
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  // Надо придумать нормульное центрирование заголовка
+  top: -15px;
+  left: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: $dark-blue-2;
+  background-color: #edeff6;
+  text-transform: uppercase;
+
+  @include primary-font($bold);
+}
+
+.form-field-border__text {
+  width: 270px;
+  height: 89px;
+  padding: 26px;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}

@@ -1,73 +1,58 @@
 .form-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeff6;
+  margin: 0;
+  padding-top: 23px;
+}
+
+.form-user__wrapper {
   width: 320px;
-  padding-top: 20px;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form-user__photo {
-  border: none;
-  border-radius: 10px;
-  padding: 0;
-  margin-bottom: 25px;
-}
-
-// Форма тэгов
-
-.form-user__tags {
-  width: 270px;
-  padding: 0;
-  border: 1px solid #cbced9;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  position: relative;
-}
-
 .form-user__title {
-  display: inline-block;
-  height: 30px;
-  position: absolute;
-  // Надо придумать нормульное центрирование заголовка
-  top: -15px;
-  left: 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 24px;
   color: $dark-blue-2;
-  background-color: #edeff6;
-  text-transform: uppercase;
 
   @include primary-font($bold);
 }
 
-.form-user__text {
-  width: 270px;
-  height: 89px;
-  padding: 26px;
-  box-sizing: border-box;
-  border: none;
-  resize: none;
-  background-color: transparent;
-  font-size: 16px;
-  line-height: 22px;
-  color: $text-grey;
-
-  @include primary-font($normal);
-}
-
-// Форма видов транспорта
-
-.form-user__transport {
-  border: 1px solid #cbced9;
-  border-radius: 10px;
-  width: 270px;
-  height: 63px;
-  box-sizing: border-box;
-  position: relative;
-  margin-bottom: 37px;
-}
-
 .form-user__plans {
+  width: 100%;
+  background-color: #dfe3f0;
   border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.form-user__plans-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-user__add-plan {
+  width: 100%;
+  border: none;
+  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-user__step {
+  width: 320px;
+  padding: 24px 24px 22px 24px;
+  margin: 0 0 10px 0;
 }

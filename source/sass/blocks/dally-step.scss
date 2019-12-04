@@ -1,0 +1,38 @@
+.dally-step {
+  margin-bottom: 23px;
+}
+
+.dally-step__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dally-step__title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-blue-2;
+
+  @include primary-font($medium);
+}
+
+.dally-step__text {
+  width: 100%;
+  height: 220px;
+  box-sizing: border-box;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+  padding: 13px 15px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: $text-grey;
+
+  @include primary-font($normal);
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

@@ -1,0 +1,34 @@
+.plan-step {
+  width: 270px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.plan-step__title {
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+.plan-step__text {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}
+
+.plan-step__btn {
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+.plan-step__country {
+  margin-bottom: 25px;
+}
