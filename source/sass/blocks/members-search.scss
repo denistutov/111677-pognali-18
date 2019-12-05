@@ -1,0 +1,26 @@
+.members-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27px;
+  background-color: #edeff6;
+}
+
+.members-search__wrapper {
+  width: 270px;
+  padding: 25px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: $light-gold;
+}
+
+.members-search__title {
+  width: 118px;
+  padding: 0;
+  margin: 0 0 21px 0;
+  font-size: 22.5px;
+  line-height: 22.5px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}

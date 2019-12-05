@@ -1,0 +1,24 @@
+.country-popup {
+  width: 100%;
+  background-color: #e2e5f2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 30px 30px;
+}
+
+.country-popup__wrapper {
+  width: 270px;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.country-popup__continents {
+  margin: 0;
+  padding: 0;
+}
+
+.country-popup__button {
+  width: 270px;
+}

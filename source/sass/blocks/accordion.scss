@@ -1,0 +1,54 @@
+.accordion {
+  border: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accordion__wrapper {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.accordion__title {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+.accordion__toggle {
+  height: 10px;
+}
+
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.accordion__transport {
+  flex-direction: row;
+}
+
+.accordion__item {
+  margin-bottom: 10px;
+}
+
+.accordion__label {
+  font-size: 15px;
+  line-height: 15px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}
+
+.members-search__button {
+  width: 230px;
+}

@@ -1,0 +1,29 @@
+.country-table {
+  padding: 0;
+  margin: 0 0 67px 25px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-table__item {
+  border: 1px solid #cbced9;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.country-table__item--active {
+  border-color: $dark-blue-2;
+}
+
+.country-table__button {
+  width: 45px;
+  height: 42px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.country-table__button--active {
+  background-color: $dark-blue-2;
+  color: #ffffff;
+}

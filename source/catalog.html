@@ -66,427 +66,548 @@
           </ul>
         </div>
       </nav>
-      <h2 class="page-header__title">Попутчики</h2>
+      <div class="page-header__title page-title">
+        <h2 class="page-title__text">Попутчики</h2>
+      </div>
     </header>
     <main class="page-main">
-      <section class="filter">
-        <div class="filter__wrapper">
-          <h2 class="filter__title">Фильтрация по странам</h2>
-          <button class="filter__toggle" type="button" aria-label="Открыть или закрыть фильтр"></button>
-          <!--Popup с фильтром-->
+      <section class="country-filter">
+        <div class="country-filter__wrapper">
+          <h2 class="country-filter__title">Фильтрация по странам</h2>
+          <button class="country-filter__button country-filter__button--close" aria-label="Закрыть"></button>
+        </div>
+        <div class="country-filter__popup country-popup">
+          <div class="country-popup__wrapper">
+            <ul class="country-popup__continents continents">
+              <li class="continents__item"><a class="continents__link continents__link--active" href="#">Европа</a></li>
+              <li class="continents__item"><a class="continents__link" href="#">Азия</a></li>
+              <li class="continents__item"><a class="continents__link" href="#">Америка</a></li>
+              <li class="continents__item"><a class="continents__link" href="#">Острова</a></li>
+            </ul>
+            <ul class="country-popup__table country-table">
+              <li class="country-table__item country-table__item--active">
+                <button class="country-table__button country-table__button--active" type="button">А</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Б</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">В</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Г</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Д</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Е</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">З</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">И</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">К</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Л</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">М</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Н</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">О</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">П</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Р</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">С</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Т</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">У</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Ф</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Х</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Ч</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Ш</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">З</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Ю</button>
+              </li>
+              <li class="country-table__item">
+                <button class="country-table__button" type="button">Я</button>
+              </li>
+            </ul>
+            <ul class="country-popup__country-list country-list">
+              <li class="country-list__item"><a class="country-list__link" href="#">Афганистан</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Албания</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Алжир</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Андорра</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Аргентина</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Армения</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Австралия</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Австрия</a></li>
+              <li class="country-list__item"><a class="country-list__link" href="#">Азербайджан</a></li>
+            </ul>
+            <button class="button button--country-filter country-popup__button" type="button" >Закрыть</button>
+          </div>
         </div>
       </section>
       <form class="form-catalog members-search" method="get" action="https://echo.htmlacademy.ru">
-        <h2 class="members-search__title">Подберите идеального попутчика</h2>
-        <fieldset class="members-search__accordion accordion">
-          <h3 class="accordion__title">Хобби</h3>
-          <ul class="accordion__list">
-            <li class="accordion__item">
-              <input id="gym" type="checkbox" checked>
-              <label for="gym">Спортзал</label>
-            </li>
-            <li class="accordion__item">
-              <input id="hookah" type="checkbox">
-              <label for="hookah">Кальян</label>
-            </li>
-            <li class="accordion__item">
-              <input id="sofa" type="checkbox">
-              <label for="sofa">Диван</label>
-            </li>
-          </ul>
-          <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-        </fieldset>
-        <fieldset class="members-search__accordion accordion accordion--is-open">
-          <h3 class="accordion__title">Музыка</h3>
-          <ul class="accordion__list">
-            <li class="accordion__item">
-              <input id="hardrock" type="checkbox" checked>
-              <label for="hardrock">Тяжелый рок</label>
-            </li>
-            <li class="accordion__item">
-              <input id="russian-rap" type="checkbox">
-              <label for="russian-rap">Русский рэп</label>
-            </li>
-            <li class="accordion__item">
-              <input id="eurodens" type="checkbox">
-              <label for="eurodens">Евроденс</label>
-            </li>
-          </ul>
-          <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-        </fieldset>
-        <fieldset class="members-search__accordion accordion">
-          <h3 class="accordion__title">Еда</h3>
-          <ul class="accordion__list">
-            <li class="accordion__item">
-              <input id="eat-meat" type="checkbox" checked>
-              <label for="eat-meat">Мясоед</label>
-            </li>
-            <li class="accordion__item">
-              <input id="diet" type="checkbox">
-              <label for="diet">Сидит на ПП</label>
-            </li>
-            <li class="accordion__item">
-              <input id="vegan" type="checkbox">
-              <label for="vegan">Веган-сыроед</label>
-            </li>
-          </ul>
-          <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-        </fieldset>
-        <fieldset class="members-search__accordion accordion accordion--is-open">
-          <h3 class="accordion__title">Транспорт</h3>
-          <ul class="accordion__list transport-list transport-list--checkbox">
-            <li class="transport-list__item">
-              <input id="plane" type="checkbox" checked>
-              <label for="plane">
-                <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
-                <span class="transport-list__text">Авиаперелет</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <input id="automobile" type="checkbox" checked>
-              <label for="automobile">
-                <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
-                <span class="transport-list__text">Автотранспорт</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <input id="bike" type="checkbox">
-              <label for="bike">
-                <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
-                <span class="transport-list__text">Велосипед</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <input id="foot" type="checkbox" checked>
-              <label for="foot">
-                <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
-                <span class="transport-list__text">Пешком</span>
-              </label>
-            </li>
-          </ul>
-          <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-        </fieldset>
-        <fieldset class="members-search__accordion accordion accordion--is-open">
-          <h3 class="accordion__title">Левел</h3>
-          <div class="accordion__range range-controls">
-            <div class="range-controls__scale">
-              <div class="range-controls__bar"></div>
-              <button class="range-controls__toggle range-toggle-min" type="button"></button>
-              <button class="range-controls__toggle range-toggle-max" type="button"></button>
+        <div class="members-search__wrapper">
+          <h2 class="members-search__title">Подберите идеального попутчика</h2>
+          <fieldset class="members-search__accordion accordion">
+            <div class="accordion__wrapper">
+              <h3 class="accordion__title">Хобби</h3>
+              <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
             </div>
-          </div>
-          <div class="level-controls">
-            <div class="level-controls__field">
-              <input class="level-min" id="level-control-min" type="number" name="range-min" value="30">
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <input id="gym" type="checkbox" checked>
+                <label class="accordion__label" for="gym">Спортзал</label>
+              </li>
+              <li class="accordion__item">
+                <input id="hookah" type="checkbox">
+                <label class="accordion__label" for="hookah">Кальян</label>
+              </li>
+              <li class="accordion__item">
+                <input id="sofa" type="checkbox">
+                <label class="accordion__label" for="sofa">Диван</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="members-search__accordion accordion accordion--is-open">
+            <div class="accordion__wrapper">
+              <h3 class="accordion__title">Музыка</h3>
+              <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
             </div>
-            <div class="level-controls__field">
-              <input class="level-max" id="level-control-max" type="number" name="range-max" value="100">
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <input id="hardrock" type="checkbox" checked>
+                <label for="hardrock">Тяжелый рок</label>
+              </li>
+              <li class="accordion__item">
+                <input id="russian-rap" type="checkbox">
+                <label for="russian-rap">Русский рэп</label>
+              </li>
+              <li class="accordion__item">
+                <input id="eurodens" type="checkbox">
+                <label for="eurodens">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="members-search__accordion accordion">
+            <div class="accordion__wrapper">
+              <h3 class="accordion__title">Еда</h3>
+              <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
             </div>
-          </div>
-          <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-        </fieldset>
-        <button class="button button--round button--white-bg" type="submit"></button>
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <input id="eat-meat" type="checkbox" checked>
+                <label for="eat-meat">Мясоед</label>
+              </li>
+              <li class="accordion__item">
+                <input id="diet" type="checkbox">
+                <label for="diet">Сидит на ПП</label>
+              </li>
+              <li class="accordion__item">
+                <input id="vegan" type="checkbox">
+                <label for="vegan">Веган-сыроед</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="members-search__accordion accordion accordion--is-open">
+            <div class="accordion__wrapper">
+              <h3 class="accordion__title">Транспорт</h3>
+              <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+            </div>
+            <ul class="accordion__list accordion__transport transport-list transport-list--checkbox">
+              <li class="transport-list__item">
+                <input class="visually-hidden" id="plane" type="checkbox" checked>
+                <label for="plane">
+                  <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                  <span class="transport-list__text">Авиаперелет</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="visually-hidden" id="automobile" type="checkbox" checked>
+                <label for="automobile">
+                  <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                  <span class="transport-list__text">Автотранспорт</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="visually-hidden" id="bike" type="checkbox">
+                <label for="bike">
+                  <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                  <span class="transport-list__text">Велосипед</span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="visually-hidden" id="foot" type="checkbox" checked>
+                <label for="foot">
+                  <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                  <span class="transport-list__text">Пешком</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="members-search__accordion accordion accordion--is-open">
+            <div class="accordion__wrapper">
+              <h3 class="accordion__title">Левел</h3>
+              <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+            </div>
+            <div class="level-controls">
+              <div class="level-controls__field">
+                <input class="level-controls__input level-min" id="level-control-min" type="number" name="range-min" value="30">
+              </div>
+              <div class="level-controls__field">
+                <input class="level-controls__input level-max" id="level-control-max" type="number" name="range-max" value="100">
+              </div>
+            </div>
+            <div class="accordion__range range-controls">
+              <div class="range-controls__scale">
+                <div class="range-controls__bar"></div>
+                <button class="range-controls__toggle range-toggle-min" type="button"></button>
+                <button class="range-controls__toggle range-toggle-max" type="button"></button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="members-search__button button button--round button--white-bg" type="submit">Показать</button>
+        </div>
       </form>
       <section class="members">
         <ul class="members__list">
-          <li class="members__item travel-card">
-            <div class="travel-card__info">
+          <li class="members__item companion-card">
+            <div class="companion-card__info">
               <h3 class="visually-hidden">Информация о попутчике:</h3>
-              <div class="travel-card__picture">
+              <div class="companion-card__picture">
                 <a class="user-logo" href="">
                   <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Таня Фирсова">
                 </a>
-                <button class="button travel-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
+                <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
               </div>
-              <a class="travel-card__name user-status user-status--offline" href="">Таня Фирсова</a>
-              <span class="travel-card__points">1,5 M</span>
-              <ul class="travel-card__tags tags-list">
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#ЗОЖ</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#ПП</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#Фитнес</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#пляж</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#авокадо</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#смузи</span>
-                </li>
-              </ul>
+              <div class="companion-card__user">
+                <a class="companion-card__name user-status user-status--offline" href="">Таня Фирсова</a>
+                <span class="companion-card__points">1,5 M</span>
+              </div>
             </div>
-            <div class="travel-card__directions">
-              <h3 class="travel-card__title">Хочет посетить:</h3>
-              <ul class="travel-card__list">
-                <li class="travel-card__item flag flag--text-aside">
+            <ul class="companion-card__tags tags-list">
+              <li class="tags-list__item">
+                <span class="tags-list__text">#ЗОЖ</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#ПП</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#Фитнес</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#пляж</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#авокадо</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#смузи</span>
+              </li>
+            </ul>
+            <div class="companion-card__directions">
+              <h3 class="companion-card__title">Хочет посетить:</h3>
+              <ul class="companion-card__list">
+                <li class="companion-card__item flag flag--text-aside">
                   <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Шриланка" width="35" height="24">
-                  <span class="flag__text">Шриланка</span>
+                  <span class="flag__text">Шри-ланка</span>
                 </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
+                <li class="companion-card__item companion-card__flag flag flag--text-aside">
                   <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
                   <span class="flag__text">Тайланд</span>
                 </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
+                <li class="companion-card__item companion-card__flag flag flag--text-aside">
                   <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Сейшелы" width="35" height="24">
                   <span class="flag__text">Сейшелы</span>
                 </li>
               </ul>
             </div>
-            <div class="travel-card__transport">
-              <h3 class="travel-card__title">Транспорт:</h3>
-              <ul class="travel-card__list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
-                  <span class="transport-list__text">Авиаперелет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
-                  <span class="transport-list__text">Автотранспорт</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
-                  <span class="transport-list__text">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
-                  <span class="transport-list__text">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="travel-card__level">
-              <h3 class="travel-card__title">Левел:</h3>
-              <div class="travel-card__level user-level user-level--simple">
-                <span class="user-level__value">99</span>
+            <div class="companion-card__wrapper">
+              <div class="companion-card__transport">
+                <h3 class="companion-card__title">Транспорт:</h3>
+                <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                    <span class="transport-list__text">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                    <span class="transport-list__text">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                    <span class="transport-list__text">Велосипед</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                    <span class="transport-list__text">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="companion-card__level">
+                <h3 class="companion-card__title">Левел:</h3>
+                <div class="companion-card__level user-level user-level--simple">
+                  <span class="user-level__value">99</span>
+                </div>
               </div>
             </div>
-            <a class="button travel-card__btn" href="">Позвать!</a>
+            <a class="button button--round companion-card__btn" href="">Позвать!</a>
           </li>
-
-          <li class="members__item travel-card">
-            <div class="travel-card__info">
+          <li class="members__item companion-card">
+            <div class="companion-card__info">
               <h3 class="visually-hidden">Информация о попутчике:</h3>
-              <div class="travel-card__picture">
+              <div class="companion-card__picture">
                 <a class="user-logo" href="">
-                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Петя Демин">
+                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Таня Фирсова">
                 </a>
-                <button class="button travel-card__like like-status" type="button" aria-label="Добавить попутчика в избранное"></button>
+                <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
               </div>
-              <a class="travel-card__name user-status user-status--offline" href="">Петя Демин</a>
-              <span class="travel-card__points">150</span>
-              <ul class="travel-card__tags tags-list">
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#бургер</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#бар</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#футбол</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#концерт</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#крафт</span>
-                </li>
-              </ul>
+              <div class="companion-card__user">
+                <a class="companion-card__name user-status user-status--offline" href="">Петя Демин</a>
+                <span class="companion-card__points">150</span>
+              </div>
             </div>
-            <div class="travel-card__directions">
-              <h3 class="travel-card__title">Хочет посетить:</h3>
-              <ul class="travel-card__list">
-                <li class="travel-card__item flag flag--text-aside">
+            <ul class="companion-card__tags tags-list">
+              <li class="tags-list__item">
+                <span class="tags-list__text">#бургер</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#бар</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#футболс</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#концерт</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#крафт</span>
+              </li>
+            </ul>
+            <div class="companion-card__directions">
+              <h3 class="companion-card__title">Хочет посетить:</h3>
+              <ul class="companion-card__list">
+                <li class="companion-card__item flag flag--text-aside">
                   <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Бельгия" width="35" height="24">
                   <span class="flag__text">Бельгия</span>
                 </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
+                <li class="companion-card__item companion-card__flag flag flag--text-aside">
                   <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
                   <span class="flag__text">Чехия</span>
                 </li>
               </ul>
             </div>
-            <div class="travel-card__transport">
-              <h3 class="travel-card__title">Транспорт:</h3>
-              <ul class="travel-card__list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
-                  <span class="transport-list__text">Авиаперелет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
-                  <span class="transport-list__text">Автотранспорт</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
-                  <span class="transport-list__text">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
-                  <span class="transport-list__text">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="travel-card__level">
-              <h3 class="travel-card__title">Левел:</h3>
-              <div class="travel-card__level user-level user-level--simple">
-                <span class="user-level__value">80</span>
+            <div class="companion-card__wrapper">
+              <div class="companion-card__transport">
+                <h3 class="companion-card__title">Транспорт:</h3>
+                <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                    <span class="transport-list__text">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                    <span class="transport-list__text">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                    <span class="transport-list__text">Велосипед</span>
+                  </li>
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                    <span class="transport-list__text">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="companion-card__level">
+                <h3 class="companion-card__title">Левел:</h3>
+                <div class="companion-card__level user-level user-level--simple">
+                  <span class="user-level__value">80</span>
+                </div>
               </div>
             </div>
-            <a class="button travel-card__btn" href="">Позвать!</a>
+            <a class="button button--round companion-card__btn" href="">Позвать!</a>
           </li>
-
-          <li class="members__item travel-card">
-            <div class="travel-card__info">
+          <li class="members__item companion-card">
+            <div class="companion-card__info">
               <h3 class="visually-hidden">Информация о попутчике:</h3>
-              <div class="travel-card__picture">
+              <div class="companion-card__picture">
                 <a class="user-logo" href="">
-                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Марк Смолов">
+                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Таня Фирсова">
                 </a>
-                <button class="button travel-card__like like-status" type="button" aria-label="Добавить попутчика в избранное"></button>
+                <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
               </div>
-              <a class="travel-card__name user-status user-status--offline" href="">Марк Смолов</a>
-              <span class="travel-card__points">1700</span>
-              <ul class="travel-card__tags tags-list">
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#рэп</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#тату</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#хайпбист</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#кроссовки</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#суприм</span>
-                </li>
-              </ul>
+              <div class="companion-card__user">
+                <a class="companion-card__name user-status user-status--offline" href="">Марк Смолов</a>
+                <span class="companion-card__points">1700</span>
+              </div>
             </div>
-            <div class="travel-card__directions">
-              <h3 class="travel-card__title">Хочет посетить:</h3>
-              <ul class="travel-card__list">
-                <li class="travel-card__item flag flag--text-aside">
+            <ul class="companion-card__tags tags-list">
+              <li class="tags-list__item">
+                <span class="tags-list__text">#рэп</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#тату</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#хайпбист</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#кроссовки</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#суприм</span>
+              </li>
+            </ul>
+            <div class="companion-card__directions">
+              <h3 class="companion-card__title">Хочет посетить:</h3>
+              <ul class="companion-card__list">
+                <li class="companion-card__item flag flag--text-aside">
                   <img class="flag__img" src="https://via.placeholder.com/35x24" alt="США" width="35" height="24">
                   <span class="flag__text">США</span>
                 </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
-                  <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Австралия" width="35" height="24">
-                  <span class="flag__text">Австралия</span>
-                </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
+                <li class="companion-card__item companion-card__flag flag flag--text-aside">
                   <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Доминикана" width="35" height="24">
                   <span class="flag__text">Доминикана</span>
                 </li>
               </ul>
             </div>
-            <div class="travel-card__transport">
-              <h3 class="travel-card__title">Транспорт:</h3>
-              <ul class="travel-card__list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
-                  <span class="transport-list__text">Авиаперелет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
-                  <span class="transport-list__text">Автотранспорт</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
-                  <span class="transport-list__text">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
-                  <span class="transport-list__text">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="travel-card__level">
-              <h3 class="travel-card__title">Левел:</h3>
-              <div class="travel-card__level user-level user-level--simple">
-                <span class="user-level__value">25</span>
+            <div class="companion-card__wrapper">
+              <div class="companion-card__transport">
+                <h3 class="companion-card__title">Транспорт:</h3>
+                <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                    <span class="transport-list__text">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                    <span class="transport-list__text">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                    <span class="transport-list__text">Велосипед</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                    <span class="transport-list__text">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="companion-card__level">
+                <h3 class="companion-card__title">Левел:</h3>
+                <div class="companion-card__level user-level user-level--simple">
+                  <span class="user-level__value">25</span>
+                </div>
               </div>
             </div>
-            <a class="button travel-card__btn" href="">Позвать!</a>
+            <a class="button button--round companion-card__btn" href="">Позвать!</a>
           </li>
-
-          <li class="members__item travel-card">
-            <div class="travel-card__info">
+          <li class="members__item companion-card">
+            <div class="companion-card__info">
               <h3 class="visually-hidden">Информация о попутчике:</h3>
-              <div class="travel-card__picture">
+              <div class="companion-card__picture">
                 <a class="user-logo" href="">
-                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Лариса Роговая">
+                  <img class="user-logo__image" src="https://via.placeholder.com/70x70" alt="Таня Фирсова">
                 </a>
-                <button class="button travel-card__like like-status" type="button" aria-label="Добавить попутчика в избранное"></button>
+                <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
               </div>
-              <a class="travel-card__name user-status user-status--offline" href="">Лариса Роговая</a>
-              <span class="travel-card__points">23</span>
-              <ul class="travel-card__tags tags-list">
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#образование</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#карьера</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#учеба</span>
-                </li>
-                <li class="tags-list__item">
-                  <span class="tags-list__text">#линкедин</span>
-                </li>
-              </ul>
+              <div class="companion-card__user">
+                <a class="companion-card__name user-status user-status--offline" href="">Лариса Роговая</a>
+                <span class="companion-card__points">23</span>
+              </div>
             </div>
-            <div class="travel-card__directions">
-              <h3 class="travel-card__title">Хочет посетить:</h3>
-              <ul class="travel-card__list">
-                <li class="travel-card__item flag flag--text-aside">
+            <ul class="companion-card__tags tags-list">
+              <li class="tags-list__item">
+                <span class="tags-list__text">#образование</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#карьера</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#учеба</span>
+              </li>
+              <li class="tags-list__item">
+                <span class="tags-list__text">#линкедин</span>
+              </li>
+            </ul>
+            <div class="companion-card__directions">
+              <h3 class="companion-card__title">Хочет посетить:</h3>
+              <ul class="companion-card__list">
+                <li class="companion-card__item flag flag--text-aside">
                   <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Великобритания" width="35" height="24">
                   <span class="flag__text">Великобритания</span>
                 </li>
-                <li class="travel-card__item travel-card__flag flag flag--text-aside">
+                <li class="companion-card__item companion-card__flag flag flag--text-aside">
                   <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Германия" width="35" height="24">
                   <span class="flag__text">Германия</span>
                 </li>
               </ul>
             </div>
-            <div class="travel-card__transport">
-              <h3 class="travel-card__title">Транспорт:</h3>
-              <ul class="travel-card__list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/19x21" alt="Авиаперелет" width="19" height="21">
-                  <span class="transport-list__text">Авиаперелет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/17x21" alt="Автотранспорт" width="17" height="21">
-                  <span class="transport-list__text">Автотранспорт</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/24x21" alt="Велосипед" width="24" height="21">
-                  <span class="transport-list__text">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__img" src="https://via.placeholder.com/20x21" alt="Пешком" width="20" height="21">
-                  <span class="transport-list__text">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="travel-card__level">
-              <h3 class="travel-card__title">Левел:</h3>
-              <div class="travel-card__level user-level user-level--simple">
-                <span class="user-level__value">50</span>
+            <div class="companion-card__wrapper">
+              <div class="companion-card__transport">
+                <h3 class="companion-card__title">Транспорт:</h3>
+                <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                    <span class="transport-list__text">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__item transport-list__item--active">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                    <span class="transport-list__text">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                    <span class="transport-list__text">Велосипед</span>
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                    <span class="transport-list__text">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="companion-card__level">
+                <h3 class="companion-card__title">Левел:</h3>
+                <div class="companion-card__level user-level user-level--simple">
+                  <span class="user-level__value">50</span>
+                </div>
               </div>
             </div>
-            <a class="button travel-card__btn" href="">Позвать!</a>
+            <a class="button button--round companion-card__btn" href="">Позвать!</a>
           </li>
         </ul>
         <div class="members__paginator catalog-paginator">
-          <a href="" class="button catalog-paginator__show-more">Показать еще</a>
+          <a href="" class="button button--transparent-bg catalog-paginator__show-more">Показать еще</a>
           <ul class="catalog-paginator__list">
             <li class="members__item catalog-paginator__page">
               <a class="catalog-paginator__btn catalog-paginator__previous" href="" aria-label="Предудщая страница"></a>

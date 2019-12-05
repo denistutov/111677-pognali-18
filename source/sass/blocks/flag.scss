@@ -1,3 +1,20 @@
 .flag__text {
   display: none;
 }
+
+.flag--text-aside {
+  position: relative;
+
+  .flag__text {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: $dark-blue-2;
+
+    @include primary-font($medium);
+  }
+}

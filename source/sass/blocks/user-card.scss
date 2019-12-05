@@ -57,5 +57,16 @@
 }
 
 .user-card__tags {
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 17px;
+}
+
+.user-card__transport {
+  display: flex;
+  justify-content: center;
+  width: 190px;
+  padding: 0;
 }

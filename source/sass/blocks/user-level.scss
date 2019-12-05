@@ -23,3 +23,14 @@
 
   @include primary-font($normal);
 }
+
+.user-level--simple {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ff8d30;
+  background-color: transparent;
+
+  .user-level__value {
+    color: $dark-blue-2;
+  }
+}

@@ -1,0 +1,102 @@
+.companion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 0 20px 0;
+  padding: 18px 15px;
+}
+
+.companion-card__info {
+  width: 100%;
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.companion-card__user {
+  display: flex;
+  flex-direction: column;
+}
+
+.companion-card__picture {
+  position: relative;
+  margin-right: 16px;
+}
+
+.companion-card__like {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+}
+
+.companion-card__name {
+  width: 78px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+.companion-card__points {
+  font-size: 14px;
+  line-height: 21px;
+  color: #161c35;
+
+  @include primary-font($bold);
+}
+
+.companion-card__tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.companion-card__directions {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.companion-card__title {
+  margin: 0 0 12px 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}
+
+.companion-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.companion-card__transport {
+  width: 100%;
+}
+
+.companion-card__wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.companion-card__transport-list {
+  display: flex;
+}
+
+.companion-card__btn {
+  width: 230px;
+}

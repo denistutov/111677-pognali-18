@@ -1,8 +1,5 @@
 .transport-list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  width: 190px;
 }
 
 .transport-list__item {
@@ -29,6 +26,16 @@
 
   .transport-list__item {
     background-color: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
+}
+
+.transport-list--grey-bg {
+  .transport-list__item {
+    background-color: #edeff6;
     border-radius: 50%;
     width: 32px;
     height: 32px;

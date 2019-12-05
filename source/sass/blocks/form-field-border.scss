@@ -38,3 +38,8 @@
 
   @include primary-font($normal);
 }
+
+.form-field-border__list {
+  display: flex;
+  justify-content: center;
+}
