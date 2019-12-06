@@ -1,7 +1,9 @@
 .page-header {
+  width: 100%;
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   flex-direction: column;
 }
@@ -21,4 +23,20 @@
   font-size: 0;
   background: transparent url("../../img/menu-close.svg") no-repeat center center;
   border: none;
+}
+
+.page-header__login {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .page-header__login {
+    display: block;
+    width: 190px;
+    padding: 25px 0;
+  }
 }

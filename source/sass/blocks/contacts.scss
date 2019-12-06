@@ -1,14 +1,13 @@
 .contacts {
-  list-style: none;
-
-  @include primary-font($bold);
-
-  font-size: 16px;
-  line-height: 22px;
-  text-align: left;
   padding: 0;
   display: flex;
   flex-direction: column;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+
+  @include primary-font($bold);
 }
 
 .contacts__item {
@@ -51,5 +50,38 @@
 .contacts--yellow {
   .contacts__link {
     color: $light-gold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin: 0 0 134px 0;
+  }
+
+  .contacts__item {
+    min-height: 67px;
+  }
+
+  .contacts__link {
+    font-size: 28px;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+      top: -20px;
+      left: -101px;
+    }
+  }
+
+  .contacts__phone {
+    &::before {
+      background-size: 27px;
+    }
+  }
+
+  .contacts__email {
+    &::before {
+      background-size: 27px;
+    }
   }
 }

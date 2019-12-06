@@ -1,12 +1,11 @@
 .intro {
-  height: 715px;
   padding: 32px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  background-color: $dark-blue-3;
+  background: $dark-blue-3 url("../../img/globe-back-mobile@1x.jpg") no-repeat center -135px;
 }
 
 .intro__title {
@@ -20,14 +19,31 @@
 }
 
 .intro__wrapper {
+  width: 320px;
+  margin-bottom: 39px;
   display: flex;
-  min-width: 320px;
-  height: 405px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 52px 0;
-  background:
-    url("../../img/traveller-illustration-mobile@1x.png") no-repeat 85px bottom,
-    url("../../img/globe-back-mobile@1x.jpg") no-repeat center -70px;
+  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 85px 145px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background: $dark-blue-1 url("../../img/globe-back-tablet@1x.jpg") no-repeat center 290px;
+  }
+
+  .intro__wrapper {
+    width: $tablet-width;
+    background: url("../../img/traveller-illustration-tablet@1x.png") no-repeat 300px 285px;
+  }
+
+  .intro__title {
+    @include primary-font($bold);
+    font-size: 60px;
+    line-height: 70px;
+    width: 395px;
+    text-align: center;
+    margin: 0 0 96px 0;
+  }
 }

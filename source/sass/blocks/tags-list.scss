@@ -15,3 +15,11 @@
     padding: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .tags-list {
+    width: 225px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

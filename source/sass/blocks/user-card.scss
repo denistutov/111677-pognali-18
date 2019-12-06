@@ -16,7 +16,6 @@
 }
 
 .user-card__wrapper {
-  height: 157px;
   width: 100%;
   background-color: #ffffff;
   display: flex;
@@ -69,4 +68,25 @@
   justify-content: center;
   width: 190px;
   padding: 0;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-card {
+    width: 285px;
+  }
+
+  .user-card__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .user-card__tags {
+    margin-bottom: 27px;
+  }
+
+  .user-card__transport {
+    margin-bottom: 29px;
+  }
 }

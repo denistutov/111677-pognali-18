@@ -1,10 +1,10 @@
 .about {
-  padding-top: 320px;
-  padding-bottom: 88px;
+  width: 100%;
   display: flex;
+  padding: 33px 0 88px 0;
   flex-direction: column;
   align-items: center;
-  background: $dark-blue-4 url("../../img/about-mobile@1x.png") no-repeat center bottom;
+  background: $dark-blue-4 url("../../img/about-mobile@1x.png") no-repeat no-repeat 90% 110px;
   color: #ffffff;
   border-radius: 0 0 30px 30px;
 }
@@ -26,6 +26,8 @@
 }
 
 .about__text {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   width: 210px;
@@ -35,4 +37,44 @@
 
 .about__text--bold {
   @include primary-font($bold);
+}
+
+.about__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 139px 0 88px 0;
+    background: $dark-blue-4 url("../../img/about-tablet@1x.png") no-repeat 90% 140px;
+  }
+
+  .about__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .about__title {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0 0 43px 0;
+  }
+
+
+  .about__text {
+    font-size: 28px;
+    line-height: 33px;
+    width: 300px;
+    margin: 0 0 53px 0;
+  }
+
+  .about__text--bold {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about__button {
+    display: block;
+    width: 274px;
+  }
 }

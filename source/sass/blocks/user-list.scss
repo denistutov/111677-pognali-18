@@ -17,3 +17,9 @@
 .user-list__login {
   width: 270px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list__login {
+    display: none;
+  }
+}

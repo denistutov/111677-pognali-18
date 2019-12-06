@@ -13,6 +13,7 @@
           <img class="logo__img" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали?" aria-label="Логотип Погнали?">
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <a class="button button--round page-header__login" href="">Авторизация</a>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -76,31 +77,32 @@
               <a class="top-menu__link button button--round" href="">Авторизация</a>
             </li>
           </ul>
-        </div>
-        <div class="intro__reviews reviews">
-          <q class="reviews__text">Лучшее приложение, что я видел в жизни!</q>
-          <b class="reviews__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</b>
-        </div>
-        <div class="intro__action">
-          <h2 class="visually-hidden">Как пользоваться нашим сайтом? Последовательность:</h2>
-          <ol class="action-list">
-            <li class="action-list__item">
-              Выберите<br/>
-              направление
-            </li>
-            <li class="action-list__item">
-              Изучите идеи<br/>
-              путешественников
-            </li>
-            <li class="action-list__item">
-              Находите тех,<br/>
-              кто похож на вас
-            </li>
-            <li class="action-list__item">
-              Путешествуйте<br/>
-              вместе!
-            </li>
-          </ol>
+
+          <div class="intro__reviews reviews">
+            <q class="reviews__text">Лучшее приложение, что я видел в жизни!</q>
+            <b class="reviews__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</b>
+          </div>
+          <div class="intro__action">
+            <h2 class="visually-hidden">Как пользоваться нашим сайтом? Последовательность:</h2>
+            <ol class="action-list">
+              <li class="action-list__item">
+                Выберите<br/>
+                направление
+              </li>
+              <li class="action-list__item">
+                Изучите идеи<br/>
+                путешественников
+              </li>
+              <li class="action-list__item">
+                Находите тех,<br/>
+                кто похож на вас
+              </li>
+              <li class="action-list__item">
+                Путешествуйте<br/>
+                вместе!
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -114,6 +116,7 @@
             близкого по духу — скорее
             зовите в совместный трип!
           </b>
+          <a class="button about__button" href="" >Подробнее</a>
         </div>
       </section>
       <section class="directions">
@@ -321,7 +324,7 @@
               <span class="rates__number">3</span>
             </li>
           </ul>
-          <a class="rates__business button button--no-bg" href="">Показать тарифы для бизнеса</a>
+          <a class="button button--no-bg rates__business" href="">Показать тарифы для бизнеса</a>
           <div class="modal business">
             <h3 class="business__title">Бизнес-тарифы</h3>
             <ul class="rates__list">
@@ -350,7 +353,7 @@
         <h2 class="visually-hidden">Регистрация</h2>
         <div class="cta__wrapper">
           <strong class="cta__title">Заинтересовались?</strong>
-          <p class="cta__text">Зарегистрируйтесь,<br/> это быстро и бесплатно!<br/> Уже зарегистрированы? Тогда скорее
+          <p class="cta__text">Зарегистрируйтесь, это быстро и бесплатно!<br/> Уже зарегистрированы? Тогда скорее
             <a href="#" class="cta__link">авторизуйтесь</a>.
           </p>
           <form action="https://echo.htmlacademy.ru" class="cta__register register">
@@ -358,7 +361,7 @@
             <input type="email" class="register__input" id="register-input" placeholder="E-mail">
             <button class="register__button" type="submit"></button>
           </form>
-          <p class="cta__text">Остались вопросы?<br/> Мы с радостью на них ответим!</p>
+          <p class="cta__text">Остались вопросы? Мы с радостью на них ответим!</p>
           <ul class="cta__contacts contacts contacts--yellow">
             <li class="contacts__item">
               <a class="contacts__link contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
@@ -374,9 +377,9 @@
         <div class="location__wrapper">
           <div class="location__desc">
             <h3 class="location__address">
-              <a href="" class="location__link"> ул. Большая Конюшенная, 19/8</a>
+              <a class="location__link" href=""> ул. Большая Конюшенная, 19/8</a>
             </h3>
-            <a class="location__navigate button button--border" href="https://goo.gl/maps/w4wHJBuGpaeL5PvD6">Проложить маршрут</a>
+            <a class="button button--border location__navigate" href="https://goo.gl/maps/w4wHJBuGpaeL5PvD6">Проложить маршрут</a>
           </div>
         </div>
         <div class="map">

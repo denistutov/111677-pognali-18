@@ -1,8 +1,8 @@
 .companions {
   display: flex;
+  padding-top: 73px;
   flex-direction: column;
   align-items: center;
-  background: url("../../img/co");
   background-color: $dark-blue-1;
   color: #ffffff;
   border-radius: 0 0 30px 30px;
@@ -15,6 +15,8 @@
 }
 
 .companions__title {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
   color: $title-orange;
@@ -34,6 +36,8 @@
 }
 
 .companions__list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
@@ -44,4 +48,43 @@
 .companions__show-all {
   width: 270px;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .companions {
+    padding-top: 143px;
+  }
+
+  .companions__desc {
+    width: $tablet-width-container;
+    padding: 0;
+  }
+
+  .companions__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 61px;
+  }
+
+  .companions__text {
+    width: 425px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 46px;
+  }
+
+  .companions__text--bold {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .companions__list {
+    width: $tablet-width-container;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .companions__show-all {
+    width: $tablet-width-container;
+  }
 }

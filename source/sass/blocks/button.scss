@@ -1,19 +1,18 @@
 .button {
   display: inline-block;
-  text-decoration: none;
   border: none;
   cursor: pointer;
-  font-size: 18px;
-  text-align: left;
-  line-height: 0;
-  color: $dark-blue-2;
-
-  @include primary-font($bold);
-
   background-color: $light-gold;
   padding: 30px 0 30px 25px;
   border-radius: 10px;
   box-sizing: border-box;
+  font-size: 18px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 0;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
 }
 
 .button--round {
@@ -44,9 +43,9 @@
 }
 
 .button--no-bg {
+  padding: 0;
   background: none;
   font-size: 16px;
-  padding: 30px 0;
 }
 
 .button--grey-bg {
@@ -65,4 +64,25 @@
   text-align: center;
   padding: 20px 0;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 24px;
+    padding: 40px 0 40px 25px;
+  }
+
+  .button--round {
+    border-radius: 20px;
+  }
+
+  .button--no-bg {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .button--border {
+    padding: 37px;
+  }
 }

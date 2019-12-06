@@ -43,6 +43,38 @@
   color: $light-gold;
 }
 
+.cta__register {
+  width: 270px;
+}
+
 .cta__contacts {
   width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .cta__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .cta__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+
+  .cta__text {
+    width: auto;
+    margin-bottom: 67px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .cta__contacts {
+    width: $tablet-width-container;
+  }
+
+  .cta__register {
+    width: $tablet-width-container;
+    margin-bottom: 61px;
+  }
 }

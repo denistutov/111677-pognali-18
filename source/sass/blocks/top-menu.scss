@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-end;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .top-menu__link.button {
@@ -29,4 +29,10 @@
 .top-menu__link--email {
   background: #ffbd30 url("../../img/topmenu-mail.svg") no-repeat center center;
   background-size: 18px 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .top-menu {
+    display: none;
+  }
 }

@@ -7,7 +7,6 @@
 
 .location__wrapper {
   width: 100%;
-  height: 158px;
   background-color: $light-gold;
   display: flex;
   justify-content: center;
@@ -32,4 +31,24 @@
 
 .location__navigate {
   width: 270px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .location__desc {
+    width: $tablet-width-container;
+    padding-top: 40px;
+  }
+
+  .location__link {
+    width: auto;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 64px;
+  }
+
+  .location__navigate {
+    width: 100%;
+    margin-bottom: 85px;
+  }
 }
