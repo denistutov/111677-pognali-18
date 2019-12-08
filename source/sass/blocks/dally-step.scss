@@ -36,3 +36,28 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .dally-step__wrapper {
+    margin-bottom: 37px;
+    align-items: center;
+  }
+
+  .dally-step__title {
+    font-size: 30px;
+    line-height: 18px;
+  }
+
+  .dally-step__flag {
+    width: 70px;
+    height: 47px;
+    background-color: pink;
+  }
+
+  .dally-step__text {
+    height: 142px;
+    padding: 21px 19px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

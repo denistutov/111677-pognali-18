@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   background-color: #edeff6;
-  margin: 0;
   padding-top: 23px;
 }
 
@@ -52,7 +51,32 @@
 }
 
 .form-user__step {
-  width: 320px;
-  padding: 24px 24px 22px 24px;
   margin: 0 0 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-user__wrapper {
+    width: $tablet-width-container;
+    position: relative;
+  }
+
+  .form-user__transport {
+    position: absolute;
+    top: 0;
+  }
+
+  .form-user__title {
+    width: $tablet-width-container;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .form-user__step {
+    margin: 0 0 40px 0;
+  }
+
+  .plan-step__calendar {
+    margin-top: 60px;
+    margin-bottom: 46px;
+  }
 }

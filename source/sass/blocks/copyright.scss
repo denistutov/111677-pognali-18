@@ -4,7 +4,7 @@
 }
 
 .copyright__wrapper {
-  width: 270px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,13 @@
 
 @media (min-width: $tablet-width) {
   .copyright__wrapper {
-    width: auto;
     border: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .copyright__text {
+    margin-right: 25px;
+    font-size: 20px;
   }
 }

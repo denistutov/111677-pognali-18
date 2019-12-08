@@ -42,3 +42,20 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .transport-list--checkbox {
+    padding: 25px 0;
+
+    .transport-list__item {
+      border-radius: 50%;
+      width: 43px;
+      height: 43px;
+      margin-right: 8px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

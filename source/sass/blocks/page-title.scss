@@ -1,6 +1,5 @@
 .page-title {
   width: 100%;
-  height: 92px;
   background-color: $dark-blue-3;
   display: flex;
   justify-content: center;
@@ -9,13 +8,21 @@
 
 .page-title__text {
   display: inline-block;
-  height: 92px;
   width: 320px;
-  padding-left: 27px;
+  padding: 27px 27px 26px 0;
+  margin: 0;
   font-size: 36px;
-  line-height: 92px;
   text-align: left;
   color: #ffffff;
 
   @include primary-font($bold);
+}
+
+@media (min-width: $tablet-width) {
+  .page-title__text {
+    width: $tablet-width-container;
+    font-size: 60px;
+    line-height: 70px;
+    padding: 27px 27px 67px 0;
+  }
 }

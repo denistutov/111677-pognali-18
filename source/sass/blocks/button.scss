@@ -52,6 +52,7 @@
   background-color: #dfe3f0;
   text-align: center;
   padding: 20px 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -73,6 +74,7 @@
   }
 
   .button--round {
+    font-size: 20px;
     border-radius: 20px;
   }
 
@@ -80,6 +82,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 0;
+  }
+
+  .button--grey-bg {
+    padding: 30px 0;
   }
 
   .button--border {

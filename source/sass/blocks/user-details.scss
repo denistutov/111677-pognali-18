@@ -22,3 +22,18 @@
 .user-details__button {
   width: 270px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-details__wrapper {
+    padding: 0;
+    margin-bottom: 52px;
+  }
+
+  .user-details__photo {
+    border-radius: 10px;
+  }
+
+  .user-details__button {
+    width: $tablet-width-container;
+  }
+}

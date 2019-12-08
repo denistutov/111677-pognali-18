@@ -1,5 +1,5 @@
 .counter {
-  width: 220px;
+  width: 100%;
   margin-bottom: 21px;
   display: flex;
   flex-direction: column;
@@ -53,4 +53,53 @@
   color: $text-grey;
 
   @include primary-font($normal);
+}
+
+@media (min-width: $tablet-width) {
+  .counter {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .counter__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .counter__header {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-top: 1px solid #d6d9e6;
+    padding-top: 24px;
+    order: 2;
+  }
+
+  .counter__number {
+    height: 70px;
+    border: 1px solid #cbced9;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .counter__value {
+    order: 3;
+  }
+
+  .counter__checkbox {
+    order: 1;
+    margin: 14px 0 34px 0;
+  }
+
+  .counter__checkbox-text {
+    font-size: 20px;
+    line-height: 18px;
+    color: $dark-blue-2;
+    text-transform: uppercase;
+
+    @include primary-font($medium);
+  }
 }

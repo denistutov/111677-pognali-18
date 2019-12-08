@@ -4,6 +4,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-sizing: border-box;
+  padding: 24px 24px 22px 24px;
 }
 
 .plan-step__title {
@@ -31,4 +32,43 @@
 
 .plan-step__country {
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .plan-step {
+    width: $tablet-width-container;
+    border-radius: 30px;
+    padding: 49px 43px 0 43px;
+  }
+
+  .plan-step__title {
+    margin-bottom: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .plan-step__text {
+    width: 500px;
+    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .plan-step__country {
+    margin-bottom: 14px;
+  }
+
+  .plan-step__btn {
+    width: 285px;
+  }
+
+  .plan-step__btn--step-back {
+    width: 200px;
+  }
+
+  .plan-step__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 49px 0;
+  }
 }

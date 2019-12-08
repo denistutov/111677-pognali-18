@@ -1,5 +1,5 @@
 .calendar {
-  width: 220px;
+  width: 100%;
 }
 
 .calendar__title-wrapper {
@@ -41,6 +41,15 @@
   background-color: #ffffff;
 }
 
+.calendar__day-name {
+  display: inline-block;
+  width: 7px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+}
+
 .calendar__day-of-week--weekend {
   color: #ff5c23;
 }
@@ -66,4 +75,32 @@
   background-color: $dark-blue-2;
   border: 2px solid #ff5c23;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__title {
+    font-size: 36px;
+  }
+
+  .calendar__table {
+    border-collapse: collapse;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .calendar__day-name {
+    width: 22px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .calendar__day-number {
+    width: 75px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: -5px;
+  }
 }

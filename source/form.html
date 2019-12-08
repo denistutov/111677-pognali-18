@@ -9,10 +9,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo logo">
           <img class="logo__img" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали?" aria-label="Логотип Погнали?">
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <a class="button button--round page-header__login" href="">Авторизация</a>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -127,8 +128,8 @@
                 <div class="plan-card__content">
                   <p class="plan-card__text">3 попутчика</p>
                   <p class="plan-card__data">26 мар — 29 мар</p>
+                  <a class="plan-card__link" href="">Изменить</a>
                 </div>
-                <a class="plan-card__link" href="">Изменить</a>
               </li>
               <li class="form-user__plans-item plan-card">
                 <h3 class="plan-card__title">
@@ -138,8 +139,8 @@
                 <div class="plan-card__content">
                   <p class="plan-card__text">1 попутчик</p>
                   <p class="plan-card__data">1 июл — 15 июл</p>
+                  <a class="plan-card__link" href="">Изменить</a>
                 </div>
-                <a class="plan-card__link" href="">Изменить</a>
               </li>
             </ol>
           </div>
@@ -163,18 +164,20 @@
                 </div>
               </div>
               <div class="plan-step__counter counter">
-                <div class="counter__header">
-                  <span class="counter__title">Длительность:</span>
-                  <span class="counter__desc">Дн.</span>
-                </div>
-                <div class="counter__value">
-                  <button class="counter__minus" type="button">-</button>
-                  <input class="counter__number" type="text" value="2"/>
-                  <button class="counter__plus" type="button">+</button>
-                </div>
-                <div class="counter__checkbox">
-                  <input id="children" type="checkbox">
-                  <label class="counter__checkbox-text" for="children">Можно с детьми</label>
+                <div class="counter__wrapper">
+                  <div class="counter__header">
+                    <span class="counter__title">Длительность:</span>
+                    <span class="counter__desc">Дн.</span>
+                  </div>
+                  <div class="counter__value">
+                    <button class="counter__minus" type="button">-</button>
+                    <input class="counter__number" type="text" value="2"/>
+                    <button class="counter__plus" type="button">+</button>
+                  </div>
+                  <div class="counter__checkbox">
+                    <input id="children" type="checkbox">
+                    <label class="counter__checkbox-text" for="children">Можно с детьми</label>
+                  </div>
                 </div>
               </div>
               <div class="plan-step__calendar calendar">
@@ -190,13 +193,27 @@
                 <table class="calendar__table">
                   <thead>
                   <tr>
-                    <th class="calendar__day-of-week">П</th>
-                    <th class="calendar__day-of-week">В</th>
-                    <th class="calendar__day-of-week">С</th>
-                    <th class="calendar__day-of-week">Ч</th>
-                    <th class="calendar__day-of-week">П</th>
-                    <th class="calendar__day-of-week calendar__day-of-week--weekend"> С </th>
-                    <th class="calendar__day-of-week calendar__day-of-week--weekend"> В </th>
+                    <th class="calendar__day-of-week">
+                      <span class="calendar__day-name">Пн</span>
+                    </th>
+                    <th class="calendar__day-of-week">
+                      <span class="calendar__day-name">Вт</span>
+                    </th>
+                    <th class="calendar__day-of-week">
+                      <span class="calendar__day-name">Ср</span>
+                    </th>
+                    <th class="calendar__day-of-week">
+                      <span class="calendar__day-name">Чт</span>
+                    </th>
+                    <th class="calendar__day-of-week">
+                      <span class="calendar__day-name">Пт</span>
+                    </th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekend">
+                      <span class="calendar__day-name">Сб</span>
+                    </th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekend">
+                      <span class="calendar__day-name">Вс</span>
+                    </th>
                   </tr>
                   </thead>
                   <tbody>
@@ -385,9 +402,11 @@
                   </tbody>
                 </table>
               </div>
-              <a class="button button--round plan-step__btn" href="">
-                Следующий шаг
-              </a>
+              <div class="plan-step__wrapper">
+                <a class="button button--round plan-step__btn" href="">
+                  Следующий шаг
+                </a>
+              </div>
             </fieldset>
             <fieldset class="form-user__step plan-step">
               <h3 class="plan-step__title">Шаг 2. Маршрут</h3>
@@ -433,12 +452,14 @@
                   Добавить страну
                 </button>
               </div>
-              <a class="button button--round plan-step__btn" href="">
-                Следующий шаг
-              </a>
-              <button class="button button--transparent-bg plan-step__btn" type="button">
-                На шаг назад
-              </button>
+              <div class="plan-step__wrapper">
+                <a class="button button--round plan-step__btn" href="">
+                  Следующий шаг
+                </a>
+                <button class="button button--transparent-bg plan-step__btn plan-step__btn--step-back" type="button">
+                  На шаг назад
+                </button>
+              </div>
               <div class="page-popup plan-step__country-select country-select">
                 <!--Popup с выбором страны-->
               </div>
@@ -465,12 +486,14 @@
                 </div>
                 <textarea class="dally-step__text" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
-              <button class="button button--round plan-step__btn" type="submit">
-                Отправить
-              </button>
-              <a class="button button--transparent-bg plan-step__btn">
-                На шаг назад
-              </a>
+              <div class="plan-step__wrapper">
+                <a class="button button--round plan-step__btn" href="">
+                  Следующий шаг
+                </a>
+                <button class="button button--transparent-bg plan-step__btn plan-step__btn--step-back" type="button">
+                  На шаг назад
+                </button>
+              </div>
             </fieldset>
           </div>
         </div>

@@ -1,7 +1,7 @@
 .country-select {
-  width: 220px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; //удалить когда будет иконка
 }
 
 .country-select__drop-list {
@@ -18,4 +18,21 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .country-select {
+    align-items: center;
+  }
+
+  .country-select__drop-list {
+    width: 369px;
+    height: 70px;
+    margin-right: 53px;
+  }
+
+  .country-select__flag {
+    width: 70px;
+    height: 47px;
+  }
 }
