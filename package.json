@@ -4,7 +4,7 @@
   "private": true,
   "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
-    " stylelint-config-htmlacademy": "0.1.x",
+    "stylelint-config-htmlacademy": "0.1.x",
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
