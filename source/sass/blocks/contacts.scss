@@ -35,14 +35,14 @@
 
 .contacts__phone {
   &::before {
-    background: $dark-blue-4 url("../../img/contacts-phone.svg") no-repeat center center;
+    background: $dark-blue-4 url("../img/contacts-phone.svg") no-repeat center center;
     background-size: 18px;
   }
 }
 
 .contacts__email {
   &::before {
-    background: $dark-blue-4 url("../../img/contacts-mail.svg") no-repeat center center;
+    background: $dark-blue-4 url("../img/contacts-mail.svg") no-repeat center center;
     background-size: 18px;
   }
 }
