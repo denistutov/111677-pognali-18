@@ -10,7 +10,6 @@
 
 .country-popup__wrapper {
   width: 270px;
-  margin: 0;
   padding: 25px 0;
 }
 
@@ -21,4 +20,29 @@
 
 .country-popup__button {
   width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .country-popup__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .country-popup__table-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .country-popup__table {
+    width: 365px;
+  }
+
+  .country-popup__country-list {
+    width: 155px;
+  }
+
+  .country-popup__button {
+    width: 100%;
+  }
 }

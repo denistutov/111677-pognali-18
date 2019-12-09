@@ -21,9 +21,40 @@
   height: 42px;
   background-color: #ffffff;
   border: none;
+
+  @include primary-font($bold);
 }
 
 .country-table__button--active {
   background-color: $dark-blue-2;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .country-table {
+    margin: 0 0 0 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .country-table__item {
+    border: none;
+    margin: 0 0 36px 0;
+  }
+
+  .country-table__button {
+    width: 70px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: rgba(25, 33, 68, 0.2);
+  }
+
+  .country-table__button--active {
+    color: $dark-blue-1;
+  }
 }

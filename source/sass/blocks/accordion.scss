@@ -49,6 +49,47 @@
   @include primary-font($normal);
 }
 
-.members-search__button {
-  width: 230px;
+@media (min-width: $tablet-width) {
+  .accordion__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  .accordion__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .accordion__toggle {
+    display: none;
+  }
+
+  .accordion__list {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-top: -47px;
+  }
+
+  .accordion__label {
+    display: inline-block;
+    width: 140px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .accordion__transport {
+    justify-content: flex-start;
+    margin: -55px 0 0 125px;
+  }
+
+  .accordion__level-controls {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 125px;
+    margin-top: -43px;
+  }
 }

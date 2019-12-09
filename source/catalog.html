@@ -60,112 +60,118 @@
         </div>
       </nav>
       <div class="page-header__title page-title">
-        <h2 class="page-title__text">Попутчики</h2>
+        <div class="page-title__wrapper">
+          <h2 class="page-title__text">Попутчики</h2>
+          <a class="page-title__link" href="index.html">На главную</a>
+        </div>
       </div>
     </header>
     <main class="page-main">
       <section class="country-filter">
         <div class="country-filter__wrapper">
           <h2 class="country-filter__title">Фильтрация по странам</h2>
-          <button class="country-filter__button country-filter__button--close" aria-label="Закрыть"></button>
+          <button class="country-filter__button country-filter__button--close" aria-label="Закрыть">Свернуть</button>
+          <button class="country-filter__button country-filter__button--open" aria-label="Закрыть">Показать все</button>
         </div>
         <div class="country-filter__popup country-popup">
-          <div class="country-popup__wrapper">
+          <div class="country-filter__popup-wrapper country-popup__wrapper">
             <ul class="country-popup__continents continents">
               <li class="continents__item"><a class="continents__link continents__link--active" href="#">Европа</a></li>
               <li class="continents__item"><a class="continents__link" href="#">Азия</a></li>
               <li class="continents__item"><a class="continents__link" href="#">Америка</a></li>
               <li class="continents__item"><a class="continents__link" href="#">Острова</a></li>
             </ul>
-            <ul class="country-popup__table country-table">
-              <li class="country-table__item country-table__item--active">
-                <button class="country-table__button country-table__button--active" type="button">А</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Б</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">В</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Г</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Д</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Е</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">З</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">И</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">К</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Л</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">М</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Н</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">О</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">П</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Р</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">С</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Т</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">У</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Ф</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Х</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Ч</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Ш</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">З</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Ю</button>
-              </li>
-              <li class="country-table__item">
-                <button class="country-table__button" type="button">Я</button>
-              </li>
-            </ul>
-            <ul class="country-popup__country-list country-list">
-              <li class="country-list__item"><a class="country-list__link" href="#">Афганистан</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Албания</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Алжир</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Андорра</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Аргентина</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Армения</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Австралия</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Австрия</a></li>
-              <li class="country-list__item"><a class="country-list__link" href="#">Азербайджан</a></li>
-            </ul>
-            <button class="button button--country-filter country-popup__button" type="button" >Закрыть</button>
+            <div class="country-popup__table-wrapper">
+              <ul class="country-popup__table country-table">
+                <li class="country-table__item country-table__item--active">
+                  <button class="country-table__button country-table__button--active" type="button">А</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Б</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">В</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Г</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Д</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Е</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">З</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">И</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">К</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Л</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">М</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Н</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">О</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">П</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Р</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">С</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Т</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">У</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Ф</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Х</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Ч</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Ш</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">З</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Ю</button>
+                </li>
+                <li class="country-table__item">
+                  <button class="country-table__button" type="button">Я</button>
+                </li>
+              </ul>
+              <ul class="country-popup__country-list country-list">
+                <li class="country-list__item"><a class="country-list__link" href="#">Афганистан</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Албания</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Алжир</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Андорра</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Аргентина</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Армения</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Австралия</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Австрия</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Азербайджан</a></li>
+              </ul>
+            </div>
+            <button class="button button--country-filter country-popup__button" type="button" >Свернуть</button>
           </div>
         </div>
       </section>
@@ -200,15 +206,15 @@
             <ul class="accordion__list">
               <li class="accordion__item">
                 <input id="hardrock" type="checkbox" checked>
-                <label for="hardrock">Тяжелый рок</label>
+                <label class="accordion__label" for="hardrock">Тяжелый рок</label>
               </li>
               <li class="accordion__item">
                 <input id="russian-rap" type="checkbox">
-                <label for="russian-rap">Русский рэп</label>
+                <label class="accordion__label" for="russian-rap">Русский рэп</label>
               </li>
               <li class="accordion__item">
                 <input id="eurodens" type="checkbox">
-                <label for="eurodens">Евроденс</label>
+                <label class="accordion__label" for="eurodens">Евроденс</label>
               </li>
             </ul>
           </fieldset>
@@ -220,15 +226,15 @@
             <ul class="accordion__list">
               <li class="accordion__item">
                 <input id="eat-meat" type="checkbox" checked>
-                <label for="eat-meat">Мясоед</label>
+                <label class="accordion__label" for="eat-meat">Мясоед</label>
               </li>
               <li class="accordion__item">
                 <input id="diet" type="checkbox">
-                <label for="diet">Сидит на ПП</label>
+                <label class="accordion__label" for="diet">Сидит на ПП</label>
               </li>
               <li class="accordion__item">
                 <input id="vegan" type="checkbox">
-                <label for="vegan">Веган-сыроед</label>
+                <label class="accordion__label" for="vegan">Веган-сыроед</label>
               </li>
             </ul>
           </fieldset>
@@ -273,19 +279,21 @@
               <h3 class="accordion__title">Левел</h3>
               <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
             </div>
-            <div class="level-controls">
-              <div class="level-controls__field">
-                <input class="level-controls__input level-min" id="level-control-min" type="number" name="range-min" value="30">
+            <div class="accordion__level-controls">
+              <div class="level-controls">
+                <div class="level-controls__field">
+                  <input class="level-controls__input level-min" id="level-control-min" type="number" name="range-min" value="30">
+                </div>
+                <div class="level-controls__field">
+                  <input class="level-controls__input level-max" id="level-control-max" type="number" name="range-max" value="100">
+                </div>
               </div>
-              <div class="level-controls__field">
-                <input class="level-controls__input level-max" id="level-control-max" type="number" name="range-max" value="100">
-              </div>
-            </div>
-            <div class="accordion__range range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
-                <button class="range-controls__toggle range-toggle-min" type="button"></button>
-                <button class="range-controls__toggle range-toggle-max" type="button"></button>
+              <div class="accordion__range range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                  <button class="range-controls__toggle range-toggle-min" type="button"></button>
+                  <button class="range-controls__toggle range-toggle-max" type="button"></button>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -462,7 +470,7 @@
               </div>
               <div class="companion-card__user">
                 <a class="companion-card__name user-status user-status--offline" href="">Марк Смолов</a>
-                <span class="companion-card__points">1700</span>
+                <span class="companion-card__points">150</span>
               </div>
             </div>
             <ul class="companion-card__tags tags-list">
@@ -601,14 +609,30 @@
         </ul>
         <div class="members__paginator catalog-paginator">
           <a href="" class="button button--transparent-bg catalog-paginator__show-more">Показать еще</a>
-          <ul class="catalog-paginator__list">
-            <li class="members__item catalog-paginator__page">
-              <a class="catalog-paginator__btn catalog-paginator__previous" href="" aria-label="Предудщая страница"></a>
-            </li>
-            <li class="members__item catalog-paginator__page">
-              <a class="catalog-paginator__btn catalog-paginator__next" href="" aria-label="Следующая страница"></a>
-            </li>
-          </ul>
+          <div class="catalog-paginator__nav">
+            <ul class="catalog-paginator__list catalog-paginator__numbers">
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn catalog-paginator__btn--current" href="">1</a>
+              </li>
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn" href="">2</a>
+              </li>
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn" href="">3</a>
+              </li>
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn" href="">4</a>
+              </li>
+            </ul>
+            <ul class="catalog-paginator__list">
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn catalog-paginator__previous" href="" aria-label="Предудщая страница"></a>
+              </li>
+              <li class="members__item catalog-paginator__page">
+                <a class="catalog-paginator__btn catalog-paginator__next" href="" aria-label="Следующая страница"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 0 0 30px 30px;
 }
 
 .country-filter__wrapper {
@@ -11,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0 0 30px 30px;
 }
 
 .country-filter__title {
@@ -28,5 +28,46 @@
 .country-filter__button {
   height: 20px;
   border: none;
+  font-size: 0;
   background: url("../../img/filter-close.svg") no-repeat center center;
+}
+
+// Это временная мера, до стилизации
+.country-filter__button--open {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .country-filter__wrapper {
+    justify-content: flex-end;
+    width: $tablet-width-container;
+    height: 78px;
+  }
+
+  .country-filter__title {
+    display: none;
+  }
+
+  .country-filter__button {
+    cursor: pointer;
+    padding-right: 64px;
+    background-position: right;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $dark-blue-1;
+
+    @include primary-font($bold);
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .country-filter__popup-wrapper {
+    padding: 0;
+    margin: -73px 0 0 0;
+    position: relative;
+
+    z-index: 1;
+  }
 }

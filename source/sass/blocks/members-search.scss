@@ -24,3 +24,25 @@
 
   @include primary-font($bold);
 }
+
+.members-search__button {
+  width: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .members-search__wrapper {
+    width: $tablet-width-container-big;
+    padding: 0 35px 38px 35px;
+  }
+
+  .members-search__title {
+    width: 100%;
+    padding: 37px 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .members-search__button {
+    width: 100%;
+  }
+}

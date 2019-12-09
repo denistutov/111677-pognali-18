@@ -83,6 +83,10 @@
   margin: 0;
 }
 
+.companion-card__item {
+  margin-bottom: 10px;
+}
+
 .companion-card__transport {
   width: 100%;
 }
@@ -99,4 +103,99 @@
 
 .companion-card__btn {
   width: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .companion-card {
+    width: $tablet-width-container-big;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 35px 25px 25px 35px;
+  }
+
+  .companion-card__picture {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    background-color: pink;
+  }
+
+  .companion-card__like {
+    bottom: 0;
+    right: -213px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .companion-card__user {
+    width: 255px;
+    justify-content: space-between;
+  }
+
+  .companion-card__name {
+    font-size: 30px;
+    line-height: 30px;
+    width: auto;
+  }
+
+  .companion-card__points {
+    display: inline-block;
+    width: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: flex-end;
+    margin-bottom: 17px;
+  }
+
+  .companion-card__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .companion-card__item {
+    width: auto;
+    margin: 0 28px 0 0;
+  }
+
+  .companion-card__wrapper {
+    width: 60px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+
+    .companion-card__title {
+      display: none;
+    }
+
+    .transport-list__item {
+      background-color: transparent;
+    }
+  }
+
+  .companion-card__tags {
+    margin-top: -160px;
+    margin-left: 6px;
+    padding-bottom: 95px;
+  }
+
+  .companion-card__transport {
+    margin-bottom: 10px;
+  }
+
+  .companion-card__transport-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .companion-card__btn {
+    width: 148px;
+    padding: 25px 0;
+    position: absolute;
+    top: 175px;
+    left: 240px;
+  }
 }

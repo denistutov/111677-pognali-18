@@ -22,3 +22,17 @@
 .continents__link--active {
   color: $dark-blue-1;
 }
+
+@media (min-width: $tablet-width) {
+  .continents {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 365px;
+  }
+
+  .continents__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
