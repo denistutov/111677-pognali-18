@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $bg-grey;
+  background-color: $bg-grey-1;
   padding-top: 78px;
   border-radius: 0 0 30px 30px;
 }
@@ -18,7 +18,7 @@
 .directions__title {
   font-size: 24px;
   line-height: 24px;
-  color: $title-orange;
+  color: $orange-1;
 
   @include primary-font($bold);
 }
@@ -51,7 +51,7 @@
 @media (min-width: $tablet-width) {
   .directions {
     border-radius: 0 0 30px 30px;
-    background: $bg-grey url("../img/flags-back@1x.png") no-repeat 90% 110px;
+    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat 90% 110px;
   }
 
   .directions__title {

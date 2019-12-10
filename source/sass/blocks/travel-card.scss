@@ -22,13 +22,13 @@
 
 .travel-card__wrapper {
   height: 90px;
-  background-color: #ffffff;
+  background-color: $white;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
 }
 
-.travel-card_desc {
+.travel-card__desc {
   position: relative;
   padding: 25px 0 27px 25px;
 }
@@ -79,15 +79,15 @@
   }
 
   .travel-card--thailand {
-    background: #ffffff url("../img/thailand-desktop@1x.jpg") no-repeat top right;
+    background: $white url("../img/thailand-desktop@1x.jpg") no-repeat top right;
   }
 
   .travel-card--france {
-    background: #ffffff url("../img/france-desktop@1x.jpg") no-repeat top right;
+    background: $white url("../img/france-desktop@1x.jpg") no-repeat top right;
   }
 
   .travel-card--czech {
-    background: #ffffff url("../img/czech-desktop@1x.jpg") no-repeat top right;
+    background: $white url("../img/czech-desktop@1x.jpg") no-repeat top right;
   }
 
   .travel-card__wrapper {
@@ -96,7 +96,7 @@
     flex-direction: column;
   }
 
-  .travel-card_desc {
+  .travel-card__desc {
     padding: 31px 0 0 31px;
     margin-bottom: 20px;
   }

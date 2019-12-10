@@ -22,19 +22,19 @@
   border-radius: 10px;
 
   &:nth-child(1) {
-    background-color: #ff8d30;
+    background-color: $orange-1;
   }
 
   &:nth-child(2) {
-    background-color: #ffa530;
+    background-color: $orange-2;
   }
 
   &:nth-child(3) {
-    background-color: #ffbd30;
+    background-color: $orange-3;
   }
 
   &:nth-child(4) {
-    background-color: #ffd74b;
+    background-color: $orange-4;
   }
 }
 
@@ -54,24 +54,24 @@
     margin: 0;
 
     &:nth-child(1) {
-      background-color: #ff8d30;
+      background-color: $orange-1;
       border-radius: 20px 20px 0 0;
       margin-right: -40px;
     }
 
     &:nth-child(2) {
-      background-color: #ffa530;
+      background-color: $orange-2;
       border-radius: 20px 20px 0 0;
     }
 
     &:nth-child(3) {
-      background-color: #ffbd30;
+      background-color: $orange-3;
       border-radius: 0 0 20px 20px;
       margin-right: -40px;
     }
 
     &:nth-child(4) {
-      background-color: #ffd74b;
+      background-color: $orange-4;
       border-radius: 0 0 20px 20px;
     }
   }

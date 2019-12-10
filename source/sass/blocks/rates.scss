@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $bg-grey;
+  background-color: $bg-grey-1;
   padding: 52px 0 0 0;
 }
 
@@ -17,7 +17,7 @@
   padding-left: 25px;
   font-size: 24px;
   line-height: 24px;
-  color: $title-orange;
+  color: $orange-1;
 
   @include primary-font($bold);
 }
@@ -40,19 +40,19 @@
 
   &:nth-child(1) {
     .rates__number {
-      background-color: #ffa530;
+      background-color: $orange-2;
     }
   }
 
   &:nth-child(2) {
     .rates__number {
-      background-color: #ffbd30;
+      background-color: $orange-3;
     }
   }
 
   &:nth-child(3) {
     .rates__number {
-      background-color: #ffd74b;
+      background-color: $orange-4;
     }
   }
 }
@@ -68,7 +68,7 @@
   right: 25px;
   text-align: center;
   line-height: 34px;
-  color: #ffffff;
+  color: $white;
 
   @include primary-font($normal);
 }
@@ -104,7 +104,7 @@
   .rates__item {
     height: 67px;
     padding: 0;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid $black;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -112,7 +112,7 @@
     line-height: 33px;
 
     &:first-child {
-      border-top: 1px solid #000000;
+      border-top: 1px solid $black;
     }
   }
 

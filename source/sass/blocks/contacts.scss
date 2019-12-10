@@ -49,13 +49,14 @@
 
 .contacts--yellow {
   .contacts__link {
-    color: $light-gold;
+    color: $orange-4;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     margin: 0 0 134px 0;
+    padding-left: 40px;
   }
 
   .contacts__item {

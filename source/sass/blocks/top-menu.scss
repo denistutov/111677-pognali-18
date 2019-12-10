@@ -22,12 +22,12 @@
 }
 
 .top-menu__link--phone {
-  background: #ff8d30 url("../img/topmenu-phone.svg") no-repeat center center;
+  background: $orange-1 url("../img/topmenu-phone.svg") no-repeat center center;
   background-size: 18px;
 }
 
 .top-menu__link--email {
-  background: #ffbd30 url("../img/topmenu-mail.svg") no-repeat center center;
+  background: $orange-3 url("../img/topmenu-mail.svg") no-repeat center center;
   background-size: 18px 14px;
 }
 

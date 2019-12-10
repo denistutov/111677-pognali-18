@@ -16,7 +16,7 @@
   margin: 0;
   font-size: 36px;
   text-align: left;
-  color: #ffffff;
+  color: $white;
 
   @include primary-font($bold);
 }
@@ -27,7 +27,7 @@
   text-transform: uppercase;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white;
 
   @include primary-font($bold);
 }

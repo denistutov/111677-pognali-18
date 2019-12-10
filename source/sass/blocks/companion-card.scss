@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 270px;
-  background-color: #ffffff;
+  background-color: $white;
   box-sizing: border-box;
   border-radius: 20px;
   margin: 0 0 20px 0;
@@ -49,7 +49,7 @@
 .companion-card__points {
   font-size: 14px;
   line-height: 21px;
-  color: #161c35;
+  color: $dark-blue-3;
 
   @include primary-font($bold);
 }

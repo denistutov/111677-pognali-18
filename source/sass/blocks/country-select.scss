@@ -7,13 +7,13 @@
 .country-select__drop-list {
   width: 168px;
   height: 42px;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-grey-2;
   border-radius: 4px;
 }
 
 .country-select__flag {
   height: 42px;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-grey-2;
   border-radius: 4px;
   box-sizing: border-box;
   display: flex;

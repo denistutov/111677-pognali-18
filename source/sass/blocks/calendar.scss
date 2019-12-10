@@ -38,7 +38,7 @@
 
 .calendar__day-of-week {
   color: $text-grey;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .calendar__day-name {
@@ -51,7 +51,7 @@
 }
 
 .calendar__day-of-week--weekend {
-  color: #ff5c23;
+  color: $calendar-orange;
 }
 
 .calendar__day-number {
@@ -59,22 +59,22 @@
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background-color: #edeff6;
+  background-color: $bg-grey-1;
 }
 
 .calendar__day-number--inactive {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .calendar__day-number--selected {
   background-color: $dark-blue-2;
-  color: #ffffff;
+  color: $white;
 }
 
 .calendar__day-number--active {
   background-color: $dark-blue-2;
-  border: 2px solid #ff5c23;
-  color: #ffffff;
+  border: 2px solid $calendar-orange;
+  color: $white;
 }
 
 @media (min-width: $tablet-width) {

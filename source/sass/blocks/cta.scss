@@ -2,7 +2,7 @@
   padding-top: 72px;
   padding-bottom: 45px;
   border-radius: 0 0 30px 30px;
-  background-color: #192144;
+  background-color: $dark-blue-1;
   display: flex;
   justify-content: center;
 }
@@ -19,7 +19,7 @@
   display: block;
   padding: 0;
   margin-bottom: 23px;
-  color: $title-orange;
+  color: $orange-1;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -34,13 +34,13 @@
   text-align: center;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 
   @include primary-font($light);
 }
 
 .cta__link {
-  color: $light-gold;
+  color: $orange-4;
 }
 
 .cta__register {

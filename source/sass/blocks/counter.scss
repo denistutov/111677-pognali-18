@@ -35,7 +35,7 @@
 .counter__number {
   height: 43px;
   width: 100%;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-grey-2;
   box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
@@ -72,14 +72,14 @@
     line-height: 18px;
     letter-spacing: 2px;
     margin-bottom: 25px;
-    border-top: 1px solid #d6d9e6;
+    border-top: 1px solid $border-grey-1;
     padding-top: 24px;
     order: 2;
   }
 
   .counter__number {
     height: 70px;
-    border: 1px solid #cbced9;
+    border: 1px solid $border-grey-2;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;

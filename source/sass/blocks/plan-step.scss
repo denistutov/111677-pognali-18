@@ -1,7 +1,7 @@
 .plan-step {
   width: 270px;
   border: none;
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 24px 24px 22px 24px;
@@ -72,5 +72,10 @@
     display: flex;
     justify-content: space-between;
     margin: 49px 0;
+  }
+
+  .plan-step__calendar {
+    margin-top: 60px;
+    margin-bottom: 46px;
   }
 }

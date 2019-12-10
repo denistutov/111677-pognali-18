@@ -9,7 +9,7 @@
   padding: 24px;
   border-radius: 10px;
   border: none;
-  background-color: #ffffff;
+  background-color: $white;
 
   &::placeholder {
     font-size: 18px;
@@ -27,5 +27,5 @@
   height: 62px;
   border: none;
   border-radius: 10px;
-  background-color: $light-gold;
+  background-color: $orange-4;
 }

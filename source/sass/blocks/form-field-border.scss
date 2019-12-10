@@ -1,7 +1,7 @@
 .form-field-border {
   width: 270px;
   padding: 0;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-grey-2;
   border-radius: 10px;
   margin-bottom: 25px;
 }
@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: 30px;
   color: $dark-blue-2;
-  background-color: #edeff6;
+  background-color: $bg-grey-1;
   text-transform: uppercase;
 
   @include primary-font($bold);
@@ -43,10 +43,6 @@
     width: 308px;
     padding: 0;
     margin-bottom: 51px;
-  }
-
-  .user-details__photo {
-    border-radius: 10px;
   }
 
   .form-field-border__title {

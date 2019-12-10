@@ -7,7 +7,7 @@
 }
 
 .country-table__item {
-  border: 1px solid #cbced9;
+  border: 1px solid $border-grey-2;
   margin-right: -1px;
   margin-bottom: -1px;
 }
@@ -19,7 +19,7 @@
 .country-table__button {
   width: 45px;
   height: 42px;
-  background-color: #ffffff;
+  background-color: $white;
   border: none;
 
   @include primary-font($bold);
@@ -27,7 +27,7 @@
 
 .country-table__button--active {
   background-color: $dark-blue-2;
-  color: #ffffff;
+  color: $white;
 }
 
 @media (min-width: $tablet-width) {
