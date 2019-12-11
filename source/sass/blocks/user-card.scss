@@ -90,3 +90,9 @@
     margin-bottom: 29px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-card {
+    min-height: 483px;
+  }
+}

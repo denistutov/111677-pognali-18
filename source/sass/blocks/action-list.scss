@@ -76,3 +76,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .action-list {
+    width: $desktop-width-container;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .action-list__item {
+    width: 345px;
+    height: 107px;
+
+    &:nth-child(n) {
+      border-radius: 20px;
+      margin: 0;
+    }
+  }
+}

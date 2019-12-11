@@ -41,7 +41,7 @@
   }
 
   .location__link {
-    width: auto;
+    width: 100%;
     font-size: 28px;
     line-height: 28px;
     margin-bottom: 64px;
@@ -50,5 +50,29 @@
   .location__navigate {
     width: 100%;
     margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__desc {
+    width: $desktop-width-container;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .location__address {
+    margin: 0 148px 0 0;
+    padding: 0;
+  }
+
+  .location__link {
+    margin: 0;
+  }
+
+  .location__navigate {
+    margin: 0;
+    width: 324px;
   }
 }

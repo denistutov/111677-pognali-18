@@ -60,7 +60,6 @@
     margin: 0 0 43px 0;
   }
 
-
   .about__text {
     font-size: 28px;
     line-height: 33px;
@@ -76,5 +75,33 @@
   .about__button {
     display: block;
     width: 274px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0;
+    background: $dark-blue-4 url("../img/about-desktop@1x.png") no-repeat bottom right;
+  }
+
+  .about__wrapper {
+    width: $desktop-width-container;
+    padding: 0;
+    min-height: 750px;
+    justify-content: center;
+  }
+
+  .about__title {
+    margin: 0 0 61px 0;
+  }
+
+  .about__text {
+    width: 615px;
+    margin: 0 0 44px 0;
+  }
+
+  .about__text--bold {
+    width: 410px;
+    margin: 0 0 86px 0;
   }
 }

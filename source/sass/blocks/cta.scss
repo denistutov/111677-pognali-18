@@ -78,3 +78,33 @@
     margin-bottom: 61px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cta__wrapper {
+    width: $desktop-width-container;
+  }
+
+  .cta__text {
+    margin-bottom: 61px;
+  }
+
+  .cta__register {
+    width: $desktop-width-container;
+    margin-bottom: 71px;
+  }
+
+  .cta__contacts {
+    display: flex;
+    width: $desktop-width-container;
+    justify-content: center;
+  }
+
+  .cta__item {
+    margin: 0 234px 0 0;
+    padding: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

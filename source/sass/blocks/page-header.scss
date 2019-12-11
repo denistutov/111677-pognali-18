@@ -40,3 +40,32 @@
     padding: 25px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $dark-blue-3;
+  }
+
+  .page-header__container {
+    width: $desktop-width-container;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page-header__wrapper {
+    width: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-header__login {
+    display: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

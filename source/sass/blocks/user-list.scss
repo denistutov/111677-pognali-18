@@ -14,12 +14,36 @@
   justify-content: center;
 }
 
+.main-nav__social {
+  display: flex;
+  justify-content: center;
+}
+
 .user-list__login {
   width: 270px;
 }
 
 @media (min-width: $tablet-width) {
   .user-list__login {
+    display: none;
+  }
+
+  .main-nav__social {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    margin: 0;
+  }
+
+  .user-list__login {
+    display: block;
+    width: 189px;
+  }
+
+  .main-nav__social {
     display: none;
   }
 }

@@ -24,8 +24,26 @@
   top: 0;
   right: 0;
   width: 60px;
-  height: 62px;
+  height: 100%;
   border: none;
   border-radius: 10px;
   background-color: $orange-4;
+}
+
+@media (min-width: $desktop-width) {
+  .register__input {
+    height: 82px;
+    padding: 30px 0 32px 35px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .register__button {
+    width: 324px;
+  }
 }

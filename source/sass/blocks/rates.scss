@@ -130,3 +130,29 @@
     margin-bottom: 86px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .rates {
+    padding: 0;
+  }
+
+  .rates__container {
+    width: $desktop-width-container;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+  }
+
+  .rates__wrapper {
+    width: 100%;
+    margin: 0 80px;
+  }
+
+  .rates__text {
+    margin-bottom: 134px;
+  }
+
+  .rates__list {
+    width: 832px;
+  }
+}

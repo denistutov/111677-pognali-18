@@ -2,8 +2,6 @@
   min-width: 270px;
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
-  margin-bottom: 37px;
 }
 
 .reviews__text {
@@ -26,8 +24,6 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
-    padding-left: 60px;
-    margin-bottom: 231px;
   }
 
   .reviews__text {
@@ -41,5 +37,11 @@
     width: 260px;
     font-size: 21px;
     line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 300px;
   }
 }

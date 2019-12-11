@@ -26,3 +26,24 @@
     margin: 0 0 150px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .menu-list {
+    flex-direction: row;
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .menu-list__item {
+    margin-right: 36px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .menu-list__link {
+    color: $white;
+  }
+}

@@ -88,3 +88,38 @@
     width: $tablet-width-container;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companions {
+    padding: 0;
+  }
+
+  .companions__container {
+    width: $desktop-width-container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 130px 0;
+  }
+
+  .companions__desc {
+    min-height: 483px;
+    padding: 0;
+  }
+
+  .companions__list {
+    margin: 0;
+  }
+
+  .companions__item {
+    margin: 0;
+  }
+
+  .companions__show-all {
+    width: 280px;
+    position: absolute;
+    bottom: 134px;
+    left: 0;
+  }
+}

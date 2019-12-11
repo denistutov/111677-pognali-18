@@ -1,7 +1,6 @@
 .social {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  //display: flex;
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -27,10 +26,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social {
-    justify-content: flex-start;
-  }
-
   .social--yellow {
     .social__item {
       width: 60px;
