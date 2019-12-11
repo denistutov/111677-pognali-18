@@ -1,0 +1,132 @@
+.rates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-grey-1;
+  padding: 52px 0 0 0;
+}
+
+.rates__wrapper {
+  width: $mobile-width;
+}
+
+.rates__text {
+  width: 110px;
+  margin: 0 0 44px 0;
+  padding-left: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $orange-1;
+
+  @include primary-font($bold);
+}
+
+.rates__list {
+  list-style: none;
+  padding: 0;
+}
+
+.rates__item {
+  padding: 14px 0 14px 25px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($light);
+
+  &:nth-child(1) {
+    .rates__number {
+      background-color: $orange-2;
+    }
+  }
+
+  &:nth-child(2) {
+    .rates__number {
+      background-color: $orange-3;
+    }
+  }
+
+  &:nth-child(3) {
+    .rates__number {
+      background-color: $orange-4;
+    }
+  }
+}
+
+.rates__number {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  text-align: center;
+  line-height: 34px;
+  color: $white;
+
+  @include primary-font($normal);
+}
+
+.rates__business {
+  width: $mobile-width;
+  padding-left: 25px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    padding: 75px 0 0 0;
+  }
+
+  .rates__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .rates__text {
+    width: auto;
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin-bottom: 75px;
+  }
+
+  .rates__list {
+    margin-bottom: 58px;
+  }
+
+  .rates__item {
+    height: 67px;
+    padding: 0;
+    border-bottom: 1px solid $black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    line-height: 33px;
+
+    &:first-child {
+      border-top: 1px solid $black;
+    }
+  }
+
+  .rates__number {
+    left: -80px;
+    width: 67px;
+    height: 67px;
+    line-height: 67px;
+    font-size: 28px;
+  }
+
+  .rates__business {
+    width: auto;
+    padding: 0;
+    margin-bottom: 86px;
+  }
+}

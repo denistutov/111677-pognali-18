@@ -1,0 +1,36 @@
+.user-level {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-level__value {
+  font-size: 24px;
+  line-height: 24px;
+
+  @include primary-font($bold);
+}
+
+.user-level__text {
+  font-size: 14px;
+  line-height: 14px;
+
+  @include primary-font($normal);
+}
+
+.user-level--simple {
+  width: 45px;
+  height: 45px;
+  border: 1px solid $orange-1;
+  background-color: transparent;
+
+  .user-level__value {
+    color: $dark-blue-2;
+  }
+}

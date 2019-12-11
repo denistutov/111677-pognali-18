@@ -1,0 +1,21 @@
+.main-nav {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  min-width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: $tablet-width-container;
+    padding-left: 60px;
+  }
+
+  .main-nav__list {
+    justify-content: flex-start;
+  }
+}
