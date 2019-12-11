@@ -1,0 +1,106 @@
+.calendar {
+  width: 100%;
+}
+
+.calendar__title-wrapper {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 25px;
+}
+
+.calendar__title {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+.calendar__control {
+  font-size: 0;
+}
+
+.calendar__table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include primary-font($normal);
+}
+
+.calendar__day-of-week {
+  color: $text-grey;
+  background-color: $white;
+}
+
+.calendar__day-name {
+  display: inline-block;
+  width: 7px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+}
+
+.calendar__day-of-week--weekend {
+  color: $calendar-orange;
+}
+
+.calendar__day-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: $bg-grey-1;
+}
+
+.calendar__day-number--inactive {
+  background-color: $white;
+}
+
+.calendar__day-number--selected {
+  background-color: $dark-blue-2;
+  color: $white;
+}
+
+.calendar__day-number--active {
+  background-color: $dark-blue-2;
+  border: 2px solid $calendar-orange;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__title {
+    font-size: 36px;
+  }
+
+  .calendar__table {
+    border-collapse: collapse;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .calendar__day-name {
+    width: 22px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .calendar__day-number {
+    width: 75px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: -5px;
+  }
+}

@@ -1,0 +1,77 @@
+.form-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-grey-1;
+  padding-top: 23px;
+}
+
+.form-user__wrapper {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-user__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+.form-user__plans {
+  width: 100%;
+  background-color: $bg-grey-3;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.form-user__plans-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-user__add-plan {
+  width: 100%;
+  border: none;
+  background-color: $bg-grey-4;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-user__step {
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-user__wrapper {
+    width: $tablet-width-container;
+    position: relative;
+  }
+
+  .form-user__transport {
+    position: absolute;
+    top: 0;
+  }
+
+  .form-user__title {
+    width: $tablet-width-container;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .form-user__step {
+    margin: 0 0 40px 0;
+  }
+}

@@ -1,0 +1,25 @@
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 25px;
+}
+
+.country-list__item {
+  margin-bottom: 6px;
+}
+
+.country-list__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}
+
+@media (min-width: $tablet-width) {
+  .country-list__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

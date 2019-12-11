@@ -4,9 +4,9 @@
   "private": true,
   "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
-    " stylelint-config-htmlacademy": "0.1.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^9.5.1",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
