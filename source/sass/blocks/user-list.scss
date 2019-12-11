@@ -1,0 +1,25 @@
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 51px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-list__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-list__login {
+  width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__login {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.user-details {
+  width: 270px;
+  padding: 0;
+  margin-bottom: 33px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-details__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17px 20px 19px;
+}
+
+.user-details__photo {
+  border-radius: 50%;
+}
+
+.user-details__button {
+  width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-details__wrapper {
+    padding: 0;
+    margin-bottom: 52px;
+  }
+
+  .user-details__photo {
+    border-radius: 10px;
+  }
+
+  .user-details__button {
+    width: $tablet-width-container;
+  }
+}

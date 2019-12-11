@@ -1,0 +1,25 @@
+.tags-list {
+  list-style: none;
+  padding: 0;
+  color: $text-grey;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include primary-font($normal);
+}
+
+.tags-list__item {
+  padding-right: 5px;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tags-list {
+    width: 225px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

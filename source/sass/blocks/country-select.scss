@@ -1,0 +1,38 @@
+.country-select {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; //удалить когда будет иконка
+}
+
+.country-select__drop-list {
+  width: 168px;
+  height: 42px;
+  border: 1px solid $border-grey-2;
+  border-radius: 4px;
+}
+
+.country-select__flag {
+  height: 42px;
+  border: 1px solid $border-grey-2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .country-select {
+    align-items: center;
+  }
+
+  .country-select__drop-list {
+    width: 369px;
+    height: 70px;
+    margin-right: 53px;
+  }
+
+  .country-select__flag {
+    width: 70px;
+    height: 47px;
+  }
+}

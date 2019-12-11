@@ -1,0 +1,105 @@
+.counter {
+  width: 100%;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+}
+
+.counter__header {
+  width: inherit;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include primary-font($medium);
+}
+
+.counter__title {
+  color: $dark-blue-2;
+}
+
+.counter__desc {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+.counter__value {
+  width: inherit;
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.counter__number {
+  height: 43px;
+  width: 100%;
+  border: 1px solid $border-grey-2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 13.5px;
+  letter-spacing: 1.5px;
+  color: $dark-blue-2;
+
+  @include primary-font($medium);
+}
+
+.counter__checkbox-text {
+  font-size: 15px;
+  line-height: 15px;
+  color: $text-grey;
+
+  @include primary-font($normal);
+}
+
+@media (min-width: $tablet-width) {
+  .counter {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .counter__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .counter__header {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-top: 1px solid $border-grey-1;
+    padding-top: 24px;
+    order: 2;
+  }
+
+  .counter__number {
+    height: 70px;
+    border: 1px solid $border-grey-2;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .counter__value {
+    order: 3;
+  }
+
+  .counter__checkbox {
+    order: 1;
+    margin: 14px 0 34px 0;
+  }
+
+  .counter__checkbox-text {
+    font-size: 20px;
+    line-height: 18px;
+    color: $dark-blue-2;
+    text-transform: uppercase;
+
+    @include primary-font($medium);
+  }
+}

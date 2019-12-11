@@ -1,0 +1,80 @@
+.cta {
+  padding-top: 72px;
+  padding-bottom: 45px;
+  border-radius: 0 0 30px 30px;
+  background-color: $dark-blue-1;
+  display: flex;
+  justify-content: center;
+}
+
+.cta__wrapper {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__title {
+  display: block;
+  padding: 0;
+  margin-bottom: 23px;
+  color: $orange-1;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @include primary-font($bold);
+}
+
+.cta__text {
+  width: 220px;
+  padding: 0;
+  margin-bottom: 34px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  @include primary-font($light);
+}
+
+.cta__link {
+  color: $orange-4;
+}
+
+.cta__register {
+  width: 270px;
+}
+
+.cta__contacts {
+  width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .cta__wrapper {
+    width: $tablet-width-container;
+  }
+
+  .cta__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+
+  .cta__text {
+    width: auto;
+    margin-bottom: 67px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .cta__contacts {
+    width: $tablet-width-container;
+  }
+
+  .cta__register {
+    width: $tablet-width-container;
+    margin-bottom: 61px;
+  }
+}
