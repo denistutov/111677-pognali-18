@@ -9,7 +9,7 @@
 }
 
 .country-popup__wrapper {
-  width: 270px;
+  width: $mobile-width-container;
   padding: 25px 0;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .country-popup__button {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 @media (min-width: $tablet-width) {

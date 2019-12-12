@@ -1,5 +1,5 @@
 .plan-step {
-  width: 270px;
+  width: $mobile-width-container;
   border: none;
   background-color: $white;
   border-radius: 10px;
@@ -77,5 +77,26 @@
   .plan-step__calendar {
     margin-top: 60px;
     margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-step {
+    width: 1320px;
+    padding: 100px 160px;
+    border-radius: 60px;
+  }
+
+  .plan-step__text {
+    width: 580px;
+    margin-bottom: 56px;
+  }
+
+  .plan-step__calendar {
+    margin-bottom: 56px;
+  }
+
+  .plan-step__wrapper {
+    margin: 56px 0 0 0;
   }
 }

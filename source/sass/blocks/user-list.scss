@@ -20,7 +20,7 @@
 }
 
 .user-list__login {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +41,8 @@
   .user-list__login {
     display: block;
     width: 189px;
+    border-radius: 25px;
+    padding: 25px 0 25px 0;
   }
 
   .main-nav__social {

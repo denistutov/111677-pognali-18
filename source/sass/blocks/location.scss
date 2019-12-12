@@ -14,7 +14,7 @@
 }
 
 .location__desc {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 .location__link {
@@ -30,7 +30,7 @@
 }
 
 .location__navigate {
-  width: 270px;
+  width: $mobile-width-container;
   margin-bottom: 35px;
 }
 

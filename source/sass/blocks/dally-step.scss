@@ -61,3 +61,9 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .dally-step__text {
+    width: 730px;
+  }
+}

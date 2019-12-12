@@ -11,7 +11,7 @@
 }
 
 .main-nav__wrapper {
-  min-width: 270px;
+  min-width: $mobile-width-container;
 }
 
 @media (min-width: $tablet-width) {

@@ -7,8 +7,9 @@
 }
 
 .page-title__wrapper {
-  width: 320px;
+  width: $mobile-width;
   padding: 27px 27px 26px 0;
+  box-sizing: border-box;
 }
 
 .page-title__text {
@@ -53,5 +54,16 @@
 
   .page-title__link {
     display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-title__wrapper {
+    width: $desktop-width-container;
+    padding: 126px 0 69px 64px;
   }
 }

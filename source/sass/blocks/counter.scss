@@ -103,3 +103,29 @@
     @include primary-font($medium);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .counter__header {
+    border: none;
+    width: 500px;
+    padding: 0 0 60px 0;
+  }
+
+  .counter__value {
+    width: 181px;
+    position: absolute;
+    top: 30px;
+    left: 230px;
+  }
+
+  .counter__wrapper {
+    position: relative;
+    padding-top: 56px;
+  }
+
+  .counter__checkbox {
+    position: absolute;
+    top: -120px;
+    right: 0;
+  }
+}

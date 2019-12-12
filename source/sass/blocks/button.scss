@@ -111,7 +111,11 @@
 
   .button--round {
     font-size: 20px;
-    border-radius: 25px;
-    padding: 25px 0 25px 0;
+    border-radius: 20px;
+    padding: 40px 0 40px 34px;
+  }
+
+  .button--transparent-bg {
+    padding: 0;
   }
 }

@@ -36,3 +36,14 @@
     height: 47px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .country-select__drop-list {
+    width: 730px;
+    margin-right: 85px;
+  }
+
+  .country-select__flag {
+    margin-right: 90px;
+  }
+}

@@ -1,5 +1,5 @@
 .plan-card {
-  width: 270px;
+  width: $mobile-width-container;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: $white;
@@ -91,5 +91,49 @@
 
   .plan-card__data {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-card {
+    width: 1256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plan-card__title {
+    width: 300px;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid $border-grey-1;
+    margin: 0;
+  }
+
+  .plan-card__number {
+    margin-right: 37px;
+  }
+
+  .plan-card__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 650px;
+    padding: 0;
+  }
+  // не работает выравние почему то justify-self
+  //
+  //.plan-card__link {
+  //  justify-self: flex-end;
+  //}
+
+  .plan-card__text {
+    margin-right: 30px;
+    width: 200px;
+  }
+
+  .plan-card__data {
+    margin-right: 80px;
+    width: 200px;
   }
 }

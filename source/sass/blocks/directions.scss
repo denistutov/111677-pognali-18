@@ -9,7 +9,7 @@
 }
 
 .directions__wrapper {
-  width: 270px;
+  width: $mobile-width-container;
   padding: 0 25px;
   box-sizing: border-box;
   margin-bottom: 66px;
@@ -44,7 +44,7 @@
 }
 
 .directions__show-all {
-  width: 270px;
+  width: $mobile-width-container;
   margin-bottom: 30px;
 }
 

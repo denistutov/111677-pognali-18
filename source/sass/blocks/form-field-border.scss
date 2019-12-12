@@ -1,12 +1,11 @@
 .form-field-border {
-  width: 270px;
   padding: 0;
   border: 1px solid $border-grey-2;
   border-radius: 10px;
-  margin-bottom: 25px;
 }
 
 .form-field-border__title {
+  width: 100%;
   display: inline-block;
   text-align: center;
   font-size: 16px;
@@ -19,8 +18,7 @@
 }
 
 .form-field-border__text {
-  width: 270px;
-  height: 89px;
+  width: 100%;
   padding: 26px;
   box-sizing: border-box;
   border: none;
@@ -40,7 +38,6 @@
 
 @media (min-width: $tablet-width) {
   .form-field-border {
-    width: 308px;
     padding: 0;
     margin-bottom: 51px;
   }
@@ -51,8 +48,14 @@
   }
 
   .form-field-border__text {
-    width: $tablet-width-container;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field-border {
+    padding: 0;
+    margin: 0;
   }
 }
