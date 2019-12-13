@@ -46,3 +46,14 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .country-popup {
+    background-color: $bg-grey-1;
+    border-radius: 0;
+  }
+
+  .country-popup__wrapper {
+    width: $desktop-width-container;
+  }
+}

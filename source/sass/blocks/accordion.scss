@@ -93,3 +93,52 @@
     margin-top: -43px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  .accordion__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .accordion__toggle {
+    display: block;
+  }
+
+  .accordion__list {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .accordion__label {
+    display: inline-block;
+    width: 140px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .accordion__transport {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .accordion__level-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+}

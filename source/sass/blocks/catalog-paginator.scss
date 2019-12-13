@@ -86,3 +86,9 @@
     background-color: $orange-4;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-paginator__nav {
+    width: 950px;
+  }
+}

@@ -1,4 +1,5 @@
 .intro {
+  width: 100%;
   padding: 32px 0 0 0;
   margin: 0;
   display: flex;
@@ -37,12 +38,12 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    background: $dark-blue-1 url("../img/globe-back-tablet@1x.jpg") no-repeat center 290px;
+    background: $dark-blue-1 url("../img/globe-back-tablet@1x.jpg") no-repeat center 350px;
   }
 
   .intro__wrapper {
     width: $tablet-width;
-    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 300px 285px;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 300px 340px;
   }
 
   .intro__title {

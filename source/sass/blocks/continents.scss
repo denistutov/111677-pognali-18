@@ -12,7 +12,7 @@
 .continents__link {
   font-size: 16px;
   text-decoration: none;
-  line-height: 22px;
+  line-height: 14px;
   text-transform: uppercase;
   color: rgba(25, 33, 68, 0.3);
 
@@ -33,6 +33,12 @@
 
   .continents__link {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .continents {
+    margin: 0 0 81px 350px;
   }
 }

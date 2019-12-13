@@ -27,6 +27,12 @@
   }
 }
 
+.menu-list__item--social {
+  .user-list__item {
+    display: block;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .menu-list {
     flex-direction: row;

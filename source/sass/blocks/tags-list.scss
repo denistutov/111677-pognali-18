@@ -23,3 +23,9 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tags-list {
+    width: 225px;
+  }
+}

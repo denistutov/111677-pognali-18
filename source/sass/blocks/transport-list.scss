@@ -59,3 +59,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .transport-list--checkbox {
+    padding: 0;
+
+    .transport-list__item {
+      margin: 0;
+    }
+  }
+}
