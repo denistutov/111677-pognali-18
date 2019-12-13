@@ -14,11 +14,6 @@
   justify-content: center;
 }
 
-.main-nav__social {
-  display: flex;
-  justify-content: center;
-}
-
 .user-list__login {
   width: $mobile-width-container;
 }
@@ -26,10 +21,6 @@
 @media (min-width: $tablet-width) {
   .user-list__login {
     display: none;
-  }
-
-  .main-nav__social {
-    justify-content: flex-start;
   }
 }
 
@@ -43,9 +34,5 @@
     width: 189px;
     border-radius: 25px;
     padding: 25px 0 25px 0;
-  }
-
-  .main-nav__social {
-    display: none;
   }
 }

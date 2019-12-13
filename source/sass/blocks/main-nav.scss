@@ -10,6 +10,11 @@
   flex-direction: column;
 }
 
+.main-nav__social {
+  display: flex;
+  justify-content: center;
+}
+
 .main-nav__wrapper {
   min-width: $mobile-width-container;
 }
@@ -21,6 +26,10 @@
   }
 
   .main-nav__list {
+    justify-content: flex-start;
+  }
+
+  .main-nav__social {
     justify-content: flex-start;
   }
 }
