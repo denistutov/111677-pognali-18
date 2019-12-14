@@ -1,11 +1,11 @@
 .top-menu {
-  list-style: none;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 40px;
   padding: 0;
   margin: 0 0 20px 0;
+  list-style: none;
 }
 
 .top-menu__link.button {
@@ -31,8 +31,20 @@
   background-size: 18px 14px;
 }
 
+.top-menu--header {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .top-menu__link {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-menu--header {
+    display: flex;
+    width: 400px;
+    height: 100%;
   }
 }

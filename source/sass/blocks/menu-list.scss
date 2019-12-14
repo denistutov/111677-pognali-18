@@ -21,9 +21,9 @@
 
 @media (min-width: $tablet-width) {
   .menu-list {
-    text-align: left;
-    font-size: 60px;
     margin: 0 0 150px 0;
+    font-size: 60px;
+    text-align: left;
   }
 }
 
@@ -36,9 +36,9 @@
 @media (min-width: $desktop-width) {
   .menu-list {
     flex-direction: row;
-    text-align: left;
-    font-size: 20px;
     margin: 0;
+    font-size: 20px;
+    text-align: left;
   }
 
   .menu-list__item {

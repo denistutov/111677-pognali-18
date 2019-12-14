@@ -1,19 +1,19 @@
 .page-footer {
-  background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 28px;
+  background-color: $white;
   border-radius: 30px 30px 0 0;
 }
 
 .page-footer__wrapper {
-  width: $mobile-width;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: $mobile-width;
 }
 
 .page-footer__logo {
@@ -62,8 +62,8 @@
   }
 
   .page-footer__container {
-    width: $desktop-width-container;
     justify-content: space-between;
+    width: $desktop-width-container;
   }
 
   .page-footer__wrapper {

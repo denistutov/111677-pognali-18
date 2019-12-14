@@ -3,9 +3,9 @@
 }
 
 .calendar__title-wrapper {
-  width: inherit;
   display: flex;
   justify-content: space-between;
+  width: inherit;
   padding: 12px 0;
   margin-bottom: 25px;
 }
@@ -26,14 +26,14 @@
 
 .calendar__table {
   width: 100%;
-  border-collapse: collapse;
-  box-sizing: border-box;
-  text-align: center;
   margin-bottom: 22px;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
 
   @include primary-font($normal);
+  border-collapse: collapse;
+  box-sizing: border-box;
 }
 
 .calendar__day-of-week {
@@ -58,9 +58,9 @@
   display: inline-block;
   width: 30px;
   height: 30px;
+  box-sizing: border-box;
   line-height: 30px;
   background-color: $bg-grey-1;
-  box-sizing: border-box;
 }
 
 .calendar__day-number--inactive {
@@ -73,9 +73,9 @@
 }
 
 .calendar__day-number--active {
-  background-color: $dark-blue-2;
   border: 2px solid $calendar-orange;
   color: $white;
+  background-color: $dark-blue-2;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,10 +84,10 @@
   }
 
   .calendar__table {
-    border-collapse: collapse;
     margin-bottom: 22px;
     font-size: 14px;
     line-height: 18px;
+    border-collapse: collapse;
   }
 
   .calendar__day-name {
@@ -100,9 +100,9 @@
   .calendar__day-number {
     width: 75px;
     height: 70px;
+    margin-left: -5px;
     font-size: 20px;
     line-height: 70px;
-    margin-left: -5px;
   }
 }
 
@@ -119,9 +119,9 @@
   }
 
   .calendar__day-of-week {
+    padding: 16px;
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    padding: 16px;
   }
 }

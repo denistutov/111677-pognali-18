@@ -1,13 +1,13 @@
 .accordion {
-  border: none;
   margin: 0 0 20px 0;
   padding: 0;
+  border: none;
 }
 
 .accordion__wrapper {
-  width: 220px;
   display: flex;
   justify-content: space-between;
+  width: 220px;
   margin-bottom: 21px;
 }
 
@@ -29,8 +29,8 @@
 .accordion__list {
   display: flex;
   flex-direction: column;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .accordion__transport {
@@ -51,9 +51,9 @@
 
 @media (min-width: $tablet-width) {
   .accordion__wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 21px;
   }
 
@@ -101,9 +101,9 @@
   }
 
   .accordion__wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 21px;
   }
 

@@ -13,20 +13,20 @@
 }
 
 .contacts__link {
-  color: $dark-blue-1;
-  text-decoration: none;
-  text-transform: uppercase;
   position: relative;
   margin-left: 62px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark-blue-1;
 
   &::before {
+    position: absolute;
     content: "";
+    top: -15px;
+    left: -61px;
     display: block;
     width: 45px;
     height: 45px;
-    position: absolute;
-    top: -15px;
-    left: -61px;
     border-radius: 50%;
   }
 }

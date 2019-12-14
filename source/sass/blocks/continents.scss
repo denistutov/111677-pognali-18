@@ -1,8 +1,8 @@
 .continents {
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin: 0 0 25px 25px;
+  list-style: none;
 }
 
 .continents__item {
@@ -25,10 +25,10 @@
 
 @media (min-width: $tablet-width) {
   .continents {
-    padding: 0;
     flex-direction: row;
     justify-content: space-between;
     width: 365px;
+    padding: 0;
   }
 
   .continents__link {

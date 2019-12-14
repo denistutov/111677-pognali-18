@@ -1,10 +1,10 @@
 .travel-card {
-  width: $mobile-width-container;
-  height: 190px;
-  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: $mobile-width-container;
+  height: 190px;
+  background-size: contain;
   border-radius: 10px;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .travel-card__wrapper {
-  height: 90px;
-  background-color: $white;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+  height: 90px;
+  background-color: $white;
 }
 
 .travel-card__desc {
@@ -42,9 +42,9 @@
 .travel-card__title {
   padding: 0;
   margin: 0 0 8px 0;
-  color: $dark-blue-3;
   font-size: 21px;
   line-height: 21px;
+  color: $dark-blue-3;
 
   @include primary-font($bold);
 }
@@ -52,29 +52,29 @@
 .travel-card__slogan {
   padding: 0;
   margin: 0;
-  color: $text-grey;
-  opacity: 0.3;
   font-size: 16px;
   line-height: 18px;
+  color: $text-grey;
 
   @include primary-font($medium);
+  opacity: 0.3;
 }
 
 .travel-card__count {
   padding: 30px 25px 0 0;
-  color: $text-grey;
-  opacity: 0.3;
   font-size: 16px;
   line-height: 20px;
+  color: $text-grey;
 
   @include primary-font($medium);
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .travel-card {
+    flex-direction: row-reverse;
     width: $tablet-width-container;
     height: 140px;
-    flex-direction: row-reverse;
     background-position: right;
   }
 
@@ -91,9 +91,9 @@
   }
 
   .travel-card__wrapper {
+    flex-direction: column;
     width: 432px;
     background: none;
-    flex-direction: column;
   }
 
   .travel-card__desc {
@@ -117,8 +117,8 @@
   }
 
   .travel-card__count {
+    padding: 0 0 0 31px;
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 0 31px;
   }
 }

@@ -1,8 +1,8 @@
 .main-nav {
-  background-color: $white;
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: $white;
 }
 
 .main-nav__contacts {
@@ -36,17 +36,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    background-color: transparent;
     justify-content: flex-start;
     height: 50px;
+    background-color: transparent;
   }
 
   .main-nav__wrapper {
-    width: 100%;
-    padding-left: 145px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding-left: 145px;
   }
 
   .main-nav__social {

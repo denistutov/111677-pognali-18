@@ -1,29 +1,29 @@
 .cta {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding-top: 72px;
   padding-bottom: 45px;
-  border-radius: 0 0 30px 30px;
   background-color: $dark-blue-1;
-  display: flex;
-  justify-content: center;
+  border-radius: 0 0 30px 30px;
 }
 
 .cta__wrapper {
-  width: $mobile-width-container;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: $mobile-width-container;
 }
 
 .cta__title {
   display: block;
   padding: 0;
   margin-bottom: 23px;
-  color: $orange-1;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  color: $orange-1;
 
   @include primary-font($bold);
 }
@@ -58,9 +58,9 @@
   }
 
   .cta__title {
+    margin-bottom: 60px;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 60px;
   }
 
   .cta__text {
@@ -96,8 +96,8 @@
 
   .cta__contacts {
     display: flex;
-    width: $desktop-width-container;
     justify-content: center;
+    width: $desktop-width-container;
   }
 
   .cta__item {

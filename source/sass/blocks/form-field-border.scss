@@ -5,30 +5,30 @@
 }
 
 .form-field-border__title {
-  width: 100%;
   display: inline-block;
-  text-align: center;
+  width: 100%;
   font-size: 16px;
   line-height: 30px;
-  color: $dark-blue-2;
-  background-color: $bg-grey-1;
+  text-align: center;
   text-transform: uppercase;
+  color: $dark-blue-2;
 
   @include primary-font($bold);
+  background-color: $bg-grey-1;
 }
 
 .form-field-border__text {
   width: 100%;
   padding: 26px;
-  box-sizing: border-box;
-  border: none;
-  resize: none;
-  background-color: transparent;
   font-size: 16px;
   line-height: 22px;
   color: $text-grey;
 
   @include primary-font($normal);
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
 }
 
 .form-field-border__list {

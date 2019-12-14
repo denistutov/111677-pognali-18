@@ -1,9 +1,9 @@
 .action-list {
-  min-width: $mobile-width-container;
   display: flex;
+  flex-direction: column;
+  min-width: $mobile-width-container;
   padding: 0;
   margin: 0;
-  flex-direction: column;
   font-size: 18px;
   line-height: 18px;
   color: $dark-blue-3;
@@ -12,13 +12,12 @@
 }
 
 .action-list__item {
-  list-style: none;
   display: inline-block;
   height: 106px;
   padding: 25px;
   margin-top: -15px;
   box-sizing: border-box;
-  background-color: pink;
+  list-style: none;
   border-radius: 10px;
 
   &:nth-child(1) {
@@ -40,10 +39,10 @@
 
 @media (min-width: $tablet-width) {
   .action-list {
-    width: $tablet-width;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: $tablet-width;
     font-size: 24px;
     line-height: 24px;
   }
@@ -54,9 +53,9 @@
     margin: 0;
 
     &:nth-child(1) {
+      margin-right: -40px;
       background-color: $orange-1;
       border-radius: 20px 20px 0 0;
-      margin-right: -40px;
     }
 
     &:nth-child(2) {
@@ -65,9 +64,9 @@
     }
 
     &:nth-child(3) {
+      margin-right: -40px;
       background-color: $orange-3;
       border-radius: 0 0 20px 20px;
-      margin-right: -40px;
     }
 
     &:nth-child(4) {
@@ -79,9 +78,9 @@
 
 @media (min-width: $desktop-width) {
   .action-list {
-    width: $desktop-width-container;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: $desktop-width-container;
   }
 
   .action-list__item {

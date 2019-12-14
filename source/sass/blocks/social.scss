@@ -1,26 +1,26 @@
 .social {
-  list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
+  list-style: none;
 }
 
 .social__link {
   display: flex;
-  width: 40px;
-  height: 30px;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 30px;
 }
 
 .social--yellow {
   .social__item {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: $orange-4;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: $orange-4;
+    border-radius: 50%;
   }
 }
 

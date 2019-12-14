@@ -1,15 +1,15 @@
 .country-table {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 0 67px 25px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .country-table__item {
-  border: 1px solid $border-grey-2;
   margin-right: -1px;
   margin-bottom: -1px;
+  border: 1px solid $border-grey-2;
 }
 
 .country-table__item--active {
@@ -19,55 +19,55 @@
 .country-table__button {
   width: 45px;
   height: 42px;
-  background-color: $white;
-  border: none;
 
   @include primary-font($bold);
+  background-color: $white;
+  border: none;
 }
 
 .country-table__button--active {
-  background-color: $dark-blue-2;
   color: $white;
+  background-color: $dark-blue-2;
 }
 
 .country-table__full-list {
   display: none;
-  list-style: none;
   padding: 50px 0 0 0;
   margin: 0;
+  list-style: none;
 }
 
 .country-table__link {
   font-size: 20px;
   line-height: 30px;
-  color: $text-grey;
   text-decoration: none;
+  color: $text-grey;
 
   @include primary-font($normal);
 }
 
 @media (min-width: $tablet-width) {
   .country-table {
-    margin: 0 0 0 25px;
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    margin: 0 0 0 25px;
+    list-style: none;
   }
 
   .country-table__item {
-    border: none;
     margin: 0 0 36px 0;
+    border: none;
   }
 
   .country-table__button {
     width: 70px;
     height: 50px;
-    background-color: transparent;
-    cursor: pointer;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: rgba(25, 33, 68, 0.2);
+    background-color: transparent;
+    cursor: pointer;
   }
 
   .country-table__button--active {

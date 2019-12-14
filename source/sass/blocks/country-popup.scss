@@ -1,11 +1,11 @@
 .country-popup {
-  width: 100%;
-  background-color: $bg-grey-2;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 0;
   margin: 0;
   border-radius: 0 0 30px 30px;
+  background-color: $bg-grey-2;
 }
 
 .country-popup__wrapper {
@@ -28,9 +28,9 @@
   }
 
   .country-popup__table-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 60px;
   }
 

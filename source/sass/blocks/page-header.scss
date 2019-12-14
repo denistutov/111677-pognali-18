@@ -1,11 +1,11 @@
 .page-header {
-  width: 100%;
-  background-color: $white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   flex-direction: column;
+  width: 100%;
+  background-color: $white;
 }
 
 .page-header__wrapper {
@@ -47,18 +47,18 @@
   }
 
   .page-header__container {
-    width: $desktop-width-container;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: $desktop-width-container;
   }
 
   .page-header__wrapper {
-    width: 200px;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    margin: 0;
   }
 
   .page-header__login {

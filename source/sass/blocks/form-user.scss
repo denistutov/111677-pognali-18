@@ -1,11 +1,11 @@
 .form-user {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $bg-grey-1;
+  width: 100%;
   padding-top: 23px;
+  background-color: $bg-grey-1;
 }
 
 .form-user__details {
@@ -13,19 +13,19 @@
 }
 
 .form-user__info {
-  width: $mobile-width;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: $mobile-width;
 }
 
 .form-user__wrapper {
-  width: $mobile-width;
-  padding: 0;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: $mobile-width;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .form-user__tags {
@@ -48,27 +48,27 @@
 
 .form-user__plans {
   width: 100%;
-  background-color: $bg-grey-3;
-  border: none;
   padding: 0;
   margin: 0;
+  border: none;
   border-radius: 30px 30px 0 0;
+  background-color: $bg-grey-3;
 }
 
 .form-user__plans-list {
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .form-user__add-plan {
-  width: 100%;
-  border: none;
-  background-color: $bg-grey-4;
-  border-radius: 30px 30px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background-color: $bg-grey-4;
+  border: none;
+  border-radius: 30px 30px 0 0;
 }
 
 .form-user__step {
@@ -77,8 +77,8 @@
 
 @media (min-width: $tablet-width) {
   .form-user__info {
-    width: $tablet-width-container;
     position: relative;
+    width: $tablet-width-container;
     margin-bottom: 30px;
   }
 
@@ -91,10 +91,10 @@
   }
 
   .form-user__transport {
-    width: $mobile-width-container;
-    margin-bottom: 25px;
     position: absolute;
     top: 0;
+    width: $mobile-width-container;
+    margin-bottom: 25px;
   }
 
   .form-user__title {
@@ -114,25 +114,25 @@
   }
 
   .form-user__info {
-    width: $desktop-width-container;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
+    width: $desktop-width-container;
     padding: 0 0 65px 64px;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .form-user__wrapper {
-    width: $desktop-width-container;
     align-items: flex-end;
+    width: $desktop-width-container;
   }
 
   .form-user__details {
-    margin: 0;
-    padding: 0;
     position: absolute;
     top: -262px;
     right: 95px;
+    margin: 0;
+    padding: 0;
   }
 
   .form-user__tags {
@@ -140,8 +140,8 @@
   }
 
   .form-user__transport {
-    width: 384px;
     position: relative;
+    width: 384px;
   }
 
   .form-user__title {

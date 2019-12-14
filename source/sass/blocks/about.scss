@@ -1,18 +1,18 @@
 .about {
-  width: 100%;
   display: flex;
-  padding: 33px 0 88px 0;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 33px 0 88px 0;
   background: $dark-blue-4 url("../img/about-mobile@1x.png") no-repeat no-repeat 90% 110px;
   color: $white;
   border-radius: 0 0 30px 30px;
 }
 
 .about__wrapper {
-  width: $mobile-width-container;
   display: flex;
   flex-direction: column;
+  width: $mobile-width-container;
   padding: 0 25px;
   box-sizing: border-box;
 }
@@ -26,11 +26,11 @@
 }
 
 .about__text {
+  width: 210px;
   padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  width: 210px;
 
   @include primary-font($light);
 }
@@ -54,17 +54,17 @@
   }
 
   .about__title {
-    font-size: 45px;
-    line-height: 45px;
     padding: 0;
     margin: 0 0 43px 0;
+    font-size: 45px;
+    line-height: 45px;
   }
 
   .about__text {
-    font-size: 28px;
-    line-height: 33px;
     width: 300px;
     margin: 0 0 53px 0;
+    font-size: 28px;
+    line-height: 33px;
   }
 
   .about__text--bold {
@@ -85,10 +85,10 @@
   }
 
   .about__wrapper {
-    width: $desktop-width-container;
-    padding: 0;
-    min-height: 750px;
     justify-content: center;
+    width: $desktop-width-container;
+    min-height: 750px;
+    padding: 0;
   }
 
   .about__title {
