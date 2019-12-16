@@ -17,12 +17,17 @@
 }
 
 .country-table__button {
+  display: inline-block;
   width: 45px;
   height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  text-align: center;
+  text-decoration: none;
+  color: $dark-blue-2;
 
   @include primary-font($bold);
   background-color: $white;
-  border: none;
 }
 
 .country-table__button--active {

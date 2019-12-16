@@ -36,7 +36,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .top-menu__link {
+  .top-menu {
     display: none;
   }
 }
@@ -44,7 +44,6 @@
 @media (min-width: $desktop-width) {
   .top-menu--header {
     display: flex;
-    width: 400px;
-    height: 100%;
+    margin: 0;
   }
 }

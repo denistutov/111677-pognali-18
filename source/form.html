@@ -29,9 +29,15 @@
                 <a class="menu-list__link" href="catalog.html">Попутчики</a>
               </li>
             </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
-                <a class="button button--round user-list__login" href="">Авторизация</a>
+            <ul class="main-nav__list top-menu top-menu--header">
+              <li class="top-menu__item">
+                <a class="top-menu__link top-menu__link--phone" href="tel:88005558628" aria-label="Позвонить нам">Позвонить нам</a>
+              </li>
+              <li class="top-menu__item">
+                <a class="top-menu__link top-menu__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Написать email">Написать email</a>
+              </li>
+              <li class="top-menu__item">
+                <a class="top-menu__link button button--round button--round-header" href="">Авторизация</a>
               </li>
             </ul>
             <ul class="main-nav__list main-nav__contacts contacts">
@@ -85,41 +91,49 @@
             </label>
           </fieldset>
           <fieldset class="form-user__tags form-field-border">
-            <label class="form-field-border__title">Тэги</label>
-            <textarea class="form-field-border__text" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+            <div class="form-field-border__wrapper">
+              <label class="form-field-border__title form-field-border__title--tags">
+                <span class="form-field-border__title-text">Тэги</span>
+              </label>
+              <textarea class="form-field-border__text" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+            </div>
           </fieldset>
           <fieldset class="form-user__transport form-field-border">
-            <label class="form-field-border__title">Транспорт</label>
-            <ul class="form-field-border__list transport-list transport-list--checkbox">
-              <li class="transport-list__item">
-                <input class="visually-hidden" id="plane" type="checkbox" checked>
-                <label for="plane">
-                  <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
-                  <span class="transport-list__text">Авиаперелет</span>
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="visually-hidden" id="automobile" type="checkbox" checked>
-                <label for="automobile">
-                  <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
-                  <span class="transport-list__text">Автотранспорт</span>
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="visually-hidden" id="bike" type="checkbox">
-                <label for="bike">
-                  <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
-                  <span class="transport-list__text">Велосипед</span>
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="visually-hidden" id="foot" type="checkbox" checked>
-                <label for="foot">
-                  <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
-                  <span class="transport-list__text">Пешком</span>
-                </label>
-              </li>
-            </ul>
+            <div class="form-field-border__wrapper">
+              <label class="form-field-border__title form-field-border__title--transport">
+                <span class="form-field-border__title-text">Транспорт</span>
+              </label>
+              <ul class="form-field-border__list transport-list transport-list--checkbox">
+                <li class="transport-list__item">
+                  <input class="visually-hidden" id="plane" type="checkbox" checked>
+                  <label for="plane">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                    <span class="transport-list__text">Авиаперелет</span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden" id="automobile" type="checkbox" checked>
+                  <label for="automobile">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                    <span class="transport-list__text">Автотранспорт</span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden" id="bike" type="checkbox">
+                  <label for="bike">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                    <span class="transport-list__text">Велосипед</span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden" id="foot" type="checkbox" checked>
+                  <label for="foot">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                    <span class="transport-list__text">Пешком</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <fieldset class="form-user__plans">

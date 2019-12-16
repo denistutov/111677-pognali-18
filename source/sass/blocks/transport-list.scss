@@ -58,6 +58,12 @@
       }
     }
   }
+
+  .transport-list--grey-bg {
+    .transport-list__item {
+      background: none;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

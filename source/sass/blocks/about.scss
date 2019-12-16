@@ -12,8 +12,8 @@
 .about__wrapper {
   display: flex;
   flex-direction: column;
-  width: $mobile-width-container;
-  padding: 0 25px;
+
+  @include container($mobile-width, $mobile-container-2);
   box-sizing: border-box;
 }
 
@@ -50,7 +50,7 @@
   }
 
   .about__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container);
   }
 
   .about__title {

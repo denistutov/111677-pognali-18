@@ -4,16 +4,28 @@
   border-radius: 10px;
 }
 
+.form-field-border__wrapper {
+  position: relative;
+}
+
 .form-field-border__title {
+  position: absolute;
+  top: -9px;
+  right: 0;
   display: inline-block;
   width: 100%;
-  font-size: 16px;
-  line-height: 30px;
   text-align: center;
-  text-transform: uppercase;
-  color: $dark-blue-2;
 
   @include primary-font($bold);
+}
+
+.form-field-border__title-text {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark-blue-2;
   background-color: $bg-grey-1;
 }
 
@@ -43,6 +55,10 @@
   }
 
   .form-field-border__title {
+    top: calc(100% - 7px);
+  }
+
+  .form-field-border__title-text {
     font-size: 20px;
     line-height: 18px;
   }
@@ -57,5 +73,11 @@
   .form-field-border {
     padding: 0;
     margin: 0;
+  }
+
+  .form-field-border__title--tags {
+    bottom: 0;
+    left: 17px;
+    text-align: left;
   }
 }

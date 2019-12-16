@@ -1,5 +1,10 @@
 .calendar {
   width: 100%;
+
+  td {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .calendar__title-wrapper {

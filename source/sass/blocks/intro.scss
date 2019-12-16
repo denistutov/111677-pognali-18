@@ -56,10 +56,13 @@
     @include primary-font($bold);
   }
 
-
   .intro__reviews {
     padding-left: 60px;
     margin-bottom: 231px;
+  }
+
+  .intro__social {
+    display: none;
   }
 }
 
