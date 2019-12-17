@@ -7,8 +7,6 @@
   padding-top: 78px;
   background-color: $bg-grey-1;
   border-radius: 0 0 30px 30px;
-
-  @include container($mobile-width);
 }
 
 .directions__wrapper {
@@ -16,6 +14,8 @@
   padding: 0 25px;
   margin-bottom: 66px;
   box-sizing: border-box;
+
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .directions__title {
@@ -47,13 +47,12 @@
 }
 
 .directions__show-all {
-  width: $mobile-width-container;
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .directions {
-    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat 90% 110px;
+    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat center right;
     border-radius: 0 0 30px 30px;
   }
 

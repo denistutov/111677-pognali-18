@@ -28,16 +28,21 @@ $text-grey: #444444;
 */
 
 $mobile-width: 320px;
-$mobile-width-container: 270px;
 $mobile-container-1: 25px;
 $mobile-container-2: 50px;
 
 $tablet-width: 768px;
-$tablet-width-container: 618px;
-$tablet-container: 75px;
-$tablet-width-container-big: 688px; //временное название
+$tablet-container-1: 75px;
+$tablet-container-2: 40px;
 
 $desktop-width: 1440px;
+$desktop-container: 60px;
+
+$retina-dppx: 1.5dppx;
+
+$mobile-width-container: 270px;
+$tablet-width-container: 618px;
+$tablet-width-container-big: 688px; //временное название
 $desktop-width-container: 1320px;
 
 /* -------------------------------------------------- */

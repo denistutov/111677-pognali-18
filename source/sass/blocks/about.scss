@@ -1,12 +1,18 @@
+
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 33px 0 88px 0;
-  background: $dark-blue-4 url("../img/about-mobile@1x.png") no-repeat no-repeat 90% 110px;
   color: $white;
   border-radius: 0 0 30px 30px;
+  background: $dark-blue-4 url("../img/about-mobile@1x.png") no-repeat no-repeat 90% 110px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: $dark-blue-4 url("../img/about-mobile@2x.png") no-repeat no-repeat 90% 110px;
+    background-size: contain;
+  }
 }
 
 .about__wrapper {
@@ -47,10 +53,15 @@
   .about {
     padding: 139px 0 88px 0;
     background: $dark-blue-4 url("../img/about-tablet@1x.png") no-repeat 90% 140px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $dark-blue-4 url("../img/about-tablet@2x.png") no-repeat right bottom;
+      background-size: 400px; //поправить высоту
+    }
   }
 
   .about__wrapper {
-    @include container($tablet-width, $tablet-container);
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .about__title {
@@ -82,13 +93,18 @@
   .about {
     padding: 0;
     background: $dark-blue-4 url("../img/about-desktop@1x.png") no-repeat bottom right;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $dark-blue-4 url("../img/about-desktop@2x.png") no-repeat bottom right;
+      background-size: 630px 665px;
+    }
   }
 
   .about__wrapper {
     justify-content: center;
-    width: $desktop-width-container;
     min-height: 750px;
-    padding: 0;
+
+    @include container($desktop-width, $desktop-container);
   }
 
   .about__title {

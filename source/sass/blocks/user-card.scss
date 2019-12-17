@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: $mobile-width-container;
-  height: 427px;
   border-radius: 10px;
+  background-color: $white;
 }
 
 .user-card__photo {
@@ -79,7 +80,6 @@
 @media (min-width: $tablet-width) {
   .user-card {
     width: 285px;
-    height: 483px;
   }
 
   .user-card__name {
@@ -99,11 +99,5 @@
 
   .user-card__transport {
     margin-bottom: 29px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .user-card {
-    min-height: 483px;
   }
 }
