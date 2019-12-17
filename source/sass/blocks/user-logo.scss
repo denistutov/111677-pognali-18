@@ -1,0 +1,25 @@
+.user-logo {
+  display: flex;
+}
+
+.user-logo__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .user-logo__image {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-logo__image {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+}

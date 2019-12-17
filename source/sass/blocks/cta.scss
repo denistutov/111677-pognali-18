@@ -1,28 +1,29 @@
 .cta {
-  padding-top: 72px;
-  padding-bottom: 45px;
-  border-radius: 0 0 30px 30px;
-  background-color: $dark-blue-1;
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 45px;
+  background-color: $dark-blue-1;
+  border-radius: 0 0 30px 30px;
 }
 
 .cta__wrapper {
-  width: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: $mobile-width-container;
 }
 
 .cta__title {
   display: block;
   padding: 0;
   margin-bottom: 23px;
-  color: $orange-1;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  color: $orange-1;
 
   @include primary-font($bold);
 }
@@ -44,11 +45,11 @@
 }
 
 .cta__register {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 .cta__contacts {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,9 +58,9 @@
   }
 
   .cta__title {
+    margin-bottom: 60px;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 60px;
   }
 
   .cta__text {
@@ -76,5 +77,35 @@
   .cta__register {
     width: $tablet-width-container;
     margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cta__wrapper {
+    width: $desktop-width-container;
+  }
+
+  .cta__text {
+    margin-bottom: 61px;
+  }
+
+  .cta__register {
+    width: $desktop-width-container;
+    margin-bottom: 71px;
+  }
+
+  .cta__contacts {
+    display: flex;
+    justify-content: center;
+    width: $desktop-width-container;
+  }
+
+  .cta__item {
+    margin: 0 234px 0 0;
+    padding: 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }

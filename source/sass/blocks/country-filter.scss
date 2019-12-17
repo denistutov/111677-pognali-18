@@ -1,17 +1,18 @@
 .country-filter {
-  background-color: $bg-grey-2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background-color: $bg-grey-2;
   border-radius: 0 0 30px 30px;
 }
 
 .country-filter__wrapper {
-  width: 270px;
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: $mobile-width-container;
+  height: 50px;
 }
 
 .country-filter__title {
@@ -27,9 +28,9 @@
 
 .country-filter__button {
   height: 20px;
-  border: none;
   font-size: 0;
   background: url("../img/filter-close.svg") no-repeat center center;
+  border: none;
 }
 
 // Это временная мера, до стилизации
@@ -40,8 +41,9 @@
 @media (min-width: $tablet-width) {
   .country-filter__wrapper {
     justify-content: flex-end;
+    margin: 60px 0;
     width: $tablet-width-container;
-    height: 78px;
+    box-sizing: border-box;
   }
 
   .country-filter__title {
@@ -49,25 +51,53 @@
   }
 
   .country-filter__button {
-    cursor: pointer;
+    z-index: 2;
+    position: relative;
     padding-right: 64px;
-    background-position: right;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
     color: $dark-blue-1;
 
     @include primary-font($bold);
-
-    position: relative;
-    z-index: 2;
+    cursor: pointer;
+    background-position: right;
   }
 
   .country-filter__popup-wrapper {
-    padding: 0;
-    margin: -73px 0 0 0;
-    position: relative;
-
     z-index: 1;
+    position: relative;
+    padding: 0;
+    margin: -117px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-filter {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .country-filter__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    width: $desktop-width-container;
+    padding: 0 69px;
+    box-sizing: border-box;
+  }
+
+  .country-filter__title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .country-filter__popup-wrapper {
+    margin: -120px 0 0 0;
   }
 }

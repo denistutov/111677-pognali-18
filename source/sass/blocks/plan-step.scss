@@ -1,10 +1,10 @@
 .plan-step {
-  width: 270px;
-  border: none;
+  width: $mobile-width-container;
+  padding: 24px 24px 22px 24px;
   background-color: $white;
   border-radius: 10px;
   box-sizing: border-box;
-  padding: 24px 24px 22px 24px;
+  border: none;
 }
 
 .plan-step__title {
@@ -37,8 +37,8 @@
 @media (min-width: $tablet-width) {
   .plan-step {
     width: $tablet-width-container;
-    border-radius: 30px;
     padding: 49px 43px 0 43px;
+    border-radius: 30px;
   }
 
   .plan-step__title {
@@ -77,5 +77,26 @@
   .plan-step__calendar {
     margin-top: 60px;
     margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-step {
+    width: 1320px;
+    padding: 100px 160px;
+    border-radius: 60px;
+  }
+
+  .plan-step__text {
+    width: 580px;
+    margin-bottom: 56px;
+  }
+
+  .plan-step__calendar {
+    margin-bottom: 56px;
+  }
+
+  .plan-step__wrapper {
+    margin: 56px 0 0 0;
   }
 }

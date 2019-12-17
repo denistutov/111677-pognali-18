@@ -1,15 +1,15 @@
 .country-popup {
-  width: 100%;
-  background-color: $bg-grey-2;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 0;
   margin: 0;
   border-radius: 0 0 30px 30px;
+  background-color: $bg-grey-2;
 }
 
 .country-popup__wrapper {
-  width: 270px;
+  width: $mobile-width-container;
   padding: 25px 0;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .country-popup__button {
-  width: 270px;
+  width: $mobile-width-container;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,9 +28,9 @@
   }
 
   .country-popup__table-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 60px;
   }
 
@@ -44,5 +44,16 @@
 
   .country-popup__button {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-popup {
+    background-color: $bg-grey-1;
+    border-radius: 0;
+  }
+
+  .country-popup__wrapper {
+    width: $desktop-width-container;
   }
 }

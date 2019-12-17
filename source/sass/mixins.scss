@@ -3,3 +3,8 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin container($width, $padding: 0) {
+  width: $width;
+  padding: 0 $padding;
+}

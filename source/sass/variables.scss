@@ -21,12 +21,26 @@ $border-grey-1: #d6d9e6;
 $border-grey-2: #cbced9;
 $text-grey: #444444;
 
+/*
+  Нужно переделать все блоки контейнеры через mixin:
+  - Пройтись по всем блокам и передалть логику цетровки
+  - Убрать лишние width или заменить на 100%, там где это возможно
+*/
+
 $mobile-width: 320px;
+$mobile-width-container: 270px;
+$mobile-container-1: 25px;
+$mobile-container-2: 50px;
+
 $tablet-width: 768px;
-$desktop-width: 1440px;
 $tablet-width-container: 618px;
+$tablet-container: 75px;
 $tablet-width-container-big: 688px; //временное название
-$desktop-width-container: 1290px;
+
+$desktop-width: 1440px;
+$desktop-width-container: 1320px;
+
+/* -------------------------------------------------- */
 
 $light: 300;
 $normal: 400;
