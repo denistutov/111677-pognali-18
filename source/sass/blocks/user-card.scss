@@ -1,12 +1,17 @@
 .user-card {
-  width: 270px;
-  height: 427px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: pink;
-  position: relative;
+  width: $mobile-width-container;
+  height: 427px;
   border-radius: 10px;
+}
+
+.user-card__photo {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px 10px 0 0;
 }
 
 .user-card__level {
@@ -16,25 +21,25 @@
 }
 
 .user-card__wrapper {
-  width: 100%;
-  background-color: $white;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  width: 100%;
   padding-top: 27px;
+  background-color: $white;
   border-radius: 0 0 10px 10px;
 }
 
 .user-card__list {
-  list-style: none;
-  width: 100%;
   position: absolute;
   top: -15px;
   left: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
 }
 
 .user-card__item {
@@ -46,20 +51,20 @@
 }
 
 .user-card__name {
-  text-decoration: none;
+  margin-bottom: 16px;
   font-size: 21px;
   line-height: 21px;
-  margin-bottom: 16px;
+  text-decoration: none;
   color: $dark-blue-2;
 
   @include primary-font($bold);
 }
 
 .user-card__tags {
-  width: 190px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 190px;
   margin-bottom: 17px;
 }
 
@@ -74,12 +79,18 @@
 @media (min-width: $tablet-width) {
   .user-card {
     width: 285px;
+    height: 483px;
   }
 
   .user-card__name {
+    margin-bottom: 24px;
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 24px;
+  }
+
+  .user-card__photo {
+    width: 285px;
+    height: 285px;
   }
 
   .user-card__tags {
@@ -88,5 +99,11 @@
 
   .user-card__transport {
     margin-bottom: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-card {
+    min-height: 483px;
   }
 }

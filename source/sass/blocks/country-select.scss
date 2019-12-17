@@ -1,7 +1,7 @@
 .country-select {
-  width: 100%;
   display: flex;
   flex-wrap: wrap; //удалить когда будет иконка
+  width: 100%;
 }
 
 .country-select__drop-list {
@@ -12,12 +12,12 @@
 }
 
 .country-select__flag {
+  display: flex;
+  align-items: center;
   height: 42px;
   border: 1px solid $border-grey-2;
   border-radius: 4px;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,5 +34,16 @@
   .country-select__flag {
     width: 70px;
     height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-select__drop-list {
+    width: 730px;
+    margin-right: 85px;
+  }
+
+  .country-select__flag {
+    margin-right: 90px;
   }
 }

@@ -1,10 +1,9 @@
 .button {
   display: inline-block;
-  border: none;
-  cursor: pointer;
-  background-color: $orange-4;
   padding: 30px 0 30px 25px;
   border-radius: 10px;
+  border: none;
+  cursor: pointer;
   box-sizing: border-box;
   font-size: 18px;
   text-align: left;
@@ -13,47 +12,48 @@
   color: $dark-blue-2;
 
   @include primary-font($bold);
+  background-color: $orange-4;
 }
 
 .button--round {
-  font-size: 17px;
-  text-transform: uppercase;
   padding: 20px 0;
-  border-radius: 20px;
-  color: $dark-blue-3;
+  font-size: 17px;
   text-align: center;
+  text-transform: uppercase;
+  color: $dark-blue-3;
+  border-radius: 20px;
 }
 
 .button--border {
-  background-color: transparent;
-  border: solid 3px $dark-blue-1;
   padding: 24px;
   color: $black;
+  background-color: transparent;
+  border: solid 3px $dark-blue-1;
 }
 
 .button--transparent-bg {
-  background-color: transparent;
-  border: none;
-  text-align: center;
   padding: 0;
   margin: 0;
   font-size: 17px;
+  text-align: center;
   text-transform: uppercase;
   color: $dark-blue-3;
+  background-color: transparent;
+  border: none;
 }
 
 .button--no-bg {
   padding: 0;
-  background: none;
   font-size: 16px;
+  background: none;
 }
 
 .button--grey-bg {
-  background-color: $bg-grey-3;
-  text-align: center;
   padding: 20px 0;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
+  background-color: $bg-grey-3;
 }
 
 .button--white-bg {
@@ -61,10 +61,10 @@
 }
 
 .button--country-filter {
-  background-color: $bg-grey-5;
-  text-align: center;
   padding: 20px 0;
+  text-align: center;
   text-transform: uppercase;
+  background-color: $bg-grey-5;
 }
 
 @media (min-width: $tablet-width) {
@@ -98,7 +98,32 @@
 
   .button--transparent-bg {
     padding: 0;
-    line-height: 30px;
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding: 40px 0 40px 35px;
+    border-radius: 20px;
+  }
+
+  .button--round {
+    padding: 40px 0 40px 34px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  .button--round-header {
+    padding: 20px;
+  }
+
+  .button--transparent-bg {
+    padding: 0;
+  }
+
+  .button--white-bg {
+    padding: 25px 0;
   }
 }

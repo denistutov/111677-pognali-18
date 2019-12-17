@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $bg-grey-1;
+  width: 100%;
   padding: 52px 0 0 0;
+  background-color: $bg-grey-1;
 }
 
 .rates__wrapper {
@@ -28,10 +29,10 @@
 }
 
 .rates__item {
-  padding: 14px 0 14px 25px;
   display: flex;
   position: relative;
   flex-direction: column;
+  padding: 14px 0 14px 25px;
   font-size: 16px;
   line-height: 22px;
   color: $text-grey;
@@ -58,19 +59,19 @@
 }
 
 .rates__number {
-  display: block;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background-color: red;
   position: absolute;
   top: 0;
   right: 25px;
+  display: block;
+  width: 34px;
+  height: 34px;
   text-align: center;
   line-height: 34px;
   color: $white;
 
   @include primary-font($normal);
+  background-color: red;
+  border-radius: 50%;
 }
 
 .rates__business {
@@ -89,12 +90,12 @@
   }
 
   .rates__text {
-    width: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 75px;
     text-align: center;
     font-size: 45px;
     line-height: 45px;
-    padding: 0;
-    margin-bottom: 75px;
   }
 
   .rates__list {
@@ -102,14 +103,14 @@
   }
 
   .rates__item {
-    height: 67px;
-    padding: 0;
-    border-bottom: 1px solid $black;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 67px;
+    padding: 0;
     font-size: 28px;
     line-height: 33px;
+    border-bottom: 1px solid $black;
 
     &:first-child {
       border-top: 1px solid $black;
@@ -120,13 +121,39 @@
     left: -80px;
     width: 67px;
     height: 67px;
-    line-height: 67px;
     font-size: 28px;
+    line-height: 67px;
   }
 
   .rates__business {
-    width: auto;
+    width: 100%;
     padding: 0;
     margin-bottom: 86px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    padding: 0;
+  }
+
+  .rates__container {
+    display: flex;
+    align-items: center;
+    width: $desktop-width-container;
+    min-height: 750px;
+  }
+
+  .rates__wrapper {
+    width: 100%;
+    margin: 0 80px;
+  }
+
+  .rates__text {
+    margin-bottom: 134px;
+  }
+
+  .rates__list {
+    width: 832px;
   }
 }

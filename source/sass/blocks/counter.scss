@@ -1,15 +1,15 @@
 .counter {
-  width: 100%;
-  margin-bottom: 21px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 21px;
 }
 
 .counter__header {
-  width: inherit;
-  margin-bottom: 9px;
   display: flex;
   justify-content: space-between;
+  width: inherit;
+  margin-bottom: 9px;
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 16px;
@@ -27,24 +27,24 @@
 }
 
 .counter__value {
-  width: inherit;
   display: flex;
+  width: inherit;
   margin-bottom: 21px;
 }
 
 .counter__number {
   height: 43px;
   width: 100%;
-  border: 1px solid $border-grey-2;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-align: center;
   font-size: 15px;
+  text-align: center;
   line-height: 13.5px;
   letter-spacing: 1.5px;
   color: $dark-blue-2;
 
   @include primary-font($medium);
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid $border-grey-2;
 }
 
 .counter__checkbox-text {
@@ -68,21 +68,21 @@
   }
 
   .counter__header {
+    order: 2;
+    margin-bottom: 25px;
+    padding-top: 24px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
     border-top: 1px solid $border-grey-1;
-    padding-top: 24px;
-    order: 2;
   }
 
   .counter__number {
     height: 70px;
-    border: 1px solid $border-grey-2;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+    border: 1px solid $border-grey-2;
   }
 
   .counter__value {
@@ -97,9 +97,35 @@
   .counter__checkbox-text {
     font-size: 20px;
     line-height: 18px;
-    color: $dark-blue-2;
     text-transform: uppercase;
+    color: $dark-blue-2;
 
     @include primary-font($medium);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .counter__header {
+    width: 500px;
+    padding: 0 0 60px 0;
+    border: none;
+  }
+
+  .counter__value {
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    width: 181px;
+  }
+
+  .counter__wrapper {
+    position: relative;
+    padding-top: 56px;
+  }
+
+  .counter__checkbox {
+    position: absolute;
+    top: -120px;
+    right: 0;
   }
 }

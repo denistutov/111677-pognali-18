@@ -7,11 +7,11 @@
 }
 
 .members-search__wrapper {
-  width: 270px;
+  width: $mobile-width-container;
   padding: 25px;
-  border-radius: 20px;
-  box-sizing: border-box;
   background-color: $orange-4;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .members-search__title {
@@ -44,5 +44,19 @@
 
   .members-search__button {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .members-search__wrapper {
+    width: 285px;
+    padding: 0 35px 38px 35px;
+  }
+
+  .members-search__title {
+    width: 100%;
+    padding: 37px 0;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
