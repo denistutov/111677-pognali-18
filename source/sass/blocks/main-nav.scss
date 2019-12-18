@@ -1,8 +1,12 @@
 .main-nav {
-  display: flex;
+  //display: flex;
+  display: none; // Убрать после добавления класса в js
   justify-content: center;
-  width: 100%;
   background-color: $white;
+}
+
+.main-nav__wrapper {
+  width: 100%;
 }
 
 .main-nav__contacts {
@@ -19,14 +23,9 @@
   display: none;
 }
 
-.main-nav__wrapper {
-  min-width: $mobile-width-container;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    width: $tablet-width-container;
-    padding-left: 60px;
+    padding-left: 40px;
   }
 
   .main-nav__list {
@@ -49,8 +48,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding-left: 145px;
+    width: 1000px; //проверить почему не работает flex-grow
+    padding: 0;
   }
 
   .main-nav__social {

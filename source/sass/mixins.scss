@@ -7,4 +7,5 @@
 @mixin container($width, $padding: 0) {
   width: $width;
   padding: 0 $padding;
+  box-sizing: border-box;
 }

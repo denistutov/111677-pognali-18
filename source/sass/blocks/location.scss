@@ -10,15 +10,22 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 206px;
   background-color: $orange-4;
   border-radius: 0 0 30px 30px;
 }
 
 .location__desc {
-  width: $mobile-width-container;
+  @include container($mobile-width, $mobile-container-1);
+}
+
+.location__address {
+  margin: 33px 0 32px 61px;
+  padding: 0;
 }
 
 .location__link {
+  position: relative;
   display: inline-block;
   width: 143px;
   font-size: 16px;
@@ -28,6 +35,21 @@
   color: $dark-blue-1;
 
   @include primary-font($bold);
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -62px;
+    display: block;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background: url("../img/contacts-location.svg") no-repeat center center;
+    background-size: 22px 24px;
+    border-radius: 50%;
+    border: 1px solid $black; // Заменить на черный фон когда вствлю svg
+  }
 }
 
 .location__navigate {

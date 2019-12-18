@@ -9,7 +9,8 @@
   color: $dark-blue-2;
 
   @include primary-font($bold);
-  background-color: $orange-4;
+  background: $orange-4 url("../../img/triangle-arrow-right.svg") no-repeat right 20px center;
+  background-size: 14px 14px;
   box-sizing: border-box;
   border-radius: 10px;
   border: none;
@@ -22,13 +23,15 @@
   text-align: center;
   text-transform: uppercase;
   color: $dark-blue-3;
+  background: $orange-4;
   border-radius: 20px;
 }
 
 .button--border {
-  padding: 24px;
+  padding: 28px 0 28px 21px;
   color: $black;
   background-color: transparent;
+  background-position: right 18px center;
   border: solid 3px $dark-blue-1;
 }
 
@@ -44,7 +47,7 @@
 }
 
 .button--no-bg {
-  padding: 0;
+  padding: 15px 25px;
   font-size: 16px;
   background: none;
 }
@@ -71,7 +74,9 @@
 @media (min-width: $tablet-width) {
   .button {
     font-size: 24px;
-    padding: 40px 0 40px 25px;
+    padding: 40px 0 40px 33px;
+    border-radius: 20px;
+    background-position: right 33px center;
   }
 
   .button--round {

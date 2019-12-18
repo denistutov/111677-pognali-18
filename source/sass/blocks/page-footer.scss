@@ -3,9 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 28px;
+  padding-top: 36px;
   background-color: $white;
   border-radius: 30px 30px 0 0;
+}
+
+.page-footer__container {
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .page-footer__wrapper {
@@ -13,19 +17,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: $mobile-width;
 }
 
 .page-footer__logo {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 }
 
 .page-footer__social {
   display: flex;
-}
-
-.page-footer__copyright {
-  width: $mobile-width-container;
+  margin: 0 0 36px 0;
 }
 
 @media (min-width: $tablet-width) {

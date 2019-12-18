@@ -1,16 +1,15 @@
-
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 33px 0 88px 0;
+  padding: 31px 0 65px 0;
   color: $white;
   border-radius: 0 0 30px 30px;
-  background: $dark-blue-4 url("../img/about-mobile@1x.png") no-repeat no-repeat 90% 110px;
+  background: $dark-blue-1 url("../img/about-mobile@1x.png") no-repeat no-repeat right 49% center;
 
   @media (min-resolution: $retina-dppx) {
-    background: $dark-blue-4 url("../img/about-mobile@2x.png") no-repeat no-repeat 90% 110px;
+    background: $dark-blue-1 url("../img/about-mobile@2x.png") no-repeat no-repeat right 49% center;
     background-size: contain;
   }
 }
@@ -24,6 +23,7 @@
 }
 
 .about__title {
+  margin: 0 0 20px 0;
   color: $orange-1;
   font-size: 24px;
   line-height: 24px;
@@ -34,11 +34,15 @@
 .about__text {
   width: 210px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 18px 0;
   font-size: 16px;
   line-height: 22px;
 
   @include primary-font($light);
+}
+
+.about__text-br--tablet {
+  display: none;
 }
 
 .about__text--bold {
@@ -51,34 +55,47 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 139px 0 88px 0;
-    background: $dark-blue-4 url("../img/about-tablet@1x.png") no-repeat 90% 140px;
-
-    @media (min-resolution: $retina-dppx) {
-      background: $dark-blue-4 url("../img/about-tablet@2x.png") no-repeat right bottom;
-      background-size: 400px; //поправить высоту
-    }
+    padding: 96px 0 88px 0;
+    background: $dark-blue-1;
+    border-radius: 0 0 60px 60px;
   }
 
   .about__wrapper {
+    background: $dark-blue-1 url("../img/about-tablet@1x.png") no-repeat right 8px top 8px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $dark-blue-1 url("../img/about-tablet@2x.png") no-repeat right 8px top 8px;
+      background-size: 374px;
+    }
+
     @include container($tablet-width, $tablet-container-1);
   }
 
   .about__title {
     padding: 0;
-    margin: 0 0 43px 0;
+    margin: 0 0 40px 0;
     font-size: 45px;
     line-height: 45px;
   }
 
   .about__text {
     width: 300px;
-    margin: 0 0 53px 0;
+    margin: 0 0 32px 0;
     font-size: 28px;
     line-height: 33px;
   }
 
+  .about__text-br {
+    display: none;
+  }
+
+  .about__text-br--tablet {
+    display: inline-block;
+    width: 30px;
+  }
+
   .about__text--bold {
+    margin: 0 0 53px 0;
     font-size: 21px;
     line-height: 25px;
   }

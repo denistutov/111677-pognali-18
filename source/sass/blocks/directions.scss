@@ -4,18 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 78px;
+  padding-top: 50px;
   background-color: $bg-grey-1;
   border-radius: 0 0 30px 30px;
 }
 
 .directions__wrapper {
-  width: $mobile-width-container;
-  padding: 0 25px;
-  margin-bottom: 66px;
+  margin-bottom: 61px;
   box-sizing: border-box;
 
-  @include container($mobile-width, $mobile-container-1);
+  @include container($mobile-width, $mobile-container-2);
 }
 
 .directions__title {
@@ -36,9 +34,14 @@
   @include primary-font($light);
 }
 
+.directions__cards {
+  @include container($mobile-width, $mobile-container-1);
+}
+
 .directions__list {
-  margin: 0;
+  width: 100%;
   padding: 0;
+  margin: 0 0 24px 0;
   list-style: none;
 }
 
@@ -47,23 +50,32 @@
 }
 
 .directions__show-all {
+  width: 100%;
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .directions {
-    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat center right;
-    border-radius: 0 0 30px 30px;
+    padding-top: 71px;
+    border-radius: 0 0 60px 60px;
+    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 80px right 40px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $bg-grey-1 url("../img/flags-back@2x.png") no-repeat top 80px right 40px;
+      background-size: 288px;
+    }
   }
 
   .directions__wrapper {
     padding: 0;
-    margin-bottom: 113px;
-    width: $tablet-width-container;
+    margin-bottom: 107px;
+
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .directions__title {
-    margin-bottom: 62px;
+    padding: 0;
+    margin: 0 0 58px 0;
     font-size: 45px;
     line-height: 45px;
   }
@@ -75,6 +87,10 @@
   .directions__text {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .directions__cards {
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .directions__show-all {

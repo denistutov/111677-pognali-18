@@ -1,7 +1,6 @@
 .action-list {
   display: flex;
   flex-direction: column;
-  min-width: $mobile-width-container;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -13,15 +12,17 @@
 
 .action-list__item {
   display: inline-block;
-  height: 106px;
-  padding: 25px;
-  margin-top: -15px;
+  width: 100%;
+  height: 100px;
+  padding: 21px 25px;
+  margin-top: -20px;
   box-sizing: border-box;
   list-style: none;
   border-radius: 10px;
 
   &:nth-child(1) {
     background-color: $orange-1;
+    margin: 0;
   }
 
   &:nth-child(2) {
@@ -34,6 +35,7 @@
 
   &:nth-child(4) {
     background-color: $orange-4;
+    height: 80px;
   }
 }
 
@@ -42,36 +44,39 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: $tablet-width;
     font-size: 24px;
     line-height: 24px;
   }
 
   .action-list__item {
-    width: 384px;
+    width: calc(50% + 40px);
     height: 140px;
+    padding: 29px 32px;
     margin: 0;
 
     &:nth-child(1) {
-      margin-right: -40px;
       background-color: $orange-1;
       border-radius: 20px 20px 0 0;
     }
 
     &:nth-child(2) {
+      width: 50%;
+      margin-left: -40px;
       background-color: $orange-2;
       border-radius: 20px 20px 0 0;
     }
 
     &:nth-child(3) {
-      margin-right: -40px;
       background-color: $orange-3;
       border-radius: 0 0 20px 20px;
     }
 
     &:nth-child(4) {
+      width: 50%;
+      margin-left: -40px;
       background-color: $orange-4;
       border-radius: 0 0 20px 20px;
+      height: 140px;
     }
   }
 }
