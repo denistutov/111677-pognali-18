@@ -120,9 +120,14 @@
   .companions__container {
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    min-height: 752px;
     padding: 130px 0;
+
+    @include container($desktop-width, $desktop-container);
+    padding-left: 130px;
   }
 
   .companions__desc {
@@ -131,6 +136,10 @@
   }
 
   .companions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 630px;
     margin: 0;
   }
 
@@ -140,8 +149,8 @@
 
   .companions__show-all {
     position: absolute;
-    bottom: 134px;
-    left: 0;
+    bottom: 47px;
+    left: 130px;
     width: 280px;
   }
 }

@@ -101,7 +101,8 @@
 
 @media (min-width: $desktop-width) {
   .directions {
-    min-height: 750px;
+    justify-content: flex-start;
+    min-height: 589px;
     padding: 0;
     background: $bg-grey-1;
   }
@@ -111,16 +112,32 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
-    width: $desktop-width-container;
-    min-height: 575px;
-    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat center right;
+    align-items: flex-start;
+    background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 86px right 57px;
+
+    @include container($desktop-width, $desktop-container-1);
+    padding-top: 160px;
+  }
+
+  .directions__cards {
+    width: 560px;
+    padding: 0;
+    margin-bottom: 139px;
+  }
+
+  .directions__list {
+    margin: 0;
+  }
+
+  .directions__wrapper {
+    width: 450px;
+    padding: 0;
   }
 
   .directions__show-all {
     position: absolute;
-    bottom: 0;
-    right: 375px;
-    width: 247px;
+    bottom: 110px;
+    right: 303px;
+    width: 275px;
   }
 }

@@ -84,16 +84,29 @@
 @media (min-width: $desktop-width) {
   .action-list {
     justify-content: space-between;
-    flex-wrap: nowrap;
-    width: $desktop-width-container;
+    flex-wrap: wrap;
+
+    @include container($desktop-width, $desktop-container);
   }
 
   .action-list__item {
-    width: 345px;
-    height: 107px;
-
     &:nth-child(n) {
+      width: 315px;
+      height: 107px;
       border-radius: 20px;
+      margin: 0 0 0 -30px;
+    }
+
+    &:nth-child(2) {
+      width: calc(345px + 30px);
+    }
+
+    &:nth-child(3) {
+      width: calc(345px + 30px);
+    }
+
+    &:first-child {
+      width: 345px;
       margin: 0;
     }
   }

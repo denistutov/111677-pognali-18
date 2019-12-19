@@ -1,6 +1,6 @@
 .main-nav {
-  //display: flex;
-  display: none; // Убрать после добавления класса в js
+  display: flex;
+  //display: none; // Убрать после добавления класса в js
   justify-content: center;
   background-color: $white;
 }
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px; //проверить почему не работает flex-grow
+    width: 974px; //проверить почему не работает flex-grow
     padding: 0;
   }
 

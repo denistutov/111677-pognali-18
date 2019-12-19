@@ -174,3 +174,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .travel-card {
+    border-radius: 20px;
+  }
+
+  .travel-card__desc {
+    padding: 22px 0 0 31px;
+  }
+
+  .travel-card__flag {
+    left: 339px;
+    top: 23px;
+  }
+}
