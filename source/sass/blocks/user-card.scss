@@ -81,10 +81,17 @@
 @media (min-width: $tablet-width) {
   .user-card {
     width: 285px;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+
+  .user-card__wrapper {
+    padding-top: 25px;
+    border-radius: 0 0 20px 20px;
   }
 
   .user-card__name {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -92,13 +99,14 @@
   .user-card__photo {
     width: 285px;
     height: 285px;
+    border-radius: 20px 20px 0 0;
   }
 
   .user-card__tags {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 
   .user-card__transport {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 }

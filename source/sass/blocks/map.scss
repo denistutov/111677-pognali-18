@@ -6,3 +6,9 @@
   width: 100%;
   height: 270px;
 }
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    height: 456px;
+  }
+}

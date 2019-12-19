@@ -65,6 +65,10 @@
 
   @include primary-font($light);
 
+  &:last-child {
+    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+  }
+
   &:nth-child(1) {
     .rates__number {
       background-color: $orange-2;
@@ -106,11 +110,19 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    padding: 75px 0 0 0;
+    padding: 71px 0 0 0;
+    border-radius: 0 0 60px 60px;
   }
 
   .rates__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
+    background: url("../img/rates@1x.png") no-repeat bottom 45px right 85px;
+    background-size: 100px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/rates@2x.png") no-repeat bottom 45px right 85px;
+      background-size: 100px;
+    }
   }
 
   .rates__text {
@@ -127,6 +139,7 @@
   }
 
   .rates__list {
+    padding: 0;
     margin-bottom: 58px;
   }
 
@@ -134,29 +147,41 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 67px;
+    width: 563px;
+    min-height: 65px;
     padding: 0;
+    margin-left: 55px;
     font-size: 28px;
     line-height: 33px;
-    border-bottom: 1px solid $black;
-
-    &:first-child {
-      border-top: 1px solid $black;
-    }
   }
 
   .rates__number {
-    left: -80px;
-    width: 67px;
-    height: 67px;
+    top: 0;
+    left: -89px;
+    width: 65px;
+    height: 65px;
     font-size: 28px;
-    line-height: 67px;
+    line-height: 65px;
   }
 
   .rates__business {
+    position: relative;
     width: 100%;
-    padding: 0;
-    margin-bottom: 86px;
+    padding: 0 0 0 54px;
+    margin-bottom: 88px;
+
+    &::before {
+      position: absolute;
+      top: -23px;
+      left: -34px;
+      display: block;
+      content: "";
+      width: 65px;
+      height: 65px;
+      background: $bg-grey-2 url("../img/business.svg") no-repeat center center;
+      background-size: 18px;
+      border-radius: 50%;
+    }
   }
 }
 

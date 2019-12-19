@@ -54,7 +54,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: $desktop-width-container;
+
+    @include container($desktop-width, $desktop-container);
   }
 
   .page-header__wrapper {

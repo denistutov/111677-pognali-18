@@ -29,10 +29,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 50px;
+    border-radius: 60px 60px 0 0;
+  }
+
   .page-footer__container {
     display: flex;
     align-items: center;
-    width: $tablet-width-container;
+
+    @include container($tablet-width, $tablet-container-2);
+    margin-bottom: 50px;
   }
 
   .page-footer__wrapper {

@@ -53,21 +53,38 @@
 }
 
 .location__navigate {
-  width: $mobile-width-container;
   margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .location__wrapper {
+    padding-top: 68px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .location__desc {
-    width: $tablet-width-container;
-    padding-top: 40px;
+    @include container($tablet-width, $tablet-container-1);
+  }
+
+  .location__address {
+    padding: 0;
+    margin: 0;
   }
 
   .location__link {
-    width: 100%;
+    width: 520px;
     margin-bottom: 64px;
+    padding-left: 93px;
     font-size: 28px;
     line-height: 28px;
+
+    &::before {
+      top: -21px;
+      left: 0;
+      width: 65px;
+      height: 65px;
+      background-size: 26px;
+    }
   }
 
   .location__navigate {

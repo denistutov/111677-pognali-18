@@ -27,12 +27,13 @@
 @media (min-width: $tablet-width) {
   .copyright__wrapper {
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
     border: none;
   }
 
   .copyright__text {
+    padding-top: 6px;
     margin-right: 25px;
     font-size: 20px;
   }

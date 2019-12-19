@@ -14,7 +14,6 @@
 
 .contacts__link {
   position: relative;
-  margin-left: 62px;
   text-decoration: none;
   text-transform: uppercase;
   color: $dark-blue-1;
@@ -53,7 +52,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin: 0 0 134px 0;
     padding-left: 40px;
   }
 
@@ -67,8 +65,8 @@
     &::before {
       width: 67px;
       height: 67px;
-      top: -20px;
-      left: -101px;
+      top: -16px;
+      left: -91px;
     }
   }
 

@@ -57,13 +57,13 @@
 @media (min-width: $tablet-width) {
   .directions {
     padding-top: 71px;
-    border-radius: 0 0 60px 60px;
     background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 80px right 40px;
 
     @media (min-resolution: $retina-dppx) {
       background: $bg-grey-1 url("../img/flags-back@2x.png") no-repeat top 80px right 40px;
       background-size: 288px;
     }
+    border-radius: 0 0 60px 60px;
   }
 
   .directions__wrapper {
@@ -91,6 +91,7 @@
 
   .directions__cards {
     @include container($tablet-width, $tablet-container-1);
+    margin-bottom: 51px;
   }
 
   .directions__show-all {

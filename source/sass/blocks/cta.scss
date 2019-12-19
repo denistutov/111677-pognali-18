@@ -55,30 +55,42 @@
 }
 
 @media (min-width: $tablet-width) {
+  .cta {
+    border-radius: 0 0 60px 60px;
+  }
+
   .cta__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .cta__title {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     font-size: 45px;
     line-height: 45px;
   }
 
   .cta__text {
-    width: auto;
+    width: $tablet-width;
     margin-bottom: 67px;
     font-size: 28px;
     line-height: 33px;
   }
 
+  .cta__text-br {
+    display: none;
+  }
+
   .cta__contacts {
-    width: $tablet-width-container;
+    width: 476px;
+    margin-bottom: 37px;
   }
 
   .cta__register {
-    width: $tablet-width-container;
-    margin-bottom: 61px;
+    margin-bottom: 56px;
+  }
+
+  .cta__text--footer {
+    margin-bottom: 66px;
   }
 }
 
