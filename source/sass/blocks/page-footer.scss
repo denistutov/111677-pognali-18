@@ -70,7 +70,9 @@
 
   .page-footer__container {
     justify-content: space-between;
-    width: $desktop-width-container;
+
+    @include container($desktop-width, $desktop-container);
+    margin: 0;
   }
 
   .page-footer__wrapper {
@@ -84,5 +86,7 @@
 
   .page-footer__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 180px;
   }
 }

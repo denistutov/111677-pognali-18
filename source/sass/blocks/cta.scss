@@ -95,31 +95,42 @@
 }
 
 @media (min-width: $desktop-width) {
+  .cta {
+    padding-top: 100px;
+  }
+
   .cta__wrapper {
-    width: $desktop-width-container;
+    @include container($desktop-width, $desktop-container-1);
   }
 
   .cta__text {
     margin-bottom: 61px;
   }
 
+  .cta__text--footer {
+    margin-bottom: 79px;
+    font-size: 29px;
+  }
+
   .cta__register {
-    width: $desktop-width-container;
-    margin-bottom: 71px;
+    margin-bottom: 65px;
   }
 
   .cta__contacts {
     display: flex;
     justify-content: center;
-    width: $desktop-width-container;
+    width: 800px;
+    padding-left: 117px;
+    margin-bottom: 93px;
   }
 
   .cta__item {
-    margin: 0 234px 0 0;
+    margin: 0 225px 0 0;
     padding: 0;
 
     &:last-child {
       margin: 0;
+      padding-left: 10px;
     }
   }
 }

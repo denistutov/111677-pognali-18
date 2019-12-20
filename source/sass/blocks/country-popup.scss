@@ -4,22 +4,23 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 20px 20px;
   background-color: $bg-grey-2;
 }
 
 .country-popup__wrapper {
-  width: $mobile-width-container;
-  padding: 25px 0;
+  @include container($mobile-width, $mobile-container-1);
+  padding-top: 20px;
 }
 
 .country-popup__continents {
-  margin: 0;
   padding: 0;
+  margin: 0 0 13px 25px;
 }
 
 .country-popup__button {
-  width: $mobile-width-container;
+  width: 100%;
+  margin: 0 0 25px 0;
 }
 
 @media (min-width: $tablet-width) {

@@ -23,6 +23,16 @@
   top: 0;
   right: 0;
   width: 60px;
+  height: 100%;
+}
+
+.register__button-text {
+  display: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +70,11 @@
   }
 
   .register__button {
-    width: 324px;
+    width: 327px;
+    padding: 0 0 0 35px;
+  }
+
+  .register__button-text {
+    display: inline-block;
   }
 }

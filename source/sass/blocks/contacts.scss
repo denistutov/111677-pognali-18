@@ -67,18 +67,19 @@
       height: 67px;
       top: -16px;
       left: -91px;
-    }
-  }
-
-  .contacts__phone {
-    &::before {
       background-size: 27px;
     }
   }
+}
 
-  .contacts__email {
+@media (min-width: $desktop-width) {
+  .contacts__link {
     &::before {
-      background-size: 27px;
+      width: 90px;
+      height: 90px;
+      top: -27px;
+      left: -121px;
+      background-size: 36px;
     }
   }
 }

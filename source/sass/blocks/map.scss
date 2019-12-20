@@ -12,3 +12,9 @@
     height: 456px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map__frame {
+    height: 395px;
+  }
+}

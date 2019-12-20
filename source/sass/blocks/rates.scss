@@ -193,13 +193,17 @@
   .rates__container {
     display: flex;
     align-items: center;
-    width: $desktop-width-container;
     min-height: 750px;
+
+    @include container($desktop-width, $desktop-container-1);
   }
 
   .rates__wrapper {
     width: 100%;
-    margin: 0 80px;
+    margin: 0;
+    padding: 0;
+    background-position: right 3px top 181px;
+    background-size: 200px;
   }
 
   .rates__text {
@@ -207,6 +211,15 @@
   }
 
   .rates__list {
+    align-items: flex-start;
     width: 832px;
+  }
+
+  .rates__item {
+    margin-left: 90px;
+  }
+
+  .rates__business {
+    margin-left: 36px;
   }
 }

@@ -65,10 +65,23 @@
 }
 
 .button--country-filter {
-  padding: 20px 0;
-  text-align: center;
+  position: relative;
+  padding: 20px 0 20px 108px;
+  text-align: left;
   text-transform: uppercase;
-  background-color: $bg-grey-5;
+  background: $bg-grey-5;
+  border-radius: 20px;
+
+  &::before {
+    position: absolute;
+    top: 14px;
+    left: 85px;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url("../../img/filter-close.svg") no-repeat center right;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -133,5 +146,10 @@
 
   .button--white-bg {
     padding: 25px 0;
+  }
+
+  .button--border {
+    padding: 38px 28px;
+    background-position: right 34px center;
   }
 }

@@ -32,6 +32,10 @@
   display: none;
 }
 
+.page-header__title {
+  min-height: 76px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__container {
     @include container($tablet-width, $tablet-container-2);

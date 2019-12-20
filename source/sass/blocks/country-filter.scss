@@ -11,23 +11,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $mobile-width-container;
   height: 50px;
+
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .country-filter__title {
+  position: relative;
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 27px;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   color: $dark-blue-1;
 
   @include primary-font($bold);
+
+  &::before {
+    position: absolute;
+    top: 1px;
+    left: -27px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 20px;
+    background: url("../../img/filter.svg") no-repeat center center;
+  }
 }
 
 .country-filter__button {
   height: 20px;
+  margin: 1px 7px 0 0;
   font-size: 0;
   background: url("../img/filter-close.svg") no-repeat center center;
   border: none;
