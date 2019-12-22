@@ -55,21 +55,28 @@
   .country-table {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 0 25px;
+    margin: 0;
     list-style: none;
   }
 
   .country-table__item {
-    margin: 0 0 36px 0;
+    margin-right: 35px;
+    margin-bottom: 33px;
     border: none;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
   }
 
   .country-table__button {
-    width: 70px;
+    width: 35px;
     height: 50px;
+    padding: 0;
+    margin: 0;
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
+    text-align: center;
     color: rgba(25, 33, 68, 0.2);
     background-color: transparent;
     cursor: pointer;

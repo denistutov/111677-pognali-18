@@ -18,7 +18,7 @@
             </picture>
           </a>
           <button class="page-header__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
-          <a class="button button--round page-header__login" href="">Авторизация</a>
+          <a class="button button--round button--round-header page-header__login" href="">Авторизация</a>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
@@ -386,15 +386,17 @@
                 </li>
               </ul>
               <ul class="country-popup__country-list country-list">
-                <li class="country-list__item"><a class="country-list__link" href="#">Афганистан</a></li>
-                <li class="country-list__item"><a class="country-list__link" href="#">Албания</a></li>
-                <li class="country-list__item"><a class="country-list__link" href="#">Алжир</a></li>
-                <li class="country-list__item"><a class="country-list__link" href="#">Андорра</a></li>
-                <li class="country-list__item"><a class="country-list__link" href="#">Аргентина</a></li>
-                <li class="country-list__item"><a class="country-list__link" href="#">Армения</a></li>
                 <li class="country-list__item"><a class="country-list__link" href="#">Австралия</a></li>
                 <li class="country-list__item"><a class="country-list__link" href="#">Австрия</a></li>
                 <li class="country-list__item"><a class="country-list__link" href="#">Азербайджан</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Албания</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Алжир</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Ангола</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Андорра</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Антигуа и Барбуда</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Аргентина</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Армения</a></li>
+                <li class="country-list__item"><a class="country-list__link" href="#">Афганистан</a></li>
               </ul>
             </div>
             <button class="button button--country-filter country-popup__button" type="button" >Свернуть</button>
@@ -404,135 +406,152 @@
       <div class="page-main__wrapper">
         <form class="form-catalog members-search" method="get" action="https://echo.htmlacademy.ru">
           <div class="members-search__wrapper">
-            <h2 class="members-search__title">Подберите идеального попутчика</h2>
-            <fieldset class="members-search__accordion accordion accordion--is-closed">
-              <div class="accordion__wrapper">
-                <h3 class="accordion__title">Хобби</h3>
-                <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-              </div>
-              <ul class="accordion__list">
-                <li class="accordion__item">
-                  <input class="visually-hidden" id="gym" type="checkbox" checked>
-                  <label class="accordion__label" for="gym">Спортзал</label>
-                </li>
-                <li class="accordion__item">
-                  <input class="visually-hidden" id="hookah" type="checkbox">
-                  <label class="accordion__label" for="hookah">Кальян</label>
-                </li>
-                <li class="accordion__item">
-                  <input class="visually-hidden" id="sofa" type="checkbox">
-                  <label class="accordion__label" for="sofa">Диван</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="members-search__accordion accordion accordion--is-open">
-              <div class="accordion__wrapper">
-                <h3 class="accordion__title">Музыка</h3>
-                <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-              </div>
-              <ul class="accordion__list">
-                <li class="accordion__item">
-                  <label class="accordion__label" for="hardrock">
-                    <input class="accordion__input visually-hidden" id="hardrock" type="checkbox" checked>
-                    <span class="accordion__indicator"></span>
-                    <span class="accordion__label-text">Тяжелый рок</span>
-                  </label>
-                </li>
-                <li class="accordion__item">
-                  <label class="accordion__label" for="russian-rap">
-                    <input class="accordion__input visually-hidden" id="russian-rap" type="checkbox">
-                    <span class="accordion__indicator"></span>
-                    <span class="accordion__label-text">Русский рэп</span>
-                  </label>
-                </li>
-                <li class="accordion__item">
-                  <label class="accordion__label" for="eurodens">
-                    <input class="accordion__input visually-hidden" id="eurodens" type="checkbox">
-                    <span class="accordion__indicator"></span>
-                    <span class="accordion__label-text">Евроденс</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="members-search__accordion accordion accordion--is-closed">
-              <div class="accordion__wrapper">
-                <h3 class="accordion__title">Еда</h3>
-                <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-              </div>
-              <ul class="accordion__list">
-                <li class="accordion__item">
-                  <input id="eat-meat" type="checkbox" checked>
-                  <label class="accordion__label" for="eat-meat">Мясоед</label>
-                </li>
-                <li class="accordion__item">
-                  <input id="diet" type="checkbox">
-                  <label class="accordion__label" for="diet">Сидит на ПП</label>
-                </li>
-                <li class="accordion__item">
-                  <input id="vegan" type="checkbox">
-                  <label class="accordion__label" for="vegan">Веган-сыроед</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="members-search__accordion accordion accordion--is-open">
-              <div class="accordion__wrapper">
-                <h3 class="accordion__title">Транспорт</h3>
-                <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-              </div>
-              <ul class="accordion__list accordion__transport transport-list transport-list--checkbox">
-                <li class="transport-list__item">
-                  <input class="visually-hidden" id="plane" type="checkbox" checked>
-                  <label for="plane">
-                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
-                    <span class="transport-list__text">Авиаперелет</span>
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="visually-hidden" id="automobile" type="checkbox" checked>
-                  <label for="automobile">
-                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
-                    <span class="transport-list__text">Автотранспорт</span>
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="visually-hidden" id="bike" type="checkbox">
-                  <label for="bike">
-                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
-                    <span class="transport-list__text">Велосипед</span>
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="visually-hidden" id="foot" type="checkbox" checked>
-                  <label for="foot">
-                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
-                    <span class="transport-list__text">Пешком</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="members-search__accordion accordion accordion--is-open">
-              <div class="accordion__wrapper">
-                <h3 class="accordion__title">Левел</h3>
-                <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
-              </div>
-              <div class="accordion__level-controls">
-                <div class="level-controls">
-                  <div class="level-controls__field">
-                    <input class="level-controls__input level-min" id="level-control-min" type="number" name="range-min" value="30">
+            <div class="members-search__inner-wrapper">
+              <h2 class="members-search__title">Подберите идеального попутчика</h2>
+              <fieldset class="members-search__accordion accordion accordion--is-closed">
+                <div class="accordion__wrapper">
+                  <h3 class="accordion__title">Хобби</h3>
+                  <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+                </div>
+                <ul class="accordion__list">
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="gym">
+                      <input class="accordion__input visually-hidden" id="gym" type="checkbox" checked>
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Спортзал</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="hookah">
+                      <input class="accordion__input visually-hidden" id="hookah" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Кальян</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="sofa">
+                      <input class="accordion__input visually-hidden" id="sofa" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Диван</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="members-search__accordion accordion accordion--is-open">
+                <div class="accordion__wrapper">
+                  <h3 class="accordion__title">Музыка</h3>
+                  <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+                </div>
+                <ul class="accordion__list">
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="hardrock">
+                      <input class="accordion__input visually-hidden" id="hardrock" type="checkbox" checked>
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Тяжелый рок</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="russian-rap">
+                      <input class="accordion__input visually-hidden" id="russian-rap" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Русский рэп</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="eurodens">
+                      <input class="accordion__input visually-hidden" id="eurodens" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Евроденс</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="members-search__accordion accordion accordion--is-closed">
+                <div class="accordion__wrapper">
+                  <h3 class="accordion__title">Еда</h3>
+                  <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+                </div>
+                <ul class="accordion__list">
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="eat-meat">
+                      <input class="accordion__input visually-hidden" id="eat-meat" type="checkbox" checked>
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Мясоед</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="diet">
+                      <input class="accordion__input visually-hidden" id="diet" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Сидит на ПП</span>
+                    </label>
+                  </li>
+                  <li class="accordion__item">
+                    <label class="accordion__label" for="vegan">
+                      <input class="accordion__input visually-hidden" id="vegan" type="checkbox">
+                      <span class="accordion__indicator"></span>
+                      <span class="accordion__label-text">Веган-сыроед</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="members-search__accordion accordion accordion--transport accordion--is-open">
+                <div class="accordion__wrapper">
+                  <h3 class="accordion__title">Транспорт</h3>
+                  <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+                </div>
+                <ul class="accordion__list accordion__transport transport-list transport-list--checkbox">
+                  <li class="transport-list__item">
+                    <label class="transport-list__label" for="plane">
+                      <input class="transport-list__input visually-hidden" id="plane" type="checkbox">
+                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="14" height="16">
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <label class="transport-list__label" for="automobile">
+                      <input class="transport-list__input visually-hidden" id="automobile" type="checkbox">
+                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <label class="transport-list__label" for="bike">
+                      <input class="transport-list__input visually-hidden" id="bike" type="checkbox">
+                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <label class="transport-list__label" for="foot">
+                      <input class="transport-list__input visually-hidden" id="foot" type="checkbox">
+                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="members-search__accordion accordion accordion--level accordion--is-open">
+                <div class="accordion__wrapper">
+                  <h3 class="accordion__title">Левел</h3>
+                  <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
+                </div>
+                <div class="accordion__level-controls">
+                  <div class="level-controls">
+                    <div class="level-controls__field">
+                      <input class="level-controls__input level-controls__input--level-min" id="level-control-min" type="number" name="range-min" value="30">
+                    </div>
+                    <div class="level-controls__separator"><span class="level-controls__line"></span></div>
+                    <div class="level-controls__field">
+                      <input class="level-controls__input level-controls__input--level-max" id="level-control-max" type="number" name="range-max" value="100">
+                    </div>
                   </div>
-                  <div class="level-controls__field">
-                    <input class="level-controls__input level-max" id="level-control-max" type="number" name="range-max" value="100">
+                  <div class="accordion__range range-controls">
+                    <div class="range-controls__scale">
+                      <div class="range-controls__bar"></div>
+                      <button class="range-controls__toggle range-toggle-min" type="button"></button>
+                      <button class="range-controls__toggle range-toggle-max" type="button"></button>
+                    </div>
                   </div>
                 </div>
-                <div class="accordion__range range-controls">
-                  <div class="range-controls__scale">
-                    <div class="range-controls__bar"></div>
-                    <button class="range-controls__toggle range-toggle-min" type="button"></button>
-                    <button class="range-controls__toggle range-toggle-max" type="button"></button>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
             <button class="members-search__button button button--round button--white-bg" type="submit">Показать</button>
           </div>
         </form>
@@ -544,7 +563,9 @@
                   <img class="user-logo__image" src="../img/firsova-desktop@1x.jpg" alt="Таня Фирсова">
                 </a>
                 <div class="companion-card__user">
-                  <a class="companion-card__name user-status user-status--offline" href="">Таня Фирсова</a>
+                  <a class="companion-card__name" href="">
+                      <span class="companion-card__name-text user-status user-status--offline">Таня Фирсова</span>
+                  </a>
                   <ul class="companion-card__tags tags-list">
                     <li class="tags-list__item">
                       <span class="tags-list__text">#ЗОЖ</span>
@@ -566,7 +587,7 @@
                     </li>
                   </ul>
                   <div class="companion-card__user-actions">
-                    <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
+                    <button class="companion-card__like companion-card__like--active" type="button" aria-label="Добавить попутчика в избранное"></button>
                     <a class="button button--round companion-card__btn" href="">Позвать!</a>
                     <span class="companion-card__points">1,5 M</span>
                   </div>
@@ -576,15 +597,15 @@
                 <h3 class="companion-card__title">Хочет посетить:</h3>
                 <ul class="companion-card__list">
                   <li class="companion-card__item flag flag--text-aside">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Шриланка" width="35" height="24">
+                    <img class="flag__img" src="img/flag-sri-lanka.svg" alt="Шриланка" width="26" height="18">
                     <span class="flag__text">Шри-ланка</span>
                   </li>
                   <li class="companion-card__item companion-card__flag flag flag--text-aside">
-                    <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Тайланд" width="35" height="24">
+                    <img class="flag__img" src="img/flag-thailand.svg" alt="Тайланд" width="26" height="18">
                     <span class="flag__text">Тайланд</span>
                   </li>
                   <li class="companion-card__item companion-card__flag flag flag--text-aside">
-                    <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Сейшелы" width="35" height="24">
+                    <img class="flag__img" src="img/flag-seychelles.svg" alt="Сейшелы" width="26" height="18">
                     <span class="flag__text">Сейшелы</span>
                   </li>
                 </ul>
@@ -594,19 +615,19 @@
                   <h3 class="companion-card__title">Транспорт:</h3>
                   <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="14" height="16">
                       <span class="transport-list__text">Авиаперелет</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
                       <span class="transport-list__text">Автотранспорт</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
                       <span class="transport-list__text">Велосипед</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
                       <span class="transport-list__text">Пешком</span>
                     </li>
                   </ul>
@@ -625,29 +646,30 @@
                   <img class="user-logo__image" src="../img/demin-desktop@1x.jpg" alt="Петя Демин">
                 </a>
                 <div class="companion-card__user">
-                  <a class="companion-card__name user-status user-status--offline" href="">Петя Демин</a>
+                  <a class="companion-card__name" href="">
+                    <span class="companion-card__name-text user-status user-status--offline">
+                      Петя Демин
+                    </span>
+                  </a>
                   <ul class="companion-card__tags tags-list">
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ЗОЖ</span>
+                      <span class="tags-list__text">#бургер</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ПП</span>
+                      <span class="tags-list__text">#бар</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#Фитнес</span>
+                      <span class="tags-list__text">#футбол</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#пляж</span>
+                      <span class="tags-list__text">#концерт</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#авокадо</span>
-                    </li>
-                    <li class="tags-list__item">
-                      <span class="tags-list__text">#смузи</span>
+                      <span class="tags-list__text">#крафт</span>
                     </li>
                   </ul>
                   <div class="companion-card__user-actions">
-                    <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
+                    <button class="companion-card__like" type="button" aria-label="Добавить попутчика в избранное"></button>
                     <a class="button button--round companion-card__btn" href="">Позвать!</a>
                     <span class="companion-card__points">150</span>
                   </div>
@@ -657,11 +679,11 @@
                 <h3 class="companion-card__title">Хочет посетить:</h3>
                 <ul class="companion-card__list">
                   <li class="companion-card__item flag flag--text-aside">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Бельгия" width="35" height="24">
+                    <img class="flag__img" src="img/flag-belgium.svg" alt="Бельгия" width="26" height="18">
                     <span class="flag__text">Бельгия</span>
                   </li>
                   <li class="companion-card__item companion-card__flag flag flag--text-aside">
-                    <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Чехия" width="35" height="24">
+                    <img class="flag__img" src="img/flag-czech.svg" alt="Чехия" width="26" height="18">
                     <span class="flag__text">Чехия</span>
                   </li>
                 </ul>
@@ -671,19 +693,19 @@
                   <h3 class="companion-card__title">Транспорт:</h3>
                   <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="14" height="16">
                       <span class="transport-list__text">Авиаперелет</span>
                     </li>
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
                       <span class="transport-list__text">Автотранспорт</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
                       <span class="transport-list__text">Велосипед</span>
                     </li>
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
                       <span class="transport-list__text">Пешком</span>
                     </li>
                   </ul>
@@ -702,43 +724,48 @@
                   <img class="user-logo__image" src="../img/smolov-desktop@1x.jpg" alt="Марк Смолов">
                 </a>
                 <div class="companion-card__user">
-                  <a class="companion-card__name user-status user-status--offline" href="">Марк Смолов</a>
+                  <a class="companion-card__name" href="">
+                    <span class="companion-card__name-text user-status user-status--offline">
+                      Марк Смолов
+                    </span>
+                  </a>
                   <ul class="companion-card__tags tags-list">
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ЗОЖ</span>
+                      <span class="tags-list__text">#рэп</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ПП</span>
+                      <span class="tags-list__text">#тату</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#Фитнес</span>
+                      <span class="tags-list__text">#хайпбист</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#пляж</span>
+                      <span class="tags-list__text">#кроссовки</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#авокадо</span>
-                    </li>
-                    <li class="tags-list__item">
-                      <span class="tags-list__text">#смузи</span>
+                      <span class="tags-list__text">#суприм</span>
                     </li>
                   </ul>
                   <div class="companion-card__user-actions">
-                    <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
+                    <button class="companion-card__like" type="button" aria-label="Добавить попутчика в избранное"></button>
                     <a class="button button--round companion-card__btn" href="">Позвать!</a>
                     <span class="companion-card__points">150</span>
                   </div>
                 </div>
               </div>
-              <div class="companion-card__directions">
+              <div class="companion-card__directions companion-card__directions--fix">
                 <h3 class="companion-card__title">Хочет посетить:</h3>
                 <ul class="companion-card__list">
                   <li class="companion-card__item flag flag--text-aside">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="США" width="35" height="24">
+                    <img class="flag__img" src="img/flag-usa.svg" alt="США" width="26" height="18">
                     <span class="flag__text">США</span>
                   </li>
                   <li class="companion-card__item companion-card__flag flag flag--text-aside">
-                    <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Доминикана" width="35" height="24">
+                    <img class="flag__img" src="img/flag-australia.svg" alt="Австралия" width="26" height="18">
+                    <span class="flag__text">Австралия</span>
+                  </li>
+                  <li class="companion-card__item companion-card__flag flag flag--text-aside">
+                    <img class="flag__img" src="img/flag-dominica.svg" alt="Доминикана" width="26" height="18">
                     <span class="flag__text">Доминикана</span>
                   </li>
                 </ul>
@@ -748,19 +775,19 @@
                   <h3 class="companion-card__title">Транспорт:</h3>
                   <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="16">
                       <span class="transport-list__text">Авиаперелет</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
                       <span class="transport-list__text">Автотранспорт</span>
                     </li>
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
                       <span class="transport-list__text">Велосипед</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
                       <span class="transport-list__text">Пешком</span>
                     </li>
                   </ul>
@@ -779,29 +806,27 @@
                   <img class="user-logo__image" src="../img/rogovaya-desktop@1x.jpg" alt="Лариса Роговая">
                 </a>
                 <div class="companion-card__user">
-                  <a class="companion-card__name user-status user-status--offline" href="">Лариса Роговая</a>
+                  <a class="companion-card__name" href="">
+                    <span class="companion-card__name-text user-status user-status--online">
+                      Лариса Роговая
+                    </span>
+                  </a>
                   <ul class="companion-card__tags tags-list">
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ЗОЖ</span>
+                      <span class="tags-list__text">#образование</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#ПП</span>
+                      <span class="tags-list__text">#карьера</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#Фитнес</span>
+                      <span class="tags-list__text">#учеба</span>
                     </li>
                     <li class="tags-list__item">
-                      <span class="tags-list__text">#пляж</span>
-                    </li>
-                    <li class="tags-list__item">
-                      <span class="tags-list__text">#авокадо</span>
-                    </li>
-                    <li class="tags-list__item">
-                      <span class="tags-list__text">#смузи</span>
+                      <span class="tags-list__text">#линкедин</span>
                     </li>
                   </ul>
                   <div class="companion-card__user-actions">
-                    <button class="companion-card__like like-status is-liked" type="button" aria-label="Добавить попутчика в избранное"></button>
+                    <button class="companion-card__like" type="button" aria-label="Добавить попутчика в избранное"></button>
                     <a class="button button--round companion-card__btn" href="">Позвать!</a>
                     <span class="companion-card__points">23</span>
                   </div>
@@ -811,11 +836,11 @@
                 <h3 class="companion-card__title">Хочет посетить:</h3>
                 <ul class="companion-card__list">
                   <li class="companion-card__item flag flag--text-aside">
-                    <img class="flag__img" src="https://via.placeholder.com/35x24" alt="Великобритания" width="35" height="24">
+                    <img class="flag__img" src="img/flag-united-kingdom.svg" alt="Великобритания" width="26" height="18">
                     <span class="flag__text">Великобритания</span>
                   </li>
                   <li class="companion-card__item companion-card__flag flag flag--text-aside">
-                    <img class="flag-img" src="https://via.placeholder.com/35x24" alt="Германия" width="35" height="24">
+                    <img class="flag__img" src="https://via.placeholder.com/26x18" alt="Германия" width="26" height="18">
                     <span class="flag__text">Германия</span>
                   </li>
                 </ul>
@@ -825,19 +850,19 @@
                   <h3 class="companion-card__title">Транспорт:</h3>
                   <ul class="companion-card__list companion-card__transport-list transport-list transport-list--grey-bg">
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
+                      <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="16">
                       <span class="transport-list__text">Авиаперелет</span>
                     </li>
                     <li class="transport-list__item transport-list__item--active">
-                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
+                      <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
                       <span class="transport-list__text">Автотранспорт</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
+                      <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
                       <span class="transport-list__text">Велосипед</span>
                     </li>
                     <li class="transport-list__item">
-                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
+                      <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
                       <span class="transport-list__text">Пешком</span>
                     </li>
                   </ul>

@@ -36,14 +36,26 @@
 }
 
 .button--transparent-bg {
-  padding: 0;
+  position: relative;
+  padding: 10px 0 10px 31px;
   margin: 0;
   font-size: 17px;
   text-align: center;
   text-transform: uppercase;
   color: $dark-blue-3;
-  background-color: transparent;
+  background: none;
   border: none;
+
+  &::before {
+    position: absolute;
+    top: -1px;
+    left: 60px;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/show-more-plus.svg") no-repeat center center;
+  }
 }
 
 .button--no-bg {
@@ -97,6 +109,24 @@
     border-radius: 20px;
   }
 
+  .button--round-header {
+    width: 190px;
+    padding: 25px 0;
+    border-radius: 25px;
+  }
+
+  .button--country-filter {
+    font-size: 20px;
+    padding: 50px 0 50px 282px;
+
+    &::before {
+      top: 40px;
+      left: 243px;
+      width: 19px;
+      height: 19px;
+    }
+  }
+
   .button--no-bg {
     font-size: 20px;
     line-height: 20px;
@@ -114,6 +144,7 @@
 
   .button--white-bg {
     padding: 25px 0;
+    border-radius: 25px;
   }
 
   .button--transparent-bg {
@@ -135,11 +166,6 @@
     border-radius: 20px;
   }
 
-  .button--round-header {
-    padding: 25px;
-    border-radius: 25px;
-  }
-
   .button--transparent-bg {
     padding: 0;
   }
@@ -149,7 +175,7 @@
   }
 
   .button--border {
-    padding: 38px 28px;
-    background-position: right 34px center;
+    padding: 38px 33px;
+    background-position: right 32px center;
   }
 }

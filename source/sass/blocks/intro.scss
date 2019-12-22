@@ -138,7 +138,7 @@
     min-height: 640px;
 
     @include container($desktop-width, $desktop-container);
-    padding-top: 94px;
+    padding-top: 98px;
     margin: 0;
     background: url("../img/traveller-illustration-desktop@1x.png") no-repeat center right 40%;
 
@@ -161,7 +161,7 @@
 
   .intro__action {
     position: absolute;
-    bottom: 125px;
+    bottom: 124px;
     left: 0;
   }
 }

@@ -53,12 +53,12 @@
   .register__button {
     border-radius: 0 20px 20px 0;
     width: 82px;
+    background-position: right 38px center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .register__input {
-    height: 82px;
     padding: 30px 0 32px 35px;
     font-size: 24px;
     line-height: 24px;

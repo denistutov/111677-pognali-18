@@ -11,7 +11,6 @@
   align-items: center;
   width: 100%;
   padding: 11px 0 0 1px;
-  //margin-bottom: 21px;
 }
 
 .accordion__title {
@@ -29,8 +28,8 @@
   height: 10px;
   width: 10px;
   border: none;
-  background: url("../img/dropdown.svg") no-repeat center center;
-  background-size: 9px 9px;
+  background: url("../img/dropdown.svg") no-repeat center right 1px;
+  background-size: 8px 8px;
 }
 
 .accordion__list {
@@ -47,7 +46,7 @@
 }
 
 .accordion__item {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .accordion__label {
@@ -60,7 +59,7 @@
 
   .accordion__indicator {
     position: absolute;
-    top: 0;
+    top: -4;
     left: -27px;
     display: block;
     content: "";
@@ -72,7 +71,8 @@
 }
 
 .accordion__input:checked ~ .accordion__indicator {
-  background: #00ff00; //Сделать иконку для чекбокса
+  background: $white url("../img/tick.svg") no-repeat center center; //Сделать иконку для чекбокса
+  background-size: 10px;
 }
 
 .accordion--is-closed {
@@ -82,15 +82,16 @@
 }
 
 .accordion--is-open {
-  margin: 0 0 5px 0;
+  margin: 0 0 7px 0;
 
   .accordion__wrapper {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .accordion__toggle {
-    background: url("../img/dropup.svg") no-repeat center center;
-    background-size: 9px 9px;
+    transform: rotate(180deg);
+    background: url("../img/dropdown.svg") no-repeat center left 1px;
+    background-size: 8px 8px;
   }
 
   .accordion__list {
@@ -98,17 +99,28 @@
   }
 
   .accordion__transport {
-    margin: 0;
+    margin: 0 0 12px 0;
   }
 }
 
+.accordion--level {
+  .accordion__wrapper {
+    margin-bottom: 12px;
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .accordion {
+    border: none;
+    margin: 0 0 12px 0;
+  }
+
   .accordion__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 21px;
+    padding: 0;
   }
 
   .accordion__title {
@@ -122,16 +134,32 @@
 
   .accordion__list {
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 120px;
-    margin-top: -47px;
+    justify-content: flex-start;
+    width: auto;
+    margin-left: 162px;
+    margin-top: -45px;
+  }
+
+  .accordion__item {
+    margin-right: 55px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .accordion__label {
     display: inline-block;
-    width: 140px;
+    width: 115px;
     font-size: 20px;
     line-height: 20px;
+
+    .accordion__indicator {
+      top: -4px;
+      left: -36px;
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .accordion__transport {
@@ -143,14 +171,43 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin-left: 125px;
-    margin-top: -43px;
+    margin-top: -61px;
+  }
+
+  .accordion--is-closed {
+    .accordion__list {
+      width: auto;
+      display: flex;
+    }
+  }
+
+  .accordion--is-open {
+    .accordion__wrapper {
+      margin-bottom: 21px;
+    }
+
+    .accordion__list {
+      width: auto;
+      margin-left: 161px;
+    }
+  }
+
+  .accordion--transport {
+    padding-top: 8px;
+
+    .accordion__list {
+      margin-left: 120px;
+      margin-top: -60px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .accordion {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
@@ -178,7 +235,7 @@
 
   .accordion__label {
     display: inline-block;
-    width: 140px;
+    width: auto;
     font-size: 20px;
     line-height: 20px;
   }

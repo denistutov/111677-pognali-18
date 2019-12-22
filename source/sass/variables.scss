@@ -17,16 +17,13 @@ $bg-grey-2: #e2e5f2;
 $bg-grey-3: #dfe3f0;
 $bg-grey-4: #d4d9eb;
 $bg-grey-5: #d6daed;
+$bg-pink-like: #f9eaea;
+$bg-status-offline: #f97676;
+$bg-status-online: #81e31e;
 $border-grey-1: #d6d9e6;
 $border-grey-2: #cbced9;
 $border-orange-1: #f3c72b;
 $text-grey: #444444;
-
-/*
-  Нужно переделать все блоки контейнеры через mixin:
-  - Пройтись по всем блокам и передалть логику цетровки
-  - Убрать лишние width или заменить на 100%, там где это возможно
-*/
 
 $mobile-width: 320px;
 $mobile-container-1: 25px;

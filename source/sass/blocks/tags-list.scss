@@ -9,7 +9,7 @@
 }
 
 .tags-list__item {
-  padding-right: 3px;
+  padding-right: 2px;
 
   &:last-child {
     padding: 0;
@@ -21,6 +21,10 @@
     width: 225px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .tags-list__item {
+    padding-right: 6px;
   }
 }
 

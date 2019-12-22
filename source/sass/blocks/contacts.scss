@@ -1,5 +1,4 @@
 .contacts {
-  padding: 0;
   list-style: none;
   font-size: 16px;
   line-height: 22px;
@@ -10,6 +9,7 @@
 
 .contacts__item {
   min-height: 45px;
+  padding: 0 0 0 41px;
 }
 
 .contacts__link {
@@ -65,7 +65,7 @@
     &::before {
       width: 67px;
       height: 67px;
-      top: -16px;
+      top: -22px;
       left: -91px;
       background-size: 27px;
     }
@@ -77,7 +77,7 @@
     &::before {
       width: 90px;
       height: 90px;
-      top: -27px;
+      top: -33px;
       left: -121px;
       background-size: 36px;
     }

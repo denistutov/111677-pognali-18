@@ -5,6 +5,12 @@
   background-color: $bg-grey-1;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 100%;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
     display: flex;

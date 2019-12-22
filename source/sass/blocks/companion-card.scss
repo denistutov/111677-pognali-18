@@ -4,9 +4,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 20px 0;
-  padding: 18px 15px 60px 15px;
-  width: $mobile-width-container;
+  width: 100%;
+  padding: 15px 15px 73px 14px;
   box-sizing: border-box;
   border-radius: 20px;
   background-color: $white;
@@ -15,6 +14,7 @@
 .companion-card__info {
   display: flex;
   width: 100%;
+  padding: 0 0 0 4px;
 }
 
 .companion-card__user {
@@ -29,16 +29,25 @@
 
 .companion-card__like {
   position: absolute;
-  top: 58px;
-  left: 58px;
+  top: 53px;
+  left: 68px;
   width: 31px;
   height: 31px;
+  border: none;
   border-radius: 50%;
+  background: $bg-grey-1 url("../img/heart.svg") no-repeat center center;
+  background-size: 13px 11px;
+}
+
+.companion-card__like--active {
+  background: $bg-pink-like url("../img/heart-active.svg") no-repeat center center;
+  background-size: 13px 11px;
 }
 
 .companion-card__name {
   width: 78px;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 6px;
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
@@ -47,8 +56,12 @@
   @include primary-font($bold);
 }
 
+.companion-card__name-text {
+  position: relative;
+}
+
 .companion-card__points {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 14px;
   line-height: 21px;
   color: $dark-blue-3;
@@ -61,30 +74,65 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: -86px;
-  margin-bottom: 10px;
-  width: 230px;
+  width: 180px;
+  margin-left: -79px;
+  margin-bottom: 12px;
 }
 
 .companion-card__directions {
-  margin-bottom: 20px;
+  position: relative;
   width: 100%;
+  min-height: 98px;
+  padding: 0 0 2px 0;
+  box-sizing: border-box;
+
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    display: block;
+    content: "";
+    width: calc(100% + 29px);
+    height: 1px;
+    background-color: $border-grey-2;
+  }
+
+  &::after {
+    z-index: 1;
+    position: absolute;
+    bottom: -11px;
+    left: -16px;
+    display: block;
+    content: "";
+    width: calc(100% + 29px);
+    height: 1px;
+    background-color: $border-grey-2;
+  }
+}
+
+.companion-card__directions--fix {
+  height: 122px; // Почему то только этом элементе высота не соответствует нормальной
 }
 
 .companion-card__title {
-  padding: 0;
-  margin: 0 0 12px 0;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  padding: 0 11px;
+  margin: 0 0 14px 0;
   font-size: 15px;
-  line-height: 18px;
   text-transform: lowercase;
   color: $text-grey;
+  box-sizing: border-box;
 
   @include primary-font($normal);
+  background-color: $white;
 }
 
 .companion-card__list {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 8px;
   list-style: none;
 }
 
@@ -105,10 +153,18 @@
   display: flex;
 }
 
+.companion-card__level {
+  margin: 0 auto;
+
+  .companion-card__title {
+    margin-bottom: 10px;
+  }
+}
+
 .companion-card__btn {
   position: absolute;
-  left: 15px;
-  bottom: 15px;
+  left: 20px;
+  bottom: 23px;
   width: 230px;
 }
 
@@ -122,38 +178,42 @@
   .companion-card {
     flex-direction: row;
     align-items: flex-start;
-    width: $tablet-width-container-big;
-    padding: 35px 25px 25px 35px;
+    padding: 34px 20px 25px 31px;
   }
 
   .companion-card__info {
     width: 470px;
-    margin-bottom: 30px;
-    margin-right: 96px;
+    margin-bottom: 21px;
+    margin-right: 93px;
   }
 
   .companion-card__like {
+    order: 2;
     position: initial;
     width: 50px;
     height: 50px;
+    background-size: 20px;
   }
 
   .companion-card__user {
+    position: relative;
     width: 255px;
+    margin-left: 15px;
   }
 
   .companion-card__name {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .companion-card__points {
+    order: 3;
     display: inline-block;
     align-self: flex-end;
     width: 49px;
-    margin: 0 0 14px 10px;
+    margin: 0 0 13px 6px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -172,6 +232,7 @@
 
   .companion-card__title {
     display: inline-block;
+    margin: 0 0 18px 41px;
   }
 
   .companion-card__user-actions {
@@ -179,7 +240,8 @@
   }
 
   .companion-card__tags {
-    margin: 0 0 45px 0;
+    width: 100%;
+    margin: 0 0 45px 5px;
   }
 
   .companion-card__transport {
@@ -199,6 +261,21 @@
 
   .companion-card__directions {
     order: 3;
+    min-height: 50px;
+
+    &::before {
+      top: 10px;
+      left: -31px;
+      width: calc(100% + 52px);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .companion-card__directions--fix {
+    height: 100%;
   }
 
   .companion-card__wrapper {

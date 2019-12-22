@@ -116,7 +116,7 @@
     min-height: 750px;
 
     @include container($desktop-width, $desktop-container-1);
-    padding-top: 126px;
+    padding-top: 130px;
 
     background: url("../img/about-desktop@1x.png") no-repeat top 85px right 60px;
 
@@ -141,6 +141,6 @@
 
   .about__text--bold {
     width: 410px;
-    margin: 0 0 86px 0;
+    margin: 0 0 84px 0;
   }
 }

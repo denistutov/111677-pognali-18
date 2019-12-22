@@ -2,22 +2,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include container($mobile-width, $mobile-container-1);
   padding-top: 27px;
   background-color: $bg-grey-1;
 }
 
 .members-search__wrapper {
-  width: 270px;
-  padding: 24px 25px;
+  width: 100%;
+  padding: 26px 20px 22px 20px;
   background-color: $orange-4;
   box-sizing: border-box;
   border-radius: 20px;
 }
 
+.members-search__inner-wrapper {
+  padding: 0 5px;
+}
+
 .members-search__title {
   width: 118px;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 21px 0;
   font-size: 23.5px;
   line-height: 22.5px;
   color: $dark-blue-2;
@@ -26,24 +32,43 @@
 }
 
 .members-search__button {
-  width: 230px;
+  width: 100%;
+}
+
+.members-search__level {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .members-search {
+    padding: 45px 0 0 0;
+    margin: 0 0 40px 0;
+    width: 100%;
+  }
+
   .members-search__wrapper {
-    width: $tablet-width-container-big;
-    padding: 0 35px 38px 35px;
+    width: 688px;
+    padding: 0 34px 0 35px;
+    margin: 0;
+  }
+
+  .members-search__inner-wrapper {
+    padding: 0;
+    margin-bottom: 37px;
+    border-bottom: 1px solid $border-orange-1;
   }
 
   .members-search__title {
     width: 100%;
-    padding: 37px 0;
+    padding: 43px 0 40px 0;
+    margin-bottom: 33px;
     font-size: 30px;
-    line-height: 30px;
+    border-bottom: 1px solid $border-orange-1;
   }
 
   .members-search__button {
     width: 100%;
+    margin-bottom: 37px;
   }
 }
 

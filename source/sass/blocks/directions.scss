@@ -116,7 +116,7 @@
     background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 86px right 57px;
 
     @include container($desktop-width, $desktop-container-1);
-    padding-top: 160px;
+    padding-top: 163px;
   }
 
   .directions__cards {
@@ -132,6 +132,10 @@
   .directions__wrapper {
     width: 450px;
     padding: 0;
+  }
+
+  .directions__title {
+    line-height: 48px;
   }
 
   .directions__show-all {

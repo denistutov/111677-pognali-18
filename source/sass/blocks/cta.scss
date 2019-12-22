@@ -81,7 +81,9 @@
   }
 
   .cta__contacts {
+    align-self: flex-start;
     width: 476px;
+    padding-left: 50px;
     margin-bottom: 37px;
   }
 
@@ -103,8 +105,14 @@
     @include container($desktop-width, $desktop-container-1);
   }
 
+  .cta__title {
+    margin-bottom: 52px;
+    line-height: 55px;
+  }
+
   .cta__text {
-    margin-bottom: 61px;
+    margin-bottom: 60px;
+    line-height: 31px;
   }
 
   .cta__text--footer {
@@ -113,14 +121,14 @@
   }
 
   .cta__register {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 
   .cta__contacts {
     display: flex;
     justify-content: center;
     width: 800px;
-    padding-left: 117px;
+    padding-left: 249px;
     margin-bottom: 93px;
   }
 

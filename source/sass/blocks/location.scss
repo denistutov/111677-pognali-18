@@ -106,6 +106,7 @@
 
     @include container($desktop-width, $desktop-container-1);
     padding-top: 56px;
+    padding-right: 134px;
   }
 
   .location__address {
@@ -114,12 +115,12 @@
   }
 
   .location__link {
-    padding-right: 62px;
+    padding-right: 58px;
     margin: 0;
     line-height: 82px;
 
     &::before {
-      top: -3px;
+      top: -6px;
       left: -29px;
       width: 90px;
       height: 90px;
