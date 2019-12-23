@@ -27,6 +27,27 @@
   }
 
   .members__item {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .members__paginator {
+    @include container($tablet-width, $tablet-container-2);
+
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .members {
+    align-items: flex-start;
+  }
+
+  .members__paginator {
+    width: 100%;
+    margin-bottom: 61px;
   }
 }

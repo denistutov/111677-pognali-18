@@ -73,15 +73,25 @@
 }
 
 @media (min-width: $desktop-width) {
-  .members-search__wrapper {
+  .members-search {
     width: 285px;
-    padding: 0 35px 38px 35px;
+    padding-top: 0;
+  }
+
+  .members-search__wrapper {
+    width: 100%;
+  }
+
+  .members-search__inner-wrapper {
+    border: none;
+    padding: 0 5px;
+    margin-bottom: 0;
   }
 
   .members-search__title {
-    width: 100%;
-    padding: 37px 0;
+    padding: 37px 0 0 0;
     font-size: 30px;
     line-height: 30px;
+    border: none;
   }
 }

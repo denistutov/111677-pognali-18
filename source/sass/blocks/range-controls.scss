@@ -63,3 +63,9 @@
     margin-left: 25%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-controls {
+    width: 100%;
+  }
+}

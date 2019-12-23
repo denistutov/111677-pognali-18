@@ -205,51 +205,49 @@
 }
 
 @media (min-width: $desktop-width) {
-  .accordion {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .accordion__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 21px;
-  }
-
-  .accordion__title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   .accordion__toggle {
     display: block;
   }
 
-  .accordion__list {
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+  .accordion--is-closed {
+    .accordion__list {
+      display: none;
+    }
+
+    .accordion__wrapper {
+      margin-bottom: 0;
+    }
   }
 
-  .accordion__label {
-    display: inline-block;
-    width: auto;
-    font-size: 20px;
-    line-height: 20px;
+  .accordion--is-open {
+    margin: 0 0 7px 0;
+
+    .accordion__wrapper {
+      margin-bottom: 15px;
+    }
+
+    .accordion__list {
+      flex-direction: row;
+      margin: 0 0 0 35px;
+    }
+
+    .accordion__transport {
+      margin: 0 0 12px 0;
+    }
   }
 
-  .accordion__transport {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
+  .accordion--level {
+    .accordion__wrapper {
+      margin-bottom: 12px;
+    }
   }
 
   .accordion__level-controls {
-    display: flex;
+    margin: 0 0 0 0;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+  }
+
+  .accordion--transport {
+    padding-top: 0;
   }
 }

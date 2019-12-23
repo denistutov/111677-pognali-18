@@ -45,8 +45,8 @@
 }
 
 .companion-card__name {
+  position: relative;
   width: 78px;
-  display: inline-block;
   margin-bottom: 6px;
   font-size: 20px;
   line-height: 20px;
@@ -57,7 +57,14 @@
 }
 
 .companion-card__name-text {
-  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  &::before {
+    top: 7px;
+    right: -66px;
+  }
 }
 
 .companion-card__points {
@@ -202,10 +209,20 @@
   }
 
   .companion-card__name {
+    position: initial;
     width: 100%;
     margin-bottom: 17px;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .companion-card__name-text {
+    position: relative;
+
+    &::before {
+      top: 10px;
+      right: -32px;
+    }
   }
 
   .companion-card__points {
@@ -308,6 +325,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 600px;
+    padding: 0;
     margin: 0 90px 0 0;
   }
 
@@ -331,6 +349,10 @@
     padding-top: 50px;
     padding-bottom: 90px;
     margin: 0;
+
+    &::before {
+      display: none;
+    }
 
     .companion-card__list {
       flex-direction: column;
