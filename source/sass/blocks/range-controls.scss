@@ -68,4 +68,16 @@
   .range-controls {
     width: 100%;
   }
+
+  .range-toggle-min {
+    left: 31%;
+  }
+
+  .range-controls__bar {
+    margin-left: 31%;
+  }
+
+  .range-toggle-max {
+    left: calc(100% - 12px);
+  }
 }

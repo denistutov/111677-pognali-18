@@ -326,27 +326,31 @@
     align-items: flex-start;
     width: 600px;
     padding: 0;
-    margin: 0 90px 0 0;
+    margin: 0 65px 0 0;
   }
 
   .companion-card__user {
-    width: 255px;
-    padding-top: 50px;
+    width: 257px;
+    padding-top: 45px;
   }
 
   .companion-card__user-actions {
     margin-bottom: 20px;
   }
 
+  .companion-card__tags {
+    margin: 0 0 47px 5px;
+  }
+
   .companion-card__points {
     margin: 0;
-    padding: 0 0 15px 10px;
+    padding: 0 0 15px 6px;
   }
 
   .companion-card__directions {
     display: flex;
     width: 200px;
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 90px;
     margin: 0;
 
@@ -362,7 +366,7 @@
 
   .companion-card__item {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 13px 0;
 
     &:last-child {
       margin: 0;
@@ -376,12 +380,13 @@
   .companion-card__wrapper {
     order: 3;
     position: absolute;
-    bottom: 50px;
-    right: 65px;
-    width: 200px;
-    height: 40px;
+    bottom: 39px;
+    right: 8px;
+    width: 282px;
+    height: 60px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .companion-card__transport {
@@ -394,5 +399,13 @@
   .companion-card__list {
     flex-direction: row;
     align-items: center;
+  }
+
+  .companion-card__name-text {
+    &::before {
+      top: 12px;
+      right: 0;
+      left: -25px;
+    }
   }
 }

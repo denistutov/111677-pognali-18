@@ -27,6 +27,12 @@
   border-radius: 20px;
 }
 
+.button--round-header {
+  width: 270px;
+  padding: 25px 0;
+  border-radius: 25px;
+}
+
 .button--border {
   padding: 28px 0 28px 21px;
   color: $black;
@@ -77,22 +83,25 @@
 }
 
 .button--country-filter {
-  position: relative;
   padding: 20px 0 20px 108px;
   text-align: left;
   text-transform: uppercase;
   background: $bg-grey-5;
   border-radius: 20px;
 
-  &::before {
-    position: absolute;
-    top: 14px;
-    left: 85px;
-    display: inline-block;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: url("../../img/filter-close.svg") no-repeat center right;
+  span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: -23px;
+      display: inline-block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: url("../../img/filter-close.svg") no-repeat center right;
+    }
   }
 }
 
@@ -111,15 +120,17 @@
 
   .button--round-header {
     width: 190px;
+    padding: 25px 0;
+    margin-bottom: 6px;
   }
 
   .button--country-filter {
     font-size: 20px;
     padding: 50px 0 50px 282px;
 
-    &::before {
-      top: 40px;
-      left: 243px;
+    span::before {
+      top: 2px;
+      left: -40px;
       width: 19px;
       height: 19px;
     }
@@ -161,13 +172,25 @@
   .button--round {
     padding: 40px 0 40px 34px;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
   .button--round-header {
-    width: 190px;
     padding: 25px 0;
-    border-radius: 25px;
+  }
+
+  .button--country-filter {
+    text-align: center;
+    padding: 50px 0;
+
+    span {
+      padding: 0 0 0 35px;
+
+      &::before {
+        left: -4px;
+        top: 4px;
+      }
+    }
   }
 
   .button--transparent-bg {

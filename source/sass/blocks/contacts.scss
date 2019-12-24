@@ -9,7 +9,7 @@
 
 .contacts__item {
   min-height: 45px;
-  padding: 0 0 0 41px;
+  padding: 0 0 0 18px;
 }
 
 .contacts__link {
@@ -21,7 +21,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -15px;
+    top: -13px;
     left: -61px;
     display: block;
     width: 45px;
@@ -57,6 +57,7 @@
 
   .contacts__item {
     min-height: 67px;
+    padding: 0 0 0 51px;
   }
 
   .contacts__link {
@@ -65,7 +66,7 @@
     &::before {
       width: 67px;
       height: 67px;
-      top: -22px;
+      top: -18px;
       left: -91px;
       background-size: 27px;
     }

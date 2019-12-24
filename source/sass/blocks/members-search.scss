@@ -80,16 +80,18 @@
 
   .members-search__wrapper {
     width: 100%;
+    padding: 0 42px 0 47px;
   }
 
   .members-search__inner-wrapper {
     border: none;
-    padding: 0 5px;
-    margin-bottom: 0;
+    padding: 0 5px 0 0;
+    margin-bottom: 17px;
   }
 
   .members-search__title {
-    padding: 37px 0 0 0;
+    padding: 44px 0 0 0;
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 30px;
     border: none;

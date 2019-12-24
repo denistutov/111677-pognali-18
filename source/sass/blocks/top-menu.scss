@@ -7,10 +7,6 @@
   list-style: none;
 }
 
-.top-menu__link.button {
-  width: 190px;
-}
-
 .top-menu__item {
   height: 40px;
 }
@@ -34,11 +30,21 @@
 }
 
 .top-menu--header {
-  display: none;
+  .top-menu__link--phone {
+    display: none;
+  }
+
+  .top-menu__link--email {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .top-menu {
+    display: none;
+  }
+
+  .top-menu--header {
     display: none;
   }
 }
@@ -46,7 +52,7 @@
 @media (min-width: $desktop-width) {
   .top-menu--header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: 50px;
     margin: 0;
   }

@@ -18,7 +18,7 @@
 }
 
 .members__paginator {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,8 +46,13 @@
     align-items: flex-start;
   }
 
+  .members__list {
+    padding: 0;
+  }
+
   .members__paginator {
     width: 100%;
-    margin-bottom: 61px;
+    padding: 0;
+    margin-bottom: 77px;
   }
 }

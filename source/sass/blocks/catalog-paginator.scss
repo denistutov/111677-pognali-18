@@ -119,6 +119,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-paginator__show-more {
+    width: 100%;
+    padding-left: 395px;
+    margin-top: 50px;
+    margin-bottom: 68px;
+    text-align: left;
+
+    &::before {
+      left: 345px;
+    }
+  }
+
   .catalog-paginator__nav {
     width: 950px;
   }

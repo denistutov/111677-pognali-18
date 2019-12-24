@@ -90,11 +90,12 @@
 @media (min-width: $desktop-width) {
   .country-table {
     width: 100%;
+    padding: 0 35px;
   }
 
   .country-table__item {
-    width: 250px;
-    margin: 0 0 56px 0;
+    width: 245px;
+    margin: 0 0 57px 0;
   }
 
   .country-table__button {
@@ -104,5 +105,6 @@
 
   .country-table__full-list {
     display: block;
+    padding: 37px 0 0 0;
   }
 }

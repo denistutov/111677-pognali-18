@@ -98,6 +98,14 @@
 
   .page-title__wrapper {
     width: $desktop-width-container;
-    padding: 126px 64px 69px 64px;
+    padding: 106px 64px 69px 67px;
+  }
+
+  .page-title__text::before {
+    bottom: -73px;
+  }
+
+  .page-title__link::after {
+    top: 9px;
   }
 }

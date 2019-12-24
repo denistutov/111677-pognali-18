@@ -9,14 +9,24 @@
   width: 100%;
 }
 
+.main-nav__menu {
+  margin: 40px 0 53px 0;
+}
+
+.main-nav__top-menu {
+  margin-bottom: 74px;
+}
+
 .main-nav__contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .main-nav__social {
   display: flex;
   justify-content: center;
+  margin-bottom: 37px;
 }
 
 .main-nav__header-social {
@@ -25,7 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    padding-left: 40px;
+    padding-left: 57px;
+    padding-top: 75px;
   }
 
   .main-nav__list {
@@ -34,6 +45,11 @@
 
   .main-nav__social {
     justify-content: flex-start;
+    margin: 0 0 10px 13px;
+  }
+
+  .main-nav__contacts {
+    margin-bottom: 107px;
   }
 }
 

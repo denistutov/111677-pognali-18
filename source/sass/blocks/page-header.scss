@@ -44,6 +44,11 @@
   .page-header__login {
     display: block;
   }
+
+  .page-header__toggle {
+    margin-left: 21px;
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {

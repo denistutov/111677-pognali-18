@@ -60,6 +60,14 @@
   }
 
   .country-popup__wrapper {
-    width: $desktop-width-container;
+    @include container($desktop-width, $desktop-container);
+  }
+
+  .country-popup__table-wrapper {
+    margin-bottom: 17px;
+  }
+
+  .country-popup__button {
+    margin: 0 0 153px 0;
   }
 }
