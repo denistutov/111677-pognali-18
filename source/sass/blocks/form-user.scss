@@ -16,34 +16,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: $mobile-width;
-}
+  margin: 0 0 9px 0;
 
-.form-user__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: $mobile-width;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.form-user__tags {
-  width: $mobile-width-container;
-  margin-bottom: 25px;
-}
-
-.form-user__transport {
-  width: $mobile-width-container;
-  margin-bottom: 25px;
-}
-
-.form-user__title {
-  font-size: 24px;
-  line-height: 24px;
-  color: $dark-blue-2;
-
-  @include primary-font($bold);
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .form-user__plans {
@@ -55,6 +30,36 @@
   background-color: $bg-grey-3;
 }
 
+.form-user__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include container($mobile-width, $mobile-container-1);
+  margin: 0 auto 20px auto;
+}
+
+.form-user__tags {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-user__transport {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-user__title {
+  @include container($mobile-width, $mobile-container-1);
+
+  margin: 27px 0 31px 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
 .form-user__plans-list {
   padding: 0;
   margin: 0;
@@ -62,9 +67,6 @@
 }
 
 .form-user__add-plan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   background-color: $bg-grey-4;
   border: none;

@@ -6,8 +6,41 @@
   width: 60px;
   height: 60px;
   color: $white;
-  background-color: $black;
   border-radius: 50%;
+}
+
+.user-level--form {
+  width: 100px;
+  height: 100px;
+
+  .user-level__value {
+    margin-bottom: 3px;
+    font-size: 38px;
+    line-height: 38px;
+    color: $dark-blue-3;
+
+    @include primary-font($bold);
+  }
+
+  .user-level__text {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-grey;
+
+    @include primary-font($normal);
+
+    &::before {
+      position: absolute;
+      top: -2px;
+      left: -10px;
+      display: block;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $border-grey-2;
+    }
+  }
 }
 
 .user-level__value {

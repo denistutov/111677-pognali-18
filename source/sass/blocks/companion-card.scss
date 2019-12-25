@@ -309,11 +309,23 @@
 
 @media (min-width: $desktop-width) {
   .companion-card {
+    position: relative;
     width: 950px;
     padding: 0;
     margin: 0 0 30px 0;
     flex-direction: row;
     align-items: flex-start;
+
+    &::after {
+      position: absolute;
+      top: 60px;
+      right: 319px;
+      display: block;
+      content: "";
+      width: 1px;
+      height: 187px;
+      background: linear-gradient(to bottom, rgba($bg-grey-1, 0) 0%, $bg-grey-1 25%, $bg-grey-1 65%, rgba($bg-grey-1, 0) 100%);
+    }
   }
 
   .companion-card__picture {

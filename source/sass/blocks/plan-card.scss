@@ -1,7 +1,9 @@
 .plan-card {
-  width: $mobile-width-container;
-  padding: 24px;
-  margin-bottom: 20px;
+  display: block;
+  min-width: 270px;
+  width: 100%;
+  padding: 22px 23px 26px 24px;
+  margin-bottom: 9px;
   border-radius: 10px;
   background-color: $white;
   box-sizing: border-box;
@@ -37,7 +39,7 @@
 }
 
 .plan-card__data {
-  margin: 0 0 27px 0;
+  margin: 0 0 23px 0;
   padding: 0;
 }
 

@@ -1,14 +1,24 @@
 .plan-step {
-  width: $mobile-width-container;
-  padding: 24px 24px 22px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2px 20px 0 20px;
   background-color: $white;
   border-radius: 10px;
   box-sizing: border-box;
   border: none;
 }
 
+.plan-step__container {
+  margin: 0 5px;
+}
+
 .plan-step__title {
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
   font-size: 20px;
   line-height: 20px;
   color: $dark-blue-2;
@@ -17,7 +27,8 @@
 }
 
 .plan-step__text {
-  margin-bottom: 25px;
+  width: 220px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
   color: $text-grey;
@@ -32,6 +43,10 @@
 
 .plan-step__country {
   margin-bottom: 25px;
+}
+
+.plan-step__calendar {
+  padding: 25px 0 0 0;
 }
 
 @media (min-width: $tablet-width) {

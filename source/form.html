@@ -84,7 +84,7 @@
         <div class="form-user__info">
           <fieldset class="form-user__details user-details">
             <div class="user-details__wrapper">
-              <div class="user-details__level user-level">
+              <div class="user-details__level user-level user-level--form">
                 <span class="user-level__value">80</span>
                 <span class="user-level__text">level</span>
               </div>
@@ -110,31 +110,27 @@
               </label>
               <ul class="form-field-border__list transport-list transport-list--checkbox">
                 <li class="transport-list__item">
-                  <input class="visually-hidden" id="plane" type="checkbox" checked>
-                  <label for="plane">
-                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="19" height="21">
-                    <span class="transport-list__text">Авиаперелет</span>
+                  <label class="transport-list__label" for="plane">
+                    <input class="transport-list__input visually-hidden" id="plane" type="checkbox">
+                    <img class="transport-list__img" src="img/plane.svg" alt="Авиаперелет" width="14" height="16">
                   </label>
                 </li>
                 <li class="transport-list__item">
-                  <input class="visually-hidden" id="automobile" type="checkbox" checked>
-                  <label for="automobile">
-                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="17" height="21">
-                    <span class="transport-list__text">Автотранспорт</span>
+                  <label class="transport-list__label" for="automobile">
+                    <input class="transport-list__input visually-hidden" id="automobile" type="checkbox">
+                    <img class="transport-list__img" src="img/bus.svg" alt="Автотранспорт" width="13" height="16">
                   </label>
                 </li>
                 <li class="transport-list__item">
-                  <input class="visually-hidden" id="bike" type="checkbox">
-                  <label for="bike">
-                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="24" height="21">
-                    <span class="transport-list__text">Велосипед</span>
+                  <label class="transport-list__label" for="bike">
+                    <input class="transport-list__input visually-hidden" id="bike" type="checkbox">
+                    <img class="transport-list__img" src="img/bike.svg" alt="Велосипед" width="19" height="17">
                   </label>
                 </li>
                 <li class="transport-list__item">
-                  <input class="visually-hidden" id="foot" type="checkbox" checked>
-                  <label for="foot">
-                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="20" height="21">
-                    <span class="transport-list__text">Пешком</span>
+                  <label class="transport-list__label" for="foot">
+                    <input class="transport-list__input visually-hidden" id="foot" type="checkbox">
+                    <img class="transport-list__img" src="img/run.svg" alt="Пешком" width="15" height="17">
                   </label>
                 </li>
               </ul>
@@ -174,260 +170,302 @@
           <div class="form-user__wrapper">
             <h2 class="form-user__title">Добавить план:</h2>
             <fieldset class="form-user__step plan-step">
-              <h3 class="plan-step__title">Шаг 1. Даты пребывания</h3>
-              <p class="plan-step__text">Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <div class="plan-step__counter counter">
-                <div class="counter__wrapper">
-                  <div class="counter__header">
-                    <span class="counter__title">Ищу попутчиков:</span>
-                    <span class="counter__desc">Чел.</span>
-                  </div>
-                  <div class="counter__value">
-                    <button class="counter__minus" type="button">-</button>
-                    <input class="counter__number" type="text" value="2"/>
-                    <button class="counter__plus" type="button">+</button>
-                  </div>
-                </div>
-              </div>
-              <div class="plan-step__counter counter">
-                <div class="counter__wrapper">
-                  <div class="counter__header">
-                    <span class="counter__title">Длительность:</span>
-                    <span class="counter__desc">Дн.</span>
-                  </div>
-                  <div class="counter__value">
-                    <button class="counter__minus" type="button">-</button>
-                    <input class="counter__number" type="text" value="2"/>
-                    <button class="counter__plus" type="button">+</button>
-                  </div>
-                  <div class="counter__checkbox">
-                    <input id="children" type="checkbox">
-                    <label class="counter__checkbox-text" for="children">Можно с детьми</label>
+              <div class="plan-step__container">
+                <h3 class="plan-step__title"><span>Шаг 1.</span><span>Даты пребывания</span></h3>
+                <p class="plan-step__text">Укажите предпочтительное количество попутчиков, которых
+                  вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <div class="plan-step__counter counter">
+                  <div class="counter__wrapper">
+                    <div class="counter__header">
+                      <span class="counter__title">Ищу попутчиков:</span>
+                      <span class="counter__desc">Чел.</span>
+                    </div>
+                    <div class="counter__value">
+                      <button class="counter__minus" type="button">-</button>
+                      <input class="counter__number" type="text" value="2"/>
+                      <button class="counter__plus" type="button">+</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="plan-step__calendar calendar">
-                <div class="calendar__title-wrapper">
-                  <button class="calendar__control calendar__control--prev" type="button">
-                    Предыдущий месяц
-                  </button>
-                  <p class="calendar__title">Март 2019</p>
-                  <button class="calendar__control calendar__control--next" type="button">
-                    Следующий месяц
-                  </button>
+                <div class="plan-step__counter counter">
+                  <div class="counter__wrapper">
+                    <div class="counter__header">
+                      <span class="counter__title">Длительность:</span>
+                      <span class="counter__desc">Дн.</span>
+                    </div>
+                    <div class="counter__value">
+                      <button class="counter__minus" type="button">-</button>
+                      <input class="counter__number" type="text" value="2"/>
+                      <button class="counter__plus" type="button">+</button>
+                    </div>
+                    <div class="counter__checkbox">
+                      <input id="children" type="checkbox">
+                      <label class="counter__checkbox-text" for="children">Можно с детьми</label>
+                    </div>
+                  </div>
                 </div>
-                <table class="calendar__table">
-                  <thead>
-                  <tr>
-                    <th class="calendar__day-of-week">
-                      <span class="calendar__day-name">Пн</span>
-                    </th>
-                    <th class="calendar__day-of-week">
-                      <span class="calendar__day-name">Вт</span>
-                    </th>
-                    <th class="calendar__day-of-week">
-                      <span class="calendar__day-name">Ср</span>
-                    </th>
-                    <th class="calendar__day-of-week">
-                      <span class="calendar__day-name">Чт</span>
-                    </th>
-                    <th class="calendar__day-of-week">
-                      <span class="calendar__day-name">Пт</span>
-                    </th>
-                    <th class="calendar__day-of-week calendar__day-of-week--weekend">
-                      <span class="calendar__day-name">Сб</span>
-                    </th>
-                    <th class="calendar__day-of-week calendar__day-of-week--weekend">
-                      <span class="calendar__day-name">Вс</span>
-                    </th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-23" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-23">
-                        23
-                      </label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-24" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-24">24</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-25" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-25">25</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-26" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-26">26</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-27" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-27">27</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="february-28" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="february-28">28</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-01" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-01">1</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-02" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-02">2</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-03" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-03">3</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-04" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-04">4</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-05" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-05">5</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-06" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-06">6</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-07" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-07">7</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-08" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-08">8</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-09" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-09">9</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-10" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-10">10</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-11" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-11">11</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-12" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-12">12</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-13" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-13">13</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-14" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-14">14</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-15" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-15">15</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-16" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-16">16</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-17" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-17">17</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-18" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-18">18</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-19" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-19">19</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-20" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-20">20</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-21" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-21">21</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-22" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-22">22</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-23" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-23">23</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-24" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-24">24</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-25" disabled />
-                      <label class="calendar__day-number calendar__day-number--inactive" for="march-25">25</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-26" checked />
-                      <label class="calendar__day-number calendar__day-number--selected calendar__day-number--active" for="march-26">26</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-27" checked />
-                      <label class="calendar__day-number calendar__day-number--selected" for="march-27">27</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-28" checked />
-                      <label class="calendar__day-number calendar__day-number--selected" for="march-28">28</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-29" />
-                      <label class="calendar__day-number" for="march-29">29</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-30" />
-                      <label class="calendar__day-number" for="march-30">30</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="march-31" />
-                      <label class="calendar__day-number" for="march-31">31</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-01" />
-                      <label class="calendar__day-number" for="april-01">1</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-02" />
-                      <label class="calendar__day-number" for="april-02">2</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-03" />
-                      <label class="calendar__day-number" for="april-03">3</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-04" />
-                      <label class="calendar__day-number" for="april-04">4</label>
-                    </td>
-                    <td>
-                      <input class="visually-hidden" type="checkbox" name="day-number" id="april-05" />
-                      <label class="calendar__day-number" for="april-05">5</label>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
+                <div class="plan-step__calendar calendar">
+                  <div class="calendar__title-wrapper">
+                    <button class="calendar__control calendar__control--prev" type="button">
+                      Предыдущий месяц
+                    </button>
+                    <p class="calendar__title">Март 2019</p>
+                    <button class="calendar__control calendar__control--next" type="button">
+                      Следующий месяц
+                    </button>
+                  </div>
+                  <table class="calendar__table">
+                    <thead>
+                    <tr>
+                      <th class="calendar__day-of-week">
+                        <span class="calendar__day-name">Пн</span>
+                      </th>
+                      <th class="calendar__day-of-week">
+                        <span class="calendar__day-name">Вт</span>
+                      </th>
+                      <th class="calendar__day-of-week">
+                        <span class="calendar__day-name">Ср</span>
+                      </th>
+                      <th class="calendar__day-of-week">
+                        <span class="calendar__day-name">Чт</span>
+                      </th>
+                      <th class="calendar__day-of-week">
+                        <span class="calendar__day-name">Пт</span>
+                      </th>
+                      <th class="calendar__day-of-week calendar__day-of-week--weekend">
+                        <span class="calendar__day-name">Сб</span>
+                      </th>
+                      <th class="calendar__day-of-week calendar__day-of-week--weekend">
+                        <span class="calendar__day-name">Вс</span>
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          23
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          24
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          25
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          26
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          27
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          28
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          1
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          2
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          3
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          4
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          5
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          6
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          7
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          8
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          9
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          10
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          11
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          12
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          13
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          14
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          15
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          16
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          17
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          18
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          19
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          20
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          21
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          22
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          23
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          24
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--inactive">
+                        <button class="calendar__day-number calendar__day-number--inactive" type="button">
+                          25
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--active">
+                        <button class="calendar__day-number calendar__day-number--selected" type="button">
+                          26
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--selected">
+                        <button class="calendar__day-number calendar__day-number--selected" type="button">
+                          27
+                        </button>
+                      </td>
+                      <td class="calendar__cell calendar__cell--selected">
+                        <button class="calendar__day-number calendar__day-number--selected" type="button">
+                          28
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          29
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          30
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          31
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          1
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          2
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          3
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          4
+                        </button>
+                      </td>
+                      <td class="calendar__cell">
+                        <button class="calendar__day-number" type="button">
+                          5
+                        </button>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="plan-step__wrapper">
                 <a class="button button--round plan-step__btn" href="">
