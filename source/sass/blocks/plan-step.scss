@@ -15,10 +15,37 @@
   margin: 0 5px;
 }
 
+.plan-step__country-wrapper {
+  padding: 1px 0 0 0;
+  margin-bottom: 25px;
+}
+
+.plan-step__dally-wrapper {
+  position: relative;
+  margin-bottom: 18px;
+
+  .plan-step__text {
+    margin-top: 15px;
+    margin-bottom: 11px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 121px;
+    left: -14px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 281px;
+    background-color: $dark-blue-2;
+  }
+}
+
 .plan-step__title {
   display: flex;
   flex-direction: column;
-  margin-bottom: 17px;
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 20px;
   line-height: 20px;
   color: $dark-blue-2;
@@ -28,7 +55,7 @@
 
 .plan-step__text {
   width: 220px;
-  margin-bottom: 20px;
+  margin: 16px 0 21px 0;
   font-size: 16px;
   line-height: 22px;
   color: $text-grey;
@@ -38,15 +65,30 @@
 
 .plan-step__btn {
   width: 230px;
-  margin-bottom: 20px;
+}
+
+.plan-step__btn--step-next {
+  margin-bottom: 21px;
+}
+
+.plan-step__btn--step-back {
+  margin: 16px 0 0 0;
+}
+
+.plan-step__wrapper {
+  margin-bottom: 17px;
+
+  .plan-step__btn--step-next {
+    margin: 0;
+  }
 }
 
 .plan-step__country {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .plan-step__calendar {
-  padding: 25px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 @media (min-width: $tablet-width) {

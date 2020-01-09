@@ -1,6 +1,7 @@
 .counter {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -25,9 +26,32 @@
 }
 
 .counter__value {
+  position: relative;
   display: flex;
   width: inherit;
   margin-bottom: 21px;
+}
+
+.counter__control {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 41px;
+  font-size: 0;
+  border: 0;
+  opacity: 0.3;
+}
+
+.counter__control--minus {
+  left: 0;
+  background: url("../../img/qty-minus-mobile.svg") no-repeat center center;
+  background-size: 14px;
+}
+
+.counter__control--plus {
+  right: 0;
+  background: url("../../img/qty-plus-mobile.svg") no-repeat center center;
+  background-size: 14px;
 }
 
 .counter__number {
@@ -46,12 +70,36 @@
 }
 
 .counter__checkbox-text {
-  margin-left: 15px;
+  margin-left: 40px;
   font-size: 15px;
   line-height: 15px;
   color: $text-grey;
 
   @include primary-font($normal);
+}
+
+.counter__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 26px;
+}
+
+.counter__checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid $border-grey-2;
+}
+
+.counter__checkbox-input:checked ~ .counter__checkbox-indicator {
+  background: url("../img/tick.svg") no-repeat center center;
+  background-size: 8px;
 }
 
 @media (min-width: $tablet-width) {
