@@ -95,7 +95,7 @@
               <span class="user-details__button-text">Сменить фото</span>
             </label>
           </fieldset>
-          <fieldset class="form-user__tags form-field-border">
+          <fieldset class="form-user__tags form-field-border form-field-border--tags">
             <div class="form-field-border__wrapper">
               <label class="form-field-border__title form-field-border__title--tags">
                 <span class="form-field-border__title-text">Тэги</span>
@@ -103,7 +103,7 @@
               <textarea class="form-field-border__text" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
           </fieldset>
-          <fieldset class="form-user__transport form-field-border">
+          <fieldset class="form-user__transport form-field-border form-field-border--transport">
             <div class="form-field-border__wrapper">
               <label class="form-field-border__title form-field-border__title--transport">
                 <span class="form-field-border__title-text">Транспорт</span>
@@ -159,7 +159,7 @@
                 </h3>
                 <div class="plan-card__content">
                   <p class="plan-card__text">1 попутчик</p>
-                  <p class="plan-card__data">1 июл — 15 июл</p>
+                  <p class="plan-card__data"><span>&nbsp;&nbsp;</span>1 июл — 15 июл</p>
                   <a class="plan-card__link" href="">Изменить</a>
                 </div>
               </li>
@@ -472,21 +472,21 @@
                 Следующий шаг
               </a>
             </fieldset>
-            <fieldset class="form-user__step plan-step">
+            <fieldset class="form-user__step plan-step plan-step--country">
               <div class="plan-step__container">
                 <h3 class="plan-step__title">
                   <span>Шаг 2.</span>
                   <span>Маршрут</span>
                 </h3>
-                <p class="plan-step__text">Укажите страны, которые вы хотели по посетить.
+                <p class="plan-step__text plan-step__text">Укажите страны, которые вы хотели посетить.
                   Это может быть одна или сразу несколько.</p>
                 <div class="plan-step__country-wrapper">
                   <div class="plan-step__country country-select">
                     <button class="country-select__drop-list" type="button">
                       Босния и Герцеговина
                     </button>
-                    <div class="country-select__flag flag">
-                      <img class="flag__img" src="img/flag-bosnia.svg" alt="Босния и герцеговина" width="35" height="24" aria-label="Флаг страны">
+                    <div class="country-select__flag flag flag--form">
+                      <img class="flag__img country-select__flag-img" src="img/flag-bosnia.svg" alt="Босния и герцеговина" width="35" height="24" aria-label="Флаг страны">
                     </div>
                     <button class="country-select__delete" type="button">
                       Удалить страну
@@ -496,8 +496,8 @@
                     <button class="country-select__drop-list" type="button">
                       Чехия
                     </button>
-                    <div class="country-select__flag flag">
-                      <img class="flag__img" src="img/flag-czech.svg" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
+                    <div class="country-select__flag flag flag--form">
+                      <img class="flag__img country-select__flag-img" src="img/flag-czech.svg" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
                     </div>
                     <button class="country-select__delete">
                       Удалить страну
@@ -508,14 +508,14 @@
                       Выберите страну
                     </button>
                     <div class="country-select__flag">
-                      <img class="country-select__flag-img" src="img/dropdown-form.svg" alt="" width="12" height="7">
+                      <img class="country-select__flag-img--empty" src="img/dropdown-form.svg" alt="" width="12" height="7">
                     </div>
                     <button class="country-select__delete" type="button">
                       Удалить страну
                     </button>
                   </div>
                   <div class="plan-step__country country-select country-select--add-new">
-                    <button class="country-select__drop-list country-select__drop-list">
+                    <button class="country-select__drop-list">
                       Добавить страну
                     </button>
                   </div>
@@ -533,7 +533,7 @@
                 <!--Popup с выбором страны-->
               </div>
             </fieldset>
-            <fieldset class="form-user__step plan-step">
+            <fieldset class="form-user__step plan-step plan-step--dally">
               <div class="plan-step__container">
                 <h3 class="plan-step__title">
                   <span>Шаг 3.</span>
@@ -545,7 +545,7 @@
                   <div class="plan-step__dally dally-step">
                     <div class="dally-step__wrapper">
                       <h3 class="dally-step__title">Босния и герцеговина</h3>
-                      <div class="dally-step__flag flag">
+                      <div class="dally-step__flag flag flag--form">
                         <img class="flag__img" src="img/flag-bosnia.svg" alt="Босния и герцеговина" width="35" height="24" aria-label="Флаг страны">
                       </div>
                     </div>
@@ -554,7 +554,7 @@
                   <div class="plan-step__dally dally-step">
                     <div class="dally-step__wrapper">
                       <h3 class="dally-step__title">Чехия</h3>
-                      <div class="dally-step__flag flag">
+                      <div class="dally-step__flag flag flag--form">
                         <img class="flag__img" src="img/flag-czech.svg" alt="Чехия" width="35" height="24" aria-label="Флаг страны">
                       </div>
                     </div>

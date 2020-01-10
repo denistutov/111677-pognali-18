@@ -67,3 +67,10 @@
     color: $dark-blue-2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .user-level--form {
+    width: 94px;
+    height: 94px;
+  }
+}

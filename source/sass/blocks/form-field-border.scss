@@ -55,7 +55,10 @@
   }
 
   .form-field-border__title {
-    top: calc(100% - 7px);
+    top: calc(100% - 8px);
+    letter-spacing: 2px;
+
+    @include primary-font($medium);
   }
 
   .form-field-border__title-text {
@@ -64,8 +67,18 @@
   }
 
   .form-field-border__text {
+    padding: 31px 39px 8px 39px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .form-field-border--tags {
+    width: 100%;
+  }
+
+  .form-field-border--transport {
+    width: 308px;
+    margin-left: -1px;
   }
 }
 

@@ -41,6 +41,10 @@
 .plan-card__data {
   margin: 0 0 23px 0;
   padding: 0;
+
+  span {
+    display: none;
+  }
 }
 
 .plan-card__link {
@@ -66,7 +70,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 34px;
+    padding: 37px 32px 34px 36px;
     margin: 0 0 19px 0;
     font-size: 24px;
     line-height: 24px;
@@ -92,7 +96,11 @@
   }
 
   .plan-card__data {
-    margin: 0;
+    margin: 0 34px 0 0;
+
+    span {
+      display: inline-block;
+    }
   }
 }
 

@@ -23,6 +23,7 @@
   @include primary-font($bold);
 
   &::before {
+    z-index: 5;
     position: absolute;
     bottom: -11px;
     left: 0;
@@ -58,8 +59,8 @@
     align-items: center;
 
     @include container($tablet-width, $tablet-container-1);
-    padding-top: 117px;
-    padding-bottom: 66px;
+    padding-top: 114px;
+    padding-bottom: 68px;
   }
 
   .page-title__text {
@@ -67,8 +68,9 @@
     line-height: 65px;
 
     &::before {
-      bottom: -70px;
+      bottom: -71px;
       height: 8px;
+      border-radius: 4px;
     }
   }
 

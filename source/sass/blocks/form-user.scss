@@ -81,35 +81,58 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-user {
+    padding: 63px 0 0 0;
+  }
+
   .form-user__info {
     position: relative;
-    width: $tablet-width-container;
-    margin-bottom: 30px;
+
+    @include container($tablet-width, $tablet-container-1);
+    margin-bottom: 10px;
   }
 
   .form-user__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .form-user__tags {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .form-user__transport {
     position: absolute;
     top: 0;
-    width: $mobile-width-container;
+
+    @include container($mobile-width, $mobile-container-1);
     margin-bottom: 25px;
   }
 
   .form-user__title {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
+    margin: 45px 0 46px 0;
     font-size: 36px;
     line-height: 50px;
   }
 
+  .form-user__details {
+    margin-bottom: 53px;
+  }
+
   .form-user__step {
     margin: 0 0 40px 0;
+  }
+
+  .form-user__plans {
+    min-height: 561px;
+  }
+
+  .form-user__add-plan {
+    margin-bottom: 4px;
+
+    .form-user__title {
+      margin: 43px 0 53px 0;
+    }
   }
 }
 

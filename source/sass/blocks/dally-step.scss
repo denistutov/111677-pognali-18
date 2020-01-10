@@ -86,25 +86,45 @@
 }
 
 @media (min-width: $tablet-width) {
-  .dally-step__wrapper {
+  .dally-step {
     margin-bottom: 37px;
+  }
+
+  .dally-step__wrapper {
+    margin-bottom: 29px;
     align-items: center;
+
+    &::before {
+      left: calc(100% + 19px);
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .dally-step__title {
+    padding-left: 0;
+    width: auto;
     font-size: 30px;
     line-height: 18px;
+
+    @include primary-font($bold);
+
+    &::after {
+      display: none;
+    }
   }
 
   .dally-step__flag {
-    width: 70px;
-    height: 47px;
-    background-color: pink;
+    margin: 2px 1px 0 0;
   }
 
   .dally-step__text {
     height: 142px;
-    padding: 21px 19px;
+    padding: 16px 30px 0 17px;
     font-size: 20px;
     line-height: 24px;
   }

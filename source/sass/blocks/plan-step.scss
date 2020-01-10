@@ -71,10 +71,6 @@
   margin-bottom: 21px;
 }
 
-.plan-step__btn--step-back {
-  margin: 16px 0 0 0;
-}
-
 .plan-step__wrapper {
   margin-bottom: 17px;
 
@@ -93,9 +89,67 @@
 
 @media (min-width: $tablet-width) {
   .plan-step {
-    width: $tablet-width-container;
-    padding: 49px 43px 0 43px;
+    padding: 23px 44px 0 44px;
     border-radius: 30px;
+  }
+
+  .plan-step__dally-wrapper {
+    padding-right: 30px;
+
+    .plan-step__dally:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: 130px;
+      left: calc(100% - 4px);
+      width: 3px;
+      height: 262px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 84px;
+      right: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $border-grey-2;
+    }
+  }
+
+  .plan-step--country {
+    margin-bottom: 51px;
+
+    .plan-step__title {
+      margin-top: 22px;
+      margin-bottom: 35px;
+    }
+
+    .plan-step__text {
+      width: 390px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .plan-step--dally {
+    .plan-step__title {
+      margin-top: 22px;
+      margin-bottom: 35px;
+    }
+
+    .plan-step__text {
+      margin-bottom: 62px;
+    }
+
+    .plan-step__wrapper {
+      margin-top: 43px;
+    }
+  }
+
+  .plan-step__container {
+    margin: 0;
   }
 
   .plan-step__title {
@@ -106,34 +160,76 @@
 
   .plan-step__text {
     width: 500px;
-    margin-bottom: 42px;
+    margin-bottom: 39px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .plan-step__country {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .plan-step__btn {
+    position: relative;
     width: 285px;
+    font-size: 24px;
     text-align: left;
+    text-transform: none;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      right: 36px;
+      display: block;
+      content: "";
+      width: 10px;
+      height: 14px;
+      background: url("../img/triangle-arrow-right.svg") no-repeat center center;
+    }
   }
 
   .plan-step__btn--step-back {
     width: 200px;
     text-align: right;
+
+    &::after {
+      right: 167px;
+      width: 10px;
+      height: 14px;
+      background: url("../img/triangle-arrow-left.svg") no-repeat center center;
+    }
+  }
+
+  .plan-step__btn--step-next {
+    margin-bottom: 56px;
   }
 
   .plan-step__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 49px 0;
+    margin: 49px 0 52px 0;
   }
 
   .plan-step__calendar {
-    margin-top: 60px;
-    margin-bottom: 46px;
+    margin-top: 18px;
+    margin-bottom: 44px;
+  }
+
+  .plan-step__country-wrapper {
+    position: relative;
+    padding-top: 41px;
+    border-top: 1px solid $border-grey-2;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 135px;
+      display: block;
+      content: "";
+      width: 1px;
+      height: calc(100% + 40px);
+      background: linear-gradient(to top, rgba($border-grey-2, 0.1) 0%, rgba($border-grey-2, 1) 30%, $border-grey-2 30%, $border-grey-2 100%) no-repeat;
+    }
   }
 }
 

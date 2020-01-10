@@ -24,7 +24,7 @@
     content: "";
     width: 5px;
     height: 10px;
-    background: url("../../img/small-arrow.svg") no-repeat center center;
+    background: url("../img/small-arrow.svg") no-repeat center center;
     background-size: 5px 10px;
     opacity: 0.3;
   }
@@ -103,7 +103,7 @@
     border-left: none;
   }
 
-  .country-select__flag-img {
+  .country-select__flag-img--empty {
     padding-left: 11px;
   }
 }
@@ -149,7 +149,7 @@
   box-sizing: border-box;
 }
 
-.country-select__flag-img {
+.country-select__flag-img--empty {
   opacity: 0.3;
 }
 
@@ -170,17 +170,88 @@
 @media (min-width: $tablet-width) {
   .country-select {
     align-items: center;
+
+    &::before {
+      right: 128px;
+      bottom: 29px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .country-select__drop-list {
     width: 369px;
     height: 70px;
     margin-right: 53px;
+    padding: 0 0 0 23px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+
+    &::before {
+      top: 30px;
+      right: 27px;
+      width: 17px;
+      height: 9px;
+      background-size: contain;
+    }
+  }
+
+  .country-select--add-new {
+    &::before {
+      background-color: $white;
+    }
+
+    .country-select__drop-list {
+      width: 369px;
+
+      &::before {
+        top: 26px;
+        right: 28px;
+        width: 17px;
+        height: 17px;
+        background-size: contain;
+      }
+    }
+  }
+
+  .country-select--empty {
+    &::before {
+      background-color: $white;
+    }
+
+    .country-select__drop-list {
+      border: 1px solid $border-grey-2;
+      border-radius: 4px;
+
+      &::before {
+        display: block;
+      }
+    }
   }
 
   .country-select__flag {
-    width: 70px;
-    height: 47px;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .country-select__flag-img--empty {
+    display: none;
+  }
+
+  .country-select__delete {
+    top: 21px;
+    right: -6px;
+    width: 22px;
+    height: 25px;
+    background: transparent url("../../img/filter-close.svg") no-repeat center center;
+    background-size: 17px;
+    opacity: 0.3;
   }
 }
 

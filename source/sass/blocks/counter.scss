@@ -138,16 +138,42 @@
 
   .counter__checkbox {
     order: 1;
-    margin: 14px 0 34px 0;
+    margin: 8px 0 32px 0;
+    padding-left: 19px;
   }
 
   .counter__checkbox-text {
     font-size: 20px;
     line-height: 18px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: $dark-blue-2;
 
     @include primary-font($medium);
+  }
+
+  .counter__checkbox-indicator {
+    top: -5px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .counter__checkbox-input:checked ~ .counter__checkbox-indicator {
+    background-size: 12px;
+  }
+
+  .counter__control {
+    width: 63px;
+  }
+
+  .counter__control--plus {
+    background: url("../../img/qty-plus.svg") no-repeat center center;
+    background-size: 20px;
+  }
+
+  .counter__control--minus {
+    background: url("../../img/qty-minus.svg") no-repeat center center;
+    background-size: 20px;
   }
 }
 

@@ -1,7 +1,8 @@
 .user-details {
-  width: $mobile-width-container;
   padding: 0;
   border: none;
+
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .user-details__wrapper {
@@ -16,21 +17,30 @@
 }
 
 .user-details__button {
-  width: $mobile-width-container;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .user-details__wrapper {
     padding: 0;
-    margin-bottom: 52px;
+    margin: 0 0 52px 0;
   }
 
   .user-details__photo {
     border-radius: 10px;
+    width: 94px;
+    height: 94px;
   }
 
   .user-details__button {
-    width: $tablet-width-container;
+    width: 618px;
+  }
+
+  .user-details__button-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    @include primary-font($medium);
   }
 }
 

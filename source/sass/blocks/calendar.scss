@@ -1,5 +1,5 @@
 .calendar {
-  width: 220px;
+  width: 100%;
 }
 
 .calendar__title-wrapper {
@@ -16,7 +16,6 @@
   padding: 0;
   margin: 0;
   font-size: 20px;
-  line-height: 20px;
   color: $dark-blue-2;
 
   @include primary-font($bold);
@@ -118,7 +117,28 @@
     font-size: 36px;
   }
 
+  .calendar__title-wrapper {
+    align-items: center;
+    padding: 21px 0 21px 0;
+    margin-bottom: 33px;
+  }
+
+  .calendar__control {
+    height: 28px;
+    width: 15px;
+    margin: 0 19px;
+  }
+
+  .calendar__control--prev {
+    background-size: 15px 28px;
+  }
+
+  .calendar__control--next {
+    background-size: 15px 28px;
+  }
+
   .calendar__table {
+    width: 100%;
     margin-bottom: 22px;
     font-size: 14px;
     line-height: 18px;
@@ -128,16 +148,18 @@
   .calendar__day-name {
     width: 22px;
     height: 26px;
-    letter-spacing: inherit;
     font-size: 18px;
     line-height: 26px;
+    letter-spacing: 2px;
+
+    @include primary-font($medium);
   }
 
   .calendar__day-number {
-    width: 75px;
-    height: 70px;
+    width: 72px;
+    height: 66px;
     font-size: 20px;
-    line-height: 70px;
+    line-height: 60px;
   }
 }
 

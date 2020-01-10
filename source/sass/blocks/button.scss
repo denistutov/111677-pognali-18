@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  width: 100%;
+  width: 170px;
   padding: 30px 0 30px 25px;
   font-size: 18px;
   text-align: left;
@@ -34,6 +34,7 @@
 }
 
 .button--border {
+  width: 100%;
   padding: 28px 0 28px 21px;
   color: $black;
   background-color: transparent;
@@ -123,6 +124,7 @@
     width: 190px;
     padding: 25px 0;
     margin-bottom: 6px;
+    border-radius: 25px;
   }
 
   .button--country-filter {
@@ -145,6 +147,7 @@
 
   .button--grey-bg {
     padding: 30px 0;
+    border-radius: 10px;
   }
 
   .button--border {
@@ -161,6 +164,7 @@
     padding: 0;
     font-size: 20px;
     line-height: 30px;
+    color: $dark-blue-2;
   }
 }
 
