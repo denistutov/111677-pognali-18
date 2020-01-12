@@ -1,9 +1,12 @@
 .page-title {
+  z-index: 5;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: $dark-blue-3;
+  border-radius: 0 0 20px 20px;
 }
 
 .page-title__wrapper {
@@ -51,6 +54,7 @@
   .page-title {
     display: flex;
     align-items: center;
+    border-radius: 0 0 60px 60px;
   }
 
   .page-title__wrapper {
@@ -59,8 +63,8 @@
     align-items: center;
 
     @include container($tablet-width, $tablet-container-1);
-    padding-top: 114px;
-    padding-bottom: 68px;
+    padding-top: 117px;
+    padding-bottom: 65px;
   }
 
   .page-title__text {
@@ -68,7 +72,7 @@
     line-height: 65px;
 
     &::before {
-      bottom: -71px;
+      bottom: -70px;
       height: 8px;
       border-radius: 4px;
     }
@@ -99,12 +103,14 @@
   }
 
   .page-title__wrapper {
-    width: $desktop-width-container;
-    padding: 106px 64px 69px 67px;
+    @include container($desktop-width, $desktop-container-1);
+    padding-left: 127px;
+    padding-top: 109px;
+    padding-bottom: 64px;
   }
 
   .page-title__text::before {
-    bottom: -73px;
+    bottom: -70px;
   }
 
   .page-title__link::after {

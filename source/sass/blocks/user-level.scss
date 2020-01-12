@@ -72,5 +72,13 @@
   .user-level--form {
     width: 94px;
     height: 94px;
+
+    .user-level__value {
+      color: $white;
+    }
+
+    .user-level__text {
+      color: $white;
+    }
   }
 }

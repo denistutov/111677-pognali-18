@@ -11,6 +11,31 @@
   border: none;
 }
 
+.plan-step--country {
+  padding: 24px 20px 0 20px;
+
+  .plan-step__title {
+    margin: 0;
+  }
+
+  .plan-step__text {
+    margin: 16px 0 19px 0;
+  }
+}
+
+.plan-step--dally {
+  padding: 25px 20px 0 20px;
+  margin-bottom: 40px;
+
+  .plan-step__title {
+    margin: 0;
+  }
+
+  .plan-step__text {
+    margin: 16px 0 19px 0;
+  }
+}
+
 .plan-step__container {
   margin: 0 5px;
 }
@@ -31,7 +56,7 @@
 
   &::before {
     position: absolute;
-    top: 121px;
+    top: 119px;
     left: -14px;
     display: block;
     content: "";
@@ -44,7 +69,6 @@
 .plan-step__title {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   margin-bottom: 0;
   font-size: 20px;
   line-height: 20px;
@@ -54,7 +78,7 @@
 }
 
 .plan-step__text {
-  width: 220px;
+  width: 215px;
   margin: 16px 0 21px 0;
   font-size: 16px;
   line-height: 22px;
@@ -72,10 +96,10 @@
 }
 
 .plan-step__wrapper {
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 
   .plan-step__btn--step-next {
-    margin: 0;
+    margin: 0 0 18px 0;
   }
 }
 
@@ -89,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .plan-step {
-    padding: 23px 44px 0 44px;
+    padding: 13px 44px 0 44px;
     border-radius: 30px;
   }
 
@@ -109,7 +133,7 @@
 
     &::after {
       position: absolute;
-      top: 84px;
+      top: 81px;
       right: 0;
       display: block;
       content: "";
@@ -120,27 +144,30 @@
   }
 
   .plan-step--country {
+    padding: 27px 44px 0 44px;
     margin-bottom: 51px;
 
     .plan-step__title {
       margin-top: 22px;
-      margin-bottom: 35px;
     }
 
     .plan-step__text {
       width: 390px;
-      margin-bottom: 35px;
+      margin: 35px 0 32px 0;
     }
   }
 
   .plan-step--dally {
+    margin-bottom: 98px;
+    padding: 27px 44px 0 44px;
+
     .plan-step__title {
-      margin-top: 22px;
-      margin-bottom: 35px;
+      margin-top: 20px;
+      margin-bottom: 34px;
     }
 
     .plan-step__text {
-      margin-bottom: 62px;
+      margin-bottom: 59px;
     }
 
     .plan-step__wrapper {
@@ -153,7 +180,7 @@
   }
 
   .plan-step__title {
-    margin-bottom: 37px;
+    margin-bottom: 33px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -190,6 +217,7 @@
 
   .plan-step__btn--step-back {
     width: 200px;
+    height: 82px;
     text-align: right;
 
     &::after {
@@ -207,7 +235,7 @@
   .plan-step__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 49px 0 52px 0;
+    margin: 49px 0 36px 0;
   }
 
   .plan-step__calendar {
@@ -236,20 +264,91 @@
 @media (min-width: $desktop-width) {
   .plan-step {
     width: 1320px;
-    padding: 100px 160px;
+    padding: 62px 160px 80px 160px;
     border-radius: 60px;
   }
 
+
+  .plan-step--country {
+    padding: 75px 160px;
+    margin-bottom: 45px;
+
+    .plan-step__text {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+
+  .plan-step--dally {
+    padding: 80px 160px 62px 160px;
+    margin-bottom: 44px;
+
+    .plan-step__title {
+      margin-bottom: 34px;
+    }
+
+    .plan-step__text {
+      width: 530px;
+      margin-bottom: 70px;
+      border: none;
+    }
+
+    .plan-step__wrapper {
+      margin-top: 52px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .plan-step__country-wrapper {
+    padding-top: 62px;
+
+    &::after {
+      right: 225px;
+      height: calc(100% + 140px);
+    }
+  }
+
+  .plan-step__dally-wrapper {
+    &::after {
+      top: 100px;
+    }
+
+    &::before {
+      top: 200px;
+      left: calc(100% - 227px);
+    }
+  }
+
+  .plan-step__title {
+    flex-direction: row;
+    margin-bottom: 34px;
+
+    span {
+      margin-right: 8px;
+    }
+  }
+
   .plan-step__text {
-    width: 580px;
-    margin-bottom: 56px;
+    width: 100%;
+    padding-bottom: 54px;
+    border-bottom: 1px solid $border-grey-2;
   }
 
   .plan-step__calendar {
+    padding: 9px 0 0 0;
+    margin-top: 0;
     margin-bottom: 56px;
   }
 
   .plan-step__wrapper {
-    margin: 56px 0 0 0;
+    margin: 56px 0 10px 0;
+  }
+
+  .plan-step__btn--step-next {
+    margin-bottom: 25px;
+  }
+
+  .plan-step__btn--step-back {
+    margin-right: 4px;
   }
 }

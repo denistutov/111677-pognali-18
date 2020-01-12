@@ -154,6 +154,7 @@
 
   .counter__checkbox-indicator {
     top: -5px;
+    left: -1px;
     width: 36px;
     height: 36px;
   }
@@ -179,26 +180,36 @@
 
 @media (min-width: $desktop-width) {
   .counter__header {
-    width: 500px;
-    padding: 0 0 60px 0;
+    width: 483px;
+    padding: 18px 0 23px 0;
     border: none;
+  }
+
+  .counter__desc {
+    width: 45px;
+    color: $dark-blue-2;
   }
 
   .counter__value {
     position: absolute;
-    top: 30px;
-    left: 230px;
-    width: 181px;
+    top: -9px;
+    left: 220px;
+    width: 182px;
   }
 
   .counter__wrapper {
     position: relative;
-    padding-top: 56px;
+    padding: 0;
   }
 
   .counter__checkbox {
     position: absolute;
-    top: -120px;
+    top: -77px;
     right: 0;
+  }
+
+  .counter__checkbox-indicator {
+    left: 1px;
+    top: -8px;
   }
 }

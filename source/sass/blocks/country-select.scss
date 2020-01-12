@@ -35,7 +35,7 @@
   display: block;
   width: 168px;
   height: 42px;
-  padding: 0 0 0 10px;
+  padding: 2px 0 0 11px;
   font-size: 14px;
   text-align: left;
   text-transform: uppercase;
@@ -116,7 +116,7 @@
   &::before {
     width: 6px;
     height: 6px;
-    background: transparent;
+    background: $bg-grey-1;
     border: 1px solid $border-grey-2;
   }
 
@@ -202,10 +202,6 @@
   }
 
   .country-select--add-new {
-    &::before {
-      background-color: $white;
-    }
-
     .country-select__drop-list {
       width: 369px;
 
@@ -256,12 +252,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .country-select {
+    &::before {
+      right: 218px;
+    }
+  }
+
   .country-select__drop-list {
     width: 730px;
     margin-right: 85px;
+    padding-top: 4px;
+    padding-left: 25px;
+  }
+
+  .country-select--add-new {
+    .country-select__drop-list {
+      width: 730px;
+    }
   }
 
   .country-select__flag {
     margin-right: 90px;
+  }
+
+  .country-select__delete {
+    right: 4px;
   }
 }
