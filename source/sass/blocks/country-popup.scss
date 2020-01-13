@@ -24,6 +24,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .country-popup {
+    border-radius: 0 0 60px 60px;
+  }
+
   .country-popup__wrapper {
     @include container($tablet-width, $tablet-container-1);
     padding-bottom: 50px;
@@ -33,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .country-popup__continents {

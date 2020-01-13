@@ -52,17 +52,30 @@
   color: $dark-blue-3;
   background: none;
   border: none;
+}
 
-  //&::before {
-  //  position: absolute;
-  //  top: -1px;
-  //  left: 60px;
-  //  display: block;
-  //  content: "";
-  //  width: 18px;
-  //  height: 18px;
-  //  background: url("../img/show-more-plus.svg") no-repeat center center;
-  //}
+.button--paginator {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 18px;
+    background-color: $dark-blue-2;
+  }
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $dark-blue-2;
+  }
 }
 
 .button--no-bg {
@@ -165,6 +178,23 @@
     font-size: 20px;
     line-height: 30px;
     color: $dark-blue-2;
+  }
+
+
+  .button--paginator {
+    &::before {
+      top: 0;
+      left: 12px;
+      width: 3px;
+      height: 27px;
+    }
+
+    &::after {
+      top: 12px;
+      left: 0;
+      width: 27px;
+      height: 3px;
+    }
   }
 }
 

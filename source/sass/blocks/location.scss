@@ -1,9 +1,12 @@
 .location {
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: -30px;
 }
 
 .location__wrapper {
@@ -11,6 +14,7 @@
   justify-content: center;
   width: 100%;
   min-height: 206px;
+  padding-top: 30px;
   background-color: $orange-4;
   border-radius: 0 0 30px 30px;
 }
@@ -58,7 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .location__wrapper {
-    padding-top: 68px;
+    padding-top: 128px;
+    margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -96,7 +101,7 @@
 @media (min-width: $desktop-width) {
   .location__wrapper {
     min-height: 197px;
-    padding-top: 0;
+    padding-top: 60px;
   }
 
   .location__desc {

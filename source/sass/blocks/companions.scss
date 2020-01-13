@@ -1,9 +1,12 @@
 .companions {
+  z-index: 4;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 100px;
+  margin-top: -30px;
   color: $white;
   border-radius: 0 0 30px 30px;
   background-color: $dark-blue-1;
@@ -59,7 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 137px;
+    padding-top: 197px;
+    margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -127,7 +131,7 @@
 
     @include container($desktop-width, $desktop-container);
     padding-left: 130px;
-    padding-top: 132px;
+    padding-top: 192px;
   }
 
   .companions__desc {

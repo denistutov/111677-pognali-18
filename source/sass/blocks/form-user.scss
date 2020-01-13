@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 23px;
+  padding-top: 33px;
   background-color: $bg-grey-1;
 }
 
@@ -83,7 +83,7 @@
 
 @media (min-width: $tablet-width) {
   .form-user {
-    padding: 93px 0 0 0;
+    padding: 64px 0 0 0;
   }
 
   .form-user__info {
@@ -117,7 +117,7 @@
   }
 
   .form-user__details {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 
   .form-user__step {
@@ -139,7 +139,7 @@
 
 @media (min-width: $desktop-width) {
   .form-user {
-    padding-top: 132px;
+    padding-top: 73px;
   }
 
   .form-user__step {
@@ -165,6 +165,7 @@
   }
 
   .form-user__details {
+    z-index: 7;
     position: absolute;
     top: -262px;
     right: 154px;

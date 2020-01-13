@@ -1,30 +1,18 @@
 .page-main {
-  z-index: 4;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -30px;
-  margin-top: -30px;
   background-color: $bg-grey-1;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
-    margin-bottom: -60px;
-  }
-
   .page-main__wrapper {
     width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    margin-bottom: -60px;
-    margin-top: -60px;
-  }
-
   .page-main__wrapper {
     display: flex;
     flex-direction: row-reverse;

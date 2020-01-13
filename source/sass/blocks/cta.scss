@@ -1,8 +1,11 @@
 .cta {
+  z-index: 2;
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 72px 0 0 0;
+  padding: 102px 0 0 0;
+  margin-top: -30px;
   background-color: $dark-blue-1;
   border-radius: 0 0 30px 30px;
 }
@@ -56,6 +59,8 @@
 
 @media (min-width: $tablet-width) {
   .cta {
+    padding-top: 120px;
+    margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -98,7 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .cta {
-    padding-top: 100px;
+    padding-top: 160px;
   }
 
   .cta__wrapper {

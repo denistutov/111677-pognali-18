@@ -109,10 +109,12 @@
 @media (min-width: $desktop-width) {
   .about {
     padding: 0;
-    background-color: $dark-blue-4;
+    background-color: $dark-blue-1;
   }
 
   .about__wrapper {
+    z-index: 1;
+    position: relative;
     min-height: 750px;
 
     @include container($desktop-width, $desktop-container-1);
@@ -123,6 +125,19 @@
     @media (min-resolution: $retina-dppx) {
       background: url("../img/about-desktop@2x.png") no-repeat top 85px right 60px;
       background-size: 630px;
+    }
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: 75px;
+      left: 60px;
+      display: block;
+      content: "";
+      width: 213px;
+      height: 213px;
+      background-color: $dark-blue-6;
+      border-radius: 20px;
     }
   }
 

@@ -1,11 +1,15 @@
 .rates {
+  z-index: 3;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 50px 0 0 0;
+  padding: 80px 0 0 0;
+  margin-top: -30px;
   background-color: $bg-grey-1;
+  border-radius: 0 0 30px 30px;
 }
 
 .rates__wrapper {
@@ -110,7 +114,8 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    padding: 71px 0 0 0;
+    padding: 131px 0 0 0;
+    margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -191,19 +196,36 @@
   }
 
   .rates__container {
+    z-index: 1;
+    position: relative;
     display: flex;
     align-items: center;
     min-height: 750px;
 
     @include container($desktop-width, $desktop-container-1);
+    padding-top: 60px;
   }
 
   .rates__wrapper {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
     background-position: right 3px top 181px;
     background-size: 200px;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: 137px;
+      right: 100px;
+      display: block;
+      content: "";
+      width: 444px;
+      height: 300px;
+      background-color: $bg-grey-2;
+      border-radius: 20px;
+    }
   }
 
   .rates__text {
@@ -212,10 +234,11 @@
 
   .rates__list {
     align-items: flex-start;
-    width: 832px;
+    width: 830px;
   }
 
   .rates__item {
+    width: 100%;
     margin-left: 90px;
   }
 

@@ -18,6 +18,7 @@
   position: relative;
 
   &::before {
+    z-index: 1;
     position: absolute;
     top: 16px;
     left: 135px;
@@ -34,6 +35,7 @@
 }
 
 .catalog-paginator__btn {
+  position: relative;
   display: block;
   width: 135px;
   height: 50px;
@@ -44,19 +46,34 @@
   color: $dark-blue-3;
 
   @include primary-font($bold);
+  background-color: $white;
   border-radius: 0;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 5px);
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-right: 10px solid $dark-blue-1;
+  }
 }
 
 .catalog-paginator__previous {
-  background: $white url("../img/triangle-arrow-left.svg") no-repeat center center;
-  background-size: 10px;
   border-radius: 20px 0 0 20px;
 }
 
 .catalog-paginator__next {
-  background: $white url("../img/triangle-arrow-right.svg") no-repeat center center;
-  background-size: 10px 20px;
   border-radius: 0 20px 20px 0;
+
+  &::before {
+    transform: rotate(180deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -80,6 +97,12 @@
 
   .catalog-paginator__numbers {
     display: flex;
+
+    .catalog-paginator__btn {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .catalog-paginator__show-more {
@@ -87,13 +110,6 @@
     padding-left: 42px;
     margin-top: 32px;
     margin-bottom: 49px;
-
-    &::before {
-      top: 1px;
-      left: 3px;
-      height: 27px;
-      width: 27px;
-    }
   }
 
   .catalog-paginator__btn {
@@ -120,15 +136,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-paginator__show-more {
-    width: 100%;
-    padding-left: 395px;
+    width: 240px;
+    padding: 0;
     margin-top: 50px;
     margin-bottom: 68px;
-    text-align: left;
-
-    &::before {
-      left: 345px;
-    }
+    text-align: center;
   }
 
   .catalog-paginator__nav {

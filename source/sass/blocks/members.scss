@@ -37,7 +37,7 @@
   .members__paginator {
     @include container($tablet-width, $tablet-container-2);
 
-    margin-bottom: 61px;
+    margin-bottom: 121px;
   }
 }
 
@@ -53,6 +53,6 @@
   .members__paginator {
     width: 100%;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
   }
 }

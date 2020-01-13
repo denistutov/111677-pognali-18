@@ -1,5 +1,5 @@
 .accordion {
-  margin: 0 0 10px 0;
+  margin: 0 0 7px 0;
   padding: 0;
   border: none;
   border-top: 1px solid $border-orange-1;
@@ -11,6 +11,7 @@
   align-items: center;
   width: 100%;
   padding: 11px 0 0 1px;
+  margin-bottom: 15px;
 }
 
 .accordion__title {
@@ -28,7 +29,9 @@
   height: 10px;
   width: 10px;
   border: none;
-  background: url("../img/dropdown.svg") no-repeat center right 1px;
+  background: url("../img/dropdown.svg") no-repeat center center;
+  background-size: contain;
+  transform: rotate(0);
 }
 
 .accordion__list {
@@ -36,12 +39,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 27px;
   list-style: none;
 }
 
 .accordion__transport {
   flex-direction: row;
+  margin: 0 0 12px 0;
 }
 
 .accordion__item {
@@ -78,27 +82,9 @@
   .accordion__list {
     display: none;
   }
-}
-
-.accordion--is-open {
-  margin: 0 0 7px 0;
-
-  .accordion__wrapper {
-    margin-bottom: 15px;
-  }
 
   .accordion__toggle {
     transform: rotate(180deg);
-    background: url("../img/dropdown.svg") no-repeat center left 1px;
-    background-size: 8px 8px;
-  }
-
-  .accordion__list {
-    margin-left: 27px;
-  }
-
-  .accordion__transport {
-    margin: 0 0 12px 0;
   }
 }
 
@@ -135,7 +121,7 @@
     flex-direction: row;
     justify-content: flex-start;
     width: auto;
-    margin-left: 162px;
+    margin-left: 161px;
     margin-top: -45px;
   }
 
@@ -182,17 +168,6 @@
     }
   }
 
-  .accordion--is-open {
-    .accordion__wrapper {
-      margin-bottom: 21px;
-    }
-
-    .accordion__list {
-      width: auto;
-      margin-left: 161px;
-    }
-  }
-
   .accordion--transport {
     padding-top: 8px;
 
@@ -204,6 +179,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .accordion {
+    margin: 0 0 7px 0;
+  }
+
+  .accordion__list {
+    flex-direction: row;
+    margin: 0 0 0 35px;
+  }
+
   .accordion__toggle {
     display: block;
   }
@@ -240,15 +224,6 @@
 
   .accordion--transport.accordion--is-closed {
     margin: 0 0 12px 0;
-  }
-
-  .accordion--is-open {
-    margin: 0 0 7px 0;
-
-    .accordion__list {
-      flex-direction: row;
-      margin: 0 0 0 35px;
-    }
   }
 
   .accordion--transport {
