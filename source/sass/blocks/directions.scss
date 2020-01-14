@@ -94,6 +94,7 @@
   .directions__cards {
     z-index: 1;
     position: relative;
+
     @include container($tablet-width, $tablet-container-1);
     margin-bottom: 51px;
 
