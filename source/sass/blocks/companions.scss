@@ -5,20 +5,51 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 70px;
   margin-top: -30px;
   color: $white;
   border-radius: 0 0 30px 30px;
-  background-color: $dark-blue-1;
+  background-color: $dark-blue-1 ;
+
 }
 
 .companions__container {
+  position: relative;
+
   @include container($mobile-width, $mobile-container-1);
+  background: url("../img/rogovaya-back-mobile@1x.png") no-repeat top 22% left;
+  background-size: 61px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/rogovaya-back-mobile@2x.png") no-repeat top 22% left;
+    background-size: 61px;
+  }
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 113px;
+    height: 132px;
+    background-color: $dark-blue-6;
+    border-radius: 20px;
+  }
 }
 
 .companions__desc {
-  padding: 0 25px;
+  padding: 30px 25px 0 25px;
   margin-bottom: 57px;
+
+  background: url("../img/smolov-back-desktop@1x.png") no-repeat top right;
+  background-size: 143px 143px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/smolov-back-desktop@2x.png") no-repeat top right;
+    background-size: 143px 143px;
+  }
 }
 
 .companions__title {
@@ -62,27 +93,54 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 197px;
+    padding-top: 137px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
-  }
 
-  .companions__desc {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  .companions__text-br {
-    display: inline-block;
-    width: 30px;
   }
 
   .companions__container {
+    z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
     @include container($tablet-width, $tablet-container-1);
+
+    background: $dark-blue-1 url("../img/smolov-back-desktop@1x.png") no-repeat top 33% left;
+    background-size: 143px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $dark-blue-1 url("../img/smolov-back-desktop@2x.png") no-repeat top 33% left;
+      background-size: 143px;
+    }
+
+    &::before {
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .companions__desc {
+    padding: 60px 0 0 0;
+    margin-bottom: 20px;
+
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat top right;
+    background-size: 285px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat top right;
+      background-size: 285px;
+    }
+  }
+
+  .companions__text-br {
+    display: inline-block;
+    width: 30px;
   }
 
   .companions__title {
@@ -132,11 +190,17 @@
     @include container($desktop-width, $desktop-container);
     padding-left: 130px;
     padding-top: 192px;
+    background-position: 42% 193px;
+
+    &::before {
+      top: 110px;
+    }
   }
 
   .companions__desc {
     min-height: 483px;
     padding: 0;
+    background-position: 62px bottom;
   }
 
   .companions__title {

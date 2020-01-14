@@ -49,10 +49,9 @@
     content: "";
     width: 45px;
     height: 45px;
-    background: url("../img/contacts-location.svg") no-repeat center center;
+    background: $dark-blue-4 url("../img/contacts-location.svg") no-repeat center center;
     background-size: 22px 24px;
     border-radius: 50%;
-    border: 1px solid $black; // Заменить на черный фон когда вствлю svg
   }
 }
 

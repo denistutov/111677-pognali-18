@@ -92,8 +92,23 @@
   }
 
   .directions__cards {
+    z-index: 1;
+    position: relative;
     @include container($tablet-width, $tablet-container-1);
     margin-bottom: 51px;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: -58px;
+      left: 15px;
+      display: block;
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: $bg-grey-2;
+    }
   }
 
   .directions__show-all {
@@ -126,6 +141,11 @@
     width: 560px;
     padding: 0;
     margin-bottom: 139px;
+
+    &::before {
+      top: -72px;
+      left: -72px;
+    }
   }
 
   .directions__list {
@@ -143,8 +163,8 @@
 
   .directions__show-all {
     position: absolute;
-    bottom: 110px;
-    right: 303px;
+    bottom: 0;
+    right: -440px;
     width: 275px;
   }
 }

@@ -22,6 +22,12 @@
 
 .copyright__link {
   padding-top: 4px;
+
+  svg {
+    width: 27px;
+    height: 34px;
+    fill: $dark-blue-1;
+  }
 }
 
 @media (min-width: $tablet-width) {

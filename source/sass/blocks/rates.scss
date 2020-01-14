@@ -65,12 +65,12 @@
   font-size: 16px;
   line-height: 22px;
   color: $text-grey;
-  border-top: 1px solid rgba(229, 229, 229, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 
   @include primary-font($light);
 
   &:last-child {
-    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   &:nth-child(1) {
