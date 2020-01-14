@@ -45,6 +45,9 @@
 }
 
 .user-card__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-right: 19px;
 
   &:last-child {
