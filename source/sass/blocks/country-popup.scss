@@ -23,6 +23,10 @@
   margin: 0 0 25px 0;
 }
 
+.country-popup__table {
+  margin: 0 0 48px 25px;
+}
+
 @media (min-width: $tablet-width) {
   .country-popup {
     border-radius: 0 0 60px 60px;
