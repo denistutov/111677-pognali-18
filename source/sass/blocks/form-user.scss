@@ -33,12 +33,19 @@
 }
 
 .form-user__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include container($mobile-width, $mobile-container-1);
   margin: 0 auto 20px auto;
+}
+
+.form-user__step-nav {
+  position: absolute;
+  top: 32px;
+  right: 12px;
 }
 
 .form-user__tags {
@@ -95,6 +102,11 @@
 
   .form-user__wrapper {
     @include container($tablet-width, $tablet-container-1);
+  }
+
+  .form-user__step-nav {
+    top: 65px;
+    right: 90px;
   }
 
   .form-user__tags {
@@ -162,6 +174,10 @@
     @include container($desktop-width, $desktop-container);
     padding-right: 60px;
     padding-left: 125px;
+
+    .form-user__step-nav {
+      display: none;
+    }
   }
 
   .form-user__details {

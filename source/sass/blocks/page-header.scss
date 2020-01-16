@@ -32,6 +32,63 @@
   display: none;
 }
 
+.page-header--js {
+  background-color: $dark-blue-3;
+
+  .page-header__nav {
+    z-index: 100;
+    position: fixed;
+    top: 73px;
+    display: none;
+  }
+
+  .page-header__nav--is-open {
+    display: block;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: -50%;
+      display: block;
+      content: "";
+      width: 200%;
+      height: 200%;
+      background-color: $white;
+    }
+  }
+
+  .page-header__toggle {
+    display: block;
+    width: 25px;
+    height: 11px;
+    background: transparent url("../img/menu.svg") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.page-header--menu-open {
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+
+  .page-header__toggle {
+    width: 19px;
+    height: 19px;
+    background: transparent url("../img/menu-close.svg") no-repeat center center;
+  }
+}
+
+.page-header--scroll {
+  z-index: 100;
+  position: fixed;
+  background-color: $white;
+
+  .page-header__toggle {
+    background: url("../img/menu-grey.svg") no-repeat center center;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__container {
     @include container($tablet-width, $tablet-container-2);
@@ -45,11 +102,19 @@
     margin-left: 21px;
     margin-bottom: 5px;
   }
+
+  .page-header--js {
+    background-color: $dark-blue-1;
+  }
+
+  .page-header--scroll {
+    background-color: $white;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-color: $dark-blue-3;
+    background-color: $dark-blue-4;
   }
 
   .page-header__container {
@@ -57,6 +122,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 
     @include container($desktop-width, $desktop-container);
   }
@@ -74,5 +140,47 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__nav {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 1px);
+      left: -90px;
+      display: block;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+      border-radius: 1px;
+    }
+  }
+
+  .page-header--js {
+    .page-header__nav {
+      position: relative;
+      top: 0;
+      display: flex;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+
+  .page-header--scroll {
+    background-color: $white;
+
+    a {
+      color: $dark-blue-1;
+    }
+
+    .page-header__nav {
+      &::before {
+        background-color: $dark-blue-1;
+      }
+    }
   }
 }

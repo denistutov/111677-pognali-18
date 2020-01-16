@@ -92,7 +92,7 @@
     }
 
     &::after {
-      bottom: 0;
+      bottom: -1px;
       height: 55px;
       background-color: $bg-grey-1;
     }

@@ -58,18 +58,6 @@
     justify-content: flex-start;
     height: 50px;
     background-color: transparent;
-
-    &::before {
-      position: absolute;
-      top: 23px;
-      left: -110px;
-      display: block;
-      content: "";
-      width: 60px;
-      height: 2px;
-      background-color: $white;
-      border-radius: 1px;
-    }
   }
 
   .main-nav__wrapper {
