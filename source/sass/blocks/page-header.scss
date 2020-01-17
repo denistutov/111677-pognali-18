@@ -33,7 +33,7 @@
 }
 
 .page-header--js {
-  background-color: $dark-blue-3;
+  background-color: $dark-blue-4;
 
   .page-header__nav {
     z-index: 100;
@@ -114,6 +114,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    background-color: $dark-blue-3;
+  }
+
+  .page-header--inner {
     background-color: $dark-blue-4;
   }
 

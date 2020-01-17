@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page-header">
+    <header class="page-header page-header--inner">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo logo" href="index.html">
@@ -101,6 +101,9 @@
               <div class="user-details__level user-level user-level--form">
                 <span class="user-level__value">80</span>
                 <span class="user-level__text">level</span>
+                <svg class="user-level__scale" viewBox="0 0 42 42">
+                  <circle class="svg-lvl__segment" cx="21" cy="21" r="19" fill="transparent" stroke-dasharray="80 20" stroke-dashoffset="12"></circle>
+                </svg>
               </div>
               <img class="user-details__photo" src="img/photo-account-mobile@1x.jpg" alt="Ваша фотография" width="99" height="100">
             </div>
@@ -126,25 +129,33 @@
                 <li class="transport-list__item">
                   <label class="transport-list__label" for="plane">
                     <input class="transport-list__input visually-hidden" id="plane" type="checkbox">
-                    <img class="transport-list__img" src="img/icon-plane.svg" alt="Авиаперелет" width="14" height="16">
+                    <svg class="transport-list__img" width="14" height="16">
+                      <use xlink:href="#icon-plane"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__label" for="automobile">
-                    <input class="transport-list__input visually-hidden" id="automobile" type="checkbox">
-                    <img class="transport-list__img" src="img/icon-bus.svg" alt="Автотранспорт" width="13" height="16">
+                    <input class="transport-list__input visually-hidden" id="automobile" type="checkbox" disabled>
+                    <svg class="transport-list__img" width="13" height="16">
+                      <use xlink:href="#icon-bus"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__label" for="bike">
                     <input class="transport-list__input visually-hidden" id="bike" type="checkbox">
-                    <img class="transport-list__img" src="img/icon-bike.svg" alt="Велосипед" width="19" height="17">
+                    <svg class="transport-list__img" width="19" height="17">
+                      <use xlink:href="#icon-bike"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__label" for="foot">
                     <input class="transport-list__input visually-hidden" id="foot" type="checkbox">
-                    <img class="transport-list__img" src="img/icon-run.svg" alt="Пешком" width="15" height="17">
+                    <svg class="transport-list__img" width="15" height="17">
+                      <use xlink:href="#icon-run"></use>
+                    </svg>
                   </label>
                 </li>
               </ul>

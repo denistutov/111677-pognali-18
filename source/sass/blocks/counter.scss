@@ -40,6 +40,14 @@
   font-size: 0;
   border: 0;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .counter__control--minus {
@@ -67,6 +75,16 @@
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid $border-grey-2;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover-form;
+  }
+
+  &:active {
+    border-color: $dark-blue-3;
+  }
 }
 
 .counter__checkbox-text {
@@ -79,27 +97,46 @@
 }
 
 .counter__checkbox {
-  position: relative;
   display: flex;
   align-items: center;
   height: 26px;
 }
 
 .counter__checkbox-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   display: block;
-  content: "";
   width: 24px;
   height: 24px;
   border-radius: 4px;
   border: 1px solid $border-grey-2;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    border-color: $border-hover-form;
+  }
+
+  &:active {
+    background-color: $bg-grey-8;
+    border-color: transparent;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
-.counter__checkbox-input:checked ~ .counter__checkbox-indicator {
+.counter__checkbox-input:checked ~ .counter__checkbox-indicator::before {
   background: url("../img/tick.svg") no-repeat center center;
-  background-size: 8px;
+  background-size: 10px;
 }
 
 @media (min-width: $tablet-width) {

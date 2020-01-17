@@ -1,6 +1,6 @@
 .plan-step {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -38,6 +38,7 @@
 
 .plan-step__container {
   position: relative;
+  width: 100%;
   margin: 0 5px;
 
   .plan-step__step-nav {
@@ -98,10 +99,12 @@
 
 .plan-step__btn--step-next {
   margin-bottom: 21px;
+  margin-right: auto;
 }
 
 .plan-step__wrapper {
   margin-bottom: 14px;
+  width: 100%;
 
   .plan-step__btn--step-next {
     margin: 0 0 18px 0;

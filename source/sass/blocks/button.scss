@@ -15,6 +15,10 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+  }
 }
 
 .button--round {
@@ -25,6 +29,18 @@
   color: $dark-blue-3;
   background: $orange-4;
   border-radius: 20px;
+
+  &:hover {
+    background-color: $orange-3;
+  }
+
+  &:active {
+    color: rgba($dark-blue-3, 0.3);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .button--round-header {
@@ -52,6 +68,14 @@
   color: $dark-blue-3;
   background: none;
   border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--paginator {
@@ -91,6 +115,10 @@
   text-transform: uppercase;
   border-radius: 25px;
   background: $bg-grey-3;
+
+  &:hover {
+    background-color: $bg-hover-btn;
+  }
 }
 
 .button--white-bg {
@@ -129,6 +157,7 @@
   font-size: 0;
   background: none;
   border-radius: 0;
+  opacity: 0.3;
 
   &::before,
   &::after {
@@ -148,6 +177,14 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 

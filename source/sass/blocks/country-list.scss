@@ -11,6 +11,14 @@
   color: $text-grey;
 
   @include primary-font($normal);
+
+  &:hover {
+    color: $dark-blue-2;
+  }
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+  }
 }
 
 .country-list--simple {

@@ -8,7 +8,7 @@
     position: absolute;
     bottom: 17px;
     right: 49px;
-    display: block;
+    display: none;
     content: "";
     width: 8px;
     height: 8px;
@@ -75,10 +75,15 @@
     background-size: 12px 7px;
     opacity: 0.3;
   }
+
+  &:hover {
+    border-color: $border-hover-form;
+  }
 }
 
 .country-select--empty {
   &::before {
+    display: block;
     width: 6px;
     height: 6px;
     background: transparent;
@@ -95,6 +100,10 @@
 
     &::before {
       display: none;
+    }
+
+    &:hover {
+      border-color: $border-hover-form;
     }
   }
 
@@ -114,6 +123,7 @@
   }
 
   &::before {
+    display: block;
     width: 6px;
     height: 6px;
     background: $bg-grey-1;
@@ -125,6 +135,14 @@
     border: none;
     background-color: $bg-grey-1;
 
+    &:hover {
+      background-color: $bg-grey-3;
+    }
+
+    &:active {
+      color: rgba($dark-blue-2, 0.3);
+    }
+
     &::after {
       display: none;
     }
@@ -133,6 +151,10 @@
       top: 13px;
       right: 13px;
       background: url("../../img/show-more-plus.svg") no-repeat center center;
+    }
+
+    &:active::before {
+      opacity: 0.3;
     }
   }
 }
@@ -170,6 +192,7 @@
 @media (min-width: $tablet-width) {
   .country-select {
     &::before {
+      display: block;
       right: 128px;
       bottom: 29px;
       width: 15px;

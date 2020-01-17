@@ -33,13 +33,19 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list main-nav__menu menu-list">
               <li class="menu-list__item">
-                <a class="menu-list__link">О сервисе</a>
+                <a class="menu-list__link">
+                  <span data-hover="О сервисе">О сервисе</span>
+                </a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="form.html">Направления</a>
+                <a class="menu-list__link" href="form.html">
+                  <span data-hover="Направления">Направления</span>
+                </a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="catalog.html">Попутчики</a>
+                <a class="menu-list__link" href="catalog.html">
+                  <span data-hover="Попутчики">Попутчики</span>
+                </a>
               </li>
             </ul>
             <ul class="main-nav__list main-nav__top-menu top-menu top-menu--header">
@@ -114,18 +120,22 @@
               <li class="action-list__item">
                 Выберите<br/>
                 направление
+                <span class="action-list__count">1</span>
               </li>
               <li class="action-list__item">
                 Изучите идеи<br/>
                 путешественников
+                <span class="action-list__count">2</span>
               </li>
               <li class="action-list__item">
                 Находите тех,<br/>
                 кто похож на вас
+                <span class="action-list__count">3</span>
               </li>
               <li class="action-list__item">
                 Путешествуйте<br/>
                 вместе!
+                <span class="action-list__count">4</span>
               </li>
             </ol>
           </div>
@@ -230,7 +240,9 @@
               <div class="user-card__level user-level">
                 <span class="user-level__value">99</span>
                 <span class="user-level__text">level</span>
-                <img class="user-level__scale" src="img/level-scale-99.svg">
+                <svg class="user-level__scale" viewBox="0 0 42 42">
+                  <circle class="svg-lvl__segment" cx="21" cy="21" r="19" fill="transparent"  stroke-dasharray="100 7" stroke-dashoffset="18"></circle>
+                </svg>
               </div>
               <div class="user-card__wrapper">
                 <ul class="user-card__list">
@@ -304,7 +316,9 @@
               <div class="user-card__level user-level">
                 <span class="user-level__value">80</span>
                 <span class="user-level__text">level</span>
-                <img class="user-level__scale" src="img/level-scale-80.svg">
+                <svg class="user-level__scale" viewBox="0 0 42 42">
+                  <circle class="svg-lvl__segment" cx="21" cy="21" r="19" fill="transparent" stroke-dasharray="80 20" stroke-dashoffset="12"></circle>
+                </svg>
               </div>
               <div class="user-card__wrapper">
                 <ul class="user-card__list">

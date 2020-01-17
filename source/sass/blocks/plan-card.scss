@@ -53,6 +53,14 @@
   color: rgba(0, 0, 0, 0.3);
 
   @include primary-font($medium);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {

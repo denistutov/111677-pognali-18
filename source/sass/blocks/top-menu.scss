@@ -11,22 +11,57 @@
   height: 40px;
 }
 
+.top-menu__link {
+  position: relative;
+  cursor: pointer;
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
 .top-menu__link--phone,
 .top-menu__link--email {
   display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .top-menu__link--phone {
-  background: $orange-1 url("../img/topmenu-phone.svg") no-repeat center center;
-  background-size: 18px;
+  background-color: $orange-1;
+
+  &::before {
+    background: url("../img/topmenu-phone.svg") no-repeat center center;
+    background-size: 18px;
+  }
+
+  &:hover {
+    background-color: $orange-5;
+  }
 }
 
 .top-menu__link--email {
-  background: $orange-3 url("../img/topmenu-mail.svg") no-repeat center center;
-  background-size: 18px 14px;
+  background-color: $orange-3;
+
+  &:before {
+    background: url("../img/topmenu-mail.svg") no-repeat center center;
+    background-size: 18px 14px;
+  }
+
+  &:hover {
+    background-color: $orange-1;
+  }
 }
 
 .top-menu--header {

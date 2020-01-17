@@ -81,7 +81,20 @@
   resize: none;
 
   &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba($text-grey, 0.3);
+  }
+
+  &:hover {
+    border-color: $border-hover-form;
+  }
+
+  &:active::placeholder,
+  &:focus::placeholder {
+    color: $text-grey;
+  }
+
+  &:invalid {
+    border-color: $form-invalid;
   }
 }
 
