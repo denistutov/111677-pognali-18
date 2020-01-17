@@ -7,6 +7,7 @@
   height: 60px;
   color: $white;
   border-radius: 50%;
+  background-color: rgba($black, 0.6);
 }
 
 .user-level--form {
@@ -43,6 +44,14 @@
   }
 }
 
+.user-level__scale {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 64px;
+  height: 64px;
+}
+
 .user-level__value {
   font-size: 24px;
   line-height: 24px;
@@ -51,10 +60,24 @@
 }
 
 .user-level__text {
+  position: relative;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 14px;
 
   @include primary-font($normal);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    display: block;
+    content: "";
+    width: calc(100% + 8px);
+    height: 1px;
+    background-color: $white;
+    opacity: 0.3;
+  }
 }
 
 .user-level--simple {

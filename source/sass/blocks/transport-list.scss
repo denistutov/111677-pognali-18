@@ -45,10 +45,11 @@
   .transport-list__img {
     display: block;
     margin: 0 auto;
+    fill: $dark-blue-2;
   }
 
   .transport-list__input:checked ~ .transport-list__img {
-    display: none; // после подключения svg менять фон картинки
+    fill: $bg-grey-1;
   }
 }
 
@@ -59,6 +60,16 @@
     margin: 0;
     background-color: $bg-grey-1;
     border-radius: 50%;
+  }
+
+  .transport-list__img {
+    fill: rgba($black, 0.3);
+  }
+}
+
+.transport-list__item--active {
+  .transport-list__img {
+    fill: $dark-blue-2;
   }
 }
 
