@@ -39,7 +39,7 @@
 }
 
 .companions__desc {
-  padding: 30px 25px 0 25px;
+  padding: 33px 25px 0 25px;
   margin-bottom: 57px;
 
   background: url("../img/smolov-back-desktop@1x.png") no-repeat top right;
@@ -53,7 +53,7 @@
 
 .companions__title {
   padding: 0;
-  margin: 0 0 21px 0;
+  margin: 0 0 19px 0;
   font-size: 24px;
   line-height: 24px;
   color: $orange-1;
@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .companions__item {
@@ -87,12 +87,12 @@
 
 .companions__show-all {
   width: 100%;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 137px;
+    padding-top: 140px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
@@ -106,18 +106,18 @@
 
     @include container($tablet-width, $tablet-container-1);
 
-    background: $dark-blue-1 url("../img/smolov-back-desktop@1x.png") no-repeat top 33% left;
+    background: $dark-blue-1 url("../img/smolov-back-desktop@1x.png") no-repeat top 344px left 40px;
     background-size: 143px;
 
     @media (min-resolution: $retina-dppx) {
-      background: $dark-blue-1 url("../img/smolov-back-desktop@2x.png") no-repeat top 33% left;
+      background: $dark-blue-1 url("../img/smolov-back-desktop@2x.png") no-repeat top 344px left 40px;
       background-size: 143px;
     }
 
     &::before {
       z-index: -1;
       top: 0;
-      left: 0;
+      left: 40px;
       width: 213px;
       height: 213px;
     }
@@ -127,7 +127,7 @@
 
   .companions__desc {
     padding: 60px 0 0 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     background: url("../img/rogovaya-back-desktop@1x.png") no-repeat top right;
     background-size: 285px;
@@ -190,6 +190,7 @@
     @include container($desktop-width, $desktop-container);
     padding-left: 130px;
     padding-top: 192px;
+    margin-bottom: 56px;
     background-position: 42% 193px;
 
     &::before {
@@ -219,10 +220,15 @@
     margin: 0;
   }
 
+  .companions__text {
+    margin-bottom: 43px;
+  }
+
   .companions__show-all {
     position: absolute;
-    bottom: 49px;
+    bottom: 78px;
     left: 130px;
     width: 280px;
+    margin: 0;
   }
 }

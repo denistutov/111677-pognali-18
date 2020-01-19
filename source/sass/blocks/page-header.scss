@@ -33,7 +33,11 @@
 }
 
 .page-header--js {
-  background-color: $dark-blue-4;
+  background-color: $dark-blue-3;
+
+  .page-header--inner {
+    background-color: $dark-blue-4;
+  }
 
   .page-header__nav {
     z-index: 100;
@@ -62,6 +66,7 @@
     display: block;
     width: 25px;
     height: 11px;
+    margin-bottom: 5px;
     background: transparent url("../img/menu.svg") no-repeat center center;
     background-size: contain;
   }
@@ -99,8 +104,7 @@
   }
 
   .page-header__toggle {
-    margin-left: 21px;
-    margin-bottom: 5px;
+    margin-left: 22px;
   }
 
   .page-header--js {
@@ -151,12 +155,12 @@
 
     &::before {
       position: absolute;
-      top: calc(50% - 1px);
-      left: -90px;
+      top: 50%;
+      left: -106px;
       display: block;
       content: "";
       width: 60px;
-      height: 2px;
+      height: 1px;
       background-color: $white;
       border-radius: 1px;
     }

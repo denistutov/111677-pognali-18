@@ -42,8 +42,8 @@
 
 .action-list__count {
   position: absolute;
-  top: 23px;
-  right: 23px;
+  top: 22px;
+  right: 21px;
   font-size: 18px;
   color: $white;
 
@@ -62,7 +62,7 @@
   .action-list__item {
     width: calc(50% + 40px);
     height: 140px;
-    padding: 29px 32px;
+    padding: 32px 33px;
     margin: 0;
 
     &:nth-child(1) {
@@ -93,8 +93,8 @@
 
   .action-list__count {
     top: auto;
-    bottom: 30px;
-    left: 34px;
+    bottom: 24px;
+    left: 33px;
     right: auto;
     font-size: 30px;
   }
@@ -109,6 +109,8 @@
   }
 
   .action-list__item {
+    padding: 29px 32px;
+
     &:nth-child(n) {
       width: 315px;
       height: 107px;
@@ -133,15 +135,15 @@
       border-radius: 20px;
 
       .action-list__count {
-        right: 30px;
+        right: 33px;
       }
     }
   }
 
   .action-list__count {
-    top: 30px;
+    top: 29px;
     bottom: auto;
-    right: 60px;
+    right: 64px;
     left: auto;
     font-size: 24px;
   }

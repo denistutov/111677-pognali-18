@@ -44,6 +44,16 @@
   @include primary-font($medium);
   border: 1px solid $border-grey-2;
   box-sizing: border-box;
+  outline: 0;
+
+  &:hover {
+    border-color: $border-hover-form;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $dark-blue-3;
+  }
 }
 
 .level-controls__input--level-min {

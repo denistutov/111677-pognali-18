@@ -4,12 +4,17 @@
   flex-direction: column;
   justify-content: center;
   padding: 0;
+  margin: 45px 0 47px 0;
   list-style: none;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
 
   @include primary-font($medium);
+}
+
+.menu-list__item {
+  height: 36px;
 }
 
 .menu-list__link {
@@ -29,7 +34,7 @@
       position: absolute;
       top: 100%;
       content: attr(data-hover);
-      transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
       color: $orange-4;
     }
 
@@ -45,17 +50,23 @@
 
 @media (min-width: $tablet-width) {
   .menu-list {
-    margin: 0 0 159px 0;
+    margin: 0 0 153px 0;
     font-size: 60px;
     text-align: left;
   }
+
+  .menu-list__item {
+    height: 71px;
+  }
+
+  .menu-list__item--social {
+    .user-list__item {
+      display: block;
+    }
+  }
+
 }
 
-.menu-list__item--social {
-  .user-list__item {
-    display: block;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .menu-list {
@@ -66,7 +77,8 @@
   }
 
   .menu-list__item {
-    margin-right: 36px;
+    height: 16px;
+    margin-right: 33px;
 
     &:last-child {
       margin: 0;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 31px 0 65px 0;
+  padding: 33px 0 63px 0;
   color: $white;
   border-radius: 0 0 30px 30px;
   background: $dark-blue-1 url("../img/about-mobile@1x.png") no-repeat no-repeat right 49% center;
@@ -41,7 +41,7 @@
   @include primary-font($light);
 }
 
-.about__text-br--tablet {
+.about__text-br {
   display: none;
 }
 
@@ -53,23 +53,54 @@
   display: none;
 }
 
+.about__br {
+  display: inline-block;
+  width: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .about {
-    padding: 96px 0 88px 0;
+    z-index: 1;
+    position: relative;
+    padding: 159px 0 88px 0;
     margin-top: -60px;
     background: $dark-blue-1;
     border-radius: 0 0 60px 60px;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: 118px;
+      left: calc(50% - 343px);
+      display: block;
+      content: "";
+      width: 687px;
+      height: 213px;
+      background-color: $dark-blue-6;
+      border-radius: 20px;
+    }
   }
 
   .about__wrapper {
-    background: $dark-blue-1 url("../img/about-tablet@1x.png") no-repeat right 8px top 8px;
+    z-index: 2;
+    position: relative;
+    background: url("../img/about-tablet@1x.png") no-repeat right 8px top 8px;
 
     @media (min-resolution: $retina-dppx) {
-      background: $dark-blue-1 url("../img/about-tablet@2x.png") no-repeat right 8px top 8px;
+      background: url("../img/about-tablet@2x.png") no-repeat right 8px top 8px;
       background-size: 374px;
     }
 
     @include container($tablet-width, $tablet-container-1);
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: $dark-blue-6;
+      border-radius: 20px;
+    }
   }
 
   .about__title {
@@ -87,16 +118,16 @@
   }
 
   .about__text-br {
+    display: inline-block;
+    width: 40px;
+  }
+
+  .about__br {
     display: none;
   }
 
-  .about__text-br--tablet {
-    display: inline-block;
-    width: 30px;
-  }
-
   .about__text--bold {
-    margin: 0 0 53px 0;
+    margin: 0 0 51px 0;
     font-size: 21px;
     line-height: 25px;
   }
@@ -111,11 +142,13 @@
   .about {
     padding: 60px 0 0 0;
     background-color: $dark-blue-1;
+
+    &::before {
+      display: none;
+    }
   }
 
   .about__wrapper {
-    z-index: 1;
-    position: relative;
     min-height: 750px;
 
     @include container($desktop-width, $desktop-container-1);
@@ -129,16 +162,10 @@
     }
 
     &::before {
-      z-index: -1;
-      position: absolute;
       top: 75px;
       left: 60px;
-      display: block;
-      content: "";
       width: 213px;
       height: 213px;
-      background-color: $dark-blue-6;
-      border-radius: 20px;
     }
   }
 
@@ -148,10 +175,10 @@
 
   .about__text {
     width: 615px;
-    margin: 0 0 38px 0;
+    margin: 0 0 41px 0;
   }
 
-  .about__text-br--tablet {
+  .about__text-br {
     display: none;
   }
 

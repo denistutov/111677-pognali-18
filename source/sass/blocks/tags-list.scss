@@ -9,7 +9,7 @@
 }
 
 .tags-list__item {
-  padding-right: 2px;
+  padding-right: 3px;
 
   &:last-child {
     padding: 0;
@@ -18,18 +18,12 @@
 
 @media (min-width: $tablet-width) {
   .tags-list {
-    width: 225px;
+    width: 230px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .tags-list__item {
-    padding-right: 6px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .tags-list {
-    width: 225px;
+    padding-right: 4px;
   }
 }

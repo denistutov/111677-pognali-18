@@ -36,6 +36,10 @@
   }
 }
 
+.transport-list__img {
+  opacity: 0.15;
+}
+
 .transport-list__text {
   display: none;
 }
@@ -66,6 +70,7 @@
     display: block;
     margin: 0 auto;
     fill: $dark-blue-2;
+    opacity: 1;
   }
 
   .transport-list__input:checked ~ .transport-list__img {
@@ -77,6 +82,10 @@
   }
 
   .transport-list__input:disabled:hover ~ .transport-list__img {
+    opacity: 0.3;
+  }
+
+  .transport-list__input:focus ~ .transport-list__img {
     opacity: 0.3;
   }
 }
@@ -98,10 +107,40 @@
 .transport-list__item--active {
   .transport-list__img {
     fill: $dark-blue-2;
+    opacity: 1;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .transport-list__item--plane {
+    .transport-list__img {
+      width: 19px;
+      height: 21px;
+    }
+  }
+
+  .transport-list__item--bus {
+    .transport-list__img {
+      width: 17px;
+      height: 21px;
+    }
+  }
+
+  .transport-list__item--bike {
+    .transport-list__img {
+      width: 24px;
+      height: 21px;
+    }
+  }
+
+  .transport-list__item--run {
+    .transport-list__img {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+
   .transport-list--checkbox {
     padding: 25px 0;
 

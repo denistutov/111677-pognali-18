@@ -7,10 +7,10 @@
   padding: 19px 0 0 0;
   margin: 0;
   color: $white;
-  background: $dark-blue-3 url("../img/globe-back-mobile@1x.jpg") no-repeat center -72px;
+  background: $dark-blue-3 url("../img/globe-back-mobile@1x.jpg") no-repeat center -75px;
 
   @media (min-resolution: $retina-dppx) {
-    background: $dark-blue-3 url("../img/globe-back-mobile@2x.jpg") no-repeat center -72px;
+    background: $dark-blue-3 url("../img/globe-back-mobile@2x.jpg") no-repeat center -75px;
     background-size: 319px;
   }
 
@@ -29,7 +29,7 @@
 
 .intro__title {
   display: inline-block;
-  margin: 0 0 246px 0;
+  margin: 0 0 244px 0;
   padding: 0;
   width: 240px;
   font-size: 36px;
@@ -47,10 +47,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 39px;
-  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 79px 131px;
+  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 79px 129px;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../img/traveller-illustration-mobile@2x.png") no-repeat 79px 131px;
+    background: url("../img/traveller-illustration-mobile@2x.png") no-repeat 79px 129px;
     background-size: 192px;
   }
 
@@ -72,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 55px 0 0 0;
+    padding: 59px 0 0 0;
     background: $dark-blue-1 url("../img/globe-back-tablet@1x.jpg") no-repeat center top 278px;
 
     @media (min-resolution: $retina-dppx) {
@@ -86,10 +86,10 @@
   }
 
   .intro__wrapper {
-    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 284px 245px;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 284px 240px;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 284px 245px;
+      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 284px 240px;
       background-size: 371px;
     }
 
@@ -111,7 +111,7 @@
   }
 
   .intro__reviews {
-    margin: 0 0 213px 0;
+    margin: 0 0 208px 0;
   }
 
   .intro__social {

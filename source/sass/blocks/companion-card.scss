@@ -9,12 +9,21 @@
   box-sizing: border-box;
   border-radius: 20px;
   background-color: $white;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 rgba($black, 0.08);
+
+    picture {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .companion-card__info {
   display: flex;
   width: 100%;
   padding: 0 0 0 4px;
+  overflow: hidden;
 }
 
 .companion-card__user {
@@ -24,24 +33,53 @@
 }
 
 .companion-card__picture {
+  width: 70px;
+  height: 70px;
   margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  picture {
+    transition: all 0.3s ease-out;
+  }
 }
 
 .companion-card__like {
   position: absolute;
   top: 53px;
   left: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 31px;
   height: 31px;
+  background-color: $bg-grey-1;
   border: none;
   border-radius: 50%;
-  background: $bg-grey-1 url("../img/heart.svg") no-repeat center center;
-  background-size: 13px 11px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-grey-2;
+  }
+
+  &:active {
+    .companion-card__like-icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.companion-card__like-icon {
+  width: 17px;
+  height: 17px;
 }
 
 .companion-card__like--active {
-  background: $bg-pink-like url("../img/heart-active.svg") no-repeat center center;
-  background-size: 13px 11px;
+  background-color: $bg-pink-like;
+
+  &:hover {
+    background-color: $bg-pink-like-hover;
+  }
 }
 
 .companion-card__name {
@@ -54,6 +92,14 @@
   color: $dark-blue-2;
 
   @include primary-font($bold);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion-card__name-text {
@@ -186,6 +232,12 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 34px 20px 25px 31px;
+  }
+
+  .companion-card__picture {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
   }
 
   .companion-card__info {
@@ -330,6 +382,10 @@
 
   .companion-card__picture {
     display: flex;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
   }
 
   .companion-card__info {

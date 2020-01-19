@@ -7,18 +7,35 @@
   width: 100%;
   border-radius: 10px;
   background-color: $white;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 rgba($black, 0.08);
+
+    .user-card__photo {
+      transform: scale(1.1);
+    }
+  }
+
+  picture {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 .user-card__photo {
   width: 270px;
   height: 270px;
   border-radius: 10px 10px 0 0;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
 }
 
 .user-card__level {
   position: absolute;
-  top: 16px;
-  left: 17px;
+  top: 18px;
+  left: 18px;
 }
 
 .user-card__wrapper {
@@ -27,14 +44,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 25px;
   background-color: $white;
   border-radius: 0 0 10px 10px;
 }
 
 .user-card__list {
   position: absolute;
-  top: -17px;
+  top: -13px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -63,6 +80,14 @@
   color: $dark-blue-2;
 
   @include primary-font($bold);
+
+  &:hover {
+    color: rgba($dark-blue-2, 0.7);
+  }
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+  }
 }
 
 .user-card__name-text {
@@ -79,7 +104,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 190px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .user-card__transport {
@@ -95,11 +120,27 @@
     width: 285px;
     justify-content: space-between;
     border-radius: 20px;
+
+    picture {
+      width: 285px;
+      height: 285px;
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   .user-card__wrapper {
-    padding-top: 24px;
+    padding-top: 31px;
     border-radius: 0 0 20px 20px;
+  }
+
+  .user-card__level {
+    top: 22px;
+    left: 20px;
+  }
+
+  .user-card__list {
+    top: -10px;
   }
 
   .user-card__name {
@@ -110,8 +151,8 @@
 
   .user-card__name-text {
     &::before {
-      top: 13px;
-      left: -21px;
+      top: 9px;
+      left: -22px;
     }
   }
 
@@ -122,10 +163,21 @@
   }
 
   .user-card__tags {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   .user-card__transport {
     margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-card__wrapper {
+    padding-top: 31px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .user-card__list {
+    top: -13px;
   }
 }

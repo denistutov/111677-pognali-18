@@ -48,6 +48,14 @@
   color: $text-grey;
 
   @include primary-font($normal);
+
+  &:hover {
+    color: $dark-blue-2;
+  }
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+  }
 }
 
 .country-table__country-list {
@@ -74,7 +82,7 @@
     }
 
     &:active {
-      background-color: $bg-grey-1; //проблема с обводкой
+      background-color: $bg-grey-1;
     }
   }
 

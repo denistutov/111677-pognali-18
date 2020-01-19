@@ -7,7 +7,7 @@
 
 .map__frame {
   width: 100%;
-  height: 300px;
+  height: 323px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,12 +16,12 @@
   }
 
   .map__frame {
-    height: 516px;
+    height: 566px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__frame {
-    height: 455px;
+    height: 515px;
   }
 }

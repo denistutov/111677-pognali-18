@@ -19,6 +19,7 @@
 @media (min-width: $desktop-width) {
   .user-logo {
     height: 285px;
+    border-radius: 20px 0 0 20px;
   }
 
   .user-logo__image {

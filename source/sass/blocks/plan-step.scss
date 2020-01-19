@@ -219,22 +219,7 @@
   }
 
   .plan-step__btn {
-    position: relative;
     width: 285px;
-    font-size: 24px;
-    text-align: left;
-    text-transform: none;
-
-    &::after {
-      position: absolute;
-      top: calc(50% - 7px);
-      right: 36px;
-      display: block;
-      content: "";
-      width: 10px;
-      height: 14px;
-      background: url("../img/triangle-arrow-right.svg") no-repeat center center;
-    }
   }
 
   .plan-step__btn--step-back {

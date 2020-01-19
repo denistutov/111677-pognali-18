@@ -722,11 +722,11 @@ body {
     border-radius: 50%; }
 
 .contacts__phone::before {
-  background: #121936 url("../img/contacts-phone.svg") no-repeat center center;
+  background: #121936 url("../img/icon-contacts-phone.svg") no-repeat center center;
   background-size: 18px; }
 
 .contacts__email::before {
-  background: #121936 url("../img/contacts-mail.svg") no-repeat center center;
+  background: #121936 url("../img/icon-contacts-mail.svg") no-repeat center center;
   background-size: 18px; }
 
 .contacts--yellow .contacts__link {
@@ -5473,11 +5473,11 @@ body {
   height: 31px;
   border: none;
   border-radius: 50%;
-  background: #edeff6 url("../img/heart.svg") no-repeat center center;
+  background: #edeff6 url("../img/icon-heart.svg") no-repeat center center;
   background-size: 13px 11px; }
 
 .companion-card__like--active {
-  background: #f9eaea url("../img/heart-active.svg") no-repeat center center;
+  background: #f9eaea url("../img/icon-heart-active.svg") no-repeat center center;
   background-size: 13px 11px; }
 
 .companion-card__name {

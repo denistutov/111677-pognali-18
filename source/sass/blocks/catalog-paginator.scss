@@ -32,6 +32,14 @@
 
 .catalog-paginator__numbers {
   display: none;
+
+  .catalog-paginator__btn {
+    &:active {
+      border-radius: 50%;
+      background-color: $orange-4;
+      opacity: 1;
+    }
+  }
 }
 
 .catalog-paginator__btn {
@@ -61,6 +69,14 @@
     border-top-width: 10px;
     border-bottom-width: 10px;
     border-right: 10px solid $dark-blue-1;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

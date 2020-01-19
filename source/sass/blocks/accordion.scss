@@ -12,6 +12,14 @@
   width: 100%;
   padding: 11px 0 0 1px;
   margin-bottom: 15px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .accordion__title {
@@ -71,11 +79,23 @@
     background: $white;
     border-radius: 4px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .accordion__input:checked ~ .accordion__indicator {
-  background: $white url("../img/tick.svg") no-repeat center center; //Сделать иконку для чекбокса
+  background: $white url("../img/tick.svg") no-repeat center center;
   background-size: 10px;
+}
+
+.accordion__input:focus ~ .accordion__indicator {
+  border: 1px solid $dark-blue-2;
 }
 
 .accordion--is-closed {

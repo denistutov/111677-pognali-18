@@ -78,6 +78,14 @@
   color: $white;
 
   @include primary-font($bold);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -45,6 +45,14 @@
 
 .cta__link {
   color: $orange-4;
+
+  &:hover {
+    color: $orange-1;
+  }
+
+  &:active {
+    color: rgba($orange-1, 0.3);
+  }
 }
 
 .cta__register {
@@ -53,13 +61,13 @@
 }
 
 .cta__contacts {
-  width: 100%;
+  width: 85%;
   margin: 0 0 17px 0;
 }
 
 @media (min-width: $tablet-width) {
   .cta {
-    padding-top: 120px;
+    padding-top: 135px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
@@ -76,7 +84,7 @@
 
   .cta__text {
     width: $tablet-width;
-    margin-bottom: 67px;
+    margin-bottom: 62px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -89,11 +97,11 @@
     align-self: flex-start;
     width: 476px;
     padding-left: 50px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .cta__register {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 
   .cta__text--footer {
@@ -103,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
   .cta {
-    padding-top: 160px;
+    padding-top: 162px;
   }
 
   .cta__wrapper {
@@ -111,17 +119,17 @@
   }
 
   .cta__title {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     line-height: 55px;
   }
 
   .cta__text {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     line-height: 31px;
   }
 
   .cta__text--footer {
-    margin-bottom: 79px;
+    margin-bottom: 81px;
     font-size: 29px;
   }
 
@@ -134,7 +142,7 @@
     justify-content: center;
     width: 800px;
     padding-left: 249px;
-    margin-bottom: 93px;
+    margin-bottom: 90px;
   }
 
   .cta__item {

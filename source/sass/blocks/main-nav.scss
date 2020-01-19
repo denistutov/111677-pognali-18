@@ -19,13 +19,13 @@
 .main-nav__contacts {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .main-nav__social {
   display: flex;
   justify-content: center;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .main-nav__header-social {
@@ -34,8 +34,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
+    padding-top: 82px;
     padding-left: 57px;
-    padding-top: 75px;
   }
 
   .main-nav__list {
@@ -48,7 +48,7 @@
   }
 
   .main-nav__contacts {
-    margin-bottom: 107px;
+    margin-bottom: 105px;
   }
 }
 

@@ -59,12 +59,11 @@
     content: "";
     width: 100%;
     height: 80px;
-    background-color: pink;
   }
 
   &:last-child::before {
     display: block;
-    background: linear-gradient(to bottom, rgba($white, 1) 0%,  rgba($bg-grey-1 , 1)  100%) no-repeat;
+    background: linear-gradient(to bottom, rgba($white, 0.01) 0%, rgba($bg-grey-1, 1)  100%) no-repeat;
   }
 }
 
@@ -75,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .directions {
-    padding-top: 71px;
+    padding-top: 75px;
     background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 80px right 40px;
 
     @media (min-resolution: $retina-dppx) {
@@ -87,7 +86,7 @@
 
   .directions__wrapper {
     padding: 0;
-    margin-bottom: 107px;
+    margin-bottom: 104px;
 
     @include container($tablet-width, $tablet-container-1);
   }
@@ -118,8 +117,8 @@
     &::before {
       z-index: -1;
       position: absolute;
-      top: -58px;
-      left: 15px;
+      top: -43px;
+      left: 39px;
       display: block;
       content: "";
       width: 141px;
@@ -151,7 +150,7 @@
     background: $bg-grey-1 url("../img/flags-back@1x.png") no-repeat top 86px right 57px;
 
     @include container($desktop-width, $desktop-container-1);
-    padding-top: 163px;
+    padding-top: 162px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -181,8 +180,8 @@
 
   .directions__show-all {
     position: absolute;
-    bottom: 0;
-    right: -440px;
+    bottom: -27px;
+    right: -448px;
     width: 275px;
   }
 }
