@@ -23,7 +23,7 @@
 .members-search__title {
   width: 118px;
   padding: 0;
-  margin: 0 0 21px 0;
+  margin: 0 0 20px 0;
   font-size: 23.5px;
   line-height: 22.5px;
   color: $dark-blue-2;
@@ -54,7 +54,7 @@
 
   .members-search__inner-wrapper {
     padding: 0;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
     border-bottom: 1px solid $border-orange-1;
   }
 
@@ -91,9 +91,13 @@
 
   .members-search__title {
     padding: 44px 0 0 0;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-size: 30px;
     line-height: 30px;
     border: none;
+  }
+
+  .members-search__button {
+    margin-bottom: 47px;
   }
 }

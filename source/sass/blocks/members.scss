@@ -18,7 +18,7 @@
 }
 
 .members__paginator {
-  margin-bottom: 33px;
+  margin-bottom: 54px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
   }
 
   .members__item {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     &:last-child {
       margin-bottom: 0;
@@ -37,7 +37,7 @@
   .members__paginator {
     @include container($tablet-width, $tablet-container-2);
 
-    margin-bottom: 121px;
+    margin-bottom: 111px;
   }
 }
 

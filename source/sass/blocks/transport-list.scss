@@ -165,15 +165,22 @@
     .transport-list__item {
       background: none;
     }
+  }
 
-    .transport-list__img {
-      width: 19px;
-      height: 21px;
+  .transport-list--accordion {
+    .transport-list__item {
+      margin-right: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .transport-list--grey-bg {
+    .transport-list__item {
+      margin-right: 2px;
+    }
+  }
+
   .transport-list--checkbox {
     padding: 25px 0;
 
