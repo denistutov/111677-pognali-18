@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 23px;
+  padding-top: 33px;
   background-color: $bg-grey-1;
 }
 
@@ -16,43 +16,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: $mobile-width;
-}
+  margin: 0 0 9px 0;
+  padding-top: 30px;
 
-.form-user__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: $mobile-width;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.form-user__tags {
-  width: $mobile-width-container;
-  margin-bottom: 25px;
-}
-
-.form-user__transport {
-  width: $mobile-width-container;
-  margin-bottom: 25px;
-}
-
-.form-user__title {
-  font-size: 24px;
-  line-height: 24px;
-  color: $dark-blue-2;
-
-  @include primary-font($bold);
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .form-user__plans {
   width: 100%;
+  min-height: 460px;
   padding: 0;
   margin: 0;
   border: none;
   border-radius: 30px 30px 0 0;
   background-color: $bg-grey-3;
+}
+
+.form-user__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include container($mobile-width, $mobile-container-1);
+  margin: 0 auto 20px auto;
+}
+
+.form-user__step-nav {
+  position: absolute;
+  top: 32px;
+  right: 12px;
+}
+
+.form-user__tags {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-user__transport {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-user__title {
+  @include container($mobile-width, $mobile-container-1);
+
+  margin: 28px 0 30px 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
 }
 
 .form-user__plans-list {
@@ -62,10 +76,9 @@
 }
 
 .form-user__add-plan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
+  margin-top: -30px;
+  margin-bottom: 14px;
   background-color: $bg-grey-4;
   border: none;
   border-radius: 30px 30px 0 0;
@@ -76,35 +89,63 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-user {
+    padding: 64px 0 0 0;
+  }
+
   .form-user__info {
     position: relative;
-    width: $tablet-width-container;
-    margin-bottom: 30px;
+
+    @include container($tablet-width, $tablet-container-1);
+    margin-bottom: 10px;
   }
 
   .form-user__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
+  }
+
+  .form-user__step-nav {
+    top: 65px;
+    right: 90px;
   }
 
   .form-user__tags {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .form-user__transport {
     position: absolute;
     top: 0;
-    width: $mobile-width-container;
+
+    @include container($mobile-width, $mobile-container-1);
     margin-bottom: 25px;
   }
 
   .form-user__title {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
+    margin: 50px 0 40px 0;
     font-size: 36px;
     line-height: 50px;
   }
 
+  .form-user__details {
+    margin-bottom: 52px;
+  }
+
   .form-user__step {
     margin: 0 0 40px 0;
+  }
+
+  .form-user__plans {
+    min-height: 561px;
+  }
+
+  .form-user__add-plan {
+    margin-bottom: 4px;
+
+    .form-user__title {
+      margin: 46px 0 48px 0;
+    }
   }
 }
 
@@ -113,24 +154,37 @@
     padding-top: 73px;
   }
 
+  .form-user__step {
+    margin: 0 0 44px 0;
+  }
+
   .form-user__info {
     flex-direction: row;
     justify-content: space-between;
-    width: $desktop-width-container;
-    padding: 0 0 65px 64px;
+
+    @include container($desktop-width, $desktop-container-1);
+    padding-bottom: 65px;
+    padding-right: $desktop-container;
+    padding-left: 125px;
     margin: 0;
     box-sizing: border-box;
   }
 
   .form-user__wrapper {
-    align-items: flex-end;
-    width: $desktop-width-container;
+    @include container($desktop-width, $desktop-container);
+    padding-right: 60px;
+    padding-left: 125px;
+
+    .form-user__step-nav {
+      display: none;
+    }
   }
 
   .form-user__details {
+    z-index: 7;
     position: absolute;
     top: -262px;
-    right: 95px;
+    right: 154px;
     margin: 0;
     padding: 0;
   }
@@ -145,14 +199,28 @@
   }
 
   .form-user__title {
-    width: 1256px;
+    width: 100%;
+    padding: 0;
+    margin: 48px 0 41px 10px;
   }
 
   .form-user__add-plan {
+    margin-top: -60px;
     border-radius: 60px 60px 0 0;
+
+    .form-user__wrapper {
+      padding-left: 60px;
+      margin-bottom: 84px;
+    }
+
+    .form-user__title {
+      margin: 49px 0 49px 0;
+      padding-left: 70px;
+    }
   }
 
   .form-user__plans {
+    min-height: 472px;
     border-radius: 60px 60px 0 0;
   }
 }

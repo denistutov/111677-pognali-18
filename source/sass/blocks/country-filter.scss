@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 14px;
   background-color: $bg-grey-2;
   border-radius: 0 0 30px 30px;
 }
@@ -11,49 +12,137 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $mobile-width-container;
-  height: 50px;
+  flex-wrap: wrap;
+  height: 180px;
+
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .country-filter__title {
+  position: relative;
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 27px;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   color: $dark-blue-1;
 
   @include primary-font($bold);
+
+  &::before {
+    position: absolute;
+    top: 1px;
+    left: -27px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 20px;
+    background: url("../../img/filter.svg") no-repeat center center;
+  }
+}
+
+.country-filter__continents {
+  order: 3;
+  padding: 0;
+  margin: 16px 0 0 25px;
 }
 
 .country-filter__button {
+  position: relative;
   height: 20px;
   font-size: 0;
-  background: url("../img/filter-close.svg") no-repeat center center;
+  background-color: transparent;
   border: none;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-// Это временная мера, до стилизации
+.country-filter__button--close {
+  display: block;
+  margin: 13px 7px 0 0;
+
+  &::before {
+    background: url("../img/filter-close.svg") no-repeat center center;
+  }
+}
+
 .country-filter__button--open {
   display: none;
+
+  &::before {
+    background: url("../img/dots.svg") no-repeat center center;
+  }
+}
+
+.country-filter--js {
+  .country-filter__popup {
+    display: none;
+  }
+
+  .country-filter__wrapper {
+    height: 50px;
+  }
+
+  .country-filter__continents {
+    display: none;
+  }
+
+  .country-filter__button--close {
+    display: none;
+  }
+
+  .country-filter__button--open {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .country-filter {
+    padding-top: 0;
+    border-radius: 0 0 60px 60px;
+  }
+
   .country-filter__wrapper {
-    justify-content: flex-end;
-    margin: 60px 0;
-    width: $tablet-width-container;
+    margin: 40px 0 50px 0;
     box-sizing: border-box;
+    height: 50px;
+
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .country-filter__title {
     display: none;
   }
 
+  .country-filter__continents {
+    order: 2;
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+
   .country-filter__button {
+    order: 3;
     z-index: 2;
     position: relative;
-    padding-right: 64px;
+    padding-right: 85px;
+    margin: 0;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -61,14 +150,36 @@
 
     @include primary-font($bold);
     cursor: pointer;
-    background-position: right;
+    background-position: top 1px right 2px;
+    background-size: 19px;
+
+    &::before {
+      top: 4px;
+      right: 2px;
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .country-filter__button--open {
+    padding-right: 50px;
+
+    &::before {
+      width: 28px;
+    }
   }
 
   .country-filter__popup-wrapper {
     z-index: 1;
     position: relative;
+    margin: 0 0 0 0;
     padding: 0;
-    margin: -117px 0 0 0;
+  }
+
+  .country-filter--js {
+    .country-filter__continents {
+      display: flex;
+    }
   }
 }
 
@@ -79,14 +190,16 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: $bg-grey-1;
   }
 
   .country-filter__wrapper {
     justify-content: space-between;
     align-items: center;
-    width: $desktop-width-container;
-    padding: 0 69px;
-    box-sizing: border-box;
+    margin-top: 44px;
+    margin-bottom: 58px;
+
+    @include container($desktop-width, 124px);
   }
 
   .country-filter__title {
@@ -95,9 +208,37 @@
     padding: 0;
     font-size: 20px;
     line-height: 18px;
+
+    &::before {
+      top: 0;
+      left: -44px;
+      width: 23px;
+      height: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      right: -6px;
+      top: 1px;
+      display: inline-block;
+      content: ":";
+      color: $dark-blue-2;
+    }
+  }
+
+  .country-filter__continents {
+    margin-right: 327px;
+    margin-top: 2px;
+  }
+
+  .country-filter__button {
+    &::before {
+      top: 2px;
+      right: 4px;
+    }
   }
 
   .country-filter__popup-wrapper {
-    margin: -120px 0 0 0;
+    margin: 0 0 0 0;
   }
 }

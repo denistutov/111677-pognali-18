@@ -1,7 +1,9 @@
 .plan-card {
-  width: $mobile-width-container;
-  padding: 24px;
-  margin-bottom: 20px;
+  display: block;
+  min-width: 270px;
+  width: 100%;
+  padding: 22px 23px 26px 24px;
+  margin-bottom: 9px;
   border-radius: 10px;
   background-color: $white;
   box-sizing: border-box;
@@ -37,8 +39,12 @@
 }
 
 .plan-card__data {
-  margin: 0 0 27px 0;
+  margin: 0 0 23px 0;
   padding: 0;
+
+  span {
+    display: none;
+  }
 }
 
 .plan-card__link {
@@ -47,11 +53,19 @@
   color: rgba(0, 0, 0, 0.3);
 
   @include primary-font($medium);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .plan-card {
-    width: $tablet-width-container;
+    width: 617px;
     padding: 0;
     margin-bottom: 10px;
 
@@ -64,7 +78,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 34px;
+    padding: 40px 32px 33px 36px;
     margin: 0 0 19px 0;
     font-size: 24px;
     line-height: 24px;
@@ -79,7 +93,7 @@
   .plan-card__content {
     display: flex;
     justify-content: space-between;
-    padding: 0 34px 19px 34px;
+    padding: 0 33px 17px 32px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -90,7 +104,11 @@
   }
 
   .plan-card__data {
-    margin: 0;
+    margin: 0 34px 0 0;
+
+    span {
+      display: inline-block;
+    }
   }
 }
 
@@ -100,6 +118,11 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1256px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   .plan-card__title {
@@ -107,7 +130,8 @@
     justify-content: flex-start;
     width: 300px;
     margin: 0;
-    border-bottom: 1px solid $border-grey-1;
+    padding: 37px 31px 35px 42px;
+    border-bottom: none;
   }
 
   .plan-card__number {
@@ -118,22 +142,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 650px;
+    width: 630px;
     padding: 0;
   }
-  // не работает выравние почему то justify-self
-  //
-  //.plan-card__link {
-  //  justify-self: flex-end;
-  //}
 
   .plan-card__text {
     margin-right: 30px;
-    width: 200px;
+    width: 147px;
   }
 
   .plan-card__data {
-    margin-right: 80px;
+    margin-right: 107px;
     width: 200px;
+
+    span {
+      display: none;
+    }
   }
 }

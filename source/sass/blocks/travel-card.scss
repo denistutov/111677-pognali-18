@@ -2,46 +2,63 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: $mobile-width-container;
-  height: 190px;
-  background-size: contain;
+  width: 100%;
+  min-height: 190px;
   border-radius: 10px;
 }
 
 .travel-card--thailand {
   background: url("../img/thailand-mobile@1x.jpg") no-repeat top center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/thailand-mobile@2x.jpg") no-repeat top center;
+    background-size: contain;
+  }
 }
 
 .travel-card--france {
   background: url("../img/france-mobile@1x.jpg") no-repeat top center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/france-mobile@2x.jpg") no-repeat top center;
+    background-size: contain;
+  }
 }
 
 .travel-card--czech {
   background: url("../img/czech-mobile@1x.jpg") no-repeat top center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/czech-mobile@2x.jpg") no-repeat top center;
+    background-size: contain;
+  }
 }
 
 .travel-card__wrapper {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  height: 90px;
+  min-height: 92px;
   background-color: $white;
 }
 
 .travel-card__desc {
   position: relative;
-  padding: 25px 0 27px 25px;
+  padding: 28px 0 0 24px;
 }
 
 .travel-card__flag {
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 25px;
 }
 
 .travel-card__title {
   padding: 0;
-  margin: 0 0 8px 0;
+  margin: 0 0 3px 0;
   font-size: 21px;
   line-height: 21px;
   color: $dark-blue-3;
@@ -61,49 +78,78 @@
 }
 
 .travel-card__count {
+  position: relative;
+  display: inline-block;
   padding: 30px 25px 0 0;
   font-size: 16px;
   line-height: 20px;
-  color: $text-grey;
+  color: rgba($text-grey, 0.3);
 
   @include primary-font($medium);
-  opacity: 0.3;
+
+  &::before {
+    position: absolute;
+    top: 33px;
+    left: -17px;
+    display: block;
+    content: "";
+    width: 11px;
+    height: 12px;
+    background: url("../../img/user.svg") no-repeat center center;
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .travel-card {
     flex-direction: row-reverse;
-    width: 618px;
-    height: 140px;
     background-position: right;
+    min-height: 140px;
+    border-radius: 20px;
   }
 
   .travel-card--thailand {
     background: $white url("../img/thailand-desktop@1x.jpg") no-repeat top right;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $white url("../img/thailand-desktop@2x.jpg") no-repeat top right;
+      background-size: contain;
+    }
   }
 
   .travel-card--france {
     background: $white url("../img/france-desktop@1x.jpg") no-repeat top right;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $white url("../img/france-desktop@2x.jpg") no-repeat top right;
+      background-size: contain;
+    }
   }
 
   .travel-card--czech {
     background: $white url("../img/czech-desktop@1x.jpg") no-repeat top right;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $white url("../img/czech-desktop@2x.jpg") no-repeat top right;
+      background-size: contain;
+    }
   }
 
   .travel-card__wrapper {
     flex-direction: column;
-    width: 432px;
     background: none;
+    height: 122px;
   }
 
   .travel-card__desc {
-    padding: 31px 0 0 31px;
-    margin-bottom: 20px;
+    padding: 29px 0 0 31px;
+    margin: 0;
   }
 
   .travel-card__title {
     font-size: 24px;
     line-height: 24px;
+    margin: 0 0 5px 0;
   }
 
   .travel-card__slogan {
@@ -112,13 +158,35 @@
   }
 
   .travel-card__flag {
-    left: 415px;
-    top: 40px;
+    left: 397px;
+    top: 17px;
   }
 
   .travel-card__count {
-    padding: 0 0 0 31px;
+    padding: 0 0 0 58px;
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      top: 7px;
+      left: 31px;
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-card {
+    border-radius: 20px;
+  }
+
+  .travel-card__desc {
+    padding: 22px 0 0 31px;
+  }
+
+  .travel-card__flag {
+    left: 339px;
+    top: 23px;
   }
 }

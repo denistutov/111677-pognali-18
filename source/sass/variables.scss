@@ -1,46 +1,59 @@
 $white: #ffffff;
 $black: #000000;
+$red: #ff0000;
 
 $dark-blue-1: #192144;
 $dark-blue-2: #1d2e5b;
 $dark-blue-3: #161c35;
 $dark-blue-4: #121936;
+$dark-blue-5: #101d41;
+$dark-blue-6: #141b3b;
 
 $orange-1: #ff8d30;
 $orange-2: #ffa530;
 $orange-3: #ffbd30;
 $orange-4: #ffd74b;
+$orange-5: #f26926;
 $calendar-orange: #ff5c23;
+$form-invalid: #f47e7e;
+$mail-form-invalid: #ffefef;
 
 $bg-grey-1: #edeff6;
 $bg-grey-2: #e2e5f2;
 $bg-grey-3: #dfe3f0;
 $bg-grey-4: #d4d9eb;
 $bg-grey-5: #d6daed;
+$bg-grey-6: #cccccc;
+$bg-grey-7: #f3f4f8;
+$bg-grey-8: #e2e5f1;
+
+$bg-hover-btn: #d1d7e9;
+$bg-hover-filter-btn: #c8cee8;
+$bg-pink-like: #f9eaea;
+$bg-pink-like-hover: #f9d8d8;
+$bg-status-offline: #f97676;
+$bg-status-online: #81e31e;
 $border-grey-1: #d6d9e6;
 $border-grey-2: #cbced9;
+$border-input-hover: #aeb4cb;
+$border-orange-1: #f3c72b;
+$border-hover-form: #959bb2;
 $text-grey: #444444;
 
-/*
-  Нужно переделать все блоки контейнеры через mixin:
-  - Пройтись по всем блокам и передалть логику цетровки
-  - Убрать лишние width или заменить на 100%, там где это возможно
-*/
-
 $mobile-width: 320px;
-$mobile-width-container: 270px;
 $mobile-container-1: 25px;
 $mobile-container-2: 50px;
 
 $tablet-width: 768px;
-$tablet-width-container: 618px;
-$tablet-container: 75px;
-$tablet-width-container-big: 688px; //временное название
+$tablet-container-1: 75px;
+$tablet-container-2: 40px;
 
 $desktop-width: 1440px;
-$desktop-width-container: 1320px;
+$desktop-container: 60px;
+$desktop-container-1: 130px;
+$desktop-container-2: 95px;
 
-/* -------------------------------------------------- */
+$retina-dppx: 1.5dppx;
 
 $light: 300;
 $normal: 400;

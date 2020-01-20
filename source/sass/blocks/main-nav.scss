@@ -1,32 +1,41 @@
 .main-nav {
   display: flex;
   justify-content: center;
-  width: 100%;
   background-color: $white;
+}
+
+.main-nav__wrapper {
+  width: 100%;
+}
+
+.main-nav__menu {
+  margin: 40px 0 53px 0;
+}
+
+.main-nav__top-menu {
+  margin-bottom: 74px;
 }
 
 .main-nav__contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .main-nav__social {
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 
 .main-nav__header-social {
   display: none;
 }
 
-.main-nav__wrapper {
-  min-width: $mobile-width-container;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    width: $tablet-width-container;
-    padding-left: 60px;
+    padding-top: 82px;
+    padding-left: 57px;
   }
 
   .main-nav__list {
@@ -35,11 +44,17 @@
 
   .main-nav__social {
     justify-content: flex-start;
+    margin: 0 0 25px 13px;
+  }
+
+  .main-nav__contacts {
+    margin-bottom: 105px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    position: relative;
     justify-content: flex-start;
     height: 50px;
     background-color: transparent;
@@ -49,8 +64,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding-left: 145px;
+    width: 974px; //проверить почему не работает flex-grow
+    padding: 0;
   }
 
   .main-nav__social {

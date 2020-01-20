@@ -1,18 +1,52 @@
 .page-title {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: $dark-blue-3;
+  background-color: $dark-blue-4;
+
+  &::before {
+    z-index: 6;
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 25px;
+    background: $dark-blue-4;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &::after {
+    z-index: 5;
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 25px;
+    background-color: $bg-grey-1;
+  }
+}
+
+.page-title--catalog {
+  &::after {
+    background-color: $bg-grey-2;
+  }
 }
 
 .page-title__wrapper {
   width: $mobile-width;
-  padding: 27px 27px 26px 0;
+  padding: 22px 0 0 25px;
   box-sizing: border-box;
 }
 
 .page-title__text {
+  z-index: 6;
+  position: relative;
   display: inline-block;
   margin: 0;
   font-size: 36px;
@@ -20,6 +54,19 @@
   color: $white;
 
   @include primary-font($bold);
+
+  &::before {
+    z-index: 6;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: $orange-1;
+    border-radius: 2.4px;
+  }
 }
 
 .page-title__link {
@@ -31,39 +78,120 @@
   color: $white;
 
   @include primary-font($bold);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-title {
     display: flex;
     align-items: center;
+
+    &::before {
+      bottom: 0;
+      height: 56px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    &::after {
+      bottom: -1px;
+      height: 55px;
+      background-color: $bg-grey-1;
+    }
+  }
+
+  .page-title--catalog {
+    &::after {
+      background-color: $bg-grey-2;
+    }
   }
 
   .page-title__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $tablet-width-container;
-    padding: 30px 0 67px 0;
+
+    @include container($tablet-width, $tablet-container-1);
+    padding-top: 112px;
+    padding-bottom: 70px;
   }
 
   .page-title__text {
     font-size: 60px;
-    line-height: 70px;
+    line-height: 65px;
+
+    &::before {
+      bottom: -74px;
+      height: 8px;
+      border-radius: 4px;
+    }
   }
 
   .page-title__link {
+    position: relative;
     display: inline-block;
+    padding-top: 9px;
+    padding-right: 60px;
+
+    &::after {
+      position: absolute;
+      top: 13px;
+      right: 0;
+      display: block;
+      content: "";
+      width: 32px;
+      height: 16px;
+      background: url("../img/return.svg") no-repeat center center;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    border-radius: 0 0 60px 60px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      bottom: -2px;
+      height: 65px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    &::after {
+      height: 60px;
+      background-color: $bg-grey-1;
+    }
+  }
+
+  .page-title--catalog {
+    &::after {
+      background-color: $bg-grey-1;
+    }
   }
 
   .page-title__wrapper {
-    width: $desktop-width-container;
-    padding: 126px 64px 69px 64px;
+    @include container($desktop-width, $desktop-container-1);
+    padding-left: 127px;
+    padding-top: 106px;
+    padding-bottom: 68px;
+  }
+
+  .page-title__link {
+    padding-right: 54px;
+
+    &::after {
+      top: 12px;
+      right: -8px;
+    }
+  }
+
+  .page-title__text::before {
+    bottom: -72px;
   }
 }

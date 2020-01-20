@@ -1,13 +1,13 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  min-width: $mobile-width-container;
+  width: 100%;
 }
 
 .reviews__text {
   display: inline-block;
   width: 160px;
-  margin-bottom: 32px;
+  margin-bottom: 18px;
   line-height: 22px;
 
   @include primary-font($light);
@@ -28,13 +28,15 @@
 
   .reviews__text {
     width: 260px;
-    margin-bottom: 52px;
+    margin-bottom: 44px;
+    padding-left: 34px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .reviews__author {
     width: 260px;
+    padding-left: 34px;
     font-size: 21px;
     line-height: 25px;
   }
@@ -42,6 +44,17 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 300px;
+    width: 286px;
+  }
+
+  .reviews__text {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 44px;
+  }
+
+  .reviews__author {
+    width: 100%;
+    padding: 0;
   }
 }

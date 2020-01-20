@@ -1,12 +1,11 @@
 .continents {
-  display: flex;
+  display: block;
   flex-direction: column;
-  margin: 0 0 25px 25px;
   list-style: none;
 }
 
 .continents__item {
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 
 .continents__link {
@@ -17,6 +16,14 @@
   color: rgba(25, 33, 68, 0.3);
 
   @include primary-font($bold);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .continents__link--active {
@@ -25,6 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .continents {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 365px;
@@ -38,7 +46,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .continents {
-    margin: 0 0 81px 350px;
+  .continents__item {
+    margin: 0;
   }
 }

@@ -6,8 +6,64 @@
   width: 60px;
   height: 60px;
   color: $white;
-  background-color: $black;
   border-radius: 50%;
+  background-color: rgba($black, 0.6);
+}
+
+.user-level--form {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+
+  .user-level__value {
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 38px;
+    line-height: 38px;
+    color: $dark-blue-3;
+
+    @include primary-font($bold);
+  }
+
+  .user-level__text {
+    position: relative;
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-grey;
+
+    @include primary-font($normal);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -10px;
+      display: block;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $border-grey-2;
+    }
+  }
+
+  .user-level__scale {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 1;
+  }
+}
+
+.user-level__scale {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 64px;
+  height: 64px;
+  stroke: $orange-1;
+  stroke-width: 2;
 }
 
 .user-level__value {
@@ -18,19 +74,77 @@
 }
 
 .user-level__text {
+  position: relative;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 14px;
 
   @include primary-font($normal);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    display: block;
+    content: "";
+    width: calc(100% + 8px);
+    height: 1px;
+    background-color: $white;
+    opacity: 0.3;
+  }
 }
 
 .user-level--simple {
+  position: relative;
   width: 45px;
   height: 45px;
+  font-size: 24px;
   background-color: transparent;
-  border: 1px solid $orange-1;
 
   .user-level__value {
     color: $dark-blue-2;
+  }
+
+  .user-level__text {
+    display: none;
+  }
+
+  .user-level__scale {
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-level--simple {
+    width: 60px;
+    height: 60px;
+
+    .user-level__text {
+      display: block;
+      color: $text-grey;
+      opacity: 0.4;
+
+      &::before {
+        background-color: $text-grey;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-level--form {
+    width: 94px;
+    height: 94px;
+
+    .user-level__value {
+      color: $white;
+    }
+
+    .user-level__text {
+      color: $white;
+    }
   }
 }

@@ -1,10 +1,7 @@
 .button {
   display: inline-block;
+  width: 170px;
   padding: 30px 0 30px 25px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  box-sizing: border-box;
   font-size: 18px;
   text-align: left;
   text-decoration: none;
@@ -13,39 +10,173 @@
 
   @include primary-font($bold);
   background-color: $orange-4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $orange-3;
+  }
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+  }
+}
+
+.button--arrow-right {
+  position: relative;
+  font-size: 18px;
+  text-align: left;
+  text-transform: none;
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 20px;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 14px;
+    background: url("../img/triangle-arrow-right.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.button--arrow-change {
+  padding: 20px 0;
+  font-size: 17px;
+  color: $dark-blue-3;
+  background: $orange-4;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    display: none;
+  }
+}
+
+.button--arrow-left {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 36px;
+    display: none;
+    content: "";
+    width: 10px;
+    height: 14px;
+    background: url("../img/triangle-arrow-left.svg") no-repeat center center;
+    background-size: contain;
+  }
 }
 
 .button--round {
   padding: 20px 0;
-  font-size: 17px;
-  text-align: center;
+  border-radius: 25px;
   text-transform: uppercase;
-  color: $dark-blue-3;
-  border-radius: 20px;
+  text-align: center;
+  color: $dark-blue-4;
 }
 
 .button--border {
-  padding: 24px;
-  color: $black;
+  width: 100%;
+  padding: 28px 0 28px 21px;
+  color: $dark-blue-1;
   background-color: transparent;
+  background-position: right 18px center;
   border: solid 3px $dark-blue-1;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-blue-1;
+  }
+
+  &:hover::after {
+    background: url("../img/triangle-arrow-right--white.svg") no-repeat center center;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .button--transparent-bg {
-  padding: 0;
+  position: relative;
+  padding: 10px 0;
   margin: 0;
   font-size: 17px;
   text-align: center;
   text-transform: uppercase;
   color: $dark-blue-3;
-  background-color: transparent;
+  background: none;
   border: none;
+
+  &:hover {
+    background: none;
+    opacity: 0.7;
+  }
+
+  &:active {
+    background: none;
+    opacity: 0.3;
+  }
+}
+
+.button--paginator {
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 18px;
+    background-color: $dark-blue-2;
+  }
+
+  &::after {
+    top: 8px;
+    width: 18px;
+    height: 2px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.3;
+  }
 }
 
 .button--no-bg {
-  padding: 0;
+  padding: 15px 25px;
   font-size: 16px;
   background: none;
+
+  &:hover {
+    opacity: 0.7;
+    background: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background: none;
+  }
 }
 
 .button--grey-bg {
@@ -53,29 +184,150 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: $bg-grey-3;
+  border-radius: 25px;
+  background: $bg-grey-3;
+
+  &:hover {
+    background-color: $bg-hover-btn;
+  }
 }
 
 .button--white-bg {
   background-color: $white;
+
+  &:hover {
+    background-color: $white;
+    box-shadow: 0 2px 10px rgba($black, 0.08);
+  }
+
+  &:active {
+    background-color: $border-orange-1;
+    color: rgba($dark-blue-3, 0.3);
+  }
 }
 
 .button--country-filter {
-  padding: 20px 0;
-  text-align: center;
+  padding: 20px 0 20px 108px;
+  text-align: left;
   text-transform: uppercase;
-  background-color: $bg-grey-5;
+  background: $bg-grey-5;
+  border-radius: 20px;
+
+  span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: -23px;
+      display: inline-block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: url("../../img/filter-close.svg") no-repeat center right;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-hover-filter-btn;
+  }
+
+  &:active {
+    color: rgba($dark-blue-2, 0.3);
+
+    span {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.button--popup-close {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background: none;
+  border-radius: 0;
+  opacity: 0.3;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     font-size: 24px;
-    padding: 40px 0 40px 25px;
+    padding: 40px 0 40px 33px;
+    border-radius: 20px;
+    background-position: right 33px center;
+  }
+
+  .button--arrow-right {
+    font-size: 24px;
+  }
+
+  .button--arrow-change {
+    text-align: left;
+    text-transform: none;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  .button--arrow-left {
+    &::before {
+      display: block;
+    }
   }
 
   .button--round {
+    width: 190px;
+    padding: 25px 0;
+    margin-bottom: 6px;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
+  }
+
+  .button--country-filter {
+    font-size: 20px;
+    padding: 50px 0 50px 282px;
+
+    span::before {
+      top: 2px;
+      left: -40px;
+      width: 19px;
+      height: 19px;
+    }
   }
 
   .button--no-bg {
@@ -86,20 +338,51 @@
 
   .button--grey-bg {
     padding: 30px 0;
+    border-radius: 10px;
   }
 
   .button--border {
-    padding: 37px;
+    padding: 37px 33px;
+    background-position: right 31px center;
   }
 
   .button--white-bg {
     padding: 25px 0;
+    border-radius: 25px;
   }
 
   .button--transparent-bg {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
+    color: $dark-blue-2;
+  }
+
+  .button--paginator {
+    &::before {
+      top: 0;
+      left: 12px;
+      width: 3px;
+      height: 27px;
+    }
+
+    &::after {
+      top: 12px;
+      left: 0;
+      width: 27px;
+      height: 3px;
+    }
+  }
+
+  .button--popup-close {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    &::before,
+    &::after {
+      height: 2px;
+    }
   }
 }
 
@@ -110,13 +393,27 @@
   }
 
   .button--round {
-    padding: 40px 0 40px 34px;
-    font-size: 20px;
-    border-radius: 20px;
+    padding: 25px 0;
   }
 
-  .button--round-header {
-    padding: 20px;
+  .button--arrow-right {
+    &::after {
+      right: 36px;
+    }
+  }
+
+  .button--country-filter {
+    text-align: center;
+    padding: 50px 0;
+
+    span {
+      padding: 0 0 0 35px;
+
+      &::before {
+        left: -4px;
+        top: 4px;
+      }
+    }
   }
 
   .button--transparent-bg {
@@ -125,5 +422,21 @@
 
   .button--white-bg {
     padding: 25px 0;
+  }
+
+  .button--border {
+    padding: 38px 33px;
+    background-position: right 32px center;
+  }
+
+  .button--popup-close {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+
+    &::before,
+    &::after {
+      height: 2px;
+    }
   }
 }

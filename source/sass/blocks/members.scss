@@ -7,5 +7,52 @@
 
 .members__list {
   padding: 0;
+  margin: 0 0 13px 0;
+
+  @include container($mobile-width, $mobile-container-1);
   list-style: none;
+}
+
+.members__item {
+  margin-bottom: 10px;
+}
+
+.members__paginator {
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .members__list {
+    @include container($tablet-width, $tablet-container-2);
+  }
+
+  .members__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .members__paginator {
+    @include container($tablet-width, $tablet-container-2);
+
+    margin-bottom: 121px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .members {
+    align-items: flex-start;
+  }
+
+  .members__list {
+    padding: 0;
+  }
+
+  .members__paginator {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 140px;
+  }
 }

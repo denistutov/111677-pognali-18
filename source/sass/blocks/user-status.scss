@@ -1,0 +1,23 @@
+.user-status::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.user-status--online::before {
+  background-color: $bg-status-online;
+}
+
+.user-status--offline::before {
+  background-color: $bg-status-offline;
+}
+
+@media (min-width: $tablet-width) {
+  .user-status::before {
+    width: 7px;
+    height: 7px;
+  }
+}

@@ -1,49 +1,302 @@
 .country-select {
+  position: relative;
   display: flex;
-  flex-wrap: wrap; //удалить когда будет иконка
   width: 100%;
+
+  &::before {
+    z-index: 3;
+    position: absolute;
+    bottom: 17px;
+    right: 49px;
+    display: none;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $dark-blue-2;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -16px;
+    right: 50px;
+    display: block;
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url("../img/small-arrow.svg") no-repeat center center;
+    background-size: 5px 10px;
+    opacity: 0.3;
+  }
 }
 
 .country-select__drop-list {
+  position: relative;
+  display: block;
   width: 168px;
   height: 42px;
+  padding: 2px 0 0 11px;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: $dark-blue-2;
+
+  @include primary-font($medium);
+
+  background-color: $white;
   border: 1px solid $border-grey-2;
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &::after {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, rgba($white, 0.3) 0%, rgba($white, 1) 40%, $white 40%, $white 100%) no-repeat;
+  }
+
+  &::before {
+    z-index: 2;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/dropdown-form.svg") no-repeat center center;
+    background-size: 12px 7px;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $border-hover-form;
+  }
+}
+
+.country-select--empty {
+  &::before {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    border: 1px solid $border-grey-2;
+  }
+
+  .country-select__drop-list {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      border-color: $border-hover-form;
+    }
+  }
+
+  .country-select__flag {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+  }
+
+  .country-select__flag-img--empty {
+    padding-left: 11px;
+  }
+}
+
+.country-select--add-new {
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: $bg-grey-1;
+    border: 1px solid $border-grey-2;
+  }
+
+  .country-select__drop-list {
+    width: 100%;
+    border: none;
+    background-color: $bg-grey-1;
+
+    &:hover {
+      background-color: $bg-grey-3;
+    }
+
+    &:active {
+      color: rgba($dark-blue-2, 0.3);
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      top: 13px;
+      right: 13px;
+      background: url("../../img/show-more-plus.svg") no-repeat center center;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .country-select__flag {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+  width: 53px;
   height: 42px;
   border: 1px solid $border-grey-2;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
+.country-select__flag-img--empty {
+  opacity: 0.3;
+}
+
+.country-select__delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background: $bg-grey-1 url("../img/close.svg") no-repeat center center;
+  background-size: 9px;
+}
+
 @media (min-width: $tablet-width) {
   .country-select {
-    align-items: center;
+    &::before {
+      display: block;
+      right: 128px;
+      bottom: 29px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .country-select__drop-list {
     width: 369px;
     height: 70px;
     margin-right: 53px;
+    padding: 0 0 0 23px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+
+    &::before {
+      top: 30px;
+      right: 27px;
+      width: 17px;
+      height: 9px;
+      background-size: contain;
+    }
+  }
+
+  .country-select--add-new {
+    .country-select__drop-list {
+      width: 369px;
+
+      &::before {
+        top: 26px;
+        right: 28px;
+        width: 17px;
+        height: 17px;
+        background-size: contain;
+      }
+    }
+  }
+
+  .country-select--empty {
+    &::before {
+      background-color: $white;
+    }
+
+    .country-select__drop-list {
+      border: 1px solid $border-grey-2;
+      border-radius: 4px;
+
+      &::before {
+        display: block;
+      }
+    }
   }
 
   .country-select__flag {
-    width: 70px;
-    height: 47px;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .country-select__flag-img--empty {
+    display: none;
+  }
+
+  .country-select__delete {
+    top: 21px;
+    right: -6px;
+    width: 22px;
+    height: 25px;
+    background: transparent url("../../img/filter-close.svg") no-repeat center center;
+    background-size: 17px;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .country-select {
+    &::before {
+      right: 218px;
+    }
+  }
+
   .country-select__drop-list {
     width: 730px;
     margin-right: 85px;
+    padding-top: 4px;
+    padding-left: 25px;
+  }
+
+  .country-select--add-new {
+    .country-select__drop-list {
+      width: 730px;
+    }
   }
 
   .country-select__flag {
     margin-right: 90px;
+  }
+
+  .country-select__delete {
+    right: 4px;
   }
 }

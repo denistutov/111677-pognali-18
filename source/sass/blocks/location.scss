@@ -1,24 +1,35 @@
 .location {
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: -30px;
 }
 
 .location__wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 206px;
+  padding-top: 30px;
   background-color: $orange-4;
   border-radius: 0 0 30px 30px;
 }
 
 .location__desc {
-  width: $mobile-width-container;
+  @include container($mobile-width, $mobile-container-1);
+}
+
+.location__address {
+  margin: 33px 0 32px 61px;
+  padding: 0;
 }
 
 .location__link {
+  position: relative;
   display: inline-block;
   width: 143px;
   font-size: 16px;
@@ -28,24 +39,56 @@
   color: $dark-blue-1;
 
   @include primary-font($bold);
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -62px;
+    display: block;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background: $dark-blue-4 url("../img/contacts-location.svg") no-repeat center center;
+    background-size: 14px;
+    border-radius: 50%;
+  }
 }
 
 .location__navigate {
-  width: $mobile-width-container;
   margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .location__wrapper {
+    padding-top: 160px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .location__desc {
-    width: $tablet-width-container;
-    padding-top: 40px;
+    @include container($tablet-width, $tablet-container-1);
+  }
+
+  .location__address {
+    padding: 0;
+    margin: 0;
   }
 
   .location__link {
-    width: 100%;
-    margin-bottom: 64px;
+    width: 520px;
+    margin-bottom: 62px;
+    padding-left: 93px;
     font-size: 28px;
     line-height: 28px;
+
+    &::before {
+      top: -22px;
+      left: 1px;
+      width: 66px;
+      height: 66px;
+      background-size: 21px;
+    }
   }
 
   .location__navigate {
@@ -55,21 +98,38 @@
 }
 
 @media (min-width: $desktop-width) {
+  .location__wrapper {
+    min-height: 230px;
+    padding-top: 60px;
+  }
+
   .location__desc {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: $desktop-width-container;
-    padding: 60px 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @include container($desktop-width, $desktop-container-1);
+    padding-top: 90px;
+    padding-right: 134px;
   }
 
   .location__address {
-    margin: 0 148px 0 0;
+    margin: 0;
     padding: 0;
   }
 
   .location__link {
+    padding-right: 58px;
     margin: 0;
+    line-height: 82px;
+
+    &::before {
+      top: -6px;
+      left: -29px;
+      width: 90px;
+      height: 90px;
+      background-size: 32px;
+    }
   }
 
   .location__navigate {

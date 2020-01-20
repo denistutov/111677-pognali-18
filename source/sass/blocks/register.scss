@@ -5,7 +5,8 @@
 .register__input {
   width: 100%;
   height: 62px;
-  padding: 24px;
+  padding: 3px 0 0 22px;
+  font-size: 18px;
   background-color: $white;
   border-radius: 10px;
   border: none;
@@ -14,7 +15,31 @@
   &::placeholder {
     font-size: 18px;
     line-height: 18px;
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba($text-grey, 0.3);
+  }
+
+  &:hover {
+    background-color: $bg-grey-1;
+  }
+
+  &:hover::placeholder {
+    color: rgba($text-grey, 0.5);
+  }
+
+  &:active,
+  &:focus {
+    color: white;
+    background-color: transparent;
+    border: 2px solid $white;
+  }
+
+  &:focus::placeholder {
+    color: white;
+  }
+
+  &:invalid {
+    color: $red;
+    background-color: $mail-form-invalid;
   }
 }
 
@@ -24,15 +49,48 @@
   right: 0;
   width: 60px;
   height: 100%;
-  background-color: $orange-4;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+
+  &:active {
+    .register__button-text {
+      opacity: 0.3;
+    }
+  }
+}
+
+.register__button-text {
+  display: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-blue-2;
+
+  @include primary-font($bold);
+}
+
+@media (min-width: $tablet-width) {
+  .register__input {
+    height: 80px;
+    padding: 5px 0 0 35px;
+    font-size: 24px;
+    border-radius: 20px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(68, 68, 68, 0.3);
+
+      @include primary-font($bold);
+    }
+  }
+
+  .register__button {
+    border-radius: 0 20px 20px 0;
+    width: 82px;
+    background-position: right 38px center;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .register__input {
-    height: 82px;
     padding: 30px 0 32px 35px;
     font-size: 24px;
     line-height: 24px;
@@ -44,6 +102,11 @@
   }
 
   .register__button {
-    width: 324px;
+    width: 327px;
+    padding: 0 0 0 35px;
+  }
+
+  .register__button-text {
+    display: inline-block;
   }
 }

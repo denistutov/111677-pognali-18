@@ -1,9 +1,11 @@
 .cta {
+  z-index: 2;
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 72px;
-  padding-bottom: 45px;
+  padding: 102px 0 0 0;
+  margin-top: -30px;
   background-color: $dark-blue-1;
   border-radius: 0 0 30px 30px;
 }
@@ -13,13 +15,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: $mobile-width-container;
+
+  @include container($mobile-width, $mobile-container-1);
 }
 
 .cta__title {
   display: block;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -31,7 +34,7 @@
 .cta__text {
   width: 220px;
   padding: 0;
-  margin-bottom: 34px;
+  margin: 0 0 30px 0;
   text-align: center;
   font-size: 16px;
   line-height: 22px;
@@ -42,70 +45,113 @@
 
 .cta__link {
   color: $orange-4;
+
+  &:hover {
+    color: $orange-1;
+  }
+
+  &:active {
+    color: rgba($orange-1, 0.3);
+  }
 }
 
 .cta__register {
-  width: $mobile-width-container;
+  width: 100%;
+  margin-bottom: 28px;
 }
 
 .cta__contacts {
-  width: $mobile-width-container;
+  width: 85%;
+  margin: 0 0 17px 0;
 }
 
 @media (min-width: $tablet-width) {
+  .cta {
+    padding-top: 135px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .cta__wrapper {
-    width: $tablet-width-container;
+    @include container($tablet-width, $tablet-container-1);
   }
 
   .cta__title {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     font-size: 45px;
     line-height: 45px;
   }
 
   .cta__text {
-    width: auto;
-    margin-bottom: 67px;
+    width: $tablet-width;
+    margin-bottom: 62px;
     font-size: 28px;
     line-height: 33px;
   }
 
+  .cta__text-br {
+    display: none;
+  }
+
   .cta__contacts {
-    width: $tablet-width-container;
+    align-self: flex-start;
+    width: 476px;
+    padding-left: 50px;
+    margin-bottom: 35px;
   }
 
   .cta__register {
-    width: $tablet-width-container;
-    margin-bottom: 61px;
+    margin-bottom: 59px;
+  }
+
+  .cta__text--footer {
+    margin-bottom: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .cta {
+    padding-top: 162px;
+  }
+
   .cta__wrapper {
-    width: $desktop-width-container;
+    @include container($desktop-width, $desktop-container-1);
+  }
+
+  .cta__title {
+    margin-bottom: 55px;
+    line-height: 55px;
   }
 
   .cta__text {
     margin-bottom: 61px;
+    line-height: 31px;
+  }
+
+  .cta__text--footer {
+    margin-bottom: 81px;
+    font-size: 29px;
   }
 
   .cta__register {
-    width: $desktop-width-container;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
   }
 
   .cta__contacts {
     display: flex;
     justify-content: center;
-    width: $desktop-width-container;
+    width: 800px;
+    padding-left: 249px;
+    margin-bottom: 90px;
   }
 
   .cta__item {
-    margin: 0 234px 0 0;
+    margin: 0 225px 0 0;
     padding: 0;
 
     &:last-child {
       margin: 0;
+      padding-left: 10px;
     }
   }
 }

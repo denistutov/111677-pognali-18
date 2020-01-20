@@ -1,4 +1,5 @@
 body {
+  position: relative;
   padding: 0;
   margin: 0;
 }
@@ -13,6 +14,10 @@ body {
   overflow: hidden;
 }
 
-.modal {
+.modal-popup {
   display: none;
+}
+
+.modal-popup--is-open {
+  display: flex;
 }
