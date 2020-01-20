@@ -1,5 +1,5 @@
 .continents {
-  display: none;
+  display: block;
   flex-direction: column;
   list-style: none;
 }
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .continents {
-    margin: 0 0 0 0;
+  .continents__item {
+    margin: 0;
   }
 }

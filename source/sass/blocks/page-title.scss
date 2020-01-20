@@ -182,11 +182,16 @@
     padding-bottom: 68px;
   }
 
-  .page-title__text::before {
-    bottom: -72px;
+  .page-title__link {
+    padding-right: 54px;
+
+    &::after {
+      top: 12px;
+      right: -8px;
+    }
   }
 
-  .page-title__link::after {
-    top: 9px;
+  .page-title__text::before {
+    bottom: -72px;
   }
 }
