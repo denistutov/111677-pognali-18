@@ -10,7 +10,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page-header page-header--inner page-header--js">
+    <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo logo" href="index.html">
@@ -110,7 +110,7 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="country-filter country-filter--js">
+      <section class="country-filter">
         <div class="country-filter__wrapper">
           <h2 class="country-filter__title">Фильтрация по странам</h2>
           <ul class="country-filter__continents continents">
@@ -532,7 +532,7 @@
                   <h3 class="accordion__title">Транспорт</h3>
                   <button class="accordion__toggle" type="button" aria-label="Открыть/закрыть пункт меню"></button>
                 </div>
-                <ul class="accordion__list accordion__transport transport-list transport-list--checkbox">
+                <ul class="accordion__list accordion__transport transport-list transport-list--checkbox transport-list--accordion">
                   <li class="transport-list__item">
                     <label class="transport-list__label" for="plane">
                       <input class="transport-list__input visually-hidden" id="plane" type="checkbox">
@@ -696,11 +696,11 @@
                 </div>
                 <div class="companion-card__level">
                   <h3 class="companion-card__title">Левел:</h3>
-                  <div class="companion-card__level user-level user-level--simple">
+                  <div class="companion-card__level-scale user-level user-level--simple">
                     <span class="user-level__value">99</span>
                     <span class="user-level__text">level</span>
                     <svg class="user-level__scale" viewBox="0 0 42 42">
-                      <circle cx="21" cy="21" r="19" fill="transparent"  stroke-dasharray="100 7" stroke-dashoffset="18"></circle>
+                      <circle cx="21" cy="17" r="20" fill="transparent" stroke-dasharray="100 4" stroke-dashoffset="10"></circle>
                     </svg>
                   </div>
                 </div>
@@ -800,11 +800,11 @@
                 </div>
                 <div class="companion-card__level">
                   <h3 class="companion-card__title">Левел:</h3>
-                  <div class="companion-card__level user-level user-level--simple">
+                  <div class="companion-card__level-scale user-level user-level--simple">
                     <span class="user-level__value">80</span>
                     <span class="user-level__text">level</span>
                     <svg class="user-level__scale" viewBox="0 0 42 42">
-                      <circle cx="21" cy="21" r="19" fill="transparent" stroke-dasharray="80 20" stroke-dashoffset="12"></circle>
+                      <circle cx="21" cy="17" r="20" fill="transparent" stroke-dasharray="82 18" stroke-dashoffset="5"></circle>
                     </svg>
                   </div>
                 </div>
@@ -908,11 +908,11 @@
                 </div>
                 <div class="companion-card__level">
                   <h3 class="companion-card__title">Левел:</h3>
-                  <div class="companion-card__level user-level user-level--simple">
+                  <div class="companion-card__level-scale user-level user-level--simple">
                     <span class="user-level__value">25</span>
                     <span class="user-level__text">level</span>
                     <svg class="user-level__scale" viewBox="0 0 42 42">
-                      <circle cx="21" cy="21" r="19" fill="transparent"  stroke-dasharray="30 90" stroke-dashoffset="30"></circle>
+                      <circle cx="21" cy="17" r="19" fill="transparent"  stroke-dasharray="30 90" stroke-dashoffset="30"></circle>
                     </svg>
                   </div>
                 </div>
@@ -1009,11 +1009,11 @@
                 </div>
                 <div class="companion-card__level">
                   <h3 class="companion-card__title">Левел:</h3>
-                  <div class="companion-card__level user-level user-level--simple">
+                  <div class="companion-card__level-scale user-level user-level--simple">
                     <span class="user-level__value">50</span>
                     <span class="user-level__text">level</span>
                     <svg class="user-level__scale" viewBox="0 0 42 42">
-                      <circle cx="21" cy="21" r="19" fill="transparent" stroke-dasharray="50 60" stroke-dashoffset="20"></circle>
+                      <circle cx="21" cy="17" r="19" fill="transparent" stroke-dasharray="50 60" stroke-dashoffset="20"></circle>
                     </svg>
                   </div>
                 </div>
@@ -1101,5 +1101,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/page-header.js"></script>
+    <script src="js/country-filter.js"></script>
   </body>
 </html>

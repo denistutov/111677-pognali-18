@@ -26,6 +26,7 @@
   font-size: 0;
   background: transparent url("../img/menu-close.svg") no-repeat center center;
   border: none;
+  cursor: pointer;
 }
 
 .page-header__login {
@@ -35,12 +36,8 @@
 .page-header--js {
   background-color: $dark-blue-3;
 
-  .page-header--inner {
-    background-color: $dark-blue-4;
-  }
-
   .page-header__nav {
-    z-index: 100;
+    z-index: 300;
     position: fixed;
     top: 73px;
     display: none;
@@ -53,10 +50,10 @@
       z-index: -1;
       position: absolute;
       top: 0;
-      left: -50%;
+      left: -100%;
       display: block;
       content: "";
-      width: 200%;
+      width: 200vw;
       height: 200%;
       background-color: $white;
     }
@@ -70,18 +67,18 @@
     background: transparent url("../img/menu.svg") no-repeat center center;
     background-size: contain;
   }
+
+  .page-header__toggle--is-open {
+    width: 19px;
+    height: 19px;
+    background: transparent url("../img/menu-close.svg") no-repeat center center;
+  }
 }
 
 .page-header--menu-open {
   z-index: 100;
   position: fixed;
   background-color: white;
-
-  .page-header__toggle {
-    width: 19px;
-    height: 19px;
-    background: transparent url("../img/menu-close.svg") no-repeat center center;
-  }
 }
 
 .page-header--scroll {
@@ -89,8 +86,16 @@
   position: fixed;
   background-color: $white;
 
+  .page-header__title {
+    display: none;
+  }
+
   .page-header__toggle {
     background: url("../img/menu-grey.svg") no-repeat center center;
+  }
+
+  .page-header__toggle--is-open {
+    background: transparent url("../img/menu-close.svg") no-repeat center center;
   }
 }
 
@@ -177,7 +182,7 @@
   .page-header--scroll {
     background-color: $white;
 
-    a {
+    a span {
       color: $dark-blue-1;
     }
 

@@ -97,7 +97,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 25px 10px 25px 28px;
+    padding: 25px 17px 25px 28px;
     box-sizing: border-box;
     border-radius: 20px;
     background-color: $white;
@@ -115,6 +115,9 @@
     display: flex;
 
     .catalog-paginator__btn {
+      width: 50px;
+      height: 50px;
+
       &::before {
         display: none;
       }
@@ -125,11 +128,11 @@
     width: 200px;
     padding-left: 42px;
     margin-top: 32px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 
   .catalog-paginator__btn {
-    width: 50px;
+    width: 42px;
     height: 50px;
     border-radius: 0;
   }
@@ -151,15 +154,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-paginator__show-more {
-    width: 240px;
-    padding: 0;
-    margin-top: 50px;
-    margin-bottom: 68px;
-    text-align: center;
-  }
-
   .catalog-paginator__nav {
     width: 950px;
+    padding: 25px 31px 25px 28px;
+  }
+
+  .catalog-paginator__btn {
+    width: 40px;
+  }
+
+  .catalog-paginator__show-more {
+    width: 250px;
+    margin-top: 54px;
+    margin-bottom: 65px;
+    padding-right: 66px;
+    text-align: center;
   }
 }

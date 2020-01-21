@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 15px 15px 73px 14px;
+  padding: 15px 15px 84px 14px;
   box-sizing: border-box;
   border-radius: 20px;
   background-color: $white;
@@ -70,8 +70,8 @@
 }
 
 .companion-card__like-icon {
-  width: 17px;
-  height: 17px;
+  width: 13px;
+  height: 11px;
 }
 
 .companion-card__like--active {
@@ -207,17 +207,23 @@
 }
 
 .companion-card__level {
-  margin: 0 auto;
+  position: relative;
 
   .companion-card__title {
     margin-bottom: 10px;
   }
 }
 
+.companion-card__level-scale {
+  position: absolute;
+  bottom: -11px;
+  right: 4px;
+}
+
 .companion-card__btn {
   position: absolute;
   left: 20px;
-  bottom: 23px;
+  bottom: 22px;
   width: 230px;
 }
 
@@ -237,11 +243,14 @@
   .companion-card__picture {
     width: 190px;
     height: 190px;
+    margin: 0;
     border-radius: 20px;
   }
 
   .companion-card__info {
-    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    width: 475px;
     margin-bottom: 21px;
     margin-right: 93px;
   }
@@ -270,10 +279,11 @@
 
   .companion-card__name-text {
     position: relative;
+    padding: 0 0 0 3px;
 
     &::before {
       top: 10px;
-      right: -32px;
+      right: -30px;
     }
   }
 
@@ -282,7 +292,7 @@
     display: inline-block;
     align-self: flex-end;
     width: 49px;
-    margin: 0 0 13px 6px;
+    margin: 0 0 12px 7px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -328,6 +338,11 @@
     padding: 25px 0;
   }
 
+  .companion-card__like-icon {
+    width: 17px;
+    height: 17px;
+  }
+
   .companion-card__directions {
     order: 3;
     min-height: 50px;
@@ -348,13 +363,23 @@
   }
 
   .companion-card__wrapper {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 60px;
+    width: 55px;
     height: 190px;
 
     .companion-card__title {
       display: none;
+    }
+
+    .companion-card__list {
+      margin-left: 0;
+    }
+
+    .companion-card__level-scale {
+      right: -7px;
+      bottom: -6px;
     }
   }
 }
@@ -397,6 +422,10 @@
     margin: 0 65px 0 0;
   }
 
+  .companion-card__name {
+    margin-bottom: 20px;
+  }
+
   .companion-card__user {
     width: 257px;
     padding-top: 45px;
@@ -410,6 +439,11 @@
     margin: 0 0 47px 5px;
   }
 
+  .companion-card__like-icon {
+    width: 20px;
+    height: 17px;
+  }
+
   .companion-card__points {
     margin: 0;
     padding: 0 0 15px 6px;
@@ -418,7 +452,7 @@
   .companion-card__directions {
     display: flex;
     width: 200px;
-    padding-top: 46px;
+    padding-top: 49px;
     padding-bottom: 90px;
     margin: 0;
 
@@ -455,6 +489,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .companion-card__list {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 8px;
+    }
+
+    .companion-card__level-scale {
+      right: 32px;
+      bottom: -28px;
+    }
   }
 
   .companion-card__transport {
@@ -462,11 +507,6 @@
     padding: 0;
     width: 150px;
     height: 40px;
-  }
-
-  .companion-card__list {
-    flex-direction: row;
-    align-items: center;
   }
 
   .companion-card__name-text {

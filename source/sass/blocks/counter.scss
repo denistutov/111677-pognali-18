@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.counter__wrapper {
+  width: 220px;
+}
+
 .counter__header {
   display: flex;
   justify-content: space-between;
@@ -149,6 +153,7 @@
   .counter__wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .counter__header {
@@ -176,10 +181,10 @@
   .counter__checkbox {
     order: 1;
     margin: 8px 0 32px 0;
-    padding-left: 19px;
   }
 
   .counter__checkbox-text {
+    margin-left: 20px;
     font-size: 20px;
     line-height: 18px;
     text-transform: uppercase;
@@ -190,7 +195,7 @@
   }
 
   .counter__checkbox-indicator {
-    top: -5px;
+    top: 0;
     left: -1px;
     width: 36px;
     height: 36px;
@@ -247,6 +252,6 @@
 
   .counter__checkbox-indicator {
     left: 1px;
-    top: -8px;
+    top: -2px;
   }
 }

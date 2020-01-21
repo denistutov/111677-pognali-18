@@ -39,7 +39,7 @@
 .plan-step__container {
   position: relative;
   width: 100%;
-  margin: 0 5px;
+  padding: 0 5px;
 
   .plan-step__step-nav {
     display: none;
@@ -198,7 +198,7 @@
   }
 
   .plan-step__container {
-    margin: 0;
+    padding: 0;
   }
 
   .plan-step__title {
@@ -225,7 +225,9 @@
   .plan-step__btn--step-back {
     width: 200px;
     height: 82px;
+    font-size: 24px;
     text-align: right;
+    text-transform: none;
 
     &::after {
       right: 167px;
@@ -281,8 +283,8 @@
     .plan-step__step-nav {
       display: block;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 7px;
+      right: 16px;
     }
   }
 
@@ -358,7 +360,7 @@
   }
 
   .plan-step__wrapper {
-    margin: 56px 0 10px 0;
+    margin: 56px 0 13px 0;
   }
 
   .plan-step__btn--step-next {

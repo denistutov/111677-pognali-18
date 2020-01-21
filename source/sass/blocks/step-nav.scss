@@ -11,7 +11,7 @@
 
 .step-nav__item {
   position: relative;
-  margin-right: 25px;
+  margin-right: 21px;
 
   &::before {
     position: absolute;
@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .step-nav__item {
-    margin-right: 40px;
+    margin-right: 34px;
 
     &::before {
       left: -10px;
@@ -60,10 +60,10 @@
   }
 
   .step-nav__item {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 
     &::before {
-      left: -36px;
+      left: -40px;
     }
   }
 
