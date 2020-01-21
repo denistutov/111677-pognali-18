@@ -303,6 +303,10 @@
 
   .button--arrow-right {
     font-size: 24px;
+
+    &::after {
+      right: 35px;
+    }
   }
 
   .button--arrow-change {

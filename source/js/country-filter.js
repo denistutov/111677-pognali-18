@@ -5,12 +5,12 @@ var countryFilterToggle = countryFilter.querySelectorAll('.country-filter__butto
 
 countryFilter.classList.add('country-filter--js');
 
-countryFilterToggle.forEach(element => element.addEventListener('click', function (evt) {
+countryFilterToggle.forEach(button => button.addEventListener('click', function (evt) {
   evt.preventDefault();
   if (evt) {
     countryFilterPopup.classList.toggle('country-filter__popup--is-close');
     countryFilter.classList.toggle('country-filter--filter-close');
-    return element;
+    return button;
   }
 }));
 

@@ -26,6 +26,7 @@
   font-size: 0;
   background: transparent url("../img/menu-close.svg") no-repeat center center;
   border: none;
+  cursor: pointer;
 }
 
 .page-header__login {
@@ -36,7 +37,7 @@
   background-color: $dark-blue-3;
 
   .page-header__nav {
-    z-index: 100;
+    z-index: 300;
     position: fixed;
     top: 73px;
     display: none;
@@ -181,7 +182,7 @@
   .page-header--scroll {
     background-color: $white;
 
-    a {
+    a span {
       color: $dark-blue-1;
     }
 
