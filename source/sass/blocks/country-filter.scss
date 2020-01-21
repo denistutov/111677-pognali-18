@@ -96,9 +96,8 @@
 }
 
 .country-filter--js {
-  .country-filter__popup {
-    display: none;
-  }
+  position: relative;
+  border-radius: 0 0 0 0;
 
   .country-filter__wrapper {
     height: 50px;
@@ -107,6 +106,22 @@
   .country-filter__continents {
     display: none;
   }
+
+  .country-filter__popup {
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .country-filter__popup--is-close {
+    display: none;
+  }
+}
+
+
+.country-filter--filter-close {
+  border-radius: 0 0 30px 30px;
 
   .country-filter__button--close {
     display: none;
@@ -158,7 +173,7 @@
     background-size: 19px;
 
     &::before {
-      top: -2px;
+      top: 0px;
       right: 2px;
       width: 19px;
       height: 19px;
@@ -183,9 +198,20 @@
   }
 
   .country-filter--js {
+    border-radius: 0 0 0 0;
+
     .country-filter__continents {
       display: flex;
     }
+
+    .country-filter__popup {
+      top: 120px;
+      left: 0;
+    }
+  }
+
+  .country-filter--filter-close {
+    border-radius: 0 0 60px 60px;
   }
 }
 
@@ -251,8 +277,16 @@
     }
   }
 
-
   .country-filter__popup-wrapper {
     margin: 0 0 0 0;
+  }
+
+  .country-filter--js {
+    border-radius: 0 0 0 0;
+
+    .country-filter__popup {
+      position: relative;
+      top: 0;
+    }
   }
 }

@@ -284,10 +284,12 @@
 
   &:hover {
     opacity: 1;
+    background-color: transparent;
   }
 
   &:active {
     opacity: 0.1;
+    background-color: transparent;
   }
 }
 
