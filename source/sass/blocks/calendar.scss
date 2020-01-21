@@ -5,7 +5,7 @@
 .calendar__title-wrapper {
   display: flex;
   justify-content: space-between;
-  width: inherit;
+  width: 220px;
   padding: 11px 0 9px 0;
   margin-bottom: 16px;
   border-top: 1px solid $bg-grey-2;
@@ -150,6 +150,7 @@
   }
 
   .calendar__title-wrapper {
+    width: 100%;
     align-items: center;
     padding: 27px 0 19px 0;
     margin-bottom: 32px;

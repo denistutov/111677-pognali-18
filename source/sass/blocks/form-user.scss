@@ -44,8 +44,8 @@
 
 .form-user__step-nav {
   position: absolute;
-  top: 32px;
-  right: 12px;
+  top: 30px;
+  right: 14px;
 }
 
 .form-user__tags {
@@ -102,11 +102,12 @@
 
   .form-user__wrapper {
     @include container($tablet-width, $tablet-container-1);
+    margin: 0 auto 8px;
   }
 
   .form-user__step-nav {
-    top: 65px;
-    right: 90px;
+    top: 59px;
+    right: 68px;
   }
 
   .form-user__tags {
@@ -210,7 +211,7 @@
 
     .form-user__wrapper {
       padding-left: 60px;
-      margin-bottom: 84px;
+      margin-bottom: 87px;
     }
 
     .form-user__title {

@@ -123,6 +123,10 @@
     width: 60px;
     height: 60px;
 
+    .user-level__value {
+      padding-right: 0;
+    }
+
     .user-level__text {
       display: block;
       color: $text-grey;
@@ -132,6 +136,27 @@
         background-color: $text-grey;
       }
     }
+
+    .user-level__scale {
+      left: 0;
+    }
+  }
+
+  .user-level--form {
+    .user-level__value {
+      margin-bottom: 0;
+      margin-right: 6px;
+    }
+
+    .user-level__text {
+      margin-right: 6px;
+      margin-bottom: 5px;
+    }
+
+    .user-level__scale {
+      top: -3px;
+      left: -3px;
+    }
   }
 }
 
@@ -139,13 +164,22 @@
   .user-level--form {
     width: 94px;
     height: 94px;
+    margin-top: 8px;
 
     .user-level__value {
+      margin: 10px 0 0 0;
       color: $white;
     }
 
     .user-level__text {
+      margin-bottom: 18px;
+      margin-right: 0;
       color: $white;
+    }
+
+    .user-level__scale {
+      top: -9px;
+      left: 0;
     }
   }
 }
