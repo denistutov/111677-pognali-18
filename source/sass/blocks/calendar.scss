@@ -105,6 +105,10 @@
   background-color: $white;
 }
 
+.calendar__day-of-week--weekend {
+  color: $calendar-orange;
+}
+
 .calendar__day-name {
   display: inline-block;
   width: 10px;
@@ -192,6 +196,13 @@
       .calendar__day-number {
         width: 72px;
       }
+    }
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+      outline: 4px solid $calendar-orange;
+      outline-offset: -1px;
     }
   }
 

@@ -112,7 +112,7 @@
     border-left: none;
   }
 
-  .country-select__flag-img--empty {
+  .country-select__flag--empty {
     padding-left: 11px;
   }
 }
@@ -174,7 +174,7 @@
   box-sizing: border-box;
 }
 
-.country-select__flag-img--empty {
+.country-select__flag-empty {
   opacity: 0.3;
 }
 
@@ -226,6 +226,10 @@
   }
 
   .country-select--add-new {
+    &::before {
+      right: -183px;
+    }
+
     .country-select__drop-list {
       width: 369px;
 
@@ -260,7 +264,7 @@
     border: none;
   }
 
-  .country-select__flag-img--empty {
+  .country-select__flag-empty {
     display: none;
   }
 
