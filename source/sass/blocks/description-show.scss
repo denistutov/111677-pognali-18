@@ -3,7 +3,7 @@
 
   &:hover {
     .description-show__content {
-      display: flex;
+      display: inline-block;
     }
   }
 }
@@ -13,8 +13,6 @@
   display: none;
   position: absolute;
   top: calc(100% + 13px);
-  justify-content: center;
-  align-items: center;
   content: "";
   padding: 20px 23px 22px 23px;
   font-size: 24px;

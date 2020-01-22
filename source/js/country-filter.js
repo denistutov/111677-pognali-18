@@ -14,6 +14,7 @@ countryFilterToggle.forEach(button => button.addEventListener('click', function 
   }
 }));
 
+
 closeCountryFilter.addEventListener('click', function (evt) {
   evt.preventDefault();
   countryFilterPopup.classList.toggle('country-filter__popup--is-close');

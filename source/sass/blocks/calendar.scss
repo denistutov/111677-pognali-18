@@ -68,7 +68,11 @@
   }
 
   &:hover {
+    z-index: 2;
+    position: relative;
     background-color: $dark-blue-2;
+    outline: 2px solid $calendar-orange;
+    outline-offset: -1px;
   }
 
   &:active {
@@ -78,7 +82,7 @@
 
 .calendar__cell--active {
   position: relative;
-  background-color: $dark-blue-2; //проблема с обводкой
+  background-color: $dark-blue-2;
 
   &::before {
     position: absolute;
@@ -199,10 +203,7 @@
     }
 
     &:hover {
-      position: relative;
-      z-index: 2;
       outline: 4px solid $calendar-orange;
-      outline-offset: -1px;
     }
   }
 

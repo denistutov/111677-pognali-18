@@ -21,6 +21,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user-details {
+    width: 100%;
+    padding: 0;
+  }
+
   .user-details__wrapper {
     padding: 0;
     margin: 0 0 46px 0;
@@ -34,7 +39,7 @@
   }
 
   .user-details__button {
-    width: 618px;
+    width: 100%;
   }
 
   .user-details__button-text {
@@ -48,6 +53,7 @@
 @media (min-width: $desktop-width) {
   .user-details {
     padding: 0;
+    width: auto;
   }
 
   .user-details__wrapper {
