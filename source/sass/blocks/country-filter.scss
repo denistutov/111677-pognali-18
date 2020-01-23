@@ -72,6 +72,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    outline: 1px solid $border-input-hover;
+  }
 }
 
 .country-filter__button--close {

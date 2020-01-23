@@ -67,7 +67,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     z-index: 2;
     position: relative;
     background-color: $dark-blue-2;
@@ -202,7 +203,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       outline: 4px solid $calendar-orange;
     }
   }

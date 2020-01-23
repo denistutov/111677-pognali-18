@@ -81,12 +81,11 @@
   border: 1px solid $border-grey-2;
   outline: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $border-hover-form;
   }
 
-  &:active {
+  &:focus {
     border-color: $dark-blue-3;
   }
 }
@@ -141,6 +140,11 @@
 .counter__checkbox-input:checked ~ .counter__checkbox-indicator::before {
   background: url("../img/tick.svg") no-repeat center center;
   background-size: 10px;
+}
+
+.counter__checkbox-input:focus ~ .counter__checkbox-indicator::before {
+  border: 1px solid $border-hover-form;
+  offset: 1px;
 }
 
 @media (min-width: $tablet-width) {

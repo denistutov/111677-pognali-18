@@ -128,14 +128,22 @@
   }
 
   .page-header--js {
-    .page-header__nav {
-      top: 103px;
+    .page-header__nav--is-open {
+      &::before {
+        top: 28px;
+      }
     }
   }
 
   .page-header--scroll {
     padding-top: 0;
     background-color: $white;
+
+    .page-header__nav--is-open {
+      &::before {
+        top: 0;
+      }
+    }
   }
 }
 
@@ -215,6 +223,10 @@
       &::before {
         background-color: $dark-blue-1;
       }
+    }
+
+    .page-header__nav--is-open {
+      top: -30px;
     }
   }
 }

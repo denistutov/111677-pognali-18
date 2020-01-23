@@ -79,6 +79,8 @@
   border-radius: 4px;
   border: solid 1px $border-grey-2;
   resize: none;
+  outline: 0;
+  overflow: hidden;
 
   &::placeholder {
     color: rgba($text-grey, 0.3);
@@ -88,7 +90,10 @@
     border-color: $border-hover-form;
   }
 
-  &:active::placeholder,
+  &:focus {
+    border-color: $dark-blue-3;
+  }
+
   &:focus::placeholder {
     color: $text-grey;
   }

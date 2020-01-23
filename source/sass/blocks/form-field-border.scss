@@ -3,11 +3,10 @@
   border: 1px solid $border-grey-2;
   border-radius: 10px;
 
-  &:hover {
+  &:hover{
     border-color: $border-input-hover;
   }
 
-  &:active,
   &:focus {
     border-color: $dark-blue-3;
   }
@@ -56,6 +55,7 @@
   box-sizing: border-box;
   border: none;
   resize: none;
+  overflow: hidden;
   outline: 0;
   outline-offset: 0;
 
