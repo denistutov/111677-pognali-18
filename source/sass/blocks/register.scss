@@ -89,8 +89,9 @@
 
   .register__button {
     border-radius: 0 20px 20px 0;
-    width: 82px;
-    height: auto;
+    min-width: 82px;
+    padding: 36px;
+    height: 80px;
     background-position: right 38px center;
 
     &::after {
@@ -112,7 +113,7 @@
   }
 
   .register__button {
-    width: 327px;
+    min-width: 327px;
     height: 80px;
     padding: 0 0 0 35px;
   }

@@ -14,7 +14,7 @@
 .top-menu__link {
   width: 190px;
   position: relative;
-  padding: 20px 0;
+  padding: 20px 10px;
   cursor: pointer;
 
   &:active::before {
@@ -23,13 +23,15 @@
 }
 
 .top-menu__link-header {
-  width: 270px;
+  min-width: 270px;
+  width: auto;
 }
 
 .top-menu__link--phone,
 .top-menu__link--email {
   display: inline-block;
   width: 40px;
+  padding: 20px 0;
   border-radius: 50%;
 
   &::before {
@@ -102,7 +104,8 @@
     }
 
     .top-menu__link-header {
-      width: 190px;
+      min-width: 190px;
+      width: auto;
       border-radius: 25px;
     }
   }

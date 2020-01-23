@@ -20,4 +20,16 @@
     width: 7px;
     height: 7px;
   }
+
+  .user-status--companions::before {
+    position: static;
+    margin-left: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-status::before {
+    position: absolute;
+    margin-left: 0;
+  }
 }

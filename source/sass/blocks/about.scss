@@ -133,8 +133,9 @@
   }
 
   .about__button {
-    display: block;
-    width: 274px;
+    display: inline-block;
+    min-width: 275px;
+    margin-right: auto;
   }
 }
 

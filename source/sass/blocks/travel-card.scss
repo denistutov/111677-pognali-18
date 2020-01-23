@@ -10,7 +10,7 @@
   border-radius: 10px;
   box-sizing: border-box;
 
-  &:after {
+  &::after {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -19,13 +19,12 @@
     content: "";
     width: 100%;
     height: 120px;
-    background-color: pink;
     border-radius: 10px 10px 0 0;
   }
 }
 
 .travel-card--thailand {
-  &:after {
+  &::after {
     background: url("../img/thailand-mobile@1x.jpg") no-repeat top center;
     background-size: cover;
 
@@ -37,7 +36,7 @@
 }
 
 .travel-card--france {
-  &:after {
+  &::after {
     background: url("../img/france-mobile@1x.jpg") no-repeat top center;
     background-size: cover;
 
@@ -50,7 +49,7 @@
 
 
 .travel-card--czech {
-  &:after {
+  &::after {
     background: url("../img/czech-mobile@1x.jpg") no-repeat top center;
     background-size: cover;
 
@@ -59,7 +58,7 @@
       background-size: cover;
     }
   }
-  }
+}
 
 .travel-card__wrapper {
   z-index: 2;
@@ -132,7 +131,7 @@
     padding-right: 240px;
     border-radius: 20px;
 
-    &:after {
+    &::after {
       right: 0;
       width: 186px;
       height: 100%;
@@ -141,7 +140,7 @@
   }
 
   .travel-card--thailand {
-    &:after {
+    &::after {
       background: url("../img/thailand-desktop@1x.jpg") no-repeat top right;
       background-size: cover;
 
@@ -153,8 +152,8 @@
   }
 
   .travel-card--france {
-    &:after {
-      background:  url("../img/france-desktop@1x.jpg") no-repeat top right;
+    &::after {
+      background: url("../img/france-desktop@1x.jpg") no-repeat top right;
       background-size: cover;
 
       @media (min-resolution: $retina-dppx) {
@@ -165,14 +164,14 @@
   }
 
   .travel-card--czech {
-    &:after {
+    &::after {
+      background: url("../img/czech-desktop@1x.jpg") no-repeat top right;
+      background-size: cover;
 
-    }
-    background: $white url("../img/czech-desktop@1x.jpg") no-repeat top right;
-
-    @media (min-resolution: $retina-dppx) {
-      background: $white url("../img/czech-desktop@2x.jpg") no-repeat top right;
-      background-size: contain;
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/czech-desktop@2x.jpg") no-repeat top right;
+        background-size: cover;
+      }
     }
   }
 

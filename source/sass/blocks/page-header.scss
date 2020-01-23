@@ -8,6 +8,11 @@
   background-color: $white;
 }
 
+.page-header__logo {
+  z-index: 500;
+  position: relative;
+}
+
 .page-header__container {
   @include container($mobile-width, $mobile-container-1);
 }
@@ -121,6 +126,7 @@
 
   .page-header__login {
     display: block;
+    min-width: 188px;
   }
 
   .page-header__toggle {

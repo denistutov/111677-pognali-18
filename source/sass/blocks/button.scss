@@ -1,7 +1,6 @@
 .button {
-  display: inline-block;
-  width: 170px;
-  padding: 30px 0 30px 25px;
+  display: block;
+  padding: 30px 25px 30px 25px;
   font-size: 18px;
   text-align: left;
   text-decoration: none;
@@ -87,8 +86,7 @@
 }
 
 .button--border {
-  width: 100%;
-  padding: 28px 0 28px 21px;
+  padding: 28px 40px 28px 21px;
   color: $dark-blue-1;
   background-color: transparent;
   background-position: right 18px center;
@@ -297,7 +295,7 @@
 @media (min-width: $tablet-width) {
   .button {
     font-size: 24px;
-    padding: 40px 0 40px 33px;
+    padding: 40px 75px 40px 33px;
     border-radius: 20px;
     background-position: right 33px center;
   }
@@ -326,7 +324,6 @@
   }
 
   .button--round {
-    width: 190px;
     padding: 25px 0;
     font-size: 20px;
     border-radius: 25px;
@@ -356,7 +353,7 @@
   }
 
   .button--border {
-    padding: 37px 33px;
+    padding: 37px 75px 37px 33px;
     background-position: right 31px center;
   }
 
@@ -366,7 +363,7 @@
   }
 
   .button--transparent-bg {
-    padding: 26px 0 20px 0;
+    padding: 26px 0 20px 55px;
     font-size: 20px;
     line-height: 30px;
     color: $dark-blue-2;
@@ -404,7 +401,7 @@
 
 @media (min-width: $desktop-width) {
   .button {
-    padding: 40px 0 40px 35px;
+    padding: 40px 75px 40px 35px;
     border-radius: 20px;
   }
 
@@ -437,11 +434,11 @@
   }
 
   .button--transparent-bg {
-    padding: 26px 0 20px 0;
+    padding: 26px 0 20px 55px;
   }
 
   .button--border {
-    padding: 38px 33px;
+    padding: 37px 75px 37px 33px;
     background-position: right 32px center;
   }
 
