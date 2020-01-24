@@ -5,6 +5,7 @@
   font-size: 0;
   background: url("../../img/logo-mobile-white@1x.png") no-repeat top center;
   background-size: cover;
+  cursor: pointer;
 
   @media (min-resolution: $retina-dppx) {
     background: url("../../img/logo-mobile-white@2x.png") no-repeat top center;
