@@ -84,6 +84,7 @@
 
 .companion-card__name {
   position: relative;
+  display: flex;
   width: 78px;
   margin-bottom: 6px;
   font-size: 20px;
@@ -264,13 +265,11 @@
   }
 
   .companion-card__name {
-    position: static;
-    top: 0;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
+    min-width: 240px;
     margin-bottom: 17px;
     font-size: 30px;
     line-height: 30px;
@@ -326,7 +325,7 @@
     top: 0;
     min-width: 148px;
     width: auto;
-    padding: 25px 10px;
+    padding: 13px 10px;
   }
 
   .companion-card__like-icon {
@@ -399,7 +398,7 @@
   .companion-card__picture {
     display: flex;
     width: 285px;
-    height: 285px;
+    height: 100%;
     border-radius: 20px 0 0 20px;
     overflow: hidden;
   }
@@ -407,21 +406,15 @@
   .companion-card__info {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     width: 600px;
     padding: 0;
     margin: 0 65px 0 0;
   }
 
   .companion-card__name {
-    position: relative;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     margin-bottom: 20px;
-
-    &::before {
-      top: 12px;
-      right: 0;
-      left: -25px;
-    }
   }
 
   .companion-card__user {

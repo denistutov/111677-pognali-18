@@ -1,10 +1,9 @@
 .button {
   display: block;
-  padding: 30px 25px 30px 25px;
+  padding: 21px 45px 20px 33px;
   font-size: 18px;
   text-align: left;
   text-decoration: none;
-  line-height: 0;
   color: $dark-blue-2;
 
   @include primary-font($bold);
@@ -13,7 +12,6 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  word-wrap: break-word;
 
   &:hover {
     background-color: $orange-3;
@@ -48,7 +46,7 @@
 }
 
 .button--arrow-change {
-  padding: 20px 0;
+  padding: 10px;
   font-size: 17px;
   color: $dark-blue-3;
   background: $orange-4;
@@ -78,7 +76,7 @@
 }
 
 .button--round {
-  padding: 20px 0;
+  padding: 10px 10px 9px 10px;
   border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
@@ -86,7 +84,7 @@
 }
 
 .button--border {
-  padding: 28px 40px 28px 21px;
+  padding: 18px 45px 17px 33px;
   color: $dark-blue-1;
   background-color: transparent;
   background-position: right 18px center;
@@ -112,7 +110,7 @@
 
 .button--transparent-bg {
   position: relative;
-  padding: 10px 0;
+  padding: 0 10px 0 10px;
   margin: 0;
   font-size: 17px;
   text-align: center;
@@ -133,7 +131,7 @@
 }
 
 .button--paginator {
-  padding: 10px 0 10px 31px;
+  padding: 0 0 0 40px;
 
   &::before,
   &::after {
@@ -148,14 +146,14 @@
   }
 
   &::after {
-    top: 7px;
+    top: 8px;
     left: 10px;
     width: 18px;
     height: 2px;
   }
 
   &::before {
-    top: -1px;
+    top: 0;
     left: 18px;
   }
 
@@ -171,7 +169,7 @@
 }
 
 .button--no-bg {
-  padding: 15px 25px;
+  padding: 10px 10px 9px 10px;
   font-size: 16px;
   background: none;
 
@@ -187,7 +185,7 @@
 }
 
 .button--grey-bg {
-  padding: 20px 0;
+  padding: 10px 10px 9px 10px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -214,7 +212,7 @@
 }
 
 .button--country-filter {
-  padding: 20px 0 20px 108px;
+  padding: 10px 0 9px 108px;
   text-align: left;
   text-transform: uppercase;
   background: $bg-grey-5;
@@ -225,7 +223,7 @@
 
     &::before {
       position: absolute;
-      top: 4px;
+      top: 5px;
       left: -23px;
       display: inline-block;
       content: "";
@@ -295,7 +293,7 @@
 @media (min-width: $tablet-width) {
   .button {
     font-size: 24px;
-    padding: 40px 75px 40px 33px;
+    padding: 26px 75px 26px 33px;
     border-radius: 20px;
     background-position: right 33px center;
   }
@@ -324,14 +322,14 @@
   }
 
   .button--round {
-    padding: 25px 0;
+    padding: 13px 0;
     font-size: 20px;
     border-radius: 25px;
   }
 
   .button--country-filter {
     font-size: 20px;
-    padding: 50px 0 50px 282px;
+    padding: 38px 0 38px 282px;
 
     span::before {
       top: 2px;
@@ -348,17 +346,17 @@
   }
 
   .button--grey-bg {
-    padding: 30px 0;
+    padding: 16px 0;
     border-radius: 10px;
   }
 
   .button--border {
-    padding: 37px 75px 37px 33px;
+    padding: 26px 75px 26px 33px;
     background-position: right 31px center;
   }
 
   .button--white-bg {
-    padding: 25px 0;
+    padding: 13px 0;
     border-radius: 25px;
   }
 
@@ -401,7 +399,7 @@
 
 @media (min-width: $desktop-width) {
   .button {
-    padding: 40px 75px 40px 35px;
+    padding: 26px 65px 26px 33px;
     border-radius: 20px;
   }
 
@@ -417,7 +415,7 @@
 
   .button--country-filter {
     text-align: center;
-    padding: 50px 0;
+    padding: 38px 0;
 
     span {
       padding: 0 0 0 35px;
@@ -430,7 +428,7 @@
   }
 
   .button--white-bg {
-    padding: 25px 0;
+    padding: 13px 0;
   }
 
   .button--transparent-bg {
@@ -438,7 +436,7 @@
   }
 
   .button--border {
-    padding: 37px 75px 37px 33px;
+    padding: 23px 55px 24px 33px;
     background-position: right 32px center;
   }
 
@@ -447,12 +445,12 @@
 
     &::after {
       left: -5px;
-      top: 11px;
+      top: 13px;
     }
 
     &::before {
       left: 7px;
-      top: -2px;
+      top: 2px;
     }
   }
 
