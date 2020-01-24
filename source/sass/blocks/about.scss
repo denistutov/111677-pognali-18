@@ -84,6 +84,7 @@
   .about__wrapper {
     z-index: 2;
     position: relative;
+    align-items: flex-start;
     background: url("../img/about-tablet@1x.png") no-repeat right 8px top 8px;
 
     @media (min-resolution: $retina-dppx) {
