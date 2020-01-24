@@ -56,13 +56,13 @@
 
 .counter__control--minus {
   left: 0;
-  background: url("../../img/qty-minus-mobile.svg") no-repeat center center;
+  background: url("../img/qty-minus-mobile.svg") no-repeat center center;
   background-size: 14px;
 }
 
 .counter__control--plus {
   right: 0;
-  background: url("../../img/qty-plus-mobile.svg") no-repeat center center;
+  background: url("../img/qty-plus-mobile.svg") no-repeat center center;
   background-size: 14px;
 }
 
@@ -214,12 +214,12 @@
   }
 
   .counter__control--plus {
-    background: url("../../img/qty-plus.svg") no-repeat center center;
+    background: url("../img/qty-plus.svg") no-repeat center center;
     background-size: 20px;
   }
 
   .counter__control--minus {
-    background: url("../../img/qty-minus.svg") no-repeat center center;
+    background: url("../img/qty-minus.svg") no-repeat center center;
     background-size: 20px;
   }
 }

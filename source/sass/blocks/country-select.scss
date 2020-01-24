@@ -153,7 +153,7 @@
     &::before {
       top: 13px;
       right: 13px;
-      background: url("../../img/show-more-plus.svg") no-repeat center center;
+      background: url("../img/show-more-plus.svg") no-repeat center center;
     }
 
     &:active::before {
@@ -273,7 +273,7 @@
     right: -6px;
     width: 22px;
     height: 25px;
-    background: transparent url("../../img/filter-close.svg") no-repeat center center;
+    background: transparent url("../img/filter-close.svg") no-repeat center center;
     background-size: 17px;
     opacity: 0.3;
   }
