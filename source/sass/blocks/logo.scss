@@ -3,23 +3,23 @@
   width: 96px;
   height: 15px;
   font-size: 0;
-  background: url("../../img/logo-mobile-white@1x.png") no-repeat top center;
+  background: url("../img/logo-mobile-white@1x.png") no-repeat top center;
   background-size: cover;
   cursor: pointer;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../../img/logo-mobile-white@2x.png") no-repeat top center;
+    background: url("../img/logo-mobile-white@2x.png") no-repeat top center;
     background-size: cover;
   }
 }
 
 .logo--blue,
 .logo--footer {
-  background: url("../../img/logo-mobile-blue@1x.png") no-repeat top center;
+  background: url("../img/logo-mobile-blue@1x.png") no-repeat top center;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../../img/logo-mobile-blue@2x.png") no-repeat top center;
+    background: url("../img/logo-mobile-blue@2x.png") no-repeat top center;
     background-size: cover;
   }
 }
@@ -28,22 +28,22 @@
   .logo {
     width: 166px;
     height: 42px;
-    background: url("../../img/logo-tablet-white@1x.png") no-repeat center center;
+    background: url("../img/logo-tablet-white@1x.png") no-repeat center center;
     background-size: contain;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/logo-tablet-white@2x.png") no-repeat center center;
+      background: url("../img/logo-tablet-white@2x.png") no-repeat center center;
       background-size: contain;
     }
   }
 
   .logo--blue,
   .logo--footer {
-    background: url("../../img/logo-tablet-blue@1x.png") no-repeat center center;
+    background: url("../img/logo-tablet-blue@1x.png") no-repeat center center;
     background-size: contain;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/logo-tablet-blue@2x.png") no-repeat center center;
+      background: url("../img/logo-tablet-blue@2x.png") no-repeat center center;
       background-size: contain;
     }
   }
@@ -54,22 +54,22 @@
     width: 200px;
     height: 52px;
 
-    background: url("../../img/logo-desktop-white@1x.png") no-repeat center center;
+    background: url("../img/logo-desktop-white@1x.png") no-repeat center center;
     background-size: contain;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/logo-desktop-white@2x.png") no-repeat center center;
+      background: url("../img/logo-desktop-white@2x.png") no-repeat center center;
       background-size: contain;
     }
   }
 
   .logo--blue,
   .logo--footer {
-    background: url("../../img/logo-desktop-blue@1x.png") no-repeat center center;
+    background: url("../img/logo-desktop-blue@1x.png") no-repeat center center;
     background-size: contain;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/logo-desktop-blue@2x.png") no-repeat center center;
+      background: url("../img/logo-desktop-blue@2x.png") no-repeat center center;
       background-size: contain;
     }
   }
