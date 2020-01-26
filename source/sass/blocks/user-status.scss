@@ -1,17 +1,30 @@
 .user-status::before {
   position: absolute;
   display: block;
-  content: "";
+  content: ".";
   width: 6px;
   height: 6px;
+  color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.user-status::after {
+  display: none;
+  content: ".";
+  width: 7px;
+  height: 7px;
+  color: transparent;
   border-radius: 50%;
 }
 
-.user-status--online::before {
+.user-status--online::before,
+.user-status--online::after {
   background-color: $bg-status-online;
 }
 
-.user-status--offline::before {
+.user-status--offline::before,
+.user-status--offline::after {
   background-color: $bg-status-offline;
 }
 
@@ -19,5 +32,22 @@
   .user-status::before {
     width: 7px;
     height: 7px;
+  }
+
+  .user-status--companions::before {
+    display: none;
+  }
+
+  .user-status--companions::after {
+    display: block;
+    margin-left: 23px;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-status--companions::after {
+    margin-right: 23px;
+    margin-left: -27px;
   }
 }

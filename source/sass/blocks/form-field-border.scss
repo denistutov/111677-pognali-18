@@ -1,16 +1,6 @@
 .form-field-border {
   padding: 0;
-  border: 1px solid $border-grey-2;
-  border-radius: 10px;
-
-  &:hover {
-    border-color: $border-input-hover;
-  }
-
-  &:active,
-  &:focus {
-    border-color: $dark-blue-3;
-  }
+  border: none;
 }
 
 .form-field-border--transport {
@@ -54,13 +44,19 @@
   @include primary-font($normal);
   background-color: transparent;
   box-sizing: border-box;
-  border: none;
+  border: 1px solid $border-grey-2;
+  border-radius: 10px;
   resize: none;
+  overflow: hidden;
   outline: 0;
   outline-offset: 0;
 
-  &:active,
+  &:hover {
+    border-color: $border-input-hover;
+  }
+
   &:focus {
+    border-color: $dark-blue-3;
     color: $text-grey;
   }
 }
@@ -68,6 +64,8 @@
 .form-field-border__list {
   display: flex;
   justify-content: center;
+  border: 1px solid $border-grey-2;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -116,6 +114,7 @@
 
   .form-field-border--transport {
     width: 384px;
+    right: 0;
   }
 
   .form-field-border__text {

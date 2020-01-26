@@ -4,7 +4,13 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding-top: 2px;
   background-color: $white;
+}
+
+.page-header__logo {
+  z-index: 500;
+  position: relative;
 }
 
 .page-header__container {
@@ -76,7 +82,7 @@
 }
 
 .page-header--menu-open {
-  z-index: 100;
+  z-index: 150;
   position: fixed;
   background-color: white;
 }
@@ -84,6 +90,7 @@
 .page-header--scroll {
   z-index: 100;
   position: fixed;
+  padding-top: 0;
   background-color: $white;
 
   .page-header__title {
@@ -100,30 +107,60 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 30px;
+    background-color: $dark-blue-1;
+  }
+
+  .page-header--inner {
+    background-color: $dark-blue-3;
+  }
+
+  .page-header--menu-open {
+    background-color: white;
+  }
+
   .page-header__container {
     @include container($tablet-width, $tablet-container-2);
   }
 
   .page-header__login {
     display: block;
+    min-width: 188px;
   }
 
   .page-header__toggle {
     margin-left: 22px;
   }
 
+  .page-header--js {
+    .page-header__nav--is-open {
+      &::before {
+        top: 28px;
+      }
+    }
+  }
+
   .page-header--scroll {
+    padding-top: 0;
     background-color: $white;
+
+    .page-header__nav--is-open {
+      &::before {
+        top: 0;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    padding-top: 37px;
     background-color: $dark-blue-3;
   }
 
   .page-header--inner {
-    background-color: $dark-blue-4;
+    background-color: $dark-blue-3;
   }
 
   .page-header__container {
@@ -140,6 +177,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 200px;
     margin: 0;
   }
 
@@ -180,6 +218,7 @@
   }
 
   .page-header--scroll {
+    padding-top: 0;
     background-color: $white;
 
     a span {
@@ -190,6 +229,10 @@
       &::before {
         background-color: $dark-blue-1;
       }
+    }
+
+    .page-header__nav--is-open {
+      top: -30px;
     }
   }
 }

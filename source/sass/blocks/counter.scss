@@ -56,13 +56,13 @@
 
 .counter__control--minus {
   left: 0;
-  background: url("../../img/qty-minus-mobile.svg") no-repeat center center;
+  background: url("../img/qty-minus-mobile.svg") no-repeat center center;
   background-size: 14px;
 }
 
 .counter__control--plus {
   right: 0;
-  background: url("../../img/qty-plus-mobile.svg") no-repeat center center;
+  background: url("../img/qty-plus-mobile.svg") no-repeat center center;
   background-size: 14px;
 }
 
@@ -81,12 +81,11 @@
   border: 1px solid $border-grey-2;
   outline: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $border-hover-form;
   }
 
-  &:active {
+  &:focus {
     border-color: $dark-blue-3;
   }
 }
@@ -141,6 +140,11 @@
 .counter__checkbox-input:checked ~ .counter__checkbox-indicator::before {
   background: url("../img/tick.svg") no-repeat center center;
   background-size: 10px;
+}
+
+.counter__checkbox-input:focus ~ .counter__checkbox-indicator::before {
+  border: 1px solid $border-hover-form;
+  offset: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -210,12 +214,12 @@
   }
 
   .counter__control--plus {
-    background: url("../../img/qty-plus.svg") no-repeat center center;
+    background: url("../img/qty-plus.svg") no-repeat center center;
     background-size: 20px;
   }
 
   .counter__control--minus {
-    background: url("../../img/qty-minus.svg") no-repeat center center;
+    background: url("../img/qty-minus.svg") no-repeat center center;
     background-size: 20px;
   }
 }

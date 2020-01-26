@@ -41,6 +41,10 @@
   margin: 0 0 36px 0;
 }
 
+.page-footer__copyright {
+  margin-bottom: 12px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 0;
@@ -78,6 +82,7 @@
 
   .page-footer__copyright {
     width: 254px;
+    margin: 0;
   }
 }
 
@@ -85,7 +90,7 @@
   .page-footer {
     margin: 0;
     padding: 0;
-    min-height: 91px;
+    height: 91px;
 
     &::before {
       top: -63px;

@@ -37,7 +37,7 @@
     content: "";
     width: 15px;
     height: 20px;
-    background: url("../../img/filter.svg") no-repeat center center;
+    background: url("../img/filter.svg") no-repeat center center;
   }
 }
 
@@ -71,6 +71,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px solid $border-input-hover;
   }
 }
 

@@ -134,6 +134,7 @@
 
   .location__navigate {
     margin: 0;
-    width: 324px;
+    min-width: 324px;
+    width: auto;
   }
 }

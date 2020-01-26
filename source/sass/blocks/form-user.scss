@@ -44,7 +44,7 @@
 
 .form-user__step-nav {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 14px;
 }
 
@@ -106,8 +106,8 @@
   }
 
   .form-user__step-nav {
-    top: 59px;
-    right: 68px;
+    top: 53px;
+    right: 74px;
   }
 
   .form-user__tags {
@@ -117,6 +117,7 @@
   .form-user__transport {
     position: absolute;
     top: 0;
+    right: calc(50% - 153px);
 
     @include container($mobile-width, $mobile-container-1);
     margin-bottom: 25px;
