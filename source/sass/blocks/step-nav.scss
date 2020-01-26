@@ -9,9 +9,12 @@
   list-style: none;
 }
 
-.step-nav__item {
+.step-nav__title {
   position: relative;
   margin-right: 21px;
+  font-size: 0;
+  cursor: pointer;
+  text-decoration: none;
 
   &::before {
     position: absolute;
@@ -28,19 +31,14 @@
   }
 }
 
-.step-nav__item--active {
+.step-nav__title--active {
   &::before {
     opacity: 1;
   }
 }
 
-.step-nav__title {
-  font-size: 0;
-  cursor: pointer;
-}
-
 @media (min-width: $tablet-width) {
-  .step-nav__item {
+  .step-nav__title {
     margin-right: 34px;
 
     &::before {
@@ -62,10 +60,6 @@
 
   .step-nav__item {
     margin-bottom: 23px;
-
-    &::before {
-      left: -40px;
-    }
   }
 
   .step-nav__title {
@@ -75,11 +69,13 @@
     color: rgba($black, 0.6);
 
     @include primary-font($normal);
+
+    &::before {
+      left: -40px;
+    }
   }
 
-  .step-nav__item--active {
-    .step-nav__title {
-      color: $black;
-    }
+  .step-nav__title--active {
+    color: $black;
   }
 }
